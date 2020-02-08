@@ -7,3 +7,4 @@
 | 2/4/20 | Finished Exercise 2 (finally!) and reviewed calendar for week 3 | 2 | |
 | 2/5/20 | Watched first 4 videos, completed Log4J demo and activity, completed JUnit demo  | 2.75 | |
 | 2/7/20 | Watched remaining two videos and completed about 90% of Exercise 3.  | 4.5| |
+| 2/8/20 | Finished Exercise 3, read more about Junit  | .75 | |
