@@ -18,9 +18,6 @@ Below are two different examples of newer paper planners that serve as some insp
 
 (Above image courtesy of Dailydream360.com)
 
-
-TODO: Finish everything below!!
-
 ### Project Technologies/Techniques 
 * Security/Authentication
   * Tomcat's JDBC Realm Authentication
