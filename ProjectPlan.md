@@ -34,7 +34,8 @@
 - [ ] Create the role dao
 - [ ] Create the role dao unit tests
 - [ ] Add a jsp to display user and role
-- [ ] Add jsp to add a user
+- [ ] Add jsp to create an account
+- [ ] Add index.html jsp
 
 ### Week 6
 
@@ -75,15 +76,6 @@
 - [ ] Weekly journal entry
 - [ ] Review and incorporate feedback from Checkpoint 3.
 - [ ] Carefully review code for standards and best practices - use a code quality tool? 
-
-### Week 8
-- [ ] Weekly journal entry
-- [ ] Implement paging of search results
-- [ ] Code review
-
-### Week 9
-- [ ] Weekly journal entry
-- [ ] Add password reset/reminder functionality
 
 ### Week 10
 - [ ] Weekly journal entry
