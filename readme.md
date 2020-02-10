@@ -21,13 +21,12 @@ Below are two different examples of newer paper planners that serve as some insp
 ### Project Technologies/Techniques 
 * Security/Authentication
   * Tomcat's JDBC Realm Authentication
-  * Admin role: create/read/update/delete (crud) of all data
   * User role: create planner, add items to planner, edit and delete items previously added
   * All: anyone can read information about the application, but they cannot use the product until they are logged in
 * Database
   * MySQL
   * Store users and roles
-  * Store all data for calendar, goals, and to-do list
+  * Store all data for calendar, to-do list, and habit tracker
 * ORM Framework
   * Hibernate 5
 * Dependency Management
@@ -61,4 +60,4 @@ Below are two different examples of newer paper planners that serve as some insp
 
 ### [Project Plan](ProjectPlan.md)
 
-### [Weekly Refelection](WeeklyReflection.md)
+### [Weekly Reflection](WeeklyReflection.md)
