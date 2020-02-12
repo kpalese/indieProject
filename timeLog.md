@@ -10,4 +10,4 @@
 | 2/8/20 | Finished Exercise 3, read more about Junit  | .75 | |
 | 2/9/20 | Created Problem Statement, User Stories, and began wireframes  | 4 | |
 | 2/10/20 | Got to about 90% complete with wireframes | 2.5 | Need to consider what my MVP is. |
-| 2/11/20 |  |  |  |
+| 2/11/20 | Watched Cave of Programming DAO video and Hibernate Tutorial sections. Started Week 4 videos but ran into issue where @GenericGenerator cannot be resolved. Need to continue part 1 of demo at 17:20 | 2 |  |
