@@ -9,3 +9,5 @@
 | 2/7/20 | Watched remaining two videos and completed about 90% of Exercise 3.  | 4.5| |
 | 2/8/20 | Finished Exercise 3, read more about Junit  | .75 | |
 | 2/9/20 | Created Problem Statement, User Stories, and began wireframes  | 4 | |
+| 2/10/20 | Got to about 90% complete with wireframes | 2.5 | Need to consider what my MVP is. |
+| 2/11/20 |  |  |  |
