@@ -11,3 +11,4 @@
 | 2/9/20 | Created Problem Statement, User Stories, and began wireframes  | 4 | |
 | 2/10/20 | Got to about 90% complete with wireframes | 2.5 | Need to consider what my MVP is. |
 | 2/11/20 | Watched Cave of Programming DAO video and read Hibernate Tutorial sections. Started Week 4 videos but ran into issue where @GenericGenerator cannot be resolved. Need to continue part 1 of demo at 17:20 | 2 |  |
+| 2/12/20 | Fixed pom dependency issue from yesterday. Finished Hibernate Demo Parts 1 and 2. Watched "What can go wrong" video | 2 |  |
