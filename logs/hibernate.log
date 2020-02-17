@@ -1,378 +1,318 @@
-[DEBUG] 2020-02-17 11:13:58.222 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
-[DEBUG] 2020-02-17 11:13:58.243 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
-[DEBUG] 2020-02-17 11:13:58.259 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
-[INFO ] 2020-02-17 11:13:58.596 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
-[DEBUG] 2020-02-17 11:13:58.601 [main] Environment - HHH000206: hibernate.properties not found
-[DEBUG] 2020-02-17 11:13:59.240 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
-[DEBUG] 2020-02-17 11:13:59.818 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
-[DEBUG] 2020-02-17 11:13:59.903 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
-[DEBUG] 2020-02-17 11:13:59.908 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
-[INFO ] 2020-02-17 11:13:59.962 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-[DEBUG] 2020-02-17 11:14:00.220 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@4248b963
-[DEBUG] 2020-02-17 11:14:00.221 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@4248b963
-[DEBUG] 2020-02-17 11:14:00.221 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@4248b963
-[DEBUG] 2020-02-17 11:14:00.222 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@24b4d544
-[DEBUG] 2020-02-17 11:14:00.222 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@72725ee1
-[DEBUG] 2020-02-17 11:14:00.225 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@5ac6c4f2
-[DEBUG] 2020-02-17 11:14:00.225 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@2d0ecb24
-[DEBUG] 2020-02-17 11:14:00.225 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@2d0ecb24
-[DEBUG] 2020-02-17 11:14:00.226 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@2d0ecb24
-[DEBUG] 2020-02-17 11:14:00.226 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@7e00ed0f
-[DEBUG] 2020-02-17 11:14:00.229 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@7e00ed0f
-[DEBUG] 2020-02-17 11:14:00.229 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@7e00ed0f
-[DEBUG] 2020-02-17 11:14:00.230 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@65753040
-[DEBUG] 2020-02-17 11:14:00.231 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@65753040
-[DEBUG] 2020-02-17 11:14:00.231 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@65753040
-[DEBUG] 2020-02-17 11:14:00.233 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@4e1459ea
-[DEBUG] 2020-02-17 11:14:00.233 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@4e1459ea
-[DEBUG] 2020-02-17 11:14:00.234 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@4e1459ea
-[DEBUG] 2020-02-17 11:14:00.235 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@57c47a9e
-[DEBUG] 2020-02-17 11:14:00.235 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@57c47a9e
-[DEBUG] 2020-02-17 11:14:00.240 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@57c47a9e
-[DEBUG] 2020-02-17 11:14:00.241 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@52d6cd34
-[DEBUG] 2020-02-17 11:14:00.241 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@52d6cd34
-[DEBUG] 2020-02-17 11:14:00.241 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@52d6cd34
-[DEBUG] 2020-02-17 11:14:00.242 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@c2e3264
-[DEBUG] 2020-02-17 11:14:00.243 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@c2e3264
-[DEBUG] 2020-02-17 11:14:00.243 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@c2e3264
-[DEBUG] 2020-02-17 11:14:00.244 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@4a14c44f
-[DEBUG] 2020-02-17 11:14:00.245 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@4a14c44f
-[DEBUG] 2020-02-17 11:14:00.245 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@5c1f6d57
-[DEBUG] 2020-02-17 11:14:00.248 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@5c1f6d57
-[DEBUG] 2020-02-17 11:14:00.248 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@16872c4d
-[DEBUG] 2020-02-17 11:14:00.249 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@16872c4d
-[DEBUG] 2020-02-17 11:14:00.249 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@3a01773b
-[DEBUG] 2020-02-17 11:14:00.249 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@56f521c6
-[DEBUG] 2020-02-17 11:14:00.253 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@39fa8ad2
-[DEBUG] 2020-02-17 11:14:00.253 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@39fa8ad2
-[DEBUG] 2020-02-17 11:14:00.253 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@6c302a1d
-[DEBUG] 2020-02-17 11:14:00.254 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@6c302a1d
-[DEBUG] 2020-02-17 11:14:00.271 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@34f392be
-[DEBUG] 2020-02-17 11:14:00.271 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@34f392be
-[DEBUG] 2020-02-17 11:14:00.272 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@523d6bdb
-[DEBUG] 2020-02-17 11:14:00.272 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@523d6bdb
-[DEBUG] 2020-02-17 11:14:00.288 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@2cfa2c4f
-[DEBUG] 2020-02-17 11:14:00.288 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@2cfa2c4f
-[DEBUG] 2020-02-17 11:14:00.289 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@5e2a3040
-[DEBUG] 2020-02-17 11:14:00.289 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@5e2a3040
-[DEBUG] 2020-02-17 11:14:00.290 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5bb51241
-[DEBUG] 2020-02-17 11:14:00.291 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5bb51241
-[DEBUG] 2020-02-17 11:14:00.295 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@6c42f2a1
-[DEBUG] 2020-02-17 11:14:00.295 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@6c42f2a1
-[DEBUG] 2020-02-17 11:14:00.296 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4867ab9f
-[DEBUG] 2020-02-17 11:14:00.296 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4867ab9f
-[DEBUG] 2020-02-17 11:14:00.297 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@64968732
-[DEBUG] 2020-02-17 11:14:00.300 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@64968732
-[DEBUG] 2020-02-17 11:14:00.301 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@61a1ea2c
-[DEBUG] 2020-02-17 11:14:00.301 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@61a1ea2c
-[DEBUG] 2020-02-17 11:14:00.301 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@131ff6fa
-[DEBUG] 2020-02-17 11:14:00.302 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@131ff6fa
-[DEBUG] 2020-02-17 11:14:00.302 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@131ff6fa
-[DEBUG] 2020-02-17 11:14:00.302 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@42c28305
-[DEBUG] 2020-02-17 11:14:00.305 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@35764bef
-[DEBUG] 2020-02-17 11:14:00.306 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@35764bef
-[DEBUG] 2020-02-17 11:14:00.306 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@35764bef
-[DEBUG] 2020-02-17 11:14:00.306 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@61af1510
-[DEBUG] 2020-02-17 11:14:00.307 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@3901f6af
-[DEBUG] 2020-02-17 11:14:00.313 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@3901f6af
-[DEBUG] 2020-02-17 11:14:00.324 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@13da7ab0
-[DEBUG] 2020-02-17 11:14:00.324 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@13da7ab0
-[DEBUG] 2020-02-17 11:14:00.325 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@238bfd6c
-[DEBUG] 2020-02-17 11:14:00.325 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@238bfd6c
-[DEBUG] 2020-02-17 11:14:00.330 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@4b3fe06e
-[DEBUG] 2020-02-17 11:14:00.330 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@4b3fe06e
-[DEBUG] 2020-02-17 11:14:00.331 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@3e15bb06
-[DEBUG] 2020-02-17 11:14:00.335 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@3e15bb06
-[DEBUG] 2020-02-17 11:14:00.342 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@7a7cc52c
-[DEBUG] 2020-02-17 11:14:00.343 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@21f459fc
-[DEBUG] 2020-02-17 11:14:00.343 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@21f459fc
-[DEBUG] 2020-02-17 11:14:00.345 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@21f459fc
-[DEBUG] 2020-02-17 11:14:00.346 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1290c49
-[DEBUG] 2020-02-17 11:14:00.346 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1290c49
-[DEBUG] 2020-02-17 11:14:00.346 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1290c49
-[DEBUG] 2020-02-17 11:14:00.347 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@6ba7383d
-[DEBUG] 2020-02-17 11:14:00.347 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@4fc142ec
-[DEBUG] 2020-02-17 11:14:00.352 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@1dd7796b
-[DEBUG] 2020-02-17 11:14:00.352 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@1dd7796b
-[DEBUG] 2020-02-17 11:14:00.352 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@1dd7796b
-[DEBUG] 2020-02-17 11:14:00.353 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@396639b
-[DEBUG] 2020-02-17 11:14:00.353 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@396639b
-[DEBUG] 2020-02-17 11:14:00.353 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@396639b
-[DEBUG] 2020-02-17 11:14:00.353 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@14229fa7
-[DEBUG] 2020-02-17 11:14:00.354 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@102efc59
-[DEBUG] 2020-02-17 11:14:00.355 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@3ee69ad8
-[DEBUG] 2020-02-17 11:14:00.355 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@3ee69ad8
-[DEBUG] 2020-02-17 11:14:00.356 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@53ed09e8
-[DEBUG] 2020-02-17 11:14:00.357 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@772861aa
-[DEBUG] 2020-02-17 11:14:00.357 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@772861aa
-[DEBUG] 2020-02-17 11:14:00.359 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@383864d5
-[DEBUG] 2020-02-17 11:14:00.359 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@383864d5
-[DEBUG] 2020-02-17 11:14:00.363 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@3a543f31
-[DEBUG] 2020-02-17 11:14:00.364 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@7efe7b87
-[DEBUG] 2020-02-17 11:14:00.366 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@15dc339f
-[DEBUG] 2020-02-17 11:14:00.374 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@242a209e
-[DEBUG] 2020-02-17 11:14:00.375 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@242a209e
-[DEBUG] 2020-02-17 11:14:00.375 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@39c385d6
-[DEBUG] 2020-02-17 11:14:00.376 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@1cec219f
-[DEBUG] 2020-02-17 11:14:00.376 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@692e028d
-[DEBUG] 2020-02-17 11:14:00.376 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@6629ad09
-[DEBUG] 2020-02-17 11:14:00.376 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@43e1692f
-[DEBUG] 2020-02-17 11:14:00.376 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@3e7c4815
-[DEBUG] 2020-02-17 11:14:00.376 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@27df0f3d
-[DEBUG] 2020-02-17 11:14:00.376 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@c35af2a
-[DEBUG] 2020-02-17 11:14:00.424 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
-[DEBUG] 2020-02-17 11:14:00.424 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
-[DEBUG] 2020-02-17 11:14:00.426 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
-[DEBUG] 2020-02-17 11:14:00.426 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
-[DEBUG] 2020-02-17 11:14:00.426 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
-[DEBUG] 2020-02-17 11:14:00.428 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
-[DEBUG] 2020-02-17 11:14:00.429 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
-[DEBUG] 2020-02-17 11:14:00.435 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
-[DEBUG] 2020-02-17 11:14:00.435 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
-[DEBUG] 2020-02-17 11:14:00.437 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
-[DEBUG] 2020-02-17 11:14:00.439 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
-[DEBUG] 2020-02-17 11:14:00.439 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
-[DEBUG] 2020-02-17 11:14:00.439 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
-[DEBUG] 2020-02-17 11:14:00.441 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
-[INFO ] 2020-02-17 11:14:00.449 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_indieProject
-[INFO ] 2020-02-17 11:14:00.449 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
-[INFO ] 2020-02-17 11:14:00.450 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
-[INFO ] 2020-02-17 11:14:00.866 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
-[DEBUG] 2020-02-17 11:14:01.041 [main] JdbcEnvironmentInitiator - Database ->
+[DEBUG] 2020-02-17 15:27:07.485 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2020-02-17 15:27:07.493 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2020-02-17 15:27:07.502 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2020-02-17 15:27:07.636 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2020-02-17 15:27:07.638 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2020-02-17 15:27:07.885 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2020-02-17 15:27:08.193 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2020-02-17 15:27:08.221 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2020-02-17 15:27:08.223 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2020-02-17 15:27:08.240 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2020-02-17 15:27:08.281 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@6b0615ae
+[DEBUG] 2020-02-17 15:27:08.283 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@6b0615ae
+[DEBUG] 2020-02-17 15:27:08.283 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@6b0615ae
+[DEBUG] 2020-02-17 15:27:08.284 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@771cbb1a
+[DEBUG] 2020-02-17 15:27:08.288 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@3659d7b1
+[DEBUG] 2020-02-17 15:27:08.288 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@1c758545
+[DEBUG] 2020-02-17 15:27:08.289 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@112d1c8e
+[DEBUG] 2020-02-17 15:27:08.289 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@112d1c8e
+[DEBUG] 2020-02-17 15:27:08.289 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@112d1c8e
+[DEBUG] 2020-02-17 15:27:08.290 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@213bd3d5
+[DEBUG] 2020-02-17 15:27:08.290 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@213bd3d5
+[DEBUG] 2020-02-17 15:27:08.290 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@213bd3d5
+[DEBUG] 2020-02-17 15:27:08.291 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@7bebcd65
+[DEBUG] 2020-02-17 15:27:08.291 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@7bebcd65
+[DEBUG] 2020-02-17 15:27:08.291 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@7bebcd65
+[DEBUG] 2020-02-17 15:27:08.293 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@3e84111a
+[DEBUG] 2020-02-17 15:27:08.294 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@3e84111a
+[DEBUG] 2020-02-17 15:27:08.294 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@3e84111a
+[DEBUG] 2020-02-17 15:27:08.294 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@7ea899a9
+[DEBUG] 2020-02-17 15:27:08.294 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@7ea899a9
+[DEBUG] 2020-02-17 15:27:08.295 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@7ea899a9
+[DEBUG] 2020-02-17 15:27:08.295 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@67594471
+[DEBUG] 2020-02-17 15:27:08.299 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@67594471
+[DEBUG] 2020-02-17 15:27:08.299 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@67594471
+[DEBUG] 2020-02-17 15:27:08.304 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@d48673
+[DEBUG] 2020-02-17 15:27:08.304 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@d48673
+[DEBUG] 2020-02-17 15:27:08.304 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@d48673
+[DEBUG] 2020-02-17 15:27:08.304 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@96a75da
+[DEBUG] 2020-02-17 15:27:08.305 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@96a75da
+[DEBUG] 2020-02-17 15:27:08.306 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@7d5508e0
+[DEBUG] 2020-02-17 15:27:08.306 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@7d5508e0
+[DEBUG] 2020-02-17 15:27:08.306 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@68fe48d7
+[DEBUG] 2020-02-17 15:27:08.306 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@68fe48d7
+[DEBUG] 2020-02-17 15:27:08.308 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@27a97e08
+[DEBUG] 2020-02-17 15:27:08.308 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@51ce6f85
+[DEBUG] 2020-02-17 15:27:08.310 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@28e19366
+[DEBUG] 2020-02-17 15:27:08.310 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@28e19366
+[DEBUG] 2020-02-17 15:27:08.310 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@5cb042da
+[DEBUG] 2020-02-17 15:27:08.311 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@5cb042da
+[DEBUG] 2020-02-17 15:27:08.318 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@1ff55ff
+[DEBUG] 2020-02-17 15:27:08.318 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@1ff55ff
+[DEBUG] 2020-02-17 15:27:08.319 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@148c7c4b
+[DEBUG] 2020-02-17 15:27:08.320 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@148c7c4b
+[DEBUG] 2020-02-17 15:27:08.321 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@6aba5d30
+[DEBUG] 2020-02-17 15:27:08.321 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@6aba5d30
+[DEBUG] 2020-02-17 15:27:08.322 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@2c6aed22
+[DEBUG] 2020-02-17 15:27:08.322 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@2c6aed22
+[DEBUG] 2020-02-17 15:27:08.323 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@1416a80a
+[DEBUG] 2020-02-17 15:27:08.323 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@1416a80a
+[DEBUG] 2020-02-17 15:27:08.327 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@2b5183ec
+[DEBUG] 2020-02-17 15:27:08.327 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@2b5183ec
+[DEBUG] 2020-02-17 15:27:08.331 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@b0e5507
+[DEBUG] 2020-02-17 15:27:08.332 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@b0e5507
+[DEBUG] 2020-02-17 15:27:08.335 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@5fb65013
+[DEBUG] 2020-02-17 15:27:08.335 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@5fb65013
+[DEBUG] 2020-02-17 15:27:08.336 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@2eb917d0
+[DEBUG] 2020-02-17 15:27:08.338 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2eb917d0
+[DEBUG] 2020-02-17 15:27:08.339 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@3d278b4d
+[DEBUG] 2020-02-17 15:27:08.339 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@3d278b4d
+[DEBUG] 2020-02-17 15:27:08.339 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@3d278b4d
+[DEBUG] 2020-02-17 15:27:08.340 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@6dfcffb5
+[DEBUG] 2020-02-17 15:27:08.341 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@16a49a5d
+[DEBUG] 2020-02-17 15:27:08.342 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@16a49a5d
+[DEBUG] 2020-02-17 15:27:08.342 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@16a49a5d
+[DEBUG] 2020-02-17 15:27:08.343 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@23592946
+[DEBUG] 2020-02-17 15:27:08.345 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@702c436b
+[DEBUG] 2020-02-17 15:27:08.347 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@702c436b
+[DEBUG] 2020-02-17 15:27:08.348 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@37303f12
+[DEBUG] 2020-02-17 15:27:08.348 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@37303f12
+[DEBUG] 2020-02-17 15:27:08.348 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@2ab5afc7
+[DEBUG] 2020-02-17 15:27:08.349 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@2ab5afc7
+[DEBUG] 2020-02-17 15:27:08.349 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@3ed03652
+[DEBUG] 2020-02-17 15:27:08.349 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@3ed03652
+[DEBUG] 2020-02-17 15:27:08.350 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@1dc76fa1
+[DEBUG] 2020-02-17 15:27:08.350 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@1dc76fa1
+[DEBUG] 2020-02-17 15:27:08.351 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@4f3e7344
+[DEBUG] 2020-02-17 15:27:08.352 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@3db663d0
+[DEBUG] 2020-02-17 15:27:08.352 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@3db663d0
+[DEBUG] 2020-02-17 15:27:08.352 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@3db663d0
+[DEBUG] 2020-02-17 15:27:08.352 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@5524b72f
+[DEBUG] 2020-02-17 15:27:08.352 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@5524b72f
+[DEBUG] 2020-02-17 15:27:08.353 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@5524b72f
+[DEBUG] 2020-02-17 15:27:08.354 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@4e6f2bb5
+[DEBUG] 2020-02-17 15:27:08.354 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@26d96e5
+[DEBUG] 2020-02-17 15:27:08.354 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@38af1bf6
+[DEBUG] 2020-02-17 15:27:08.356 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@38af1bf6
+[DEBUG] 2020-02-17 15:27:08.357 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@38af1bf6
+[DEBUG] 2020-02-17 15:27:08.358 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@7f08caf
+[DEBUG] 2020-02-17 15:27:08.358 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@7f08caf
+[DEBUG] 2020-02-17 15:27:08.358 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@7f08caf
+[DEBUG] 2020-02-17 15:27:08.358 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@27a2a089
+[DEBUG] 2020-02-17 15:27:08.358 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@40e60ece
+[DEBUG] 2020-02-17 15:27:08.366 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@78525ef9
+[DEBUG] 2020-02-17 15:27:08.366 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@78525ef9
+[DEBUG] 2020-02-17 15:27:08.367 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@51b35e4e
+[DEBUG] 2020-02-17 15:27:08.368 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@5fbdc49b
+[DEBUG] 2020-02-17 15:27:08.368 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@5fbdc49b
+[DEBUG] 2020-02-17 15:27:08.369 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@7a904f32
+[DEBUG] 2020-02-17 15:27:08.371 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@7a904f32
+[DEBUG] 2020-02-17 15:27:08.372 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@36fc05ff
+[DEBUG] 2020-02-17 15:27:08.372 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@153cd6bb
+[DEBUG] 2020-02-17 15:27:08.373 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@2a685eba
+[DEBUG] 2020-02-17 15:27:08.377 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@17b6d426
+[DEBUG] 2020-02-17 15:27:08.377 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@17b6d426
+[DEBUG] 2020-02-17 15:27:08.377 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@46a953cf
+[DEBUG] 2020-02-17 15:27:08.377 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@154bd49b
+[DEBUG] 2020-02-17 15:27:08.377 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@3a01773b
+[DEBUG] 2020-02-17 15:27:08.377 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@20e3c449
+[DEBUG] 2020-02-17 15:27:08.377 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@2c58dcb1
+[DEBUG] 2020-02-17 15:27:08.377 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@67fc2aad
+[DEBUG] 2020-02-17 15:27:08.377 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@56f521c6
+[DEBUG] 2020-02-17 15:27:08.377 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@680a66dd
+[DEBUG] 2020-02-17 15:27:08.417 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2020-02-17 15:27:08.417 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2020-02-17 15:27:08.418 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2020-02-17 15:27:08.418 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2020-02-17 15:27:08.420 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2020-02-17 15:27:08.420 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2020-02-17 15:27:08.422 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2020-02-17 15:27:08.423 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2020-02-17 15:27:08.423 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2020-02-17 15:27:08.425 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2020-02-17 15:27:08.425 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2020-02-17 15:27:08.426 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2020-02-17 15:27:08.426 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2020-02-17 15:27:08.426 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2020-02-17 15:27:08.433 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_indieProject
+[INFO ] 2020-02-17 15:27:08.433 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2020-02-17 15:27:08.434 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2020-02-17 15:27:08.586 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2020-02-17 15:27:08.733 [main] JdbcEnvironmentInitiator - Database ->
        name : MySQL
     version : 8.0.16
       major : 8
       minor : 0
-[DEBUG] 2020-02-17 11:14:01.042 [main] JdbcEnvironmentInitiator - Driver ->
+[DEBUG] 2020-02-17 15:27:08.738 [main] JdbcEnvironmentInitiator - Driver ->
        name : MySQL Connector/J
     version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
       major : 8
       minor : 0
-[DEBUG] 2020-02-17 11:14:01.042 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
-[INFO ] 2020-02-17 11:14:01.136 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-[DEBUG] 2020-02-17 11:14:01.163 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
-[DEBUG] 2020-02-17 11:14:01.279 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-[DEBUG] 2020-02-17 11:14:01.340 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
-[DEBUG] 2020-02-17 11:14:01.345 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1d247525] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@35ee466f]
-[DEBUG] 2020-02-17 11:14:01.505 [main] AnnotationBinder - Binding entity from annotated class: edu.matc.entity.User
-[DEBUG] 2020-02-17 11:14:01.534 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
-[DEBUG] 2020-02-17 11:14:01.548 [main] EntityBinder - Import with entity name User
-[DEBUG] 2020-02-17 11:14:01.557 [main] EntityBinder - Bind entity edu.matc.entity.User on table USERS
-[DEBUG] 2020-02-17 11:14:01.587 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=userId, insertable=true, updatable=true, unique=false}
-[DEBUG] 2020-02-17 11:14:01.588 [main] PropertyBinder - MetadataSourceProcessor property userId with lazy=false
-[DEBUG] 2020-02-17 11:14:01.589 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:userId]
-[DEBUG] 2020-02-17 11:14:01.591 [main] SimpleValueBinder - building SimpleValue for userId
-[DEBUG] 2020-02-17 11:14:01.593 [main] PropertyBinder - Building property userId
-[DEBUG] 2020-02-17 11:14:01.595 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(userId)]), userId, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
-[DEBUG] 2020-02-17 11:14:01.596 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
-[DEBUG] 2020-02-17 11:14:01.601 [main] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
-[DEBUG] 2020-02-17 11:14:01.601 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:userName]
-[DEBUG] 2020-02-17 11:14:01.601 [main] SimpleValueBinder - building SimpleValue for userName
-[DEBUG] 2020-02-17 11:14:01.601 [main] PropertyBinder - Building property userName
-[DEBUG] 2020-02-17 11:14:01.601 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=user_password, insertable=true, updatable=true, unique=false}
-[DEBUG] 2020-02-17 11:14:01.601 [main] PropertyBinder - MetadataSourceProcessor property userPassword with lazy=false
-[DEBUG] 2020-02-17 11:14:01.601 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:userPassword]
-[DEBUG] 2020-02-17 11:14:01.602 [main] SimpleValueBinder - building SimpleValue for userPassword
-[DEBUG] 2020-02-17 11:14:01.602 [main] PropertyBinder - Building property userPassword
-[DEBUG] 2020-02-17 11:14:01.603 [main] SimpleValueBinder - Starting fillSimpleValue for userId
-[DEBUG] 2020-02-17 11:14:01.603 [main] SimpleValueBinder - Starting fillSimpleValue for userName
-[DEBUG] 2020-02-17 11:14:01.604 [main] SimpleValueBinder - Starting fillSimpleValue for userPassword
-[DEBUG] 2020-02-17 11:14:01.604 [main] PrimaryKey - Forcing column [userid] to be non-null as it is part of the primary key for table [users]
-[DEBUG] 2020-02-17 11:14:01.645 [main] SessionFactoryImpl - Building session factory
-[DEBUG] 2020-02-17 11:14:01.646 [main] Settings - SessionFactory name : null
-[DEBUG] 2020-02-17 11:14:01.646 [main] Settings - Automatic flush during beforeCompletion(): enabled
-[DEBUG] 2020-02-17 11:14:01.646 [main] Settings - Automatic session close at end of transaction: disabled
-[DEBUG] 2020-02-17 11:14:01.649 [main] Settings - Statistics: disabled
-[DEBUG] 2020-02-17 11:14:01.649 [main] Settings - Deleted entity synthetic identifier rollback: disabled
-[DEBUG] 2020-02-17 11:14:01.649 [main] Settings - Default entity-mode: pojo
-[DEBUG] 2020-02-17 11:14:01.649 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
-[DEBUG] 2020-02-17 11:14:01.649 [main] Settings - Allow initialization of lazy state outside session : disabled
-[DEBUG] 2020-02-17 11:14:01.649 [main] Settings - Using BatchFetchStyle : LEGACY
-[DEBUG] 2020-02-17 11:14:01.649 [main] Settings - Default batch fetch size: -1
-[DEBUG] 2020-02-17 11:14:01.649 [main] Settings - Maximum outer join fetch depth: 2
-[DEBUG] 2020-02-17 11:14:01.649 [main] Settings - Default null ordering: NONE
-[DEBUG] 2020-02-17 11:14:01.649 [main] Settings - Order SQL updates by primary key: disabled
-[DEBUG] 2020-02-17 11:14:01.649 [main] Settings - Order SQL inserts for batching: disabled
-[DEBUG] 2020-02-17 11:14:01.651 [main] Settings - multi-tenancy strategy : NONE
-[DEBUG] 2020-02-17 11:14:01.651 [main] Settings - JTA Track by Thread: enabled
-[DEBUG] 2020-02-17 11:14:01.651 [main] Settings - Query language substitutions: {}
-[DEBUG] 2020-02-17 11:14:01.651 [main] Settings - Named query checking : enabled
-[DEBUG] 2020-02-17 11:14:01.651 [main] Settings - Second-level cache: disabled
-[DEBUG] 2020-02-17 11:14:01.652 [main] Settings - Second-level query cache: disabled
-[DEBUG] 2020-02-17 11:14:01.652 [main] Settings - Second-level query cache factory: null
-[DEBUG] 2020-02-17 11:14:01.652 [main] Settings - Second-level cache region prefix: null
-[DEBUG] 2020-02-17 11:14:01.653 [main] Settings - Optimize second-level cache for minimal puts: disabled
-[DEBUG] 2020-02-17 11:14:01.653 [main] Settings - Structured second-level cache entries: disabled
-[DEBUG] 2020-02-17 11:14:01.653 [main] Settings - Second-level cache direct-reference entries: disabled
-[DEBUG] 2020-02-17 11:14:01.654 [main] Settings - Automatic eviction of collection cache: disabled
-[DEBUG] 2020-02-17 11:14:01.654 [main] Settings - JDBC batch size: 15
-[DEBUG] 2020-02-17 11:14:01.654 [main] Settings - JDBC batch updates for versioned data: enabled
-[DEBUG] 2020-02-17 11:14:01.654 [main] Settings - Scrollable result sets: enabled
-[DEBUG] 2020-02-17 11:14:01.654 [main] Settings - Wrap result sets: disabled
-[DEBUG] 2020-02-17 11:14:01.654 [main] Settings - JDBC3 getGeneratedKeys(): enabled
-[DEBUG] 2020-02-17 11:14:01.654 [main] Settings - JDBC result set fetch size: null
-[DEBUG] 2020-02-17 11:14:01.654 [main] Settings - Connection release mode: AFTER_TRANSACTION
-[DEBUG] 2020-02-17 11:14:01.654 [main] Settings - Generate SQL with comments: disabled
-[DEBUG] 2020-02-17 11:14:01.660 [main] Settings - JPA compliance - query : 
-[DEBUG] 2020-02-17 11:14:01.663 [main] Settings - JPA compliance - closed-handling : 
-[DEBUG] 2020-02-17 11:14:01.663 [main] Settings - JPA compliance - lists : 
-[DEBUG] 2020-02-17 11:14:01.663 [main] Settings - JPA compliance - transactions : 
-[INFO ] 2020-02-17 11:14:01.809 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-[DEBUG] 2020-02-17 11:14:01.834 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
-[DEBUG] 2020-02-17 11:14:01.834 [main] SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=gnome, awt.toolkit=sun.awt.X11.XToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/home/student/IdeaProjects/indieproject/target/test-classes:/home/student/IdeaProjects/indieproject/target/classes:/home/student/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/home/student/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/home/student/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/home/student/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/home/student/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/student/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/student/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/home/student/.m2/repository/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar:/home/student/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/home/student/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/home/student/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/home/student/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/home/student/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/student/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/home/student/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/home/student/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/student/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/student/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/home/student/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/home/student/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/student/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/home/student/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/home/student/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/home/student/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/student/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/student/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/student/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/home/student/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/home/student/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar:, java.vm.vendor=Ubuntu, sun.arch.data.model=64, java.vendor.url=https://ubuntu.com/, user.timezone=America/Chicago, os.name=Linux, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/usr/lib/jvm/java-11-openjdk-amd64/lib, sun.java.command=/home/student/IdeaProjects/indieproject/target/surefire/surefirebooter13713698395157941206.jar /home/student/IdeaProjects/indieproject/target/surefire/surefire12805094072226904106tmp /home/student/IdeaProjects/indieproject/target/surefire/surefire_09708047874123865468tmp, jdk.debug=release, surefire.test.class.path=/home/student/IdeaProjects/indieproject/target/test-classes:/home/student/IdeaProjects/indieproject/target/classes:/home/student/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/home/student/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/home/student/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/home/student/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/home/student/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/student/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/student/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/home/student/.m2/repository/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar:/home/student/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/home/student/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/home/student/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/home/student/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/home/student/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/student/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/home/student/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/home/student/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/student/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/student/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/home/student/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/home/student/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/student/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/home/student/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/home/student/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/home/student/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/student/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/student/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/student/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/home/student/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/home/student/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar:, sun.cpu.endian=little, user.home=/home/student, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2020-01-14, java.home=/usr/lib/jvm/java-11-openjdk-amd64, file.separator=/, basedir=/home/student/IdeaProjects/indieproject, java.vm.compressedOopsMode=32-bit, line.separator=
-, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, surefire.real.class.path=/home/student/IdeaProjects/indieproject/target/surefire/surefirebooter13713698395157941206.jar, connection.password=student, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, java.runtime.version=11.0.6+10-post-Ubuntu-1ubuntu118.04.1, user.name=student, path.separator=:, hibernate.connection.username=****, os.version=5.3.0-28-generic, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/test_indieProject, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, localRepository=/home/student/.m2/repository, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugs.launchpad.net/ubuntu/+source/openjdk-lts, java.io.tmpdir=/tmp, java.version=11.0.6, user.dir=/home/student/IdeaProjects/indieproject, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@6cfbbff7, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, idea.version2019.3.2=true, java.vendor=Ubuntu, java.vm.info=mixed mode, sharing, java.vm.version=11.0.6+10-post-Ubuntu-1ubuntu118.04.1, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:mysql://localhost:3306/test_indieProject, java.class.version=55.0}
-[DEBUG] 2020-02-17 11:14:01.868 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
-[DEBUG] 2020-02-17 11:14:01.869 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
-[DEBUG] 2020-02-17 11:14:01.870 [main] SessionFactoryImpl - Instantiated session factory
-[DEBUG] 2020-02-17 11:14:01.870 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1d247525] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@716185fe]
-[DEBUG] 2020-02-17 11:14:01.946 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.User] is safe
-[DEBUG] 2020-02-17 11:14:01.946 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.User
-[DEBUG] 2020-02-17 11:14:01.959 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.User] is safe
-[DEBUG] 2020-02-17 11:14:01.959 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.User
-[DEBUG] 2020-02-17 11:14:02.223 [main] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.User
-[DEBUG] 2020-02-17 11:14:02.224 [main] AbstractEntityPersister -  Version select: select userId from USERS where userId =?
-[DEBUG] 2020-02-17 11:14:02.224 [main] AbstractEntityPersister -  Snapshot select: select user_.userId, user_.user_name as user_nam2_0_, user_.user_password as user_pas3_0_ from USERS user_ where user_.userId=?
-[DEBUG] 2020-02-17 11:14:02.224 [main] AbstractEntityPersister -  Insert 0: insert into USERS (user_name, user_password, userId) values (?, ?, ?)
-[DEBUG] 2020-02-17 11:14:02.224 [main] AbstractEntityPersister -  Update 0: update USERS set user_name=?, user_password=? where userId=?
-[DEBUG] 2020-02-17 11:14:02.224 [main] AbstractEntityPersister -  Delete 0: delete from USERS where userId=?
-[DEBUG] 2020-02-17 11:14:02.224 [main] AbstractEntityPersister -  Identity insert: insert into USERS (user_name, user_password) values (?, ?)
-[DEBUG] 2020-02-17 11:14:02.245 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2bab618]
-[DEBUG] 2020-02-17 11:14:02.246 [main] MetamodelGraphWalker - Visiting attribute path : userName
-[DEBUG] 2020-02-17 11:14:02.246 [main] MetamodelGraphWalker - Visiting attribute path : userPassword
-[DEBUG] 2020-02-17 11:14:02.246 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
-[DEBUG] 2020-02-17 11:14:02.254 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
-[DEBUG] 2020-02-17 11:14:02.256 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+[DEBUG] 2020-02-17 15:27:08.738 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2020-02-17 15:27:08.791 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2020-02-17 15:27:08.815 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2020-02-17 15:27:08.852 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2020-02-17 15:27:08.909 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2020-02-17 15:27:08.914 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1507c3c3] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@655a01d8]
+[DEBUG] 2020-02-17 15:27:08.978 [main] AnnotationBinder - Binding entity from annotated class: edu.matc.entity.User
+[DEBUG] 2020-02-17 15:27:09.009 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2020-02-17 15:27:09.016 [main] EntityBinder - Import with entity name User
+[DEBUG] 2020-02-17 15:27:09.020 [main] EntityBinder - Bind entity edu.matc.entity.User on table USERS
+[DEBUG] 2020-02-17 15:27:09.048 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-17 15:27:09.052 [main] PropertyBinder - MetadataSourceProcessor property userId with lazy=false
+[DEBUG] 2020-02-17 15:27:09.053 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:userId]
+[DEBUG] 2020-02-17 15:27:09.060 [main] SimpleValueBinder - building SimpleValue for userId
+[DEBUG] 2020-02-17 15:27:09.062 [main] PropertyBinder - Building property userId
+[DEBUG] 2020-02-17 15:27:09.068 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), userId, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2020-02-17 15:27:09.069 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-17 15:27:09.069 [main] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2020-02-17 15:27:09.069 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:userName]
+[DEBUG] 2020-02-17 15:27:09.069 [main] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2020-02-17 15:27:09.069 [main] PropertyBinder - Building property userName
+[DEBUG] 2020-02-17 15:27:09.070 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=user_password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-17 15:27:09.070 [main] PropertyBinder - MetadataSourceProcessor property userPassword with lazy=false
+[DEBUG] 2020-02-17 15:27:09.070 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:userPassword]
+[DEBUG] 2020-02-17 15:27:09.071 [main] SimpleValueBinder - building SimpleValue for userPassword
+[DEBUG] 2020-02-17 15:27:09.071 [main] PropertyBinder - Building property userPassword
+[DEBUG] 2020-02-17 15:27:09.077 [main] SimpleValueBinder - Starting fillSimpleValue for userId
+[DEBUG] 2020-02-17 15:27:09.078 [main] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2020-02-17 15:27:09.078 [main] SimpleValueBinder - Starting fillSimpleValue for userPassword
+[DEBUG] 2020-02-17 15:27:09.080 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [users]
+[DEBUG] 2020-02-17 15:27:09.131 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2020-02-17 15:27:09.135 [main] Settings - SessionFactory name : null
+[DEBUG] 2020-02-17 15:27:09.135 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2020-02-17 15:27:09.136 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2020-02-17 15:27:09.136 [main] Settings - Statistics: disabled
+[DEBUG] 2020-02-17 15:27:09.136 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2020-02-17 15:27:09.136 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2020-02-17 15:27:09.136 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2020-02-17 15:27:09.136 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2020-02-17 15:27:09.136 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2020-02-17 15:27:09.136 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2020-02-17 15:27:09.136 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2020-02-17 15:27:09.136 [main] Settings - Default null ordering: NONE
+[DEBUG] 2020-02-17 15:27:09.136 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2020-02-17 15:27:09.136 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2020-02-17 15:27:09.136 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2020-02-17 15:27:09.136 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2020-02-17 15:27:09.136 [main] Settings - Query language substitutions: {}
+[DEBUG] 2020-02-17 15:27:09.136 [main] Settings - Named query checking : enabled
+[DEBUG] 2020-02-17 15:27:09.137 [main] Settings - Second-level cache: disabled
+[DEBUG] 2020-02-17 15:27:09.137 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2020-02-17 15:27:09.137 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2020-02-17 15:27:09.138 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2020-02-17 15:27:09.138 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2020-02-17 15:27:09.138 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2020-02-17 15:27:09.138 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2020-02-17 15:27:09.139 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2020-02-17 15:27:09.139 [main] Settings - JDBC batch size: 15
+[DEBUG] 2020-02-17 15:27:09.139 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2020-02-17 15:27:09.139 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2020-02-17 15:27:09.139 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2020-02-17 15:27:09.139 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2020-02-17 15:27:09.139 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2020-02-17 15:27:09.139 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2020-02-17 15:27:09.139 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2020-02-17 15:27:09.139 [main] Settings - JPA compliance - query : 
+[DEBUG] 2020-02-17 15:27:09.140 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2020-02-17 15:27:09.140 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2020-02-17 15:27:09.140 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2020-02-17 15:27:09.213 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2020-02-17 15:27:09.237 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2020-02-17 15:27:09.237 [main] SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=gnome, awt.toolkit=sun.awt.X11.XToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/home/student/intellij/lib/idea_rt.jar:/home/student/intellij/plugins/junit/lib/junit5-rt.jar:/home/student/intellij/plugins/junit/lib/junit-rt.jar:/home/student/IdeaProjects/indieproject/target/test-classes:/home/student/IdeaProjects/indieproject/target/classes:/home/student/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/home/student/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/home/student/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/home/student/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/home/student/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/student/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/student/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/home/student/.m2/repository/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar:/home/student/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/home/student/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/home/student/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/home/student/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/home/student/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/student/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/home/student/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/home/student/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/student/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/student/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/home/student/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/home/student/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/student/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/home/student/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/home/student/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/home/student/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/student/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/student/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/student/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/home/student/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/home/student/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar, java.vm.vendor=Ubuntu, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=https://ubuntu.com/, user.timezone=America/Chicago, os.name=Linux, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/usr/lib/jvm/java-11-openjdk-amd64/lib, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 edu.matc.persistence.UserDaoTest, jdk.debug=release, sun.cpu.endian=little, user.home=/home/student, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2020-01-14, java.home=/usr/lib/jvm/java-11-openjdk-amd64, file.separator=/, java.vm.compressedOopsMode=32-bit, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, connection.password=student, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, java.runtime.version=11.0.6+10-post-Ubuntu-1ubuntu118.04.1, user.name=student, path.separator=:, hibernate.connection.username=****, os.version=5.3.0-28-generic, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/test_indieProject, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugs.launchpad.net/ubuntu/+source/openjdk-lts, java.io.tmpdir=/tmp, java.version=11.0.6, user.dir=/home/student/IdeaProjects/indieproject, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@1b01a0d, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.vendor=Ubuntu, java.vm.info=mixed mode, sharing, java.vm.version=11.0.6+10-post-Ubuntu-1ubuntu118.04.1, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:mysql://localhost:3306/test_indieProject, java.class.version=55.0}
+[DEBUG] 2020-02-17 15:27:09.265 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2020-02-17 15:27:09.266 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2020-02-17 15:27:09.266 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2020-02-17 15:27:09.267 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1507c3c3] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@62cba181]
+[DEBUG] 2020-02-17 15:27:09.339 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.User] is safe
+[DEBUG] 2020-02-17 15:27:09.339 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.User
+[DEBUG] 2020-02-17 15:27:09.425 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.User] is safe
+[DEBUG] 2020-02-17 15:27:09.426 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.User
+[DEBUG] 2020-02-17 15:27:09.721 [main] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.User
+[DEBUG] 2020-02-17 15:27:09.722 [main] AbstractEntityPersister -  Version select: select id from USERS where id =?
+[DEBUG] 2020-02-17 15:27:09.722 [main] AbstractEntityPersister -  Snapshot select: select user_.id, user_.user_name as user_nam2_0_, user_.user_password as user_pas3_0_ from USERS user_ where user_.id=?
+[DEBUG] 2020-02-17 15:27:09.722 [main] AbstractEntityPersister -  Insert 0: insert into USERS (user_name, user_password, id) values (?, ?, ?)
+[DEBUG] 2020-02-17 15:27:09.722 [main] AbstractEntityPersister -  Update 0: update USERS set user_name=?, user_password=? where id=?
+[DEBUG] 2020-02-17 15:27:09.722 [main] AbstractEntityPersister -  Delete 0: delete from USERS where id=?
+[DEBUG] 2020-02-17 15:27:09.722 [main] AbstractEntityPersister -  Identity insert: insert into USERS (user_name, user_password) values (?, ?)
+[DEBUG] 2020-02-17 15:27:09.747 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@fbe70d8]
+[DEBUG] 2020-02-17 15:27:09.748 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2020-02-17 15:27:09.748 [main] MetamodelGraphWalker - Visiting attribute path : userPassword
+[DEBUG] 2020-02-17 15:27:09.753 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-02-17 15:27:09.766 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-02-17 15:27:09.774 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
     - Returns
        - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
     - QuerySpaces
        - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
           - SQL table alias mapping - user0_
           - alias suffix - 0_
-          - suffixed key columns - {userId1_0_0_}
+          - suffixed key columns - {id1_0_0_}
 
-[DEBUG] 2020-02-17 11:14:02.258 [main] EntityLoader - Static select for entity edu.matc.entity.User [NONE]: select user0_.userId as userId1_0_0_, user0_.user_name as user_nam2_0_0_, user0_.user_password as user_pas3_0_0_ from USERS user0_ where user0_.userId=?
-[DEBUG] 2020-02-17 11:14:02.260 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@17ff8810]
-[DEBUG] 2020-02-17 11:14:02.260 [main] MetamodelGraphWalker - Visiting attribute path : userName
-[DEBUG] 2020-02-17 11:14:02.260 [main] MetamodelGraphWalker - Visiting attribute path : userPassword
-[DEBUG] 2020-02-17 11:14:02.260 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
-[DEBUG] 2020-02-17 11:14:02.260 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
-[DEBUG] 2020-02-17 11:14:02.265 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+[DEBUG] 2020-02-17 15:27:09.775 [main] EntityLoader - Static select for entity edu.matc.entity.User [NONE]: select user0_.id as id1_0_0_, user0_.user_name as user_nam2_0_0_, user0_.user_password as user_pas3_0_0_ from USERS user0_ where user0_.id=?
+[DEBUG] 2020-02-17 15:27:09.780 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@39832280]
+[DEBUG] 2020-02-17 15:27:09.780 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2020-02-17 15:27:09.780 [main] MetamodelGraphWalker - Visiting attribute path : userPassword
+[DEBUG] 2020-02-17 15:27:09.780 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-02-17 15:27:09.780 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-02-17 15:27:09.782 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
     - Returns
        - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
     - QuerySpaces
        - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
           - SQL table alias mapping - user0_
           - alias suffix - 0_
-          - suffixed key columns - {userId1_0_0_}
+          - suffixed key columns - {id1_0_0_}
 
-[DEBUG] 2020-02-17 11:14:02.266 [main] EntityLoader - Static select for entity edu.matc.entity.User [READ]: select user0_.userId as userId1_0_0_, user0_.user_name as user_nam2_0_0_, user0_.user_password as user_pas3_0_0_ from USERS user0_ where user0_.userId=?
-[DEBUG] 2020-02-17 11:14:02.282 [main] Loader - Static select for action ACTION_MERGE on entity edu.matc.entity.User: select user0_.userId as userId1_0_0_, user0_.user_name as user_nam2_0_0_, user0_.user_password as user_pas3_0_0_ from USERS user0_ where user0_.userId=?
-[DEBUG] 2020-02-17 11:14:02.282 [main] Loader - Static select for action ACTION_REFRESH on entity edu.matc.entity.User: select user0_.userId as userId1_0_0_, user0_.user_name as user_nam2_0_0_, user0_.user_password as user_pas3_0_0_ from USERS user0_ where user0_.userId=?
-[DEBUG] 2020-02-17 11:14:02.800 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
-[DEBUG] 2020-02-17 11:14:02.801 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
-[DEBUG] 2020-02-17 11:14:02.801 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
-[DEBUG] 2020-02-17 11:14:02.805 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2020-02-17 11:14:02.805 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[DEBUG] 2020-02-17 11:14:02.814 [main] NamedQueryRepository - Checking 0 named HQL queries
-[DEBUG] 2020-02-17 11:14:02.815 [main] NamedQueryRepository - Checking 0 named SQL queries
-[DEBUG] 2020-02-17 11:14:02.878 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@497ed877
-[DEBUG] 2020-02-17 11:14:02.902 [main] SessionFactoryRegistry - Registering SessionFactory: 590bc4eb-41b6-4c0c-886f-b1a836388d57 (<unnamed>)
-[DEBUG] 2020-02-17 11:14:02.903 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
-[DEBUG] 2020-02-17 11:14:02.971 [main] StatisticsInitiator - Statistics initialized [enabled=false]
-[DEBUG] 2020-02-17 11:14:02.991 [main] SQL - select user0_.userId as userId1_0_0_, user0_.user_name as user_nam2_0_0_, user0_.user_password as user_pas3_0_0_ from USERS user0_ where user0_.userId=?
-[DEBUG] 2020-02-17 11:14:04.475 [main] SqlExceptionHelper - could not extract ResultSet [n/a]
-java.sql.SQLSyntaxErrorException: Unknown column 'user0_.userId' in 'field list'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1005) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:379) ~[c3p0-0.9.5.3.jar:0.9.5.3]
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:60) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.getResultSet(AbstractLoadPlanBasedLoader.java:418) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:191) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:121) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:86) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:197) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4312) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:570) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:538) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:208) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:333) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1298) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1286) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.access$2100(SessionImpl.java:203) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doLoad(SessionImpl.java:2945) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$load$1(SessionImpl.java:2926) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2882) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2926) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.get(SessionImpl.java:1081) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at edu.matc.persistence.UserDao.getById(UserDao.java:23) [classes/:?]
-	at edu.matc.persistence.UserDaoTest.deleteSuccess(UserDaoTest.java:59) [test-classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:389) [junit-platform-commons-1.0.0.jar:1.0.0]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:167) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:163) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:110) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:57) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:83) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
-	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
-	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:51) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeSingleClass(JUnitPlatformProvider.java:144) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:126) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:105) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286) [surefire-booter-2.19.jar:2.19]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240) [surefire-booter-2.19.jar:2.19]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.jar:2.19]
-[WARN ] 2020-02-17 11:14:04.512 [main] SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
-[ERROR] 2020-02-17 11:14:04.513 [main] SqlExceptionHelper - Unknown column 'user0_.userId' in 'field list'
-[INFO ] 2020-02-17 11:14:04.516 [main] DefaultLoadEventListener - HHH000327: Error performing load command : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
-[DEBUG] 2020-02-17 11:14:04.517 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
-[DEBUG] 2020-02-17 11:14:05.241 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0
-[DEBUG] 2020-02-17 11:14:05.338 [main] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@3b6c2be6
-[DEBUG] 2020-02-17 11:14:05.373 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0
-[DEBUG] 2020-02-17 11:14:05.378 [main] ErrorTracker - throwQueryException() : no errors
-[DEBUG] 2020-02-17 11:14:05.502 [main] QueryTranslatorImpl - --- HQL AST ---
+[DEBUG] 2020-02-17 15:27:09.782 [main] EntityLoader - Static select for entity edu.matc.entity.User [READ]: select user0_.id as id1_0_0_, user0_.user_name as user_nam2_0_0_, user0_.user_password as user_pas3_0_0_ from USERS user0_ where user0_.id=?
+[DEBUG] 2020-02-17 15:27:09.801 [main] Loader - Static select for action ACTION_MERGE on entity edu.matc.entity.User: select user0_.id as id1_0_0_, user0_.user_name as user_nam2_0_0_, user0_.user_password as user_pas3_0_0_ from USERS user0_ where user0_.id=?
+[DEBUG] 2020-02-17 15:27:09.801 [main] Loader - Static select for action ACTION_REFRESH on entity edu.matc.entity.User: select user0_.id as id1_0_0_, user0_.user_name as user_nam2_0_0_, user0_.user_password as user_pas3_0_0_ from USERS user0_ where user0_.id=?
+[DEBUG] 2020-02-17 15:27:09.838 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2020-02-17 15:27:09.838 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2020-02-17 15:27:09.838 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2020-02-17 15:27:09.844 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2020-02-17 15:27:09.844 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2020-02-17 15:27:09.845 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2020-02-17 15:27:09.845 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2020-02-17 15:27:09.851 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@5657967b
+[DEBUG] 2020-02-17 15:27:09.853 [main] SessionFactoryRegistry - Registering SessionFactory: ed5ccd0a-18a5-407b-adcc-3ed8a6ec9809 (<unnamed>)
+[DEBUG] 2020-02-17 15:27:09.854 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2020-02-17 15:27:09.957 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2020-02-17 15:27:09.974 [main] SQL - select user0_.id as id1_0_0_, user0_.user_name as user_nam2_0_0_, user0_.user_password as user_pas3_0_0_ from USERS user0_ where user0_.id=?
+[DEBUG] 2020-02-17 15:27:09.993 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2020-02-17 15:27:09.993 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2020-02-17 15:27:10.000 [main] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.User#3]
+[DEBUG] 2020-02-17 15:27:10.001 [main] TwoPhaseLoad - Processing attribute `userName` : value = WaltD
+[DEBUG] 2020-02-17 15:27:10.001 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.001 [main] TwoPhaseLoad - Processing attribute `userPassword` : value = 321xyz
+[DEBUG] 2020-02-17 15:27:10.001 [main] TwoPhaseLoad - Attribute (`userPassword`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.001 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#3]
+[DEBUG] 2020-02-17 15:27:10.002 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-02-17 15:27:10.002 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.User#3
+[DEBUG] 2020-02-17 15:27:10.002 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 15:27:10.006 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2020-02-17 15:27:10.006 [main] TransactionImpl - begin
+[DEBUG] 2020-02-17 15:27:10.012 [main] TransactionImpl - committing
+[DEBUG] 2020-02-17 15:27:10.013 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2020-02-17 15:27:10.013 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2020-02-17 15:27:10.013 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2020-02-17 15:27:10.013 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2020-02-17 15:27:10.015 [main] EntityPrinter - Listing entities:
+[DEBUG] 2020-02-17 15:27:10.015 [main] EntityPrinter - edu.matc.entity.User{userPassword=321xyz, userName=WaltD, userId=3}
+[DEBUG] 2020-02-17 15:27:10.022 [main] SQL - delete from USERS where id=?
+[DEBUG] 2020-02-17 15:27:10.029 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 15:27:10.034 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 15:27:10.034 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2020-02-17 15:27:10.034 [main] SQL - select user0_.id as id1_0_0_, user0_.user_name as user_nam2_0_0_, user0_.user_password as user_pas3_0_0_ from USERS user0_ where user0_.id=?
+[DEBUG] 2020-02-17 15:27:10.040 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-02-17 15:27:10.040 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.User#3
+[DEBUG] 2020-02-17 15:27:10.040 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 15:27:10.141 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0
+[DEBUG] 2020-02-17 15:27:10.169 [main] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@589fb74d
+[DEBUG] 2020-02-17 15:27:10.198 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0
+[DEBUG] 2020-02-17 15:27:10.207 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2020-02-17 15:27:10.221 [main] QueryTranslatorImpl - --- HQL AST ---
  \-[QUERY] Node: 'query'
     \-[SELECT_FROM] Node: 'SELECT_FROM'
        +-[FROM] Node: 'from'
@@ -388,115 +328,63 @@ java.sql.SQLSyntaxErrorException: Unknown column 'user0_.userId' in 'field list'
        \-[SELECT] Node: 'select'
           \-[IDENT] Node: 'generatedAlias0'
 
-[DEBUG] 2020-02-17 11:14:05.515 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
-[DEBUG] 2020-02-17 11:14:05.524 [main] FromElement - FromClause{level=1} : edu.matc.entity.User (generatedAlias0) -> user0_
-[DEBUG] 2020-02-17 11:14:05.524 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.userId
-[DEBUG] 2020-02-17 11:14:05.525 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
-[DEBUG] 2020-02-17 11:14:05.525 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.userId ) ( FromClause{level=1} USERS user0_ ) )
-[DEBUG] 2020-02-17 11:14:05.530 [main] JoinProcessor - Using FROM fragment [USERS user0_]
-[DEBUG] 2020-02-17 11:14:05.530 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
-[DEBUG] 2020-02-17 11:14:05.531 [main] QueryTranslatorImpl - --- SQL AST ---
+[DEBUG] 2020-02-17 15:27:10.245 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2020-02-17 15:27:10.260 [main] FromElement - FromClause{level=1} : edu.matc.entity.User (generatedAlias0) -> user0_
+[DEBUG] 2020-02-17 15:27:10.261 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2020-02-17 15:27:10.262 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2020-02-17 15:27:10.262 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} USERS user0_ ) )
+[DEBUG] 2020-02-17 15:27:10.274 [main] JoinProcessor - Using FROM fragment [USERS user0_]
+[DEBUG] 2020-02-17 15:27:10.274 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2020-02-17 15:27:10.275 [main] QueryTranslatorImpl - --- SQL AST ---
  \-[SELECT] QueryNode: 'SELECT'  querySpaces (USERS)
     +-[SELECT_CLAUSE] SelectClause: '{select clause}'
-    |  +-[ALIAS_REF] IdentNode: 'user0_.userId as userId1_0_' {alias=generatedAlias0, className=edu.matc.entity.User, tableAlias=user0_}
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_0_' {alias=generatedAlias0, className=edu.matc.entity.User, tableAlias=user0_}
     |  \-[SQL_TOKEN] SqlFragment: 'user0_.user_name as user_nam2_0_, user0_.user_password as user_pas3_0_'
     \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
        \-[FROM_FRAGMENT] FromElement: 'USERS user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=USERS,tableAlias=user0_,origin=null,columns={,className=edu.matc.entity.User}}
 
-[DEBUG] 2020-02-17 11:14:05.531 [main] ErrorTracker - throwQueryException() : no errors
-[DEBUG] 2020-02-17 11:14:05.539 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0
-[DEBUG] 2020-02-17 11:14:05.539 [main] QueryTranslatorImpl - SQL: select user0_.userId as userId1_0_, user0_.user_name as user_nam2_0_, user0_.user_password as user_pas3_0_ from USERS user0_
-[DEBUG] 2020-02-17 11:14:05.540 [main] ErrorTracker - throwQueryException() : no errors
-[DEBUG] 2020-02-17 11:14:05.547 [main] SQL - select user0_.userId as userId1_0_, user0_.user_name as user_nam2_0_, user0_.user_password as user_pas3_0_ from USERS user0_
-[DEBUG] 2020-02-17 11:14:05.551 [main] SqlExceptionHelper - could not extract ResultSet [n/a]
-java.sql.SQLSyntaxErrorException: Unknown column 'user0_.userId' in 'field list'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1005) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:379) ~[c3p0-0.9.5.3.jar:0.9.5.3]
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:60) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.getResultSet(Loader.java:2287) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2045) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2007) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.doQuery(Loader.java:953) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:354) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.doList(Loader.java:2810) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.doList(Loader.java:2792) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2624) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.list(Loader.java:2619) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:396) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1547) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1557) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1525) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.query.Query.getResultList(Query.java:165) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at edu.matc.persistence.UserDao.getAll(UserDao.java:76) [classes/:?]
-	at edu.matc.persistence.UserDaoTest.getAllSuccess(UserDaoTest.java:68) [test-classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:389) [junit-platform-commons-1.0.0.jar:1.0.0]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:167) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:163) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:110) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:57) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:83) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
-	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
-	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:51) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeSingleClass(JUnitPlatformProvider.java:144) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:126) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:105) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286) [surefire-booter-2.19.jar:2.19]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240) [surefire-booter-2.19.jar:2.19]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.jar:2.19]
-[WARN ] 2020-02-17 11:14:05.553 [main] SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
-[ERROR] 2020-02-17 11:14:05.553 [main] SqlExceptionHelper - Unknown column 'user0_.userId' in 'field list'
-[DEBUG] 2020-02-17 11:14:05.553 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
-[DEBUG] 2020-02-17 11:14:05.562 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-[DEBUG] 2020-02-17 11:14:05.676 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.userName like :param0
-[DEBUG] 2020-02-17 11:14:05.676 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0 where generatedAlias0.userName like :param0
-[DEBUG] 2020-02-17 11:14:05.678 [main] ErrorTracker - throwQueryException() : no errors
-[DEBUG] 2020-02-17 11:14:05.680 [main] QueryTranslatorImpl - --- HQL AST ---
+[DEBUG] 2020-02-17 15:27:10.275 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2020-02-17 15:27:10.280 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0
+[DEBUG] 2020-02-17 15:27:10.280 [main] QueryTranslatorImpl - SQL: select user0_.id as id1_0_, user0_.user_name as user_nam2_0_, user0_.user_password as user_pas3_0_ from USERS user0_
+[DEBUG] 2020-02-17 15:27:10.280 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2020-02-17 15:27:10.286 [main] SQL - select user0_.id as id1_0_, user0_.user_name as user_nam2_0_, user0_.user_password as user_pas3_0_ from USERS user0_
+[DEBUG] 2020-02-17 15:27:10.290 [main] Loader - Result set row: 0
+[DEBUG] 2020-02-17 15:27:10.291 [main] Loader - Result row: EntityKey[edu.matc.entity.User#1]
+[DEBUG] 2020-02-17 15:27:10.292 [main] Loader - Result set row: 1
+[DEBUG] 2020-02-17 15:27:10.292 [main] Loader - Result row: EntityKey[edu.matc.entity.User#2]
+[DEBUG] 2020-02-17 15:27:10.292 [main] Loader - Result set row: 2
+[DEBUG] 2020-02-17 15:27:10.292 [main] Loader - Result row: EntityKey[edu.matc.entity.User#3]
+[DEBUG] 2020-02-17 15:27:10.292 [main] Loader - Result set row: 3
+[DEBUG] 2020-02-17 15:27:10.292 [main] Loader - Result row: EntityKey[edu.matc.entity.User#4]
+[DEBUG] 2020-02-17 15:27:10.292 [main] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.User#1]
+[DEBUG] 2020-02-17 15:27:10.292 [main] TwoPhaseLoad - Processing attribute `userName` : value = testUser1
+[DEBUG] 2020-02-17 15:27:10.292 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.292 [main] TwoPhaseLoad - Processing attribute `userPassword` : value = mypassword123
+[DEBUG] 2020-02-17 15:27:10.292 [main] TwoPhaseLoad - Attribute (`userPassword`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.292 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#1]
+[DEBUG] 2020-02-17 15:27:10.292 [main] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.User#2]
+[DEBUG] 2020-02-17 15:27:10.293 [main] TwoPhaseLoad - Processing attribute `userName` : value = Jane_Doe
+[DEBUG] 2020-02-17 15:27:10.293 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.293 [main] TwoPhaseLoad - Processing attribute `userPassword` : value = welcome123
+[DEBUG] 2020-02-17 15:27:10.293 [main] TwoPhaseLoad - Attribute (`userPassword`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.293 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#2]
+[DEBUG] 2020-02-17 15:27:10.294 [main] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.User#3]
+[DEBUG] 2020-02-17 15:27:10.294 [main] TwoPhaseLoad - Processing attribute `userName` : value = WaltD
+[DEBUG] 2020-02-17 15:27:10.294 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.294 [main] TwoPhaseLoad - Processing attribute `userPassword` : value = 321xyz
+[DEBUG] 2020-02-17 15:27:10.294 [main] TwoPhaseLoad - Attribute (`userPassword`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.294 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#3]
+[DEBUG] 2020-02-17 15:27:10.294 [main] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.User#4]
+[DEBUG] 2020-02-17 15:27:10.294 [main] TwoPhaseLoad - Processing attribute `userName` : value = FlowerDaisy
+[DEBUG] 2020-02-17 15:27:10.294 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.294 [main] TwoPhaseLoad - Processing attribute `userPassword` : value = ILikeFlowers
+[DEBUG] 2020-02-17 15:27:10.294 [main] TwoPhaseLoad - Attribute (`userPassword`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.294 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#4]
+[DEBUG] 2020-02-17 15:27:10.301 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 15:27:10.394 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.userName like :param0
+[DEBUG] 2020-02-17 15:27:10.395 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0 where generatedAlias0.userName like :param0
+[DEBUG] 2020-02-17 15:27:10.397 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2020-02-17 15:27:10.398 [main] QueryTranslatorImpl - --- HQL AST ---
  \-[QUERY] Node: 'query'
     +-[SELECT_FROM] Node: 'SELECT_FROM'
     |  +-[FROM] Node: 'from'
@@ -519,397 +407,99 @@ java.sql.SQLSyntaxErrorException: Unknown column 'user0_.userId' in 'field list'
           \-[COLON] Node: ':'
              \-[IDENT] Node: 'param0'
 
-[DEBUG] 2020-02-17 11:14:05.680 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
-[DEBUG] 2020-02-17 11:14:05.682 [main] FromElement - FromClause{level=1} : edu.matc.entity.User (generatedAlias0) -> user0_
-[DEBUG] 2020-02-17 11:14:05.682 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.userId
-[DEBUG] 2020-02-17 11:14:05.685 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.userId
-[DEBUG] 2020-02-17 11:14:05.689 [main] DotNode - getDataType() : userName -> org.hibernate.type.StringType@16872c4d
-[DEBUG] 2020-02-17 11:14:05.690 [main] FromReferenceNode - Resolved : generatedAlias0.userName -> user0_.user_name
-[DEBUG] 2020-02-17 11:14:05.693 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
-[DEBUG] 2020-02-17 11:14:05.694 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.userId ) ( FromClause{level=1} USERS user0_ ) ( where ( like ( user0_.user_name user0_.userId userName ) ? ) ) )
-[DEBUG] 2020-02-17 11:14:05.694 [main] JoinProcessor - Using FROM fragment [USERS user0_]
-[DEBUG] 2020-02-17 11:14:05.695 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
-[DEBUG] 2020-02-17 11:14:05.695 [main] QueryTranslatorImpl - --- SQL AST ---
+[DEBUG] 2020-02-17 15:27:10.398 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2020-02-17 15:27:10.398 [main] FromElement - FromClause{level=1} : edu.matc.entity.User (generatedAlias0) -> user0_
+[DEBUG] 2020-02-17 15:27:10.399 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2020-02-17 15:27:10.401 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2020-02-17 15:27:10.401 [main] DotNode - getDataType() : userName -> org.hibernate.type.StringType@68fe48d7
+[DEBUG] 2020-02-17 15:27:10.402 [main] FromReferenceNode - Resolved : generatedAlias0.userName -> user0_.user_name
+[DEBUG] 2020-02-17 15:27:10.404 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2020-02-17 15:27:10.404 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} USERS user0_ ) ( where ( like ( user0_.user_name user0_.id userName ) ? ) ) )
+[DEBUG] 2020-02-17 15:27:10.404 [main] JoinProcessor - Using FROM fragment [USERS user0_]
+[DEBUG] 2020-02-17 15:27:10.404 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2020-02-17 15:27:10.407 [main] QueryTranslatorImpl - --- SQL AST ---
  \-[SELECT] QueryNode: 'SELECT'  querySpaces (USERS)
     +-[SELECT_CLAUSE] SelectClause: '{select clause}'
-    |  +-[ALIAS_REF] IdentNode: 'user0_.userId as userId1_0_' {alias=generatedAlias0, className=edu.matc.entity.User, tableAlias=user0_}
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_0_' {alias=generatedAlias0, className=edu.matc.entity.User, tableAlias=user0_}
     |  \-[SQL_TOKEN] SqlFragment: 'user0_.user_name as user_nam2_0_, user0_.user_password as user_pas3_0_'
     +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
     |  \-[FROM_FRAGMENT] FromElement: 'USERS user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=USERS,tableAlias=user0_,origin=null,columns={,className=edu.matc.entity.User}}
     \-[WHERE] SqlNode: 'where'
        \-[LIKE] BinaryLogicOperatorNode: 'like'
           +-[DOT] DotNode: 'user0_.user_name' {propertyName=userName,dereferenceType=PRIMITIVE,getPropertyPath=userName,path=generatedAlias0.userName,tableAlias=user0_,className=edu.matc.entity.User,classAlias=generatedAlias0}
-          |  +-[ALIAS_REF] IdentNode: 'user0_.userId' {alias=generatedAlias0, className=edu.matc.entity.User, tableAlias=user0_}
+          |  +-[ALIAS_REF] IdentNode: 'user0_.id' {alias=generatedAlias0, className=edu.matc.entity.User, tableAlias=user0_}
           |  \-[IDENT] IdentNode: 'userName' {originalText=userName}
-          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@16872c4d}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@68fe48d7}
 
-[DEBUG] 2020-02-17 11:14:05.696 [main] ErrorTracker - throwQueryException() : no errors
-[DEBUG] 2020-02-17 11:14:05.697 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0 where generatedAlias0.userName like :param0
-[DEBUG] 2020-02-17 11:14:05.697 [main] QueryTranslatorImpl - SQL: select user0_.userId as userId1_0_, user0_.user_name as user_nam2_0_, user0_.user_password as user_pas3_0_ from USERS user0_ where user0_.user_name like ?
-[DEBUG] 2020-02-17 11:14:05.697 [main] ErrorTracker - throwQueryException() : no errors
-[DEBUG] 2020-02-17 11:14:05.705 [main] SQL - select user0_.userId as userId1_0_, user0_.user_name as user_nam2_0_, user0_.user_password as user_pas3_0_ from USERS user0_ where user0_.user_name like ?
-[DEBUG] 2020-02-17 11:14:05.708 [main] SqlExceptionHelper - could not extract ResultSet [n/a]
-java.sql.SQLSyntaxErrorException: Unknown column 'user0_.userId' in 'field list'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1005) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:379) ~[c3p0-0.9.5.3.jar:0.9.5.3]
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:60) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.getResultSet(Loader.java:2287) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2045) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2007) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.doQuery(Loader.java:953) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:354) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.doList(Loader.java:2810) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.doList(Loader.java:2792) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2624) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.list(Loader.java:2619) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:396) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1547) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1557) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1525) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.query.Query.getResultList(Query.java:165) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at edu.matc.persistence.UserDao.getByPropertyLike(UserDao.java:119) [classes/:?]
-	at edu.matc.persistence.UserDaoTest.getByPropertyEqualSuccess(UserDaoTest.java:77) [test-classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:389) [junit-platform-commons-1.0.0.jar:1.0.0]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:167) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:163) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:110) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:57) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:83) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
-	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
-	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:51) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeSingleClass(JUnitPlatformProvider.java:144) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:126) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:105) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286) [surefire-booter-2.19.jar:2.19]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240) [surefire-booter-2.19.jar:2.19]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.jar:2.19]
-[WARN ] 2020-02-17 11:14:05.712 [main] SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
-[ERROR] 2020-02-17 11:14:05.712 [main] SqlExceptionHelper - Unknown column 'user0_.userId' in 'field list'
-[DEBUG] 2020-02-17 11:14:05.712 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
-[DEBUG] 2020-02-17 11:14:05.713 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-[DEBUG] 2020-02-17 11:14:05.776 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.userName like :param0
-[DEBUG] 2020-02-17 11:14:05.777 [main] SQL - select user0_.userId as userId1_0_, user0_.user_name as user_nam2_0_, user0_.user_password as user_pas3_0_ from USERS user0_ where user0_.user_name like ?
-[DEBUG] 2020-02-17 11:14:05.778 [main] SqlExceptionHelper - could not extract ResultSet [n/a]
-java.sql.SQLSyntaxErrorException: Unknown column 'user0_.userId' in 'field list'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1005) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:379) ~[c3p0-0.9.5.3.jar:0.9.5.3]
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:60) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.getResultSet(Loader.java:2287) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2045) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2007) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.doQuery(Loader.java:953) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:354) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.doList(Loader.java:2810) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.doList(Loader.java:2792) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2624) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.Loader.list(Loader.java:2619) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:396) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1547) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1557) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1525) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.query.Query.getResultList(Query.java:165) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at edu.matc.persistence.UserDao.getByPropertyLike(UserDao.java:119) [classes/:?]
-	at edu.matc.persistence.UserDaoTest.getByPropertyLikeSuccess(UserDaoTest.java:87) [test-classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:389) [junit-platform-commons-1.0.0.jar:1.0.0]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:167) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:163) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:110) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:57) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:83) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
-	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
-	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:51) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeSingleClass(JUnitPlatformProvider.java:144) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:126) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:105) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286) [surefire-booter-2.19.jar:2.19]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240) [surefire-booter-2.19.jar:2.19]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.jar:2.19]
-[WARN ] 2020-02-17 11:14:05.779 [main] SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
-[ERROR] 2020-02-17 11:14:05.779 [main] SqlExceptionHelper - Unknown column 'user0_.userId' in 'field list'
-[DEBUG] 2020-02-17 11:14:05.783 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
-[DEBUG] 2020-02-17 11:14:05.784 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-[DEBUG] 2020-02-17 11:14:05.824 [main] SQL - select user0_.userId as userId1_0_0_, user0_.user_name as user_nam2_0_0_, user0_.user_password as user_pas3_0_0_ from USERS user0_ where user0_.userId=?
-[DEBUG] 2020-02-17 11:14:05.826 [main] SqlExceptionHelper - could not extract ResultSet [n/a]
-java.sql.SQLSyntaxErrorException: Unknown column 'user0_.userId' in 'field list'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1005) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:379) ~[c3p0-0.9.5.3.jar:0.9.5.3]
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:60) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.getResultSet(AbstractLoadPlanBasedLoader.java:418) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:191) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:121) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:86) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:197) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4312) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:570) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:538) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:208) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:333) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1298) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1286) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.access$2100(SessionImpl.java:203) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doLoad(SessionImpl.java:2945) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$load$1(SessionImpl.java:2926) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2882) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2926) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.get(SessionImpl.java:1081) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at edu.matc.persistence.UserDao.getById(UserDao.java:23) [classes/:?]
-	at edu.matc.persistence.UserDaoTest.getByIdSuccess(UserDaoTest.java:32) [test-classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:389) [junit-platform-commons-1.0.0.jar:1.0.0]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:167) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:163) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:110) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:57) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:83) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
-	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
-	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:51) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeSingleClass(JUnitPlatformProvider.java:144) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:126) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:105) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286) [surefire-booter-2.19.jar:2.19]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240) [surefire-booter-2.19.jar:2.19]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.jar:2.19]
-[WARN ] 2020-02-17 11:14:05.826 [main] SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
-[ERROR] 2020-02-17 11:14:05.826 [main] SqlExceptionHelper - Unknown column 'user0_.userId' in 'field list'
-[INFO ] 2020-02-17 11:14:05.827 [main] DefaultLoadEventListener - HHH000327: Error performing load command : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
-[DEBUG] 2020-02-17 11:14:05.827 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
-[DEBUG] 2020-02-17 11:14:05.892 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-[DEBUG] 2020-02-17 11:14:05.893 [main] TransactionImpl - begin
-[DEBUG] 2020-02-17 11:14:05.915 [main] ActionQueue - Executing identity-insert immediately
-[DEBUG] 2020-02-17 11:14:05.918 [main] SQL - insert into USERS (user_name, user_password) values (?, ?)
-[DEBUG] 2020-02-17 11:14:05.945 [main] IdentifierGeneratorHelper - Natively generated identity: 6
-[DEBUG] 2020-02-17 11:14:05.945 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
-[DEBUG] 2020-02-17 11:14:05.946 [main] TransactionImpl - committing
-[DEBUG] 2020-02-17 11:14:05.947 [main] AbstractFlushingEventListener - Processing flush-time cascades
-[DEBUG] 2020-02-17 11:14:05.948 [main] AbstractFlushingEventListener - Dirty checking collections
-[DEBUG] 2020-02-17 11:14:05.951 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
-[DEBUG] 2020-02-17 11:14:05.951 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-[DEBUG] 2020-02-17 11:14:05.952 [main] EntityPrinter - Listing entities:
-[DEBUG] 2020-02-17 11:14:05.954 [main] EntityPrinter - edu.matc.entity.User{userPassword=fflintstone55, userName=FredFlintstone, userId=6}
-[DEBUG] 2020-02-17 11:14:05.961 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
-[DEBUG] 2020-02-17 11:14:05.962 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
-[DEBUG] 2020-02-17 11:14:05.971 [main] SQL - select user0_.userId as userId1_0_0_, user0_.user_name as user_nam2_0_0_, user0_.user_password as user_pas3_0_0_ from USERS user0_ where user0_.userId=?
-[DEBUG] 2020-02-17 11:14:05.973 [main] SqlExceptionHelper - could not extract ResultSet [n/a]
-java.sql.SQLSyntaxErrorException: Unknown column 'user0_.userId' in 'field list'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1005) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:379) ~[c3p0-0.9.5.3.jar:0.9.5.3]
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:60) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.getResultSet(AbstractLoadPlanBasedLoader.java:418) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:191) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:121) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:86) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:197) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4312) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:570) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:538) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:208) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:333) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1298) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1286) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.access$2100(SessionImpl.java:203) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doLoad(SessionImpl.java:2945) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$load$1(SessionImpl.java:2926) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2882) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2926) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.get(SessionImpl.java:1081) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at edu.matc.persistence.UserDao.getById(UserDao.java:23) [classes/:?]
-	at edu.matc.persistence.UserDaoTest.insertSuccess(UserDaoTest.java:46) [test-classes/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:389) [junit-platform-commons-1.0.0.jar:1.0.0]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:167) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:163) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:110) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:57) [junit-jupiter-engine-5.0.0.jar:5.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:83) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
-	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
-	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:51) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43) [junit-platform-engine-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeSingleClass(JUnitPlatformProvider.java:144) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:126) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:105) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286) [surefire-booter-2.19.jar:2.19]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240) [surefire-booter-2.19.jar:2.19]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.jar:2.19]
-[WARN ] 2020-02-17 11:14:05.975 [main] SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
-[ERROR] 2020-02-17 11:14:05.975 [main] SqlExceptionHelper - Unknown column 'user0_.userId' in 'field list'
-[INFO ] 2020-02-17 11:14:05.975 [main] DefaultLoadEventListener - HHH000327: Error performing load command : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
-[DEBUG] 2020-02-17 11:14:05.975 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 15:27:10.407 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2020-02-17 15:27:10.408 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0 where generatedAlias0.userName like :param0
+[DEBUG] 2020-02-17 15:27:10.408 [main] QueryTranslatorImpl - SQL: select user0_.id as id1_0_, user0_.user_name as user_nam2_0_, user0_.user_password as user_pas3_0_ from USERS user0_ where user0_.user_name like ?
+[DEBUG] 2020-02-17 15:27:10.408 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2020-02-17 15:27:10.412 [main] SQL - select user0_.id as id1_0_, user0_.user_name as user_nam2_0_, user0_.user_password as user_pas3_0_ from USERS user0_ where user0_.user_name like ?
+[DEBUG] 2020-02-17 15:27:10.422 [main] Loader - Result set row: 0
+[DEBUG] 2020-02-17 15:27:10.422 [main] Loader - Result row: EntityKey[edu.matc.entity.User#2]
+[DEBUG] 2020-02-17 15:27:10.422 [main] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.User#2]
+[DEBUG] 2020-02-17 15:27:10.422 [main] TwoPhaseLoad - Processing attribute `userName` : value = Jane_Doe
+[DEBUG] 2020-02-17 15:27:10.422 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.422 [main] TwoPhaseLoad - Processing attribute `userPassword` : value = welcome123
+[DEBUG] 2020-02-17 15:27:10.422 [main] TwoPhaseLoad - Attribute (`userPassword`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.423 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#2]
+[DEBUG] 2020-02-17 15:27:10.423 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 15:27:10.464 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.userName like :param0
+[DEBUG] 2020-02-17 15:27:10.464 [main] SQL - select user0_.id as id1_0_, user0_.user_name as user_nam2_0_, user0_.user_password as user_pas3_0_ from USERS user0_ where user0_.user_name like ?
+[DEBUG] 2020-02-17 15:27:10.466 [main] Loader - Result set row: 0
+[DEBUG] 2020-02-17 15:27:10.466 [main] Loader - Result row: EntityKey[edu.matc.entity.User#3]
+[DEBUG] 2020-02-17 15:27:10.466 [main] Loader - Result set row: 1
+[DEBUG] 2020-02-17 15:27:10.466 [main] Loader - Result row: EntityKey[edu.matc.entity.User#4]
+[DEBUG] 2020-02-17 15:27:10.466 [main] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.User#3]
+[DEBUG] 2020-02-17 15:27:10.466 [main] TwoPhaseLoad - Processing attribute `userName` : value = WaltD
+[DEBUG] 2020-02-17 15:27:10.466 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.466 [main] TwoPhaseLoad - Processing attribute `userPassword` : value = 321xyz
+[DEBUG] 2020-02-17 15:27:10.466 [main] TwoPhaseLoad - Attribute (`userPassword`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.466 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#3]
+[DEBUG] 2020-02-17 15:27:10.470 [main] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.User#4]
+[DEBUG] 2020-02-17 15:27:10.472 [main] TwoPhaseLoad - Processing attribute `userName` : value = FlowerDaisy
+[DEBUG] 2020-02-17 15:27:10.473 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.473 [main] TwoPhaseLoad - Processing attribute `userPassword` : value = ILikeFlowers
+[DEBUG] 2020-02-17 15:27:10.473 [main] TwoPhaseLoad - Attribute (`userPassword`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.474 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#4]
+[DEBUG] 2020-02-17 15:27:10.474 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 15:27:10.513 [main] SQL - select user0_.id as id1_0_0_, user0_.user_name as user_nam2_0_0_, user0_.user_password as user_pas3_0_0_ from USERS user0_ where user0_.id=?
+[DEBUG] 2020-02-17 15:27:10.516 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2020-02-17 15:27:10.516 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2020-02-17 15:27:10.517 [main] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.User#3]
+[DEBUG] 2020-02-17 15:27:10.517 [main] TwoPhaseLoad - Processing attribute `userName` : value = WaltD
+[DEBUG] 2020-02-17 15:27:10.517 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.517 [main] TwoPhaseLoad - Processing attribute `userPassword` : value = 321xyz
+[DEBUG] 2020-02-17 15:27:10.517 [main] TwoPhaseLoad - Attribute (`userPassword`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.517 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#3]
+[DEBUG] 2020-02-17 15:27:10.517 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-02-17 15:27:10.517 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.User#3
+[DEBUG] 2020-02-17 15:27:10.519 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 15:27:10.569 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2020-02-17 15:27:10.569 [main] TransactionImpl - begin
+[DEBUG] 2020-02-17 15:27:10.575 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2020-02-17 15:27:10.575 [main] SQL - insert into USERS (user_name, user_password) values (?, ?)
+[DEBUG] 2020-02-17 15:27:10.594 [main] IdentifierGeneratorHelper - Natively generated identity: 8
+[DEBUG] 2020-02-17 15:27:10.594 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-02-17 15:27:10.596 [main] TransactionImpl - committing
+[DEBUG] 2020-02-17 15:27:10.596 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2020-02-17 15:27:10.596 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2020-02-17 15:27:10.597 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2020-02-17 15:27:10.597 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2020-02-17 15:27:10.597 [main] EntityPrinter - Listing entities:
+[DEBUG] 2020-02-17 15:27:10.597 [main] EntityPrinter - edu.matc.entity.User{userPassword=fflintstone55, userName=FredFlintstone, userId=8}
+[DEBUG] 2020-02-17 15:27:10.599 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 15:27:10.599 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 15:27:10.601 [main] SQL - select user0_.id as id1_0_0_, user0_.user_name as user_nam2_0_0_, user0_.user_password as user_pas3_0_0_ from USERS user0_ where user0_.id=?
+[DEBUG] 2020-02-17 15:27:10.605 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2020-02-17 15:27:10.605 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2020-02-17 15:27:10.605 [main] TwoPhaseLoad - Resolving attributes for [edu.matc.entity.User#8]
+[DEBUG] 2020-02-17 15:27:10.606 [main] TwoPhaseLoad - Processing attribute `userName` : value = FredFlintstone
+[DEBUG] 2020-02-17 15:27:10.606 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.606 [main] TwoPhaseLoad - Processing attribute `userPassword` : value = fflintstone55
+[DEBUG] 2020-02-17 15:27:10.606 [main] TwoPhaseLoad - Attribute (`userPassword`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 15:27:10.606 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#8]
+[DEBUG] 2020-02-17 15:27:10.606 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-02-17 15:27:10.607 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.User#8
+[DEBUG] 2020-02-17 15:27:10.607 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction

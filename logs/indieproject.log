@@ -4,3 +4,8 @@
 [DEBUG] 2020-02-17 10:29:50.991 [main] UserDao - Searching for user with userName = l
 [DEBUG] 2020-02-17 11:14:05.642 [main] UserDao - Searching for user with userName = Jane_Doe
 [DEBUG] 2020-02-17 11:14:05.776 [main] UserDao - Searching for user with userName = l
+[DEBUG] 2020-02-17 15:25:09.951 [main] UserDao - Searching for user with userName = Jane_Doe
+[DEBUG] 2020-02-17 15:25:10.079 [main] UserDao - Searching for user with userName = l
+[DEBUG] 2020-02-17 15:27:10.305 [main] UserDao - The list of users [edu.matc.entity.User@482a58c7, edu.matc.entity.User@3e74fd84, edu.matc.entity.User@147efd9, edu.matc.entity.User@1e120628]
+[DEBUG] 2020-02-17 15:27:10.383 [main] UserDao - Searching for user with userName = Jane_Doe
+[DEBUG] 2020-02-17 15:27:10.461 [main] UserDao - Searching for user with userName = l
