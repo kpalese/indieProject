@@ -3,14 +3,13 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 
 /**
  * A java bean to represent a user
  * @author Kelly Palese
  */
 @Entity(name = "User")
-@Table(name = "Users")
+@Table(name = "USERS")
 public class User {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
@@ -32,12 +31,10 @@ public class User {
     /**
      * Instantiates a new User.
      *
-     * @param userId   the user's id
      * @param userName    the user name
      * @param userPassword    the user's password
      */
-    public User(int userId, String userName, String userPassword) {
-        this.userId = userId;
+    public User(String userName, String userPassword) {
         this.userName = userName;
         this.userPassword = userPassword;
     }
