@@ -2,3 +2,5 @@
 [DEBUG] 2020-02-17 10:13:12.093 [main] UserDao - Searching for user with userName = l
 [DEBUG] 2020-02-17 10:29:50.885 [main] UserDao - Searching for user with userName = Jane_Doe
 [DEBUG] 2020-02-17 10:29:50.991 [main] UserDao - Searching for user with userName = l
+[DEBUG] 2020-02-17 11:14:05.642 [main] UserDao - Searching for user with userName = Jane_Doe
+[DEBUG] 2020-02-17 11:14:05.776 [main] UserDao - Searching for user with userName = l

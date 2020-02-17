@@ -1,13 +1,13 @@
 package edu.matc.entity;
 
 import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.*;
 
 /**
  * A java bean to represent a user
  * @author Kelly Palese
  */
+
 @Entity(name = "User")
 @Table(name = "USERS")
 public class User {
