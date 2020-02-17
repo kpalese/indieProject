@@ -87,6 +87,7 @@
       <version>5.4.4.Final</version>
     </dependency>
   </dependencies>
+
   <build>
     <finalName>YourIndieProject</finalName>
     <pluginManagement>
