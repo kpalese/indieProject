@@ -9,3 +9,15 @@
 [DEBUG] 2020-02-17 15:27:10.305 [main] UserDao - The list of users [edu.matc.entity.User@482a58c7, edu.matc.entity.User@3e74fd84, edu.matc.entity.User@147efd9, edu.matc.entity.User@1e120628]
 [DEBUG] 2020-02-17 15:27:10.383 [main] UserDao - Searching for user with userName = Jane_Doe
 [DEBUG] 2020-02-17 15:27:10.461 [main] UserDao - Searching for user with userName = l
+[DEBUG] 2020-02-18 09:06:20.873 [main] UserDao - The list of users [edu.matc.entity.User@4f26425b, edu.matc.entity.User@f03ee8f, edu.matc.entity.User@40dd552c, edu.matc.entity.User@33f4c769]
+[DEBUG] 2020-02-18 09:06:21.002 [main] UserDao - Searching for user with userName = Jane_Doe
+[DEBUG] 2020-02-18 09:06:21.128 [main] UserDao - Searching for user with userName = l
+[DEBUG] 2020-02-18 09:11:26.869 [main] UserDao - The list of users [edu.matc.entity.User@4f26425b, edu.matc.entity.User@f03ee8f, edu.matc.entity.User@40dd552c, edu.matc.entity.User@33f4c769]
+[DEBUG] 2020-02-18 09:11:27.010 [main] UserDao - Searching for user with userName = Jane_Doe
+[DEBUG] 2020-02-18 09:11:27.171 [main] UserDao - Searching for user with userName = l
+[DEBUG] 2020-02-18 09:14:38.475 [main] UserDao - The list of users [edu.matc.entity.User@4f26425b, edu.matc.entity.User@f03ee8f, edu.matc.entity.User@40dd552c, edu.matc.entity.User@33f4c769]
+[DEBUG] 2020-02-18 09:14:38.575 [main] UserDao - Searching for user with userName = Jane_Doe
+[DEBUG] 2020-02-18 09:14:38.684 [main] UserDao - Searching for user with userName = l
+[DEBUG] 2020-02-18 09:28:52.595 [main] UserDao - The list of users [edu.matc.entity.User@4f26425b, edu.matc.entity.User@f03ee8f, edu.matc.entity.User@40dd552c, edu.matc.entity.User@33f4c769]
+[DEBUG] 2020-02-18 09:28:52.708 [main] UserDao - Searching for user with userName = Jane_Doe
+[DEBUG] 2020-02-18 09:28:52.830 [main] UserDao - Searching for user with userName = l
