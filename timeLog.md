@@ -13,3 +13,5 @@
 | 2/11/20 | Watched Cave of Programming DAO video and read Hibernate Tutorial sections. Started Week 4 videos but ran into issue where @GenericGenerator cannot be resolved. Need to continue part 1 of demo at 17:20 | 2 |  |
 | 2/12/20 | Fixed pom dependency issue from yesterday. Finished Hibernate Demo and watched all videos | 3 | Need to really figure out a name for my indie project! Especially so I have a good naming convention for my database. |
 | 2/16/20 | Worked on entering a DAO and hibernate in my indie project. Created a test database. Need to enter test data, a cleandb.sql script, and implement unit tests for my DAO | 1.5  | I received a suggestion to name it "Garbanzo", and I kinda like it even though it has nothing to do with task management  |
+| 2/17/20 | In my indie project I entered some test data, a cleandb.sql script, and implemented unit tests | 1.25 | |
+| 2/18/20 | Added a unit test for an additional method to have 100% code coverage.  | .25 | |
