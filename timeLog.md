@@ -14,4 +14,4 @@
 | 2/12/20 | Fixed pom dependency issue from yesterday. Finished Hibernate Demo and watched all videos | 3 | Need to really figure out a name for my indie project! Especially so I have a good naming convention for my database. |
 | 2/16/20 | Worked on entering a DAO and hibernate in my indie project. Created a test database. Need to enter test data, a cleandb.sql script, and implement unit tests for my DAO | 1.5  | I received a suggestion to name it "Garbanzo", and I kinda like it even though it has nothing to do with task management  |
 | 2/17/20 | In my indie project I entered some test data, a cleandb.sql script, and implemented unit tests | 1.25 | |
-| 2/18/20 | Added a unit test for an additional method to have 100% code coverage for Exercise 4. Finished Part 1 and Part 2 of the Hibernate One-To-Many demo  | 3 | |
+| 2/18/20 | Added a unit test for an additional method to have 100% code coverage for Exercise 4. Finished Parts 1-3 of the Hibernate One-To-Many demo, watched What Could Go Wrong and .equals videos  | 4.5 | Tomorrow need to read more about .equals and then finish implementing it in the user search application |
