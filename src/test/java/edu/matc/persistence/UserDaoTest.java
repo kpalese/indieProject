@@ -1,6 +1,7 @@
 package edu.matc.persistence;
 
 import edu.matc.entity.User;
+import edu.matc.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.util.List;
@@ -8,7 +9,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class UserDaoTest {
-    UserDao dao;
+    GenericDao genericDao;
 
     /**
      * Run set up tasks before each test:
@@ -18,10 +19,10 @@ class UserDaoTest {
     @BeforeEach
     void setUp() {
 
-        edu.matc.test.util.Database database = edu.matc.test.util.Database.getInstance();
+        Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
 
-        dao = new UserDao();
+        genericDao = new GenericDao(User.class);
     }
 
     /**
@@ -29,7 +30,8 @@ class UserDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        User retrievedUser = dao.getById(3);
+        User retrievedUser = (User)genericDao.getById(3);
+        assertNotNull(retrievedUser);
         assertEquals("WaltD", retrievedUser.getUserName());
         assertEquals("321xyz", retrievedUser.getUserPassword());
     }
@@ -40,11 +42,11 @@ class UserDaoTest {
     @Test
     void updateSuccess() {
         String newUserName = "Jane_Donaldson";
-        User userToUpdate = dao.getById(2);
+        User userToUpdate = (User)genericDao.getById(2);
         userToUpdate.setUserName(newUserName);
-        dao.saveOrUpdate(userToUpdate);
-        User retrievedUser = dao.getById(2);
-        assertEquals(newUserName, retrievedUser.getUserName());
+        genericDao.saveOrUpdate(userToUpdate);
+        User retrievedUser = (User)genericDao.getById(2);
+        assertEquals(userToUpdate, retrievedUser);
     }
 
     /**
@@ -54,23 +56,19 @@ class UserDaoTest {
     void insertSuccess() {
 
         User newUser = new User("FredFlintstone", "fflintstone55");
-        int id = dao.insert(newUser);
+        int id = genericDao.insert(newUser);
         assertNotEquals(0,id);
-        User insertedUser = dao.getById(id);
-        assertEquals("FredFlintstone", insertedUser.getUserName());
-        assertEquals("fflintstone55", insertedUser.getUserPassword());
-        // Could continue comparing all values, but
-        // it may make sense to use .equals()
-        // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
-    }
+        User insertedUser = (User)genericDao.getById(id);
+        assertEquals(newUser, insertedUser);
+   }
 
     /**
      * Verify successful delete of user
      */
     @Test
     void deleteSuccess() {
-        dao.delete(dao.getById(3));
-        assertNull(dao.getById(3));
+        genericDao.delete(genericDao.getById(3));
+        assertNull(genericDao.getById(3));
     }
 
     /**
@@ -78,7 +76,7 @@ class UserDaoTest {
      */
     @Test
     void getAllSuccess() {
-        List<User> users = dao.getAll();
+        List<User> users = genericDao.getAll();
         assertEquals(4, users.size());
     }
 
@@ -87,7 +85,7 @@ class UserDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> users = dao.getByPropertyEqual("userName", "Jane_Doe");
+        List<User> users = genericDao.getByPropertyEqual("userName", "Jane_Doe");
         assertEquals(1, users.size());
         assertEquals(2, users.get(0).getUserId());
     }
@@ -97,7 +95,7 @@ class UserDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<User> users = dao.getByPropertyLike("userName", "l");
+        List<User> users = genericDao.getByPropertyLike("userName", "l");
         assertEquals(2, users.size());
     }
 }
