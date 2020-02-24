@@ -2,7 +2,6 @@ package edu.matc.entity;
 
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
-import java.sql.Date;
 import java.sql.Time;
 import java.time.LocalDate;
 import java.util.Objects;
@@ -27,7 +26,7 @@ public class Event {
 
     //TODO: Should these be LocalDate and Time??
     @Column(name = "date")
-    private Date date;
+    private LocalDate date;
 
     @Column(name = "start_time")
     private Time startTime;
@@ -57,7 +56,7 @@ public class Event {
      * @param notes     the notes
      * @param user      the user
      */
-    public Event(String name, Date date, Time startTime, Time endTime, String notes, User user) {
+    public Event(String name, LocalDate date, Time startTime, Time endTime, String notes, User user) {
         this.name = name;
         this.date = date;
         this.startTime = startTime;
@@ -107,7 +106,7 @@ public class Event {
      *
      * @return the date
      */
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
@@ -116,7 +115,7 @@ public class Event {
      *
      * @param date the date
      */
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
@@ -208,6 +207,6 @@ public class Event {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, date, startTime, endTime, notes, user);
+        return Objects.hash(id, name, date, startTime, endTime, notes);
     }
 }

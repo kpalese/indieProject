@@ -31,12 +31,12 @@ public class EventDaoTest {
     /**
      * Verify successful retrieval of an event
      */
-//    @Test
-//    void getByIdSuccess() {
-//        Event retrievedEvent = (Event)genericDao.getById(2);
-//        assertNotNull(retrievedEvent);
-//        assertEquals("Dentist", retrievedEvent.getName());
-//    }
+    @Test
+    void getByIdSuccess() {
+        Event retrievedEvent = (Event)genericDao.getById(2);
+        assertNotNull(retrievedEvent);
+        assertEquals("Dentist", retrievedEvent.getName());
+    }
 
 //    /**
 //     * Verify successful update user
