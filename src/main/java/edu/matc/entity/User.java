@@ -2,7 +2,9 @@ package edu.matc.entity;
 
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * A java bean to represent a user
@@ -15,7 +17,7 @@ public class User {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
-    @GenericGenerator(name = "native",strategy = "native")
+    @GenericGenerator(name = "native", strategy = "native")
     private int userId;
 
     @Column(name = "user_name")
@@ -23,6 +25,9 @@ public class User {
 
     @Column(name = "user_password")
     private String userPassword;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Event> events = new HashSet<>();
 
     /**
      * Instantiates a new User (empty constructor)
@@ -93,6 +98,24 @@ public class User {
      */
     public void setUserPassword(String userPassword) {
         this.userPassword = userPassword;
+    }
+
+    /**
+     * Gets events.
+     *
+     * @return the events
+     */
+    public Set<Event> getEvents() {
+        return events;
+    }
+
+    /**
+     * Sets events.
+     *
+     * @param events the events
+     */
+    public void setEvents(Set<Event> events) {
+        this.events = events;
     }
 
     @Override

@@ -2,14 +2,17 @@ package edu.matc.entity;
 
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
+import java.sql.Date;
+import java.sql.Time;
 import java.time.LocalDate;
 import java.util.Objects;
 
+
 /**
  * A java bean to represent an event
+ *
  * @author Kelly Palese
  */
-
 @Entity(name = "Event")
 @Table(name = "EVENT")
 public class Event {
@@ -22,17 +25,21 @@ public class Event {
     @Column(name = "name")
     private String name;
 
-    //TODO: Figure out date and time issues and then update variables, getter and setters, constructor, equals() and hashCode()
-//    @Column(name = "date")
-//    private LocalDate date;
+    //TODO: Should these be LocalDate and Time??
+    @Column(name = "date")
+    private Date date;
 
-    //start and end times
+    @Column(name = "start_time")
+    private Time startTime;
+
+    @Column(name = "end_time")
+    private Time endTime;
 
     @Column(name = "notes")
     private String notes;
 
-    @Column(name = "user")
-    private int userId;
+    @ManyToOne
+    private User user;
 
     /**
      * Instantiates a new Event (empty constructor)
@@ -43,63 +50,164 @@ public class Event {
     /**
      * Instantiates a new Event.
      *
-     * @param name   the name
-     * @param notes  the notes
-     * @param userId the user id
+     * @param name      the name
+     * @param date      the date
+     * @param startTime the start time
+     * @param endTime   the end time
+     * @param notes     the notes
+     * @param user      the user
      */
-    public Event(String name, String notes, int userId) {
+    public Event(String name, Date date, Time startTime, Time endTime, String notes, User user) {
         this.name = name;
+        this.date = date;
+        this.startTime = startTime;
+        this.endTime = endTime;
         this.notes = notes;
-        this.userId = userId;
+        this.user = user;
     }
 
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * Gets date.
+     *
+     * @return the date
+     */
+    public Date getDate() {
+        return date;
+    }
+
+    /**
+     * Sets date.
+     *
+     * @param date the date
+     */
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    /**
+     * Gets start time.
+     *
+     * @return the start time
+     */
+    public Time getStartTime() {
+        return startTime;
+    }
+
+    /**
+     * Sets start time.
+     *
+     * @param startTime the start time
+     */
+    public void setStartTime(Time startTime) {
+        this.startTime = startTime;
+    }
+
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public Time getEndTime() {
+        return endTime;
+    }
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(Time endTime) {
+        this.endTime = endTime;
+    }
+
+    /**
+     * Gets notes.
+     *
+     * @return the notes
+     */
     public String getNotes() {
         return notes;
     }
 
+    /**
+     * Sets notes.
+     *
+     * @param notes the notes
+     */
     public void setNotes(String notes) {
         this.notes = notes;
     }
 
-    public int getUserId() {
-        return userId;
+    /**
+     * Gets user.
+     *
+     * @return the user
+     */
+    public User getUser() {
+        return user;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    /**
+     * Sets user.
+     *
+     * @param user the user
+     */
+    public void setUser(User user) {
+        this.user = user;
     }
 
-    //TODO: Needs to be updated once I figure out the date and time issue
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Event event = (Event) o;
         return id == event.id &&
-                userId == event.userId &&
                 Objects.equals(name, event.name) &&
+                Objects.equals(date, event.date) &&
+                Objects.equals(startTime, event.startTime) &&
+                Objects.equals(endTime, event.endTime) &&
                 Objects.equals(notes, event.notes);
+        //TODO: removed user...is that correct?
     }
 
-    //TODO: Needs to be updated once I figure out the date and time issue
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, notes, userId);
+        return Objects.hash(id, name, date, startTime, endTime, notes, user);
     }
 }
