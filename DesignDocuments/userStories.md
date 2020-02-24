@@ -32,13 +32,15 @@ As a registered user I want to create, edit, and delete tasks on my weekly to-do
 
 As a registered user I want to mark completed tasks as "complete" and, if a task wasn't completed, I want to have the ability to carry it forward to the next week.
 
-### Create and delete habits that I want to track
+### Sign out
+As a registered user I want to sign out of my account.
+
+## Stretch goals
+
+### Create and delete habits that I want to track (Stretch goal)
 
 As a registered user I want to create, and delete habits that I want to track. I want to set a goal for the frequency that the habit needs to occur and indicate each time I complete an instance of the habit.
 
-### View a history of my habit tracker
+### View a history of my habit tracker (Stretch goal)
 
 As a registered user I want to view the history of all the habits I've tracked, whether or not I met each weekly goal for the habit, and my overall percentage of success for the habit.
-
-### Sign out
-As a registered user I want to sign out of my account.
