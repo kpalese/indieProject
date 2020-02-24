@@ -1,2 +1,6 @@
 [DEBUG] 2020-02-24 11:59:04.531 [main] GenericDao - Searching for entity with userName = Jane_Doe
 [DEBUG] 2020-02-24 11:59:04.688 [main] GenericDao - Searching for entity with userName = l
+[DEBUG] 2020-02-24 14:53:31.829 [main] GenericDao - Searching for entity with userName = Jane_Doe
+[DEBUG] 2020-02-24 14:53:31.934 [main] GenericDao - Searching for entity with userName = l
+[DEBUG] 2020-02-24 14:55:05.244 [main] GenericDao - Searching for entity with userName = Jane_Doe
+[DEBUG] 2020-02-24 14:55:05.390 [main] GenericDao - Searching for entity with userName = l
