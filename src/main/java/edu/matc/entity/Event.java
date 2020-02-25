@@ -4,6 +4,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.sql.Time;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Objects;
 
 
@@ -29,10 +30,10 @@ public class Event {
     private LocalDate date;
 
     @Column(name = "start_time")
-    private Time startTime;
+    private LocalTime startTime;
 
     @Column(name = "end_time")
-    private Time endTime;
+    private LocalTime endTime;
 
     @Column(name = "notes")
     private String notes;
@@ -56,7 +57,7 @@ public class Event {
      * @param notes     the notes
      * @param user      the user
      */
-    public Event(String name, LocalDate date, Time startTime, Time endTime, String notes, User user) {
+    public Event(String name, LocalDate date, LocalTime startTime, LocalTime endTime, String notes, User user) {
         this.name = name;
         this.date = date;
         this.startTime = startTime;
@@ -124,7 +125,7 @@ public class Event {
      *
      * @return the start time
      */
-    public Time getStartTime() {
+    public LocalTime getStartTime() {
         return startTime;
     }
 
@@ -133,7 +134,7 @@ public class Event {
      *
      * @param startTime the start time
      */
-    public void setStartTime(Time startTime) {
+    public void setStartTime(LocalTime startTime) {
         this.startTime = startTime;
     }
 
@@ -142,7 +143,7 @@ public class Event {
      *
      * @return the end time
      */
-    public Time getEndTime() {
+    public LocalTime getEndTime() {
         return endTime;
     }
 
@@ -151,7 +152,7 @@ public class Event {
      *
      * @param endTime the end time
      */
-    public void setEndTime(Time endTime) {
+    public void setEndTime(LocalTime endTime) {
         this.endTime = endTime;
     }
 
