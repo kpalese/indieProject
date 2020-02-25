@@ -17,3 +17,5 @@
 | 2/18/20 | Added a unit test for an additional method to have 100% code coverage for Exercise 4. Finished Parts 1-3 of the Hibernate One-To-Many demo, watched What Could Go Wrong and .equals videos  | 4.5 | Tomorrow need to read more about .equals and then finish implementing it in the user search application |
 | 2/21/20| Worked on database design. Found a helpful script online for populating my calendar table.| 3 | Outstanding issue: When trying to add a foreign key in my Event table, it says it cannot open the Calendar table. Need to look into this more.|
 | 2/23/20 | Reviewed equals() and GenericDao demos. Created GenericDao in project. Struggled with Calendar dates table. Started an Event and EventDaoTest class, but need to figure out how I'm going to track time and date before I get much further.  | 3.5 | |
+| 2/24/20 | Worked on exercise 5. Became stuck with implementing one-to-many relationship (UserDaoTest is now broken)  | 2 | |
+| 2/25/20 | Exercise 5: Renamed "user_id" column in Event table. UserDaoTest now works. Started updating EventDaoTest.  | .5 | |
