@@ -18,4 +18,4 @@
 | 2/21/20| Worked on database design. Found a helpful script online for populating my calendar table.| 3 | Outstanding issue: When trying to add a foreign key in my Event table, it says it cannot open the Calendar table. Need to look into this more.|
 | 2/23/20 | Reviewed equals() and GenericDao demos. Created GenericDao in project. Struggled with Calendar dates table. Started an Event and EventDaoTest class, but need to figure out how I'm going to track time and date before I get much further.  | 3.5 | |
 | 2/24/20 | Worked on exercise 5. Became stuck with implementing one-to-many relationship (UserDaoTest is now broken)  | 2 | |
-| 2/25/20 | Exercise 5: Renamed "user_id" column in Event table. UserDaoTest now works. Started updating EventDaoTest.  | .5 | |
+| 2/25/20 | Exercise 5: Renamed "user_id" column in Event table. UserDaoTest now works. Updated EventDaoTest. Created some placeholder text in jsps. Created AWS account. | 2.5 | |
