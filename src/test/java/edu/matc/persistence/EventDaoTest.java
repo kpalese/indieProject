@@ -3,6 +3,8 @@ package edu.matc.persistence;
 import edu.matc.entity.Event;
 import edu.matc.entity.User;
 import edu.matc.test.util.Database;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -74,34 +76,34 @@ public class EventDaoTest {
         assertEquals(newEvent, insertedEvent);
     }
 
-//    /**
-//     * Verify successful delete of user
-//     */
-//    @Test
-//    void deleteSuccess() {
-//        genericDao.delete(genericDao.getById(3));
-//        assertNull(genericDao.getById(3));
-//    }
-//
-//    /**
-//     * Verify successful retrieval of all users
-//     */
-//    @Test
-//    void getAllSuccess() {
-//        List<User> users = genericDao.getAll();
-//        assertEquals(4, users.size());
-//    }
-//
-//    /**
-//     * Verify successful get by property (equal match)
-//     */
-//    @Test
-//    void getByPropertyEqualSuccess() {
-//        List<User> users = genericDao.getByPropertyEqual("userName", "Jane_Doe");
-//        assertEquals(1, users.size());
-//        assertEquals(2, users.get(0).getUserId());
-//    }
-//
+    /**
+     * Verify successful delete of event
+     */
+    @Test
+    void deleteSuccess() {
+        genericDao.delete(genericDao.getById(3));
+        assertNull(genericDao.getById(3));
+    }
+
+    /**
+     * Verify successful retrieval of all events
+     */
+    @Test
+    void getAllSuccess() {
+        List<Event> events = genericDao.getAll();
+        assertEquals(5, events.size());
+    }
+
+    /**
+     * Verify successful get by property (equal match)
+     */
+    @Test
+    void getByPropertyEqualSuccess() {
+        List<Event> events = genericDao.getByPropertyEqual("name", "Dentist");
+        assertEquals(1, events.size());
+        assertEquals(2, events.get(0).getId());
+    }
+
 //    /**
 //     * Verify successful get by property (like match)
 //     */
