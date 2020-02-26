@@ -8,7 +8,6 @@ import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.sql.Time;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
@@ -104,12 +103,14 @@ public class EventDaoTest {
         assertEquals(2, events.get(0).getId());
     }
 
-//    /**
-//     * Verify successful get by property (like match)
-//     */
-//    @Test
-//    void getByPropertyLikeSuccess() {
-//        List<User> users = genericDao.getByPropertyLike("userName", "l");
-//        assertEquals(2, users.size());
-//    }
+    /**
+     * Verify successful get by property (like match)
+     */
+    @Test
+    void getByPropertyLikeSuccess() {
+        List<Event> events = genericDao.getByPropertyLike("name", "ti");
+        assertEquals(2, events.size());
+        assertEquals(1, events.get(0).getId());
+        assertEquals(2, events.get(1).getId());
+    }
 }

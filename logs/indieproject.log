@@ -1,3 +1,10 @@
 [DEBUG] 2020-02-25 20:35:16.095 [main] EventDaoTest - EventDaoTest genericDao.getbyId(3) = edu.matc.entity.Event@8180beae
 [DEBUG] 2020-02-25 20:46:15.699 [main] GenericDao - Searching for entity with date = 2020-03-03
 [DEBUG] 2020-02-25 20:50:26.539 [main] GenericDao - Searching for entity with name = Dentist
+[DEBUG] 2020-02-25 20:58:35.774 [main] GenericDao - Searching for entity with name = ti
+[DEBUG] 2020-02-25 20:59:43.641 [main] GenericDao - Searching for entity with name = ti
+[DEBUG] 2020-02-25 21:00:22.841 [main] GenericDao - Searching for entity with name = ti
+[DEBUG] 2020-02-25 21:01:17.555 [main] GenericDao - Searching for entity with userName = Jane_Doe
+[DEBUG] 2020-02-25 21:01:17.832 [main] GenericDao - Searching for entity with userName = l
+[DEBUG] 2020-02-25 21:02:07.224 [main] GenericDao - Searching for entity with name = Dentist
+[DEBUG] 2020-02-25 21:02:07.474 [main] GenericDao - Searching for entity with name = ti
