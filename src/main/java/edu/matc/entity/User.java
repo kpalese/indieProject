@@ -26,6 +26,9 @@ public class User {
     @Column(name = "user_password")
     private String userPassword;
 
+    @Column(name ="auto_fwd_incomplete_tasks")
+    private boolean autoFwdIncompleteTasks;
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Event> events = new HashSet<>();
 
@@ -40,13 +43,14 @@ public class User {
 
     /**
      * Instantiates a new User.
-     *
-     * @param userName    the user name
+     *  @param userName    the user name
      * @param userPassword    the user's password
+     * @param autoFwdIncompleteTasks
      */
-    public User(String userName, String userPassword) {
+    public User(String userName, String userPassword, boolean autoFwdIncompleteTasks) {
         this.userName = userName;
         this.userPassword = userPassword;
+        this.autoFwdIncompleteTasks = autoFwdIncompleteTasks;
     }
 
     /**
@@ -104,6 +108,24 @@ public class User {
     }
 
     /**
+     * Is auto fwd incomplete tasks boolean.
+     *
+     * @return the boolean
+     */
+    public boolean isAutoFwdIncompleteTasks() {
+        return autoFwdIncompleteTasks;
+    }
+
+    /**
+     * Sets auto fwd incomplete tasks.
+     *
+     * @param autoFwdIncompleteTasks the auto fwd incomplete tasks
+     */
+    public void setAutoFwdIncompleteTasks(boolean autoFwdIncompleteTasks) {
+        this.autoFwdIncompleteTasks = autoFwdIncompleteTasks;
+    }
+
+    /**
      * Gets events.
      *
      * @return the events
@@ -146,11 +168,12 @@ public class User {
         User user = (User) o;
         return userId == user.userId &&
                 Objects.equals(userName, user.userName) &&
-                Objects.equals(userPassword, user.userPassword);
+                Objects.equals(userPassword, user.userPassword) &&
+                Objects.equals(autoFwdIncompleteTasks, user.autoFwdIncompleteTasks);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(userId, userName, userPassword);
+        return Objects.hash(userId, userName, userPassword, autoFwdIncompleteTasks);
     }
 }
