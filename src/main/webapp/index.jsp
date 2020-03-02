@@ -1,9 +1,9 @@
-<%@include file="head.jsp"%>
+<%@include file="templates/head.jsp"%>
 <html>
 <body>
 
-    <%@include file="header.jsp"%>
-    <%@include file="navmenu.jsp"%>
+    <%@include file="templates/header.jsp"%>
+    <%@include file="templates/navmenu.jsp"%>
 
     <main>
         <h2>Hello there!</h2>
