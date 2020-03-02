@@ -33,6 +33,9 @@ public class Task {
     @Column(name = "notes")
     private String notes;
 
+    @Column(name = "complete")
+    private boolean complete;
+
     @ManyToOne
     private User user;
 
@@ -44,18 +47,19 @@ public class Task {
 
     /**
      * Instantiates a new Task.
-     *
-     * @param name      the name
+     *  @param name      the name
      * @param date      the date
      * @param frequency the frequency
      * @param notes     the notes
+     * @param complete  whether or not the task is complete
      * @param user      the user
      */
-    public Task(String name, LocalDate date, String frequency, String notes, User user) {
+    public Task(String name, LocalDate date, String frequency, String notes, boolean complete, User user) {
         this.name = name;
         this.date = date;
         this.frequency = frequency;
         this.notes = notes;
+        this.complete = complete;
         this.user = user;
     }
 
@@ -150,6 +154,24 @@ public class Task {
     }
 
     /**
+     * Is complete boolean.
+     *
+     * @return the boolean
+     */
+    public boolean isComplete() {
+        return complete;
+    }
+
+    /**
+     * Sets complete.
+     *
+     * @param complete the complete
+     */
+    public void setComplete(boolean complete) {
+        this.complete = complete;
+    }
+
+    /**
      * Gets user.
      *
      * @return the user
@@ -176,11 +198,12 @@ public class Task {
                 Objects.equals(name, task.name) &&
                 Objects.equals(date, task.date) &&
                 Objects.equals(frequency, task.frequency) &&
-                Objects.equals(notes, task.notes);
+                Objects.equals(notes, task.notes) &&
+                Objects.equals(complete, task.complete);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, date, frequency, notes);
+        return Objects.hash(id, name, date, frequency, notes, complete);
     }
 }

@@ -48,5 +48,6 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-
-hibernate.cfg.xml
+# Hibernate configs
+src/main/resources/hibernate.cfg.xml
+src/test/resources/hibernate.cfg.xml
