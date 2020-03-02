@@ -56,7 +56,8 @@ Below are two different examples of newer paper planners that serve as some insp
 * [User Stories](DesignDocuments/userStories.md)
 * [Screen Design](DesignDocuments/Screens.md)
 * [Application Flow](DesignDocuments/applicationFlow.md)
-* Database Design TBD
+* [Database Design](DesignDocuments/databaseDiagram.png)
+
 
 ### [Project Plan](ProjectPlan.md)
 

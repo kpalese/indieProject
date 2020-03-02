@@ -29,6 +29,9 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Event> events = new HashSet<>();
 
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Task> tasks = new HashSet<>();
+
     /**
      * Instantiates a new User (empty constructor)
      */
@@ -116,6 +119,24 @@ public class User {
      */
     public void setEvents(Set<Event> events) {
         this.events = events;
+    }
+
+    /**
+     * Gets tasks.
+     *
+     * @return the tasks
+     */
+    public Set<Task> getTasks() {
+        return tasks;
+    }
+
+    /**
+     * Sets tasks.
+     *
+     * @param tasks the tasks
+     */
+    public void setTasks(Set<Task> tasks) {
+        this.tasks = tasks;
     }
 
     @Override
