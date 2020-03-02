@@ -1,20 +1,20 @@
 package edu.matc.entity;
 
+
 import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.time.LocalTime;
 import java.util.Objects;
 
-
 /**
- * A java bean to represent an event
+ * A java bean to represent a task
  *
  * @author Kelly Palese
  */
-@Entity(name = "Event")
-@Table(name = "EVENT")
-public class Event {
+@Entity(name = "Task")
+@Table(name = "TASK")
+public class Task {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
@@ -24,15 +24,11 @@ public class Event {
     @Column(name = "name")
     private String name;
 
-    //TODO: Should these be LocalDate and Time??
     @Column(name = "date")
     private LocalDate date;
 
-    @Column(name = "start_time")
-    private LocalTime startTime;
-
-    @Column(name = "end_time")
-    private LocalTime endTime;
+    @Column(name = "frequency")
+    private String frequency;
 
     @Column(name = "notes")
     private String notes;
@@ -41,26 +37,24 @@ public class Event {
     private User user;
 
     /**
-     * Instantiates a new Event (empty constructor)
+     * Instantiates a new Task (empty constructor)
      */
-    public Event() {
+    public Task() {
     }
 
     /**
-     * Instantiates a new Event.
+     * Instantiates a new Task.
      *
      * @param name      the name
      * @param date      the date
-     * @param startTime the start time
-     * @param endTime   the end time
+     * @param frequency the frequency
      * @param notes     the notes
      * @param user      the user
      */
-    public Event(String name, LocalDate date, LocalTime startTime, LocalTime endTime, String notes, User user) {
+    public Task(String name, LocalDate date, String frequency, String notes, User user) {
         this.name = name;
         this.date = date;
-        this.startTime = startTime;
-        this.endTime = endTime;
+        this.frequency = frequency;
         this.notes = notes;
         this.user = user;
     }
@@ -120,39 +114,21 @@ public class Event {
     }
 
     /**
-     * Gets start time.
+     * Gets frequency.
      *
-     * @return the start time
+     * @return the frequency
      */
-    public LocalTime getStartTime() {
-        return startTime;
+    public String getFrequency() {
+        return frequency;
     }
 
     /**
-     * Sets start time.
+     * Sets frequency.
      *
-     * @param startTime the start time
+     * @param frequency the frequency
      */
-    public void setStartTime(LocalTime startTime) {
-        this.startTime = startTime;
-    }
-
-    /**
-     * Gets end time.
-     *
-     * @return the end time
-     */
-    public LocalTime getEndTime() {
-        return endTime;
-    }
-
-    /**
-     * Sets end time.
-     *
-     * @param endTime the end time
-     */
-    public void setEndTime(LocalTime endTime) {
-        this.endTime = endTime;
+    public void setFrequency(String frequency) {
+        this.frequency = frequency;
     }
 
     /**
@@ -195,18 +171,16 @@ public class Event {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Event event = (Event) o;
-        return id == event.id &&
-                Objects.equals(name, event.name) &&
-                Objects.equals(date, event.date) &&
-                Objects.equals(startTime, event.startTime) &&
-                Objects.equals(endTime, event.endTime) &&
-                Objects.equals(notes, event.notes);
-        //TODO: removed user...is that correct?
+        Task task = (Task) o;
+        return id == task.id &&
+                Objects.equals(name, task.name) &&
+                Objects.equals(date, task.date) &&
+                Objects.equals(frequency, task.frequency) &&
+                Objects.equals(notes, task.notes);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, date, startTime, endTime, notes);
+        return Objects.hash(id, name, date, frequency, notes);
     }
 }

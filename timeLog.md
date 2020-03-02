@@ -21,3 +21,28 @@
 | 2/25/20 | Exercise 5: Renamed "user_id" column in Event table. UserDaoTest now works. Updated EventDaoTest. Created some placeholder text in jsps. Created AWS account. | 2.5 | |
 | 2/27/20 | Started exercise 6 | 1 | |
 | 2/28/20 | Finished Exercise 6, started thinking about logos and color schemes  | 3.5 | |
+| 3/1/20 |  || |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
