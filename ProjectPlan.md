@@ -5,71 +5,63 @@
 - [x] Create project structure in IntelliJ and push
 - [x] Add link to list of indie projects in student repo.
 - [x] Complete Problem Statement
-- [ ] Determine possible Web Services or APIs to use
-- [ ] List technologies, versions and how they will be used
-- [ ] Weekly journal entry
+- [x] Determine possible Web Services or APIs to use
+- [x] List technologies, versions and how they will be used
+- [x] Weekly journal entry
 - [x] Write project plan
-- [ ] Document application flow in text and pictures
-- [ ] Triple-check for Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub. 
+- [x] Document application flow in text and pictures
+- [x] Triple-check for Checkpoint 1: Problem statement, project plan, screen design and time log pushed to GitHub. 
 
 ### Week 4
-- [ ] Complete database design
-- [ ] Create the database and user table
-- [ ] Create the user entity class and annotate for hibernate
-- [ ] Create user dao
-- [ ] Create the test database
-- [ ] Create user dao unit tests
-- [ ] Weekly journal entry
-- [ ] Set up logging
+- [x] Complete database design
+- [x] Create the database and user table
+- [x] Create the user entity class and annotate for hibernate
+- [x] Create user dao
+- [x] Create the test database
+- [x] Create user dao unit tests
+- [x] Weekly journal entry
+- [x] Set up logging
 - [ ] Create class uml diagram
-- [ ] Prepare for Week 5 peer design/code review
+- [x] Prepare for Week 5 peer design/code review
 
 
 ### Week 5
 
 - [ ] Create the template for all jsps using bootstrap or materialize
-- [ ] Weekly journal entry
-- [ ] Add the role table
-- [ ] Add the role entity
-- [ ] Create the role dao
-- [ ] Create the role dao unit tests
-- [ ] Add a jsp to display user and role
-- [ ] Add jsp to create an account
-- [ ] Add index.html jsp
+- [x] Weekly journal entry
+- [x] Add the event table
+- [x] Add the event entity
+- [x] Create the event dao
+- [x] Create the event dao unit tests
+- [x] Add index.html jsp
 
 ### Week 6
 
-- [ ] Create db on AWS
-- [ ] Deploy to AWS for first time
-- [ ] Weekly journal entry
-- [ ] Create event table
-- [ ] Add the event entity (test, dev and prod dbs)
-- [ ] Realize that these daos are repetitive. Refactor into a generic dao!
-- [ ] Create task table
+- [x] Create db on AWS
+- [x] Deploy to AWS for first time
+- [x] Weekly journal entry
+- [x] Create task table
 - [ ] Add the task entity (test, dev and prod dbs)
-- [ ] Add update and delete functionality in jsp for user and role
-- [ ] Build the view planner jsp
-- [ ] Build the event add/update/delete jsp
-- [ ] Build the task add/update/delete jsp
+- [x] Realize that these daos are repetitive. Refactor into a generic dao!
 - [ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created. 
 
 
 ### Week 7
 
 - [ ] Weekly journal entry
+- [ ] Verify all entities are in test, prod, and dev dbs
+- [ ] Update index jsp to be closer to the final version
+- [ ] Build the event add/update/delete jsp
+- [ ] Build the task add/update/delete jsp
 - [ ] Set up authentication locally
 - [ ] Set up authentication on AWS
-- [ ] Add the habit table, populate with data, (test, dev and prod dbs)
-- [ ] Create the habit entity
-- [ ] Add the habit tracker to the view planner jsp
-- [ ] Add a create/delete habit jsp
 - [ ] Review and incorporate any feedback from Checkpoint 2.
 
 
 ### Week 8
 
 - [ ] Weekly journal entry
-- [ ] Add a habit tracker history jsp
+- [ ] Build the view planner jsp
 - [ ] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented. 
 
 ### Week 9
