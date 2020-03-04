@@ -47,7 +47,7 @@ public class Task {
 
     /**
      * Instantiates a new Task.
-     *  @param name      the name
+     * @param name      the name
      * @param date      the date
      * @param frequency the frequency
      * @param notes     the notes
