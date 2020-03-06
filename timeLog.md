@@ -23,7 +23,8 @@
 | 2/28/20 | Finished Exercise 6, started thinking about logos and color schemes  | 3.5 | |
 | 3/1/20 | Peer reviews, updated database, created Task java bean, added database diagram | 2.75 | |
 | 3/2/20 | Worked on professional development topic | 3 | |
-| 3/3/20 |  |  | |
+| 3/3/20 | Worked on professional dev topic, then realized I should probably switch topics | 1.5 | |
+| 3/6/20 | Worked on exercise 7. Still need to implement it on AWS | 2.5 | |
 
 
 
