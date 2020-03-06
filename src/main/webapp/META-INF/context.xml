@@ -1,8 +1,0 @@
-<Context docBase="tasktracker" path="/tasktracker" reloadable="true">
-    <Realm className="org.apache.catalina.realm.JDBCRealm"
-           driverName="com.mysql.cj.jdbc.Driver"
-           connectionURL="jdbc:mysql://localhost:3306/indieProject?user=tomcat&amp;password=iamlefthanded"
-           userTable="USERS" userNameCol="user_name" userCredCol="user_password"
-           userRoleTable="USER_ROLES" roleNameCol="role_name" >
-    </Realm>
-</Context>
