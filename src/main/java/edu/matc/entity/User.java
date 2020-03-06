@@ -35,6 +35,9 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Task> tasks = new HashSet<>();
 
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Role> roles = new HashSet<>();
+
     /**
      * Instantiates a new User (empty constructor)
      */
@@ -45,7 +48,7 @@ public class User {
      * Instantiates a new User.
      *  @param userName    the user name
      * @param userPassword    the user's password
-     * @param autoFwdIncompleteTasks
+     * @param autoFwdIncompleteTasks whether or not to automatically forward the user's incomplete tasks
      */
     public User(String userName, String userPassword, boolean autoFwdIncompleteTasks) {
         this.userName = userName;
@@ -143,6 +146,27 @@ public class User {
         this.events = events;
     }
 
+
+    /**
+     * Add event.
+     *
+     * @param event the event
+     */
+    public void addEvent(Event event) {
+        events.add(event);
+        event.setUser(this);
+    }
+
+    /**
+     * Remove event.
+     *
+     * @param event the event
+     */
+    public void removeEvent(Event event) {
+        events.remove(event);
+        event.setUser(null);
+    }
+
     /**
      * Gets tasks.
      *
@@ -159,6 +183,64 @@ public class User {
      */
     public void setTasks(Set<Task> tasks) {
         this.tasks = tasks;
+    }
+
+    /**
+     * Add task
+     *
+     * @param task the task
+     */
+    public void addTask(Task task) {
+        tasks.add(task);
+        task.setUser(this);
+    }
+
+    /**
+     * Remove task.
+     *
+     * @param task the task
+     */
+    public void removeTask(Task task) {
+        tasks.remove(task);
+        task.setUser(null);
+    }
+
+    /**
+     * Gets roles.
+     *
+     * @return the roles
+     */
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    /**
+     * Sets roles.
+     *
+     * @param roles the roles
+     */
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
+
+    /**
+     * Add role.
+     *
+     * @param role the role
+     */
+    public void addRole(Role role) {
+        roles.add(role);
+        role.setUser(this);
+    }
+
+    /**
+     * Remove role.
+     *
+     * @param role the role
+     */
+    public void removeRole(Role role) {
+        roles.remove(role);
+        role.setUser(null);
     }
 
     @Override
