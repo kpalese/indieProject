@@ -1,5 +1,6 @@
 <%@include file="templates/head.jsp"%>
 <html>
+    <title>Home</title>
 <body>
 
     <%@include file="templates/header.jsp"%>
