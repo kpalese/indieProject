@@ -54,3 +54,4 @@ src/test/resources/hibernate.cfg.xml
 
 
 src/main/webapp/META-INF/context.xml
+context.xml
