@@ -1,1 +1,1 @@
-<h1>A really cool header will go here!!</h1>
+<img src="./images/logoTaskTracker.png" alt="task tracker logo" id="mainLogo">
