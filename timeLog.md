@@ -26,6 +26,9 @@
 | 3/3/20 | Worked on professional dev topic, then realized I should probably switch topics | 1.5 | |
 | 3/6/20 | Worked on exercise 7. Still need to implement it on AWS | 2.5 | |
 | 3/7/20 | Implemented exercise 7 on AWS. | 2.5 | |
+| 3/13/20 | Started the week 8 videos and began using SoapUI, however I had issues with SoapUI freezing multiple times. | 1.5 | |
+| 3/14/20 | Completed Week 8 activities 1 and 2 | 1 |  SoapUI freezed again, but only once |
+| 3/15/20 | Completed Week 8 activity 3 | 1 | |
 
 
 
