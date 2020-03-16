@@ -6,6 +6,10 @@
     width: auto;
 }
 
+nav {
+    margin-bottom: .5em;
+}
+
 div#wrapper {
     max-width: 80em;
     margin-left: auto;
@@ -14,5 +18,10 @@ div#wrapper {
 
 h2 {
     text-align: center;
-    margin-top: .5em;
+}
+
+#loginForm {
+    max-width: 35em;
+    margin-left: auto;
+    margin-right: auto;
 }
