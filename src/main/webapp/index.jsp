@@ -6,7 +6,7 @@
     <%@include file="templates/navmenu.jsp"%>
 
         <main>
-            <div id="wrapper">
+            <div class="wrapper">
             <h2>Welcome to Task Tracker!</h2>
 
             <a href="users/viewPlanner.jsp">Click here to view your planner (for logged in users only)</a><br/><br/>

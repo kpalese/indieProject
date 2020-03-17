@@ -1,16 +1,13 @@
 <%@include file="templates/head.jsp"%>
-
+<c:set var="title" value="Login - Task Tracker" />
 <html>
-
-    <title>Login</title>
-
 <body>
 
     <%@include file="templates/header.jsp"%>
     <%@include file="templates/navmenu.jsp"%>
 
     <main>
-        <div id="wrapper">
+        <div class="wrapper">
             <FORM ACTION="j_security_check" METHOD="POST" id="loginForm">
                 <div class="form-group">
                     <label for="j_username">User name: </label>

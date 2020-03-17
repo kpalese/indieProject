@@ -29,6 +29,7 @@
 | 3/13/20 | Started the week 8 videos and began using SoapUI, however I had issues with SoapUI freezing multiple times. | 1.5 | |
 | 3/14/20 | Completed Week 8 activities 1 and 2 | 1 |  SoapUI froze again, but only once |
 | 3/15/20 | Completed Week 8 activity 3. Worked on indie project templates, added logo and started minor styling. | 5 | |
+| 3/16/20 | Fixed issue where images and style sheets weren't linking correctly. Continued some minor styling/placeholder text. | 2 | |
 
 
 
