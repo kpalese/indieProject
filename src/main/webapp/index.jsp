@@ -1,6 +1,6 @@
 <%@include file="templates/head.jsp"%>
+<c:set var="title" value="Home - Task Tracker" />
 <html>
-    <title>Home</title>
 <body>
     <%@include file="templates/header.jsp"%>
     <%@include file="templates/navmenu.jsp"%>
