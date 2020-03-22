@@ -30,9 +30,9 @@
 | 3/14/20 | Completed Week 8 activities 1 and 2 | 1 |  SoapUI froze again, but only once |
 | 3/15/20 | Completed Week 8 activity 3. Worked on indie project templates, added logo and started minor styling. | 5 | |
 | 3/16/20 | Fixed issue where images and style sheets weren't linking correctly. Continued some minor styling/placeholder text. | 2 | |
-
-
-
+| 3/19/20 | Watched some videos and read tutorials about JavaScript drag and drop. Started a demo for prof dev presentation | 5 | |
+| 3/20/20 | Learned more about drag and drop and worked on presentation materials. | 2.5 | I need to figure out the data transfer piece tomorrow |
+| 3/21/20 | Figured out data transfer piece of drag and drop. Finished presentation materials. | 3.5 | Need to upload presentation to Git |
 
 
 
