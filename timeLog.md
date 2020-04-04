@@ -33,8 +33,11 @@
 | 3/19/20 | Watched some videos and read tutorials about JavaScript drag and drop. Started a demo for prof dev presentation | 5 | |
 | 3/20/20 | Learned more about drag and drop and worked on presentation materials. | 2.5 | I need to figure out the data transfer piece tomorrow |
 | 3/21/20 | Figured out data transfer piece of drag and drop. Finished presentation materials. | 3.5 | Need to upload presentation to Git |
-
-
+| 3/22/20 | Completed exercise 8 | 2 | |
+| 3/28/20 | Team project meeting, write problem statement, AWS googling, learning about Slack api | 3.75 | Did I really not work on anything between 3/22 and now? If I did, I lost my post-it note about it|
+| 3/29/20 | Reviewed teammates' work on team project, read more about the api | 1 | |
+| 3/30/20 | Branching activity, created branch in team project | 1 | |
+| 4/1/20 | Created db for team project, worked on javabeans, created placeholder templates for jsps, added generic dao and session provider | 3.25 | |
 
 
 

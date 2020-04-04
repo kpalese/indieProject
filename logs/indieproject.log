@@ -343,3 +343,11 @@
 [DEBUG] 2020-03-16 23:31:32.533 [main] GenericDao - Searching for entity with name = ti
 [DEBUG] 2020-03-16 23:31:33.237 [main] GenericDao - Searching for entity with userName = Jane_Doe
 [DEBUG] 2020-03-16 23:31:33.321 [main] GenericDao - Searching for entity with userName = l
+[DEBUG] 2020-03-22 20:55:18.741 [main] GenericDao - Searching for entity with name = Dentist
+[DEBUG] 2020-03-22 20:55:18.894 [main] GenericDao - Searching for entity with name = ti
+[DEBUG] 2020-03-22 20:55:19.932 [main] GenericDao - Searching for entity with userName = Jane_Doe
+[DEBUG] 2020-03-22 20:55:20.030 [main] GenericDao - Searching for entity with userName = l
+[DEBUG] 2020-03-23 16:04:49.444 [main] GenericDao - Searching for entity with name = Dentist
+[DEBUG] 2020-03-23 16:04:50.850 [main] GenericDao - Searching for entity with name = ti
+[DEBUG] 2020-03-23 16:04:55.288 [main] GenericDao - Searching for entity with userName = Jane_Doe
+[DEBUG] 2020-03-23 16:04:55.677 [main] GenericDao - Searching for entity with userName = l
