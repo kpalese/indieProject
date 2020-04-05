@@ -38,7 +38,7 @@
 | 3/29/20 | Reviewed teammates' work on team project, read more about the api | 1 | |
 | 3/30/20 | Branching activity, created branch in team project | 1 | |
 | 4/1/20 | Created db for team project, worked on javabeans, created placeholder templates for jsps, added generic dao and session provider | 3.25 | |
-
+| 4/4/20 | Updated team database, worked on UserDaoTest and RoleDaoTest, team meeting | 5 | |
 
 
 
