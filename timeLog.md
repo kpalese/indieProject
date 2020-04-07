@@ -39,6 +39,8 @@
 | 3/30/20 | Branching activity, created branch in team project | 1 | |
 | 4/1/20 | Created db for team project, worked on javabeans, created placeholder templates for jsps, added generic dao and session provider | 3.25 | |
 | 4/4/20 | Updated team database, worked on UserDaoTest and RoleDaoTest, team meeting | 5 | |
+| 4/5/20 | Team meeting, worked on RoleDaoTest | 2.5 | |
+| 4/6/20 | Updated Template and Channel entities. Ran into issue with TemplateDaoTest not passing. | 2 | |
 
 
 
