@@ -41,6 +41,8 @@
 | 4/4/20 | Updated team database, worked on UserDaoTest and RoleDaoTest, team meeting | 5 | |
 | 4/5/20 | Team meeting, worked on RoleDaoTest | 2.5 | |
 | 4/6/20 | Updated Template and Channel entities. Ran into issue with TemplateDaoTest not passing. | 2 | |
+| 4/7/20 | Added tests to TemplateDaoTest. Ran into issue with getting templates by user | 1 | |
+| 4/8/20 | Finished TemplateDaoTest and ChannelDaoTest (remembered that GenericDao equals and like methods need to accept an object for what I wanted to do) | 1 | |
 
 
 
