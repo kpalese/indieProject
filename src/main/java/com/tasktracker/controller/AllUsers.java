@@ -1,7 +1,7 @@
-package edu.matc.controller;
+package com.tasktracker.controller;
 
-import edu.matc.entity.User;
-import edu.matc.persistence.GenericDao;
+import com.tasktracker.entity.User;
+import com.tasktracker.persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

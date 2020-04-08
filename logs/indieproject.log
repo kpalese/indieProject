@@ -3,3 +3,5 @@
 [DEBUG] 2020-04-08 16:02:11.512 [main] GenericDao - Searching for entity with roleName = u
 [DEBUG] 2020-04-08 16:02:31.207 [main] GenericDao - Searching for entity with roleName = user
 [DEBUG] 2020-04-08 16:02:31.365 [main] GenericDao - Searching for entity with roleName = u
+[DEBUG] 2020-04-08 16:04:37.121 [main] GenericDao - Searching for entity with name = Dentist
+[DEBUG] 2020-04-08 16:04:37.380 [main] GenericDao - Searching for entity with name = ti

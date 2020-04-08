@@ -1,7 +1,7 @@
-package edu.matc.persistence;
+package com.tasktracker.persistence;
 
-import edu.matc.entity.User;
-import edu.matc.test.util.Database;
+import com.tasktracker.entity.User;
+import com.tasktracker.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.util.List;

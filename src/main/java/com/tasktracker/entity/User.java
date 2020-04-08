@@ -1,4 +1,4 @@
-package edu.matc.entity;
+package com.tasktracker.entity;
 
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;

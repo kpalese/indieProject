@@ -1,20 +1,20 @@
-package edu.matc.entity;
-
+package com.tasktracker.entity;
 
 import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Objects;
 
+
 /**
- * A java bean to represent a task
+ * A java bean to represent an event
  *
  * @author Kelly Palese
  */
-@Entity(name = "Task")
-@Table(name = "TASK")
-public class Task {
+@Entity(name = "Event")
+@Table(name = "EVENT")
+public class Event {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
@@ -24,42 +24,44 @@ public class Task {
     @Column(name = "name")
     private String name;
 
+    //TODO: Should these be LocalDate and Time??
     @Column(name = "date")
     private LocalDate date;
 
-    @Column(name = "frequency")
-    private String frequency;
+    @Column(name = "start_time")
+    private LocalTime startTime;
+
+    @Column(name = "end_time")
+    private LocalTime endTime;
 
     @Column(name = "notes")
     private String notes;
-
-    @Column(name = "complete")
-    private boolean complete;
 
     @ManyToOne
     private User user;
 
     /**
-     * Instantiates a new Task (empty constructor)
+     * Instantiates a new Event (empty constructor)
      */
-    public Task() {
+    public Event() {
     }
 
     /**
-     * Instantiates a new Task.
+     * Instantiates a new Event.
+     *
      * @param name      the name
      * @param date      the date
-     * @param frequency the frequency
+     * @param startTime the start time
+     * @param endTime   the end time
      * @param notes     the notes
-     * @param complete  whether or not the task is complete
      * @param user      the user
      */
-    public Task(String name, LocalDate date, String frequency, String notes, boolean complete, User user) {
+    public Event(String name, LocalDate date, LocalTime startTime, LocalTime endTime, String notes, User user) {
         this.name = name;
         this.date = date;
-        this.frequency = frequency;
+        this.startTime = startTime;
+        this.endTime = endTime;
         this.notes = notes;
-        this.complete = complete;
         this.user = user;
     }
 
@@ -118,21 +120,39 @@ public class Task {
     }
 
     /**
-     * Gets frequency.
+     * Gets start time.
      *
-     * @return the frequency
+     * @return the start time
      */
-    public String getFrequency() {
-        return frequency;
+    public LocalTime getStartTime() {
+        return startTime;
     }
 
     /**
-     * Sets frequency.
+     * Sets start time.
      *
-     * @param frequency the frequency
+     * @param startTime the start time
      */
-    public void setFrequency(String frequency) {
-        this.frequency = frequency;
+    public void setStartTime(LocalTime startTime) {
+        this.startTime = startTime;
+    }
+
+    /**
+     * Gets end time.
+     *
+     * @return the end time
+     */
+    public LocalTime getEndTime() {
+        return endTime;
+    }
+
+    /**
+     * Sets end time.
+     *
+     * @param endTime the end time
+     */
+    public void setEndTime(LocalTime endTime) {
+        this.endTime = endTime;
     }
 
     /**
@@ -151,24 +171,6 @@ public class Task {
      */
     public void setNotes(String notes) {
         this.notes = notes;
-    }
-
-    /**
-     * Is complete boolean.
-     *
-     * @return the boolean
-     */
-    public boolean isComplete() {
-        return complete;
-    }
-
-    /**
-     * Sets complete.
-     *
-     * @param complete the complete
-     */
-    public void setComplete(boolean complete) {
-        this.complete = complete;
     }
 
     /**
@@ -193,17 +195,18 @@ public class Task {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Task task = (Task) o;
-        return id == task.id &&
-                Objects.equals(name, task.name) &&
-                Objects.equals(date, task.date) &&
-                Objects.equals(frequency, task.frequency) &&
-                Objects.equals(notes, task.notes) &&
-                Objects.equals(complete, task.complete);
+        Event event = (Event) o;
+        return id == event.id &&
+                Objects.equals(name, event.name) &&
+                Objects.equals(date, event.date) &&
+                Objects.equals(startTime, event.startTime) &&
+                Objects.equals(endTime, event.endTime) &&
+                Objects.equals(notes, event.notes);
+        //TODO: removed user...is that correct?
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, date, frequency, notes, complete);
+        return Objects.hash(id, name, date, startTime, endTime, notes);
     }
 }
