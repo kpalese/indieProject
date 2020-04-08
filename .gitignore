@@ -52,5 +52,11 @@ fabric.properties
 src/main/resources/hibernate.cfg.xml
 src/test/resources/hibernate.cfg.xml
 
-
+# Authentication
 src/main/webapp/META-INF/context.xml
+
+# Log4J
+src/main/resources/log4j2.properties
+
+# Test database
+src/test/resources/database.properties
