@@ -1,0 +1,1189 @@
+[DEBUG] 2020-04-08 16:00:51.390 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2020-04-08 16:00:51.402 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2020-04-08 16:00:51.405 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2020-04-08 16:00:51.499 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2020-04-08 16:00:51.504 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2020-04-08 16:00:51.755 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2020-04-08 16:00:52.139 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2020-04-08 16:00:52.176 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2020-04-08 16:00:52.177 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2020-04-08 16:00:52.203 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2020-04-08 16:00:52.247 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@74db12c2
+[DEBUG] 2020-04-08 16:00:52.247 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@74db12c2
+[DEBUG] 2020-04-08 16:00:52.249 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@74db12c2
+[DEBUG] 2020-04-08 16:00:52.249 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@b174a73
+[DEBUG] 2020-04-08 16:00:52.250 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@327ed9f5
+[DEBUG] 2020-04-08 16:00:52.252 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@68b58644
+[DEBUG] 2020-04-08 16:00:52.253 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@7c129ef6
+[DEBUG] 2020-04-08 16:00:52.253 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@7c129ef6
+[DEBUG] 2020-04-08 16:00:52.253 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@7c129ef6
+[DEBUG] 2020-04-08 16:00:52.253 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@7f7af971
+[DEBUG] 2020-04-08 16:00:52.256 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@7f7af971
+[DEBUG] 2020-04-08 16:00:52.256 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@7f7af971
+[DEBUG] 2020-04-08 16:00:52.258 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@367d2816
+[DEBUG] 2020-04-08 16:00:52.261 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@367d2816
+[DEBUG] 2020-04-08 16:00:52.262 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@367d2816
+[DEBUG] 2020-04-08 16:00:52.263 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@27a97e08
+[DEBUG] 2020-04-08 16:00:52.263 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@27a97e08
+[DEBUG] 2020-04-08 16:00:52.263 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@27a97e08
+[DEBUG] 2020-04-08 16:00:52.264 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@65b66b08
+[DEBUG] 2020-04-08 16:00:52.264 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@65b66b08
+[DEBUG] 2020-04-08 16:00:52.264 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@65b66b08
+[DEBUG] 2020-04-08 16:00:52.265 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@244e619a
+[DEBUG] 2020-04-08 16:00:52.266 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@244e619a
+[DEBUG] 2020-04-08 16:00:52.266 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@244e619a
+[DEBUG] 2020-04-08 16:00:52.267 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@719d35e8
+[DEBUG] 2020-04-08 16:00:52.267 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@719d35e8
+[DEBUG] 2020-04-08 16:00:52.267 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@719d35e8
+[DEBUG] 2020-04-08 16:00:52.268 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@188b6035
+[DEBUG] 2020-04-08 16:00:52.270 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@188b6035
+[DEBUG] 2020-04-08 16:00:52.272 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@1ff55ff
+[DEBUG] 2020-04-08 16:00:52.274 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@1ff55ff
+[DEBUG] 2020-04-08 16:00:52.275 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@148c7c4b
+[DEBUG] 2020-04-08 16:00:52.275 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@148c7c4b
+[DEBUG] 2020-04-08 16:00:52.275 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@4eb45fec
+[DEBUG] 2020-04-08 16:00:52.276 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@61d34b4
+[DEBUG] 2020-04-08 16:00:52.277 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@e322ec9
+[DEBUG] 2020-04-08 16:00:52.278 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@e322ec9
+[DEBUG] 2020-04-08 16:00:52.278 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@719bb3b4
+[DEBUG] 2020-04-08 16:00:52.281 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@719bb3b4
+[DEBUG] 2020-04-08 16:00:52.290 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@1108adc8
+[DEBUG] 2020-04-08 16:00:52.291 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@1108adc8
+[DEBUG] 2020-04-08 16:00:52.292 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@5fb65013
+[DEBUG] 2020-04-08 16:00:52.293 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@5fb65013
+[DEBUG] 2020-04-08 16:00:52.294 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@1c6c6f24
+[DEBUG] 2020-04-08 16:00:52.296 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@1c6c6f24
+[DEBUG] 2020-04-08 16:00:52.298 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@57a2ed35
+[DEBUG] 2020-04-08 16:00:52.298 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@57a2ed35
+[DEBUG] 2020-04-08 16:00:52.301 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@184fb68d
+[DEBUG] 2020-04-08 16:00:52.302 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@184fb68d
+[DEBUG] 2020-04-08 16:00:52.303 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@16a49a5d
+[DEBUG] 2020-04-08 16:00:52.305 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@16a49a5d
+[DEBUG] 2020-04-08 16:00:52.308 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7c2b58c0
+[DEBUG] 2020-04-08 16:00:52.313 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7c2b58c0
+[DEBUG] 2020-04-08 16:00:52.315 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@aa149ed
+[DEBUG] 2020-04-08 16:00:52.316 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@aa149ed
+[DEBUG] 2020-04-08 16:00:52.318 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@2ab5afc7
+[DEBUG] 2020-04-08 16:00:52.318 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2ab5afc7
+[DEBUG] 2020-04-08 16:00:52.319 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@4aedaf61
+[DEBUG] 2020-04-08 16:00:52.320 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@4aedaf61
+[DEBUG] 2020-04-08 16:00:52.320 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@4aedaf61
+[DEBUG] 2020-04-08 16:00:52.321 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@2459319c
+[DEBUG] 2020-04-08 16:00:52.322 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@62d73ead
+[DEBUG] 2020-04-08 16:00:52.322 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@62d73ead
+[DEBUG] 2020-04-08 16:00:52.322 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@62d73ead
+[DEBUG] 2020-04-08 16:00:52.323 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@782bf610
+[DEBUG] 2020-04-08 16:00:52.323 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@10895b16
+[DEBUG] 2020-04-08 16:00:52.324 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@10895b16
+[DEBUG] 2020-04-08 16:00:52.326 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@3b9632d1
+[DEBUG] 2020-04-08 16:00:52.326 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@3b9632d1
+[DEBUG] 2020-04-08 16:00:52.326 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@1846579f
+[DEBUG] 2020-04-08 16:00:52.327 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@1846579f
+[DEBUG] 2020-04-08 16:00:52.327 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@7be7e15
+[DEBUG] 2020-04-08 16:00:52.327 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@7be7e15
+[DEBUG] 2020-04-08 16:00:52.328 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@2330e3e0
+[DEBUG] 2020-04-08 16:00:52.329 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@2330e3e0
+[DEBUG] 2020-04-08 16:00:52.330 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@706eab5d
+[DEBUG] 2020-04-08 16:00:52.336 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@249e0271
+[DEBUG] 2020-04-08 16:00:52.336 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@249e0271
+[DEBUG] 2020-04-08 16:00:52.336 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@249e0271
+[DEBUG] 2020-04-08 16:00:52.337 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@3bfc6a5e
+[DEBUG] 2020-04-08 16:00:52.338 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@3bfc6a5e
+[DEBUG] 2020-04-08 16:00:52.340 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@3bfc6a5e
+[DEBUG] 2020-04-08 16:00:52.340 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@3964d79
+[DEBUG] 2020-04-08 16:00:52.341 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@5fbdc49b
+[DEBUG] 2020-04-08 16:00:52.346 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@285f38f6
+[DEBUG] 2020-04-08 16:00:52.347 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@285f38f6
+[DEBUG] 2020-04-08 16:00:52.347 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@285f38f6
+[DEBUG] 2020-04-08 16:00:52.347 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@36fc05ff
+[DEBUG] 2020-04-08 16:00:52.348 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@36fc05ff
+[DEBUG] 2020-04-08 16:00:52.348 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@36fc05ff
+[DEBUG] 2020-04-08 16:00:52.348 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@153cd6bb
+[DEBUG] 2020-04-08 16:00:52.348 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@52d6cd34
+[DEBUG] 2020-04-08 16:00:52.349 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@1d540566
+[DEBUG] 2020-04-08 16:00:52.350 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@1d540566
+[DEBUG] 2020-04-08 16:00:52.350 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@4a14c44f
+[DEBUG] 2020-04-08 16:00:52.351 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@7be71476
+[DEBUG] 2020-04-08 16:00:52.354 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@7be71476
+[DEBUG] 2020-04-08 16:00:52.355 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@2c58dcb1
+[DEBUG] 2020-04-08 16:00:52.356 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@2c58dcb1
+[DEBUG] 2020-04-08 16:00:52.356 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@2dd8239
+[DEBUG] 2020-04-08 16:00:52.357 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@2e53b094
+[DEBUG] 2020-04-08 16:00:52.361 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@5fcfca62
+[DEBUG] 2020-04-08 16:00:52.363 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@4422dd48
+[DEBUG] 2020-04-08 16:00:52.364 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@4422dd48
+[DEBUG] 2020-04-08 16:00:52.364 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@ad3324b
+[DEBUG] 2020-04-08 16:00:52.364 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@3872bc37
+[DEBUG] 2020-04-08 16:00:52.366 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@1a87b51
+[DEBUG] 2020-04-08 16:00:52.367 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@12968227
+[DEBUG] 2020-04-08 16:00:52.367 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@144ab54
+[DEBUG] 2020-04-08 16:00:52.367 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@2cfa2c4f
+[DEBUG] 2020-04-08 16:00:52.367 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@6ecab872
+[DEBUG] 2020-04-08 16:00:52.367 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@48eb9836
+[DEBUG] 2020-04-08 16:00:52.404 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2020-04-08 16:00:52.404 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2020-04-08 16:00:52.407 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2020-04-08 16:00:52.407 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2020-04-08 16:00:52.407 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2020-04-08 16:00:52.408 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2020-04-08 16:00:52.410 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2020-04-08 16:00:52.411 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2020-04-08 16:00:52.411 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2020-04-08 16:00:52.412 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2020-04-08 16:00:52.412 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2020-04-08 16:00:52.412 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2020-04-08 16:00:52.412 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2020-04-08 16:00:52.413 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2020-04-08 16:00:52.419 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_indieProject
+[INFO ] 2020-04-08 16:00:52.420 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2020-04-08 16:00:52.420 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2020-04-08 16:00:52.611 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2020-04-08 16:00:52.849 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.16
+      major : 8
+      minor : 0
+[DEBUG] 2020-04-08 16:00:52.862 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+[DEBUG] 2020-04-08 16:00:52.862 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2020-04-08 16:00:52.915 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2020-04-08 16:00:52.959 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2020-04-08 16:00:53.010 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2020-04-08 16:00:53.093 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2020-04-08 16:00:53.102 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@43fda8d9] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@49d831c2]
+[DEBUG] 2020-04-08 16:00:53.169 [main] AnnotationBinder - Binding entity from annotated class: edu.matc.entity.User
+[DEBUG] 2020-04-08 16:00:53.207 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2020-04-08 16:00:53.215 [main] EntityBinder - Import with entity name User
+[DEBUG] 2020-04-08 16:00:53.220 [main] EntityBinder - Bind entity edu.matc.entity.User on table USERS
+[DEBUG] 2020-04-08 16:00:53.255 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.259 [main] PropertyBinder - MetadataSourceProcessor property userId with lazy=false
+[DEBUG] 2020-04-08 16:00:53.265 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:userId]
+[DEBUG] 2020-04-08 16:00:53.267 [main] SimpleValueBinder - building SimpleValue for userId
+[DEBUG] 2020-04-08 16:00:53.268 [main] PropertyBinder - Building property userId
+[DEBUG] 2020-04-08 16:00:53.275 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), userId, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2020-04-08 16:00:53.279 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=auto_fwd_incomplete_tasks, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.280 [main] PropertyBinder - MetadataSourceProcessor property autoFwdIncompleteTasks with lazy=false
+[DEBUG] 2020-04-08 16:00:53.280 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:autoFwdIncompleteTasks]
+[DEBUG] 2020-04-08 16:00:53.280 [main] SimpleValueBinder - building SimpleValue for autoFwdIncompleteTasks
+[DEBUG] 2020-04-08 16:00:53.280 [main] PropertyBinder - Building property autoFwdIncompleteTasks
+[DEBUG] 2020-04-08 16:00:53.282 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-04-08 16:00:53.288 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=events, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.294 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.315 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.315 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=events_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.315 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='events_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2020-04-08 16:00:53.316 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-04-08 16:00:53.318 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-04-08 16:00:53.319 [main] CollectionBinder - Collection role: edu.matc.entity.User.events
+[DEBUG] 2020-04-08 16:00:53.326 [main] PropertyBinder - Building property events
+[DEBUG] 2020-04-08 16:00:53.327 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-04-08 16:00:53.331 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=roles, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.331 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.332 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.332 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=roles_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.332 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='roles_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2020-04-08 16:00:53.332 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-04-08 16:00:53.332 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-04-08 16:00:53.332 [main] CollectionBinder - Collection role: edu.matc.entity.User.roles
+[DEBUG] 2020-04-08 16:00:53.332 [main] PropertyBinder - Building property roles
+[DEBUG] 2020-04-08 16:00:53.333 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-04-08 16:00:53.333 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=tasks, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.333 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.333 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.333 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=tasks_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.334 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='tasks_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2020-04-08 16:00:53.334 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-04-08 16:00:53.334 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-04-08 16:00:53.334 [main] CollectionBinder - Collection role: edu.matc.entity.User.tasks
+[DEBUG] 2020-04-08 16:00:53.334 [main] PropertyBinder - Building property tasks
+[DEBUG] 2020-04-08 16:00:53.334 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.334 [main] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2020-04-08 16:00:53.334 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:userName]
+[DEBUG] 2020-04-08 16:00:53.334 [main] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2020-04-08 16:00:53.334 [main] PropertyBinder - Building property userName
+[DEBUG] 2020-04-08 16:00:53.335 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USERS), mappingColumn=user_password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.335 [main] PropertyBinder - MetadataSourceProcessor property userPassword with lazy=false
+[DEBUG] 2020-04-08 16:00:53.335 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:userPassword]
+[DEBUG] 2020-04-08 16:00:53.335 [main] SimpleValueBinder - building SimpleValue for userPassword
+[DEBUG] 2020-04-08 16:00:53.335 [main] PropertyBinder - Building property userPassword
+[DEBUG] 2020-04-08 16:00:53.338 [main] AnnotationBinder - Binding entity from annotated class: edu.matc.entity.Event
+[DEBUG] 2020-04-08 16:00:53.339 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2020-04-08 16:00:53.339 [main] EntityBinder - Import with entity name Event
+[DEBUG] 2020-04-08 16:00:53.339 [main] EntityBinder - Bind entity edu.matc.entity.Event on table EVENT
+[DEBUG] 2020-04-08 16:00:53.345 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(EVENT), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.345 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2020-04-08 16:00:53.345 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Event:id]
+[DEBUG] 2020-04-08 16:00:53.345 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2020-04-08 16:00:53.345 [main] PropertyBinder - Building property id
+[DEBUG] 2020-04-08 16:00:53.345 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2020-04-08 16:00:53.345 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(EVENT), mappingColumn=date, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.345 [main] PropertyBinder - MetadataSourceProcessor property date with lazy=false
+[DEBUG] 2020-04-08 16:00:53.345 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Event:date]
+[DEBUG] 2020-04-08 16:00:53.345 [main] SimpleValueBinder - building SimpleValue for date
+[DEBUG] 2020-04-08 16:00:53.346 [main] PropertyBinder - Building property date
+[DEBUG] 2020-04-08 16:00:53.346 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(EVENT), mappingColumn=end_time, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.346 [main] PropertyBinder - MetadataSourceProcessor property endTime with lazy=false
+[DEBUG] 2020-04-08 16:00:53.346 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Event:endTime]
+[DEBUG] 2020-04-08 16:00:53.346 [main] SimpleValueBinder - building SimpleValue for endTime
+[DEBUG] 2020-04-08 16:00:53.350 [main] PropertyBinder - Building property endTime
+[DEBUG] 2020-04-08 16:00:53.350 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(EVENT), mappingColumn=name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.350 [main] PropertyBinder - MetadataSourceProcessor property name with lazy=false
+[DEBUG] 2020-04-08 16:00:53.350 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Event:name]
+[DEBUG] 2020-04-08 16:00:53.350 [main] SimpleValueBinder - building SimpleValue for name
+[DEBUG] 2020-04-08 16:00:53.351 [main] PropertyBinder - Building property name
+[DEBUG] 2020-04-08 16:00:53.351 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(EVENT), mappingColumn=notes, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.352 [main] PropertyBinder - MetadataSourceProcessor property notes with lazy=false
+[DEBUG] 2020-04-08 16:00:53.352 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Event:notes]
+[DEBUG] 2020-04-08 16:00:53.353 [main] SimpleValueBinder - building SimpleValue for notes
+[DEBUG] 2020-04-08 16:00:53.353 [main] PropertyBinder - Building property notes
+[DEBUG] 2020-04-08 16:00:53.353 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(EVENT), mappingColumn=start_time, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.353 [main] PropertyBinder - MetadataSourceProcessor property startTime with lazy=false
+[DEBUG] 2020-04-08 16:00:53.353 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Event:startTime]
+[DEBUG] 2020-04-08 16:00:53.353 [main] SimpleValueBinder - building SimpleValue for startTime
+[DEBUG] 2020-04-08 16:00:53.353 [main] PropertyBinder - Building property startTime
+[DEBUG] 2020-04-08 16:00:53.354 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2020-04-08 16:00:53.354 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(EVENT), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.355 [main] PropertyBinder - Building property user
+[DEBUG] 2020-04-08 16:00:53.356 [main] AnnotationBinder - Binding entity from annotated class: edu.matc.entity.Task
+[DEBUG] 2020-04-08 16:00:53.358 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2020-04-08 16:00:53.358 [main] EntityBinder - Import with entity name Task
+[DEBUG] 2020-04-08 16:00:53.358 [main] EntityBinder - Bind entity edu.matc.entity.Task on table TASK
+[DEBUG] 2020-04-08 16:00:53.364 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(TASK), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.364 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2020-04-08 16:00:53.364 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Task:id]
+[DEBUG] 2020-04-08 16:00:53.364 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2020-04-08 16:00:53.366 [main] PropertyBinder - Building property id
+[DEBUG] 2020-04-08 16:00:53.366 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2020-04-08 16:00:53.366 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(TASK), mappingColumn=complete, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.367 [main] PropertyBinder - MetadataSourceProcessor property complete with lazy=false
+[DEBUG] 2020-04-08 16:00:53.368 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Task:complete]
+[DEBUG] 2020-04-08 16:00:53.369 [main] SimpleValueBinder - building SimpleValue for complete
+[DEBUG] 2020-04-08 16:00:53.369 [main] PropertyBinder - Building property complete
+[DEBUG] 2020-04-08 16:00:53.370 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(TASK), mappingColumn=date, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.370 [main] PropertyBinder - MetadataSourceProcessor property date with lazy=false
+[DEBUG] 2020-04-08 16:00:53.370 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Task:date]
+[DEBUG] 2020-04-08 16:00:53.371 [main] SimpleValueBinder - building SimpleValue for date
+[DEBUG] 2020-04-08 16:00:53.371 [main] PropertyBinder - Building property date
+[DEBUG] 2020-04-08 16:00:53.371 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(TASK), mappingColumn=frequency, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.371 [main] PropertyBinder - MetadataSourceProcessor property frequency with lazy=false
+[DEBUG] 2020-04-08 16:00:53.371 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Task:frequency]
+[DEBUG] 2020-04-08 16:00:53.371 [main] SimpleValueBinder - building SimpleValue for frequency
+[DEBUG] 2020-04-08 16:00:53.371 [main] PropertyBinder - Building property frequency
+[DEBUG] 2020-04-08 16:00:53.371 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(TASK), mappingColumn=name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.371 [main] PropertyBinder - MetadataSourceProcessor property name with lazy=false
+[DEBUG] 2020-04-08 16:00:53.371 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Task:name]
+[DEBUG] 2020-04-08 16:00:53.371 [main] SimpleValueBinder - building SimpleValue for name
+[DEBUG] 2020-04-08 16:00:53.371 [main] PropertyBinder - Building property name
+[DEBUG] 2020-04-08 16:00:53.374 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(TASK), mappingColumn=notes, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.374 [main] PropertyBinder - MetadataSourceProcessor property notes with lazy=false
+[DEBUG] 2020-04-08 16:00:53.374 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Task:notes]
+[DEBUG] 2020-04-08 16:00:53.374 [main] SimpleValueBinder - building SimpleValue for notes
+[DEBUG] 2020-04-08 16:00:53.375 [main] PropertyBinder - Building property notes
+[DEBUG] 2020-04-08 16:00:53.375 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2020-04-08 16:00:53.375 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(TASK), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.375 [main] PropertyBinder - Building property user
+[DEBUG] 2020-04-08 16:00:53.375 [main] AnnotationBinder - Binding entity from annotated class: edu.matc.entity.Role
+[DEBUG] 2020-04-08 16:00:53.375 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2020-04-08 16:00:53.376 [main] EntityBinder - Import with entity name Role
+[DEBUG] 2020-04-08 16:00:53.376 [main] EntityBinder - Bind entity edu.matc.entity.Role on table USER_ROLES
+[DEBUG] 2020-04-08 16:00:53.384 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_ROLES), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.384 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2020-04-08 16:00:53.384 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Role:id]
+[DEBUG] 2020-04-08 16:00:53.384 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2020-04-08 16:00:53.385 [main] PropertyBinder - Building property id
+[DEBUG] 2020-04-08 16:00:53.385 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2020-04-08 16:00:53.386 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_ROLES), mappingColumn=role_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.386 [main] PropertyBinder - MetadataSourceProcessor property roleName with lazy=false
+[DEBUG] 2020-04-08 16:00:53.386 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Role:roleName]
+[DEBUG] 2020-04-08 16:00:53.386 [main] SimpleValueBinder - building SimpleValue for roleName
+[DEBUG] 2020-04-08 16:00:53.386 [main] PropertyBinder - Building property roleName
+[DEBUG] 2020-04-08 16:00:53.386 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='user_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2020-04-08 16:00:53.386 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_ROLES), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.386 [main] PropertyBinder - Building property user
+[DEBUG] 2020-04-08 16:00:53.387 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_ROLES), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-04-08 16:00:53.387 [main] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2020-04-08 16:00:53.387 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Role:userName]
+[DEBUG] 2020-04-08 16:00:53.387 [main] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2020-04-08 16:00:53.387 [main] PropertyBinder - Building property userName
+[DEBUG] 2020-04-08 16:00:53.391 [main] SimpleValueBinder - Starting fillSimpleValue for userId
+[DEBUG] 2020-04-08 16:00:53.391 [main] SimpleValueBinder - Starting fillSimpleValue for autoFwdIncompleteTasks
+[DEBUG] 2020-04-08 16:00:53.391 [main] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2020-04-08 16:00:53.391 [main] SimpleValueBinder - Starting fillSimpleValue for userPassword
+[DEBUG] 2020-04-08 16:00:53.391 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2020-04-08 16:00:53.391 [main] SimpleValueBinder - Starting fillSimpleValue for date
+[DEBUG] 2020-04-08 16:00:53.391 [main] SimpleValueBinder - Starting fillSimpleValue for endTime
+[DEBUG] 2020-04-08 16:00:53.392 [main] SimpleValueBinder - Starting fillSimpleValue for name
+[DEBUG] 2020-04-08 16:00:53.392 [main] SimpleValueBinder - Starting fillSimpleValue for notes
+[DEBUG] 2020-04-08 16:00:53.392 [main] SimpleValueBinder - Starting fillSimpleValue for startTime
+[DEBUG] 2020-04-08 16:00:53.392 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2020-04-08 16:00:53.392 [main] SimpleValueBinder - Starting fillSimpleValue for complete
+[DEBUG] 2020-04-08 16:00:53.392 [main] SimpleValueBinder - Starting fillSimpleValue for date
+[DEBUG] 2020-04-08 16:00:53.392 [main] SimpleValueBinder - Starting fillSimpleValue for frequency
+[DEBUG] 2020-04-08 16:00:53.392 [main] SimpleValueBinder - Starting fillSimpleValue for name
+[DEBUG] 2020-04-08 16:00:53.392 [main] SimpleValueBinder - Starting fillSimpleValue for notes
+[DEBUG] 2020-04-08 16:00:53.392 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2020-04-08 16:00:53.392 [main] SimpleValueBinder - Starting fillSimpleValue for roleName
+[DEBUG] 2020-04-08 16:00:53.392 [main] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2020-04-08 16:00:53.398 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [users]
+[DEBUG] 2020-04-08 16:00:53.398 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [event]
+[DEBUG] 2020-04-08 16:00:53.398 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [task]
+[DEBUG] 2020-04-08 16:00:53.398 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user_roles]
+[DEBUG] 2020-04-08 16:00:53.400 [main] CollectionSecondPass - Second pass for collection: edu.matc.entity.User.events
+[DEBUG] 2020-04-08 16:00:53.400 [main] CollectionBinder - Binding a OneToMany: edu.matc.entity.User.events through a foreign key
+[DEBUG] 2020-04-08 16:00:53.401 [main] CollectionBinder - Mapping collection: edu.matc.entity.User.events -> EVENT
+[DEBUG] 2020-04-08 16:00:53.402 [main] TableBinder - Retrieving property edu.matc.entity.Event.user
+[DEBUG] 2020-04-08 16:00:53.406 [main] CollectionSecondPass - Mapped collection key: user_id, one-to-many: edu.matc.entity.Event
+[DEBUG] 2020-04-08 16:00:53.406 [main] CollectionSecondPass - Second pass for collection: edu.matc.entity.User.roles
+[DEBUG] 2020-04-08 16:00:53.406 [main] CollectionBinder - Binding a OneToMany: edu.matc.entity.User.roles through a foreign key
+[DEBUG] 2020-04-08 16:00:53.406 [main] CollectionBinder - Mapping collection: edu.matc.entity.User.roles -> USER_ROLES
+[DEBUG] 2020-04-08 16:00:53.406 [main] TableBinder - Retrieving property edu.matc.entity.Role.user
+[DEBUG] 2020-04-08 16:00:53.406 [main] CollectionSecondPass - Mapped collection key: user_id, one-to-many: edu.matc.entity.Role
+[DEBUG] 2020-04-08 16:00:53.407 [main] CollectionSecondPass - Second pass for collection: edu.matc.entity.User.tasks
+[DEBUG] 2020-04-08 16:00:53.407 [main] CollectionBinder - Binding a OneToMany: edu.matc.entity.User.tasks through a foreign key
+[DEBUG] 2020-04-08 16:00:53.407 [main] CollectionBinder - Mapping collection: edu.matc.entity.User.tasks -> TASK
+[DEBUG] 2020-04-08 16:00:53.407 [main] TableBinder - Retrieving property edu.matc.entity.Task.user
+[DEBUG] 2020-04-08 16:00:53.407 [main] CollectionSecondPass - Mapped collection key: user_id, one-to-many: edu.matc.entity.Task
+[DEBUG] 2020-04-08 16:00:53.407 [main] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.User
+[DEBUG] 2020-04-08 16:00:53.408 [main] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.User
+[DEBUG] 2020-04-08 16:00:53.409 [main] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.User
+[DEBUG] 2020-04-08 16:00:53.411 [main] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.User
+[DEBUG] 2020-04-08 16:00:53.411 [main] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.User
+[DEBUG] 2020-04-08 16:00:53.412 [main] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.User
+[DEBUG] 2020-04-08 16:00:53.453 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2020-04-08 16:00:53.456 [main] Settings - SessionFactory name : null
+[DEBUG] 2020-04-08 16:00:53.456 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2020-04-08 16:00:53.456 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2020-04-08 16:00:53.456 [main] Settings - Statistics: disabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Default null ordering: NONE
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Query language substitutions: {}
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Named query checking : enabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Second-level cache: disabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - JDBC batch size: 15
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2020-04-08 16:00:53.457 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2020-04-08 16:00:53.458 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2020-04-08 16:00:53.460 [main] Settings - JPA compliance - query : 
+[DEBUG] 2020-04-08 16:00:53.461 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2020-04-08 16:00:53.461 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2020-04-08 16:00:53.461 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2020-04-08 16:00:53.532 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2020-04-08 16:00:53.563 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2020-04-08 16:00:53.563 [main] SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=gnome, awt.toolkit=sun.awt.X11.XToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/home/student/intellij/lib/idea_rt.jar:/home/student/intellij/plugins/junit/lib/junit5-rt.jar:/home/student/intellij/plugins/junit/lib/junit-rt.jar:/home/student/IdeaProjects/indieproject/target/test-classes:/home/student/IdeaProjects/indieproject/target/classes:/home/student/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/home/student/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/home/student/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/home/student/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/home/student/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/student/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/student/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/home/student/.m2/repository/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar:/home/student/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/home/student/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/home/student/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/home/student/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/home/student/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/student/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/home/student/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/home/student/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/student/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/student/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/home/student/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/home/student/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/student/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/home/student/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/home/student/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/home/student/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/student/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/student/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/student/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/home/student/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/home/student/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar, java.vm.vendor=Ubuntu, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=https://ubuntu.com/, user.timezone=America/Chicago, os.name=Linux, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/usr/lib/jvm/java-11-openjdk-amd64/lib, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 edu.matc.persistence.RoleDaoTest,getByPropertyEqualSuccess, jdk.debug=release, sun.cpu.endian=little, user.home=/home/student, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2020-01-14, java.home=/usr/lib/jvm/java-11-openjdk-amd64, file.separator=/, java.vm.compressedOopsMode=32-bit, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, connection.password=student, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, java.runtime.version=11.0.6+10-post-Ubuntu-1ubuntu118.04.1, user.name=student, path.separator=:, hibernate.connection.username=****, os.version=5.3.0-45-generic, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/test_indieProject, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugs.launchpad.net/ubuntu/+source/openjdk-lts, java.io.tmpdir=/tmp, java.version=11.0.6, user.dir=/home/student/IdeaProjects/indieproject, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@5fcd1c5f, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.vendor=Ubuntu, java.vm.info=mixed mode, sharing, java.vm.version=11.0.6+10-post-Ubuntu-1ubuntu118.04.1, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:mysql://localhost:3306/test_indieProject, java.class.version=55.0}
+[DEBUG] 2020-04-08 16:00:53.593 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2020-04-08 16:00:53.593 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2020-04-08 16:00:53.596 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2020-04-08 16:00:53.596 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@43fda8d9] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@1b90fee4]
+[DEBUG] 2020-04-08 16:00:53.719 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.User] is safe
+[DEBUG] 2020-04-08 16:00:53.720 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.User
+[DEBUG] 2020-04-08 16:00:53.744 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.User] is safe
+[DEBUG] 2020-04-08 16:00:53.744 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.User
+[DEBUG] 2020-04-08 16:00:54.028 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Event] is safe
+[DEBUG] 2020-04-08 16:00:54.029 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Event
+[DEBUG] 2020-04-08 16:00:54.034 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Event] is safe
+[DEBUG] 2020-04-08 16:00:54.034 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Event
+[DEBUG] 2020-04-08 16:00:54.077 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Role] is safe
+[DEBUG] 2020-04-08 16:00:54.077 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Role
+[DEBUG] 2020-04-08 16:00:54.077 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Role] is safe
+[DEBUG] 2020-04-08 16:00:54.077 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Role
+[DEBUG] 2020-04-08 16:00:54.101 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Task] is safe
+[DEBUG] 2020-04-08 16:00:54.101 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Task
+[DEBUG] 2020-04-08 16:00:54.101 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Task] is safe
+[DEBUG] 2020-04-08 16:00:54.101 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Task
+[DEBUG] 2020-04-08 16:00:54.158 [main] AbstractCollectionPersister - Static SQL for collection: edu.matc.entity.User.tasks
+[DEBUG] 2020-04-08 16:00:54.159 [main] AbstractCollectionPersister -  Row insert: update TASK set user_id=? where id=?
+[DEBUG] 2020-04-08 16:00:54.159 [main] AbstractCollectionPersister -  Row update: update TASK set  where id=?
+[DEBUG] 2020-04-08 16:00:54.159 [main] AbstractCollectionPersister -  Row delete: update TASK set user_id=null where user_id=? and id=?
+[DEBUG] 2020-04-08 16:00:54.159 [main] AbstractCollectionPersister -  One-shot delete: update TASK set user_id=null where user_id=?
+[DEBUG] 2020-04-08 16:00:54.159 [main] AbstractCollectionPersister - Static SQL for collection: edu.matc.entity.User.events
+[DEBUG] 2020-04-08 16:00:54.159 [main] AbstractCollectionPersister -  Row insert: update EVENT set user_id=? where id=?
+[DEBUG] 2020-04-08 16:00:54.159 [main] AbstractCollectionPersister -  Row update: update EVENT set  where id=?
+[DEBUG] 2020-04-08 16:00:54.161 [main] AbstractCollectionPersister -  Row delete: update EVENT set user_id=null where user_id=? and id=?
+[DEBUG] 2020-04-08 16:00:54.161 [main] AbstractCollectionPersister -  One-shot delete: update EVENT set user_id=null where user_id=?
+[DEBUG] 2020-04-08 16:00:54.161 [main] AbstractCollectionPersister - Static SQL for collection: edu.matc.entity.User.roles
+[DEBUG] 2020-04-08 16:00:54.161 [main] AbstractCollectionPersister -  Row insert: update USER_ROLES set user_id=? where id=?
+[DEBUG] 2020-04-08 16:00:54.161 [main] AbstractCollectionPersister -  Row update: update USER_ROLES set  where id=?
+[DEBUG] 2020-04-08 16:00:54.161 [main] AbstractCollectionPersister -  Row delete: update USER_ROLES set user_id=null where user_id=? and id=?
+[DEBUG] 2020-04-08 16:00:54.161 [main] AbstractCollectionPersister -  One-shot delete: update USER_ROLES set user_id=null where user_id=?
+[DEBUG] 2020-04-08 16:00:54.164 [main] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.User
+[DEBUG] 2020-04-08 16:00:54.164 [main] AbstractEntityPersister -  Version select: select id from USERS where id =?
+[DEBUG] 2020-04-08 16:00:54.164 [main] AbstractEntityPersister -  Snapshot select: select user_.id, user_.auto_fwd_incomplete_tasks as auto_fwd2_3_, user_.user_name as user_nam3_3_, user_.user_password as user_pas4_3_ from USERS user_ where user_.id=?
+[DEBUG] 2020-04-08 16:00:54.164 [main] AbstractEntityPersister -  Insert 0: insert into USERS (auto_fwd_incomplete_tasks, user_name, user_password, id) values (?, ?, ?, ?)
+[DEBUG] 2020-04-08 16:00:54.164 [main] AbstractEntityPersister -  Update 0: update USERS set auto_fwd_incomplete_tasks=?, user_name=?, user_password=? where id=?
+[DEBUG] 2020-04-08 16:00:54.164 [main] AbstractEntityPersister -  Delete 0: delete from USERS where id=?
+[DEBUG] 2020-04-08 16:00:54.164 [main] AbstractEntityPersister -  Identity insert: insert into USERS (auto_fwd_incomplete_tasks, user_name, user_password) values (?, ?, ?)
+[DEBUG] 2020-04-08 16:00:54.182 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@21e5f0b6]
+[DEBUG] 2020-04-08 16:00:54.183 [main] MetamodelGraphWalker - Visiting attribute path : autoFwdIncompleteTasks
+[DEBUG] 2020-04-08 16:00:54.183 [main] MetamodelGraphWalker - Visiting attribute path : events
+[DEBUG] 2020-04-08 16:00:54.186 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@785ed99c]
+[DEBUG] 2020-04-08 16:00:54.187 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@69a5c6be]
+[DEBUG] 2020-04-08 16:00:54.188 [main] MetamodelGraphWalker - Visiting attribute path : events.date
+[DEBUG] 2020-04-08 16:00:54.188 [main] MetamodelGraphWalker - Visiting attribute path : events.endTime
+[DEBUG] 2020-04-08 16:00:54.188 [main] MetamodelGraphWalker - Visiting attribute path : events.name
+[DEBUG] 2020-04-08 16:00:54.188 [main] MetamodelGraphWalker - Visiting attribute path : events.notes
+[DEBUG] 2020-04-08 16:00:54.188 [main] MetamodelGraphWalker - Visiting attribute path : events.startTime
+[DEBUG] 2020-04-08 16:00:54.188 [main] MetamodelGraphWalker - Visiting attribute path : events.user
+[DEBUG] 2020-04-08 16:00:54.188 [main] MetamodelGraphWalker - Property path deemed to be circular : events.user
+[DEBUG] 2020-04-08 16:00:54.189 [main] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2020-04-08 16:00:54.189 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@3009eed7]
+[DEBUG] 2020-04-08 16:00:54.189 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2ee4706d]
+[DEBUG] 2020-04-08 16:00:54.189 [main] MetamodelGraphWalker - Visiting attribute path : roles.roleName
+[DEBUG] 2020-04-08 16:00:54.191 [main] MetamodelGraphWalker - Visiting attribute path : roles.user
+[DEBUG] 2020-04-08 16:00:54.191 [main] MetamodelGraphWalker - Property path deemed to be circular : roles.user
+[DEBUG] 2020-04-08 16:00:54.191 [main] MetamodelGraphWalker - Visiting attribute path : roles.userName
+[DEBUG] 2020-04-08 16:00:54.191 [main] MetamodelGraphWalker - Visiting attribute path : tasks
+[DEBUG] 2020-04-08 16:00:54.191 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@794240e2]
+[DEBUG] 2020-04-08 16:00:54.191 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:6> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@74a820bf]
+[DEBUG] 2020-04-08 16:00:54.192 [main] MetamodelGraphWalker - Visiting attribute path : tasks.complete
+[DEBUG] 2020-04-08 16:00:54.192 [main] MetamodelGraphWalker - Visiting attribute path : tasks.date
+[DEBUG] 2020-04-08 16:00:54.192 [main] MetamodelGraphWalker - Visiting attribute path : tasks.frequency
+[DEBUG] 2020-04-08 16:00:54.192 [main] MetamodelGraphWalker - Visiting attribute path : tasks.name
+[DEBUG] 2020-04-08 16:00:54.192 [main] MetamodelGraphWalker - Visiting attribute path : tasks.notes
+[DEBUG] 2020-04-08 16:00:54.192 [main] MetamodelGraphWalker - Visiting attribute path : tasks.user
+[DEBUG] 2020-04-08 16:00:54.192 [main] MetamodelGraphWalker - Property path deemed to be circular : tasks.user
+[DEBUG] 2020-04-08 16:00:54.192 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2020-04-08 16:00:54.197 [main] MetamodelGraphWalker - Visiting attribute path : userPassword
+[DEBUG] 2020-04-08 16:00:54.197 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-04-08 16:00:54.216 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-04-08 16:00:54.229 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.events, querySpaceUid=<gen:1>, path=edu.matc.entity.User.events)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Event, querySpaceUid=<gen:2>, path=edu.matc.entity.User.events.<elements>)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:3>, path=edu.matc.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:4>, path=edu.matc.entity.User.roles.<elements>)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.tasks, querySpaceUid=<gen:5>, path=edu.matc.entity.User.tasks)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Task, querySpaceUid=<gen:6>, path=edu.matc.entity.User.tasks.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+          - JOIN (JoinDefinedByMetadata(events)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=edu.matc.entity.User.events)
+                - SQL table alias mapping - events1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id7_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=edu.matc.entity.Event)
+                      - SQL table alias mapping - events1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+          - JOIN (JoinDefinedByMetadata(roles)) : <gen:0> -> <gen:3>
+             - CollectionQuerySpaceImpl(uid=<gen:3>, collection=edu.matc.entity.User.roles)
+                - SQL table alias mapping - roles2_
+                - alias suffix - 3_
+                - suffixed key columns - {user_id4_2_3_}
+                - entity-element alias suffix - 4_
+                - 4_entity-element suffixed key columns - id1_2_4_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:3> -> <gen:4>
+                   - EntityQuerySpaceImpl(uid=<gen:4>, entity=edu.matc.entity.Role)
+                      - SQL table alias mapping - roles2_
+                      - alias suffix - 4_
+                      - suffixed key columns - {id1_2_4_}
+          - JOIN (JoinDefinedByMetadata(tasks)) : <gen:0> -> <gen:5>
+             - CollectionQuerySpaceImpl(uid=<gen:5>, collection=edu.matc.entity.User.tasks)
+                - SQL table alias mapping - tasks3_
+                - alias suffix - 5_
+                - suffixed key columns - {user_id7_1_5_}
+                - entity-element alias suffix - 6_
+                - 6_entity-element suffixed key columns - id1_1_6_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:5> -> <gen:6>
+                   - EntityQuerySpaceImpl(uid=<gen:6>, entity=edu.matc.entity.Task)
+                      - SQL table alias mapping - tasks3_
+                      - alias suffix - 6_
+                      - suffixed key columns - {id1_1_6_}
+
+[DEBUG] 2020-04-08 16:00:54.233 [main] EntityLoader - Static select for entity edu.matc.entity.User [NONE]: select user0_.id as id1_3_0_, user0_.auto_fwd_incomplete_tasks as auto_fwd2_3_0_, user0_.user_name as user_nam3_3_0_, user0_.user_password as user_pas4_3_0_, events1_.user_id as user_id7_0_1_, events1_.id as id1_0_1_, events1_.id as id1_0_2_, events1_.date as date2_0_2_, events1_.end_time as end_time3_0_2_, events1_.name as name4_0_2_, events1_.notes as notes5_0_2_, events1_.start_time as start_ti6_0_2_, events1_.user_id as user_id7_0_2_, roles2_.user_id as user_id4_2_3_, roles2_.id as id1_2_3_, roles2_.id as id1_2_4_, roles2_.role_name as role_nam2_2_4_, roles2_.user_id as user_id4_2_4_, roles2_.user_name as user_nam3_2_4_, tasks3_.user_id as user_id7_1_5_, tasks3_.id as id1_1_5_, tasks3_.id as id1_1_6_, tasks3_.complete as complete2_1_6_, tasks3_.date as date3_1_6_, tasks3_.frequency as frequenc4_1_6_, tasks3_.name as name5_1_6_, tasks3_.notes as notes6_1_6_, tasks3_.user_id as user_id7_1_6_ from USERS user0_ left outer join EVENT events1_ on user0_.id=events1_.user_id left outer join USER_ROLES roles2_ on user0_.id=roles2_.user_id left outer join TASK tasks3_ on user0_.id=tasks3_.user_id where user0_.id=?
+[DEBUG] 2020-04-08 16:00:54.233 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@336f49a1]
+[DEBUG] 2020-04-08 16:00:54.233 [main] MetamodelGraphWalker - Visiting attribute path : autoFwdIncompleteTasks
+[DEBUG] 2020-04-08 16:00:54.233 [main] MetamodelGraphWalker - Visiting attribute path : events
+[DEBUG] 2020-04-08 16:00:54.233 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@4fb57fb3]
+[DEBUG] 2020-04-08 16:00:54.233 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6b063470]
+[DEBUG] 2020-04-08 16:00:54.233 [main] MetamodelGraphWalker - Visiting attribute path : events.date
+[DEBUG] 2020-04-08 16:00:54.233 [main] MetamodelGraphWalker - Visiting attribute path : events.endTime
+[DEBUG] 2020-04-08 16:00:54.233 [main] MetamodelGraphWalker - Visiting attribute path : events.name
+[DEBUG] 2020-04-08 16:00:54.233 [main] MetamodelGraphWalker - Visiting attribute path : events.notes
+[DEBUG] 2020-04-08 16:00:54.233 [main] MetamodelGraphWalker - Visiting attribute path : events.startTime
+[DEBUG] 2020-04-08 16:00:54.233 [main] MetamodelGraphWalker - Visiting attribute path : events.user
+[DEBUG] 2020-04-08 16:00:54.233 [main] MetamodelGraphWalker - Property path deemed to be circular : events.user
+[DEBUG] 2020-04-08 16:00:54.236 [main] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2020-04-08 16:00:54.236 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@36d582cb]
+[DEBUG] 2020-04-08 16:00:54.236 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6c2a95d5]
+[DEBUG] 2020-04-08 16:00:54.237 [main] MetamodelGraphWalker - Visiting attribute path : roles.roleName
+[DEBUG] 2020-04-08 16:00:54.237 [main] MetamodelGraphWalker - Visiting attribute path : roles.user
+[DEBUG] 2020-04-08 16:00:54.237 [main] MetamodelGraphWalker - Property path deemed to be circular : roles.user
+[DEBUG] 2020-04-08 16:00:54.237 [main] MetamodelGraphWalker - Visiting attribute path : roles.userName
+[DEBUG] 2020-04-08 16:00:54.237 [main] MetamodelGraphWalker - Visiting attribute path : tasks
+[DEBUG] 2020-04-08 16:00:54.237 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@255d9277]
+[DEBUG] 2020-04-08 16:00:54.237 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:6> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1de13f34]
+[DEBUG] 2020-04-08 16:00:54.237 [main] MetamodelGraphWalker - Visiting attribute path : tasks.complete
+[DEBUG] 2020-04-08 16:00:54.237 [main] MetamodelGraphWalker - Visiting attribute path : tasks.date
+[DEBUG] 2020-04-08 16:00:54.237 [main] MetamodelGraphWalker - Visiting attribute path : tasks.frequency
+[DEBUG] 2020-04-08 16:00:54.237 [main] MetamodelGraphWalker - Visiting attribute path : tasks.name
+[DEBUG] 2020-04-08 16:00:54.237 [main] MetamodelGraphWalker - Visiting attribute path : tasks.notes
+[DEBUG] 2020-04-08 16:00:54.237 [main] MetamodelGraphWalker - Visiting attribute path : tasks.user
+[DEBUG] 2020-04-08 16:00:54.237 [main] MetamodelGraphWalker - Property path deemed to be circular : tasks.user
+[DEBUG] 2020-04-08 16:00:54.237 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2020-04-08 16:00:54.237 [main] MetamodelGraphWalker - Visiting attribute path : userPassword
+[DEBUG] 2020-04-08 16:00:54.237 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-04-08 16:00:54.238 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-04-08 16:00:54.239 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.events, querySpaceUid=<gen:1>, path=edu.matc.entity.User.events)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Event, querySpaceUid=<gen:2>, path=edu.matc.entity.User.events.<elements>)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:3>, path=edu.matc.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:4>, path=edu.matc.entity.User.roles.<elements>)
+          - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.tasks, querySpaceUid=<gen:5>, path=edu.matc.entity.User.tasks)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Task, querySpaceUid=<gen:6>, path=edu.matc.entity.User.tasks.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+          - JOIN (JoinDefinedByMetadata(events)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=edu.matc.entity.User.events)
+                - SQL table alias mapping - events1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id7_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=edu.matc.entity.Event)
+                      - SQL table alias mapping - events1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+          - JOIN (JoinDefinedByMetadata(roles)) : <gen:0> -> <gen:3>
+             - CollectionQuerySpaceImpl(uid=<gen:3>, collection=edu.matc.entity.User.roles)
+                - SQL table alias mapping - roles2_
+                - alias suffix - 3_
+                - suffixed key columns - {user_id4_2_3_}
+                - entity-element alias suffix - 4_
+                - 4_entity-element suffixed key columns - id1_2_4_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:3> -> <gen:4>
+                   - EntityQuerySpaceImpl(uid=<gen:4>, entity=edu.matc.entity.Role)
+                      - SQL table alias mapping - roles2_
+                      - alias suffix - 4_
+                      - suffixed key columns - {id1_2_4_}
+          - JOIN (JoinDefinedByMetadata(tasks)) : <gen:0> -> <gen:5>
+             - CollectionQuerySpaceImpl(uid=<gen:5>, collection=edu.matc.entity.User.tasks)
+                - SQL table alias mapping - tasks3_
+                - alias suffix - 5_
+                - suffixed key columns - {user_id7_1_5_}
+                - entity-element alias suffix - 6_
+                - 6_entity-element suffixed key columns - id1_1_6_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:5> -> <gen:6>
+                   - EntityQuerySpaceImpl(uid=<gen:6>, entity=edu.matc.entity.Task)
+                      - SQL table alias mapping - tasks3_
+                      - alias suffix - 6_
+                      - suffixed key columns - {id1_1_6_}
+
+[DEBUG] 2020-04-08 16:00:54.241 [main] EntityLoader - Static select for entity edu.matc.entity.User [READ]: select user0_.id as id1_3_0_, user0_.auto_fwd_incomplete_tasks as auto_fwd2_3_0_, user0_.user_name as user_nam3_3_0_, user0_.user_password as user_pas4_3_0_, events1_.user_id as user_id7_0_1_, events1_.id as id1_0_1_, events1_.id as id1_0_2_, events1_.date as date2_0_2_, events1_.end_time as end_time3_0_2_, events1_.name as name4_0_2_, events1_.notes as notes5_0_2_, events1_.start_time as start_ti6_0_2_, events1_.user_id as user_id7_0_2_, roles2_.user_id as user_id4_2_3_, roles2_.id as id1_2_3_, roles2_.id as id1_2_4_, roles2_.role_name as role_nam2_2_4_, roles2_.user_id as user_id4_2_4_, roles2_.user_name as user_nam3_2_4_, tasks3_.user_id as user_id7_1_5_, tasks3_.id as id1_1_5_, tasks3_.id as id1_1_6_, tasks3_.complete as complete2_1_6_, tasks3_.date as date3_1_6_, tasks3_.frequency as frequenc4_1_6_, tasks3_.name as name5_1_6_, tasks3_.notes as notes6_1_6_, tasks3_.user_id as user_id7_1_6_ from USERS user0_ left outer join EVENT events1_ on user0_.id=events1_.user_id left outer join USER_ROLES roles2_ on user0_.id=roles2_.user_id left outer join TASK tasks3_ on user0_.id=tasks3_.user_id where user0_.id=?
+[DEBUG] 2020-04-08 16:00:54.264 [main] Loader - Static select for action ACTION_MERGE on entity edu.matc.entity.User: select user0_.id as id1_3_1_, user0_.auto_fwd_incomplete_tasks as auto_fwd2_3_1_, user0_.user_name as user_nam3_3_1_, user0_.user_password as user_pas4_3_1_, events1_.user_id as user_id7_0_3_, events1_.id as id1_0_3_, events1_.id as id1_0_0_, events1_.date as date2_0_0_, events1_.end_time as end_time3_0_0_, events1_.name as name4_0_0_, events1_.notes as notes5_0_0_, events1_.start_time as start_ti6_0_0_, events1_.user_id as user_id7_0_0_ from USERS user0_ left outer join EVENT events1_ on user0_.id=events1_.user_id where user0_.id=?
+[DEBUG] 2020-04-08 16:00:54.264 [main] Loader - Static select for action ACTION_REFRESH on entity edu.matc.entity.User: select user0_.id as id1_3_1_, user0_.auto_fwd_incomplete_tasks as auto_fwd2_3_1_, user0_.user_name as user_nam3_3_1_, user0_.user_password as user_pas4_3_1_, events1_.user_id as user_id7_0_3_, events1_.id as id1_0_3_, events1_.id as id1_0_0_, events1_.date as date2_0_0_, events1_.end_time as end_time3_0_0_, events1_.name as name4_0_0_, events1_.notes as notes5_0_0_, events1_.start_time as start_ti6_0_0_, events1_.user_id as user_id7_0_0_ from USERS user0_ left outer join EVENT events1_ on user0_.id=events1_.user_id where user0_.id=?
+[DEBUG] 2020-04-08 16:00:54.264 [main] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.Event
+[DEBUG] 2020-04-08 16:00:54.264 [main] AbstractEntityPersister -  Version select: select id from EVENT where id =?
+[DEBUG] 2020-04-08 16:00:54.264 [main] AbstractEntityPersister -  Snapshot select: select event_.id, event_.date as date2_0_, event_.end_time as end_time3_0_, event_.name as name4_0_, event_.notes as notes5_0_, event_.start_time as start_ti6_0_, event_.user_id as user_id7_0_ from EVENT event_ where event_.id=?
+[DEBUG] 2020-04-08 16:00:54.265 [main] AbstractEntityPersister -  Insert 0: insert into EVENT (date, end_time, name, notes, start_time, user_id, id) values (?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2020-04-08 16:00:54.265 [main] AbstractEntityPersister -  Update 0: update EVENT set date=?, end_time=?, name=?, notes=?, start_time=?, user_id=? where id=?
+[DEBUG] 2020-04-08 16:00:54.265 [main] AbstractEntityPersister -  Delete 0: delete from EVENT where id=?
+[DEBUG] 2020-04-08 16:00:54.265 [main] AbstractEntityPersister -  Identity insert: insert into EVENT (date, end_time, name, notes, start_time, user_id) values (?, ?, ?, ?, ?, ?)
+[DEBUG] 2020-04-08 16:00:54.265 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@b06d46d]
+[DEBUG] 2020-04-08 16:00:54.265 [main] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2020-04-08 16:00:54.265 [main] MetamodelGraphWalker - Visiting attribute path : endTime
+[DEBUG] 2020-04-08 16:00:54.273 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2020-04-08 16:00:54.273 [main] MetamodelGraphWalker - Visiting attribute path : notes
+[DEBUG] 2020-04-08 16:00:54.273 [main] MetamodelGraphWalker - Visiting attribute path : startTime
+[DEBUG] 2020-04-08 16:00:54.273 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-04-08 16:00:54.273 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@656c5c3]
+[DEBUG] 2020-04-08 16:00:54.276 [main] MetamodelGraphWalker - Visiting attribute path : user.autoFwdIncompleteTasks
+[DEBUG] 2020-04-08 16:00:54.277 [main] MetamodelGraphWalker - Visiting attribute path : user.events
+[DEBUG] 2020-04-08 16:00:54.277 [main] MetamodelGraphWalker - Property path deemed to be circular : user.events
+[DEBUG] 2020-04-08 16:00:54.277 [main] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2020-04-08 16:00:54.277 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@597d48ca]
+[DEBUG] 2020-04-08 16:00:54.277 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@77324a58]
+[DEBUG] 2020-04-08 16:00:54.277 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.roleName
+[DEBUG] 2020-04-08 16:00:54.277 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.user
+[DEBUG] 2020-04-08 16:00:54.277 [main] MetamodelGraphWalker - Property path deemed to be circular : user.roles.user
+[DEBUG] 2020-04-08 16:00:54.277 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.userName
+[DEBUG] 2020-04-08 16:00:54.277 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks
+[DEBUG] 2020-04-08 16:00:54.277 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@374ccb9]
+[DEBUG] 2020-04-08 16:00:54.277 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@66713605]
+[DEBUG] 2020-04-08 16:00:54.277 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.complete
+[DEBUG] 2020-04-08 16:00:54.277 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.date
+[DEBUG] 2020-04-08 16:00:54.277 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.frequency
+[DEBUG] 2020-04-08 16:00:54.277 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.name
+[DEBUG] 2020-04-08 16:00:54.277 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.notes
+[DEBUG] 2020-04-08 16:00:54.277 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.user
+[DEBUG] 2020-04-08 16:00:54.277 [main] MetamodelGraphWalker - Property path deemed to be circular : user.tasks.user
+[DEBUG] 2020-04-08 16:00:54.277 [main] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2020-04-08 16:00:54.277 [main] MetamodelGraphWalker - Visiting attribute path : user.userPassword
+[DEBUG] 2020-04-08 16:00:54.277 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-04-08 16:00:54.277 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-04-08 16:00:54.279 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Event)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Event, querySpaceUid=<gen:0>, path=edu.matc.entity.Event)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Event.user)
+             - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:2>, path=edu.matc.entity.Event.user.roles)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:3>, path=edu.matc.entity.Event.user.roles.<elements>)
+             - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.tasks, querySpaceUid=<gen:4>, path=edu.matc.entity.Event.user.tasks)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Task, querySpaceUid=<gen:5>, path=edu.matc.entity.Event.user.tasks.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Event)
+          - SQL table alias mapping - event0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+                - JOIN (JoinDefinedByMetadata(roles)) : <gen:1> -> <gen:2>
+                   - CollectionQuerySpaceImpl(uid=<gen:2>, collection=edu.matc.entity.User.roles)
+                      - SQL table alias mapping - roles2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {user_id4_2_2_}
+                      - entity-element alias suffix - 3_
+                      - 3_entity-element suffixed key columns - id1_2_3_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=edu.matc.entity.Role)
+                            - SQL table alias mapping - roles2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_2_3_}
+                - JOIN (JoinDefinedByMetadata(tasks)) : <gen:1> -> <gen:4>
+                   - CollectionQuerySpaceImpl(uid=<gen:4>, collection=edu.matc.entity.User.tasks)
+                      - SQL table alias mapping - tasks3_
+                      - alias suffix - 4_
+                      - suffixed key columns - {user_id7_1_4_}
+                      - entity-element alias suffix - 5_
+                      - 5_entity-element suffixed key columns - id1_1_5_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:4> -> <gen:5>
+                         - EntityQuerySpaceImpl(uid=<gen:5>, entity=edu.matc.entity.Task)
+                            - SQL table alias mapping - tasks3_
+                            - alias suffix - 5_
+                            - suffixed key columns - {id1_1_5_}
+
+[DEBUG] 2020-04-08 16:00:54.280 [main] EntityLoader - Static select for entity edu.matc.entity.Event [NONE]: select event0_.id as id1_0_0_, event0_.date as date2_0_0_, event0_.end_time as end_time3_0_0_, event0_.name as name4_0_0_, event0_.notes as notes5_0_0_, event0_.start_time as start_ti6_0_0_, event0_.user_id as user_id7_0_0_, user1_.id as id1_3_1_, user1_.auto_fwd_incomplete_tasks as auto_fwd2_3_1_, user1_.user_name as user_nam3_3_1_, user1_.user_password as user_pas4_3_1_, roles2_.user_id as user_id4_2_2_, roles2_.id as id1_2_2_, roles2_.id as id1_2_3_, roles2_.role_name as role_nam2_2_3_, roles2_.user_id as user_id4_2_3_, roles2_.user_name as user_nam3_2_3_, tasks3_.user_id as user_id7_1_4_, tasks3_.id as id1_1_4_, tasks3_.id as id1_1_5_, tasks3_.complete as complete2_1_5_, tasks3_.date as date3_1_5_, tasks3_.frequency as frequenc4_1_5_, tasks3_.name as name5_1_5_, tasks3_.notes as notes6_1_5_, tasks3_.user_id as user_id7_1_5_ from EVENT event0_ left outer join USERS user1_ on event0_.user_id=user1_.id left outer join USER_ROLES roles2_ on user1_.id=roles2_.user_id left outer join TASK tasks3_ on user1_.id=tasks3_.user_id where event0_.id=?
+[DEBUG] 2020-04-08 16:00:54.280 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5864e8bf]
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : endTime
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : notes
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : startTime
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-04-08 16:00:54.280 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@191ec193]
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : user.autoFwdIncompleteTasks
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : user.events
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Property path deemed to be circular : user.events
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2020-04-08 16:00:54.280 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1c7f9861]
+[DEBUG] 2020-04-08 16:00:54.280 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7a36c83a]
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.roleName
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.user
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Property path deemed to be circular : user.roles.user
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.userName
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks
+[DEBUG] 2020-04-08 16:00:54.280 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1b7554d4]
+[DEBUG] 2020-04-08 16:00:54.280 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@57ce2898]
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.complete
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.date
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.frequency
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.name
+[DEBUG] 2020-04-08 16:00:54.280 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.notes
+[DEBUG] 2020-04-08 16:00:54.281 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.user
+[DEBUG] 2020-04-08 16:00:54.281 [main] MetamodelGraphWalker - Property path deemed to be circular : user.tasks.user
+[DEBUG] 2020-04-08 16:00:54.281 [main] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2020-04-08 16:00:54.281 [main] MetamodelGraphWalker - Visiting attribute path : user.userPassword
+[DEBUG] 2020-04-08 16:00:54.281 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-04-08 16:00:54.281 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-04-08 16:00:54.288 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Event)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Event, querySpaceUid=<gen:0>, path=edu.matc.entity.Event)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Event.user)
+             - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:2>, path=edu.matc.entity.Event.user.roles)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:3>, path=edu.matc.entity.Event.user.roles.<elements>)
+             - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.tasks, querySpaceUid=<gen:4>, path=edu.matc.entity.Event.user.tasks)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Task, querySpaceUid=<gen:5>, path=edu.matc.entity.Event.user.tasks.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Event)
+          - SQL table alias mapping - event0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+                - JOIN (JoinDefinedByMetadata(roles)) : <gen:1> -> <gen:2>
+                   - CollectionQuerySpaceImpl(uid=<gen:2>, collection=edu.matc.entity.User.roles)
+                      - SQL table alias mapping - roles2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {user_id4_2_2_}
+                      - entity-element alias suffix - 3_
+                      - 3_entity-element suffixed key columns - id1_2_3_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=edu.matc.entity.Role)
+                            - SQL table alias mapping - roles2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_2_3_}
+                - JOIN (JoinDefinedByMetadata(tasks)) : <gen:1> -> <gen:4>
+                   - CollectionQuerySpaceImpl(uid=<gen:4>, collection=edu.matc.entity.User.tasks)
+                      - SQL table alias mapping - tasks3_
+                      - alias suffix - 4_
+                      - suffixed key columns - {user_id7_1_4_}
+                      - entity-element alias suffix - 5_
+                      - 5_entity-element suffixed key columns - id1_1_5_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:4> -> <gen:5>
+                         - EntityQuerySpaceImpl(uid=<gen:5>, entity=edu.matc.entity.Task)
+                            - SQL table alias mapping - tasks3_
+                            - alias suffix - 5_
+                            - suffixed key columns - {id1_1_5_}
+
+[DEBUG] 2020-04-08 16:00:54.288 [main] EntityLoader - Static select for entity edu.matc.entity.Event [READ]: select event0_.id as id1_0_0_, event0_.date as date2_0_0_, event0_.end_time as end_time3_0_0_, event0_.name as name4_0_0_, event0_.notes as notes5_0_0_, event0_.start_time as start_ti6_0_0_, event0_.user_id as user_id7_0_0_, user1_.id as id1_3_1_, user1_.auto_fwd_incomplete_tasks as auto_fwd2_3_1_, user1_.user_name as user_nam3_3_1_, user1_.user_password as user_pas4_3_1_, roles2_.user_id as user_id4_2_2_, roles2_.id as id1_2_2_, roles2_.id as id1_2_3_, roles2_.role_name as role_nam2_2_3_, roles2_.user_id as user_id4_2_3_, roles2_.user_name as user_nam3_2_3_, tasks3_.user_id as user_id7_1_4_, tasks3_.id as id1_1_4_, tasks3_.id as id1_1_5_, tasks3_.complete as complete2_1_5_, tasks3_.date as date3_1_5_, tasks3_.frequency as frequenc4_1_5_, tasks3_.name as name5_1_5_, tasks3_.notes as notes6_1_5_, tasks3_.user_id as user_id7_1_5_ from EVENT event0_ left outer join USERS user1_ on event0_.user_id=user1_.id left outer join USER_ROLES roles2_ on user1_.id=roles2_.user_id left outer join TASK tasks3_ on user1_.id=tasks3_.user_id where event0_.id=?
+[DEBUG] 2020-04-08 16:00:54.290 [main] Loader - Static select for action ACTION_MERGE on entity edu.matc.entity.Event: select event0_.id as id1_0_0_, event0_.date as date2_0_0_, event0_.end_time as end_time3_0_0_, event0_.name as name4_0_0_, event0_.notes as notes5_0_0_, event0_.start_time as start_ti6_0_0_, event0_.user_id as user_id7_0_0_ from EVENT event0_ where event0_.id=?
+[DEBUG] 2020-04-08 16:00:54.290 [main] Loader - Static select for action ACTION_REFRESH on entity edu.matc.entity.Event: select event0_.id as id1_0_0_, event0_.date as date2_0_0_, event0_.end_time as end_time3_0_0_, event0_.name as name4_0_0_, event0_.notes as notes5_0_0_, event0_.start_time as start_ti6_0_0_, event0_.user_id as user_id7_0_0_ from EVENT event0_ where event0_.id=?
+[DEBUG] 2020-04-08 16:00:54.291 [main] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.Role
+[DEBUG] 2020-04-08 16:00:54.291 [main] AbstractEntityPersister -  Version select: select id from USER_ROLES where id =?
+[DEBUG] 2020-04-08 16:00:54.291 [main] AbstractEntityPersister -  Snapshot select: select role_.id, role_.role_name as role_nam2_2_, role_.user_id as user_id4_2_, role_.user_name as user_nam3_2_ from USER_ROLES role_ where role_.id=?
+[DEBUG] 2020-04-08 16:00:54.291 [main] AbstractEntityPersister -  Insert 0: insert into USER_ROLES (role_name, user_id, user_name, id) values (?, ?, ?, ?)
+[DEBUG] 2020-04-08 16:00:54.291 [main] AbstractEntityPersister -  Update 0: update USER_ROLES set role_name=?, user_id=?, user_name=? where id=?
+[DEBUG] 2020-04-08 16:00:54.292 [main] AbstractEntityPersister -  Delete 0: delete from USER_ROLES where id=?
+[DEBUG] 2020-04-08 16:00:54.292 [main] AbstractEntityPersister -  Identity insert: insert into USER_ROLES (role_name, user_id, user_name) values (?, ?, ?)
+[DEBUG] 2020-04-08 16:00:54.292 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1fe8f5e8]
+[DEBUG] 2020-04-08 16:00:54.292 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2020-04-08 16:00:54.292 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-04-08 16:00:54.292 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6e3dd5ce]
+[DEBUG] 2020-04-08 16:00:54.294 [main] MetamodelGraphWalker - Visiting attribute path : user.autoFwdIncompleteTasks
+[DEBUG] 2020-04-08 16:00:54.294 [main] MetamodelGraphWalker - Visiting attribute path : user.events
+[DEBUG] 2020-04-08 16:00:54.294 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@4ee8051c]
+[DEBUG] 2020-04-08 16:00:54.294 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@53125718]
+[DEBUG] 2020-04-08 16:00:54.294 [main] MetamodelGraphWalker - Visiting attribute path : user.events.date
+[DEBUG] 2020-04-08 16:00:54.294 [main] MetamodelGraphWalker - Visiting attribute path : user.events.endTime
+[DEBUG] 2020-04-08 16:00:54.294 [main] MetamodelGraphWalker - Visiting attribute path : user.events.name
+[DEBUG] 2020-04-08 16:00:54.294 [main] MetamodelGraphWalker - Visiting attribute path : user.events.notes
+[DEBUG] 2020-04-08 16:00:54.294 [main] MetamodelGraphWalker - Visiting attribute path : user.events.startTime
+[DEBUG] 2020-04-08 16:00:54.294 [main] MetamodelGraphWalker - Visiting attribute path : user.events.user
+[DEBUG] 2020-04-08 16:00:54.294 [main] MetamodelGraphWalker - Property path deemed to be circular : user.events.user
+[DEBUG] 2020-04-08 16:00:54.295 [main] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2020-04-08 16:00:54.295 [main] MetamodelGraphWalker - Property path deemed to be circular : user.roles
+[DEBUG] 2020-04-08 16:00:54.295 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks
+[DEBUG] 2020-04-08 16:00:54.295 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@743d0d44]
+[DEBUG] 2020-04-08 16:00:54.295 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@35563e4c]
+[DEBUG] 2020-04-08 16:00:54.295 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.complete
+[DEBUG] 2020-04-08 16:00:54.295 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.date
+[DEBUG] 2020-04-08 16:00:54.295 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.frequency
+[DEBUG] 2020-04-08 16:00:54.295 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.name
+[DEBUG] 2020-04-08 16:00:54.295 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.notes
+[DEBUG] 2020-04-08 16:00:54.295 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.user
+[DEBUG] 2020-04-08 16:00:54.295 [main] MetamodelGraphWalker - Property path deemed to be circular : user.tasks.user
+[DEBUG] 2020-04-08 16:00:54.295 [main] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2020-04-08 16:00:54.295 [main] MetamodelGraphWalker - Visiting attribute path : user.userPassword
+[DEBUG] 2020-04-08 16:00:54.295 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2020-04-08 16:00:54.295 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-04-08 16:00:54.295 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-04-08 16:00:54.299 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Role.user)
+             - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.events, querySpaceUid=<gen:2>, path=edu.matc.entity.Role.user.events)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Event, querySpaceUid=<gen:3>, path=edu.matc.entity.Role.user.events.<elements>)
+             - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.tasks, querySpaceUid=<gen:4>, path=edu.matc.entity.Role.user.tasks)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Task, querySpaceUid=<gen:5>, path=edu.matc.entity.Role.user.tasks.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+                - JOIN (JoinDefinedByMetadata(events)) : <gen:1> -> <gen:2>
+                   - CollectionQuerySpaceImpl(uid=<gen:2>, collection=edu.matc.entity.User.events)
+                      - SQL table alias mapping - events2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {user_id7_0_2_}
+                      - entity-element alias suffix - 3_
+                      - 3_entity-element suffixed key columns - id1_0_3_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=edu.matc.entity.Event)
+                            - SQL table alias mapping - events2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_0_3_}
+                - JOIN (JoinDefinedByMetadata(tasks)) : <gen:1> -> <gen:4>
+                   - CollectionQuerySpaceImpl(uid=<gen:4>, collection=edu.matc.entity.User.tasks)
+                      - SQL table alias mapping - tasks3_
+                      - alias suffix - 4_
+                      - suffixed key columns - {user_id7_1_4_}
+                      - entity-element alias suffix - 5_
+                      - 5_entity-element suffixed key columns - id1_1_5_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:4> -> <gen:5>
+                         - EntityQuerySpaceImpl(uid=<gen:5>, entity=edu.matc.entity.Task)
+                            - SQL table alias mapping - tasks3_
+                            - alias suffix - 5_
+                            - suffixed key columns - {id1_1_5_}
+
+[DEBUG] 2020-04-08 16:00:54.299 [main] EntityLoader - Static select for entity edu.matc.entity.Role [NONE]: select role0_.id as id1_2_0_, role0_.role_name as role_nam2_2_0_, role0_.user_id as user_id4_2_0_, role0_.user_name as user_nam3_2_0_, user1_.id as id1_3_1_, user1_.auto_fwd_incomplete_tasks as auto_fwd2_3_1_, user1_.user_name as user_nam3_3_1_, user1_.user_password as user_pas4_3_1_, events2_.user_id as user_id7_0_2_, events2_.id as id1_0_2_, events2_.id as id1_0_3_, events2_.date as date2_0_3_, events2_.end_time as end_time3_0_3_, events2_.name as name4_0_3_, events2_.notes as notes5_0_3_, events2_.start_time as start_ti6_0_3_, events2_.user_id as user_id7_0_3_, tasks3_.user_id as user_id7_1_4_, tasks3_.id as id1_1_4_, tasks3_.id as id1_1_5_, tasks3_.complete as complete2_1_5_, tasks3_.date as date3_1_5_, tasks3_.frequency as frequenc4_1_5_, tasks3_.name as name5_1_5_, tasks3_.notes as notes6_1_5_, tasks3_.user_id as user_id7_1_5_ from USER_ROLES role0_ left outer join USERS user1_ on role0_.user_id=user1_.id left outer join EVENT events2_ on user1_.id=events2_.user_id left outer join TASK tasks3_ on user1_.id=tasks3_.user_id where role0_.id=?
+[DEBUG] 2020-04-08 16:00:54.299 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@123307c4]
+[DEBUG] 2020-04-08 16:00:54.300 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2020-04-08 16:00:54.300 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-04-08 16:00:54.300 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@47058864]
+[DEBUG] 2020-04-08 16:00:54.300 [main] MetamodelGraphWalker - Visiting attribute path : user.autoFwdIncompleteTasks
+[DEBUG] 2020-04-08 16:00:54.301 [main] MetamodelGraphWalker - Visiting attribute path : user.events
+[DEBUG] 2020-04-08 16:00:54.301 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@54ccb3]
+[DEBUG] 2020-04-08 16:00:54.301 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@9b2dc56]
+[DEBUG] 2020-04-08 16:00:54.301 [main] MetamodelGraphWalker - Visiting attribute path : user.events.date
+[DEBUG] 2020-04-08 16:00:54.301 [main] MetamodelGraphWalker - Visiting attribute path : user.events.endTime
+[DEBUG] 2020-04-08 16:00:54.301 [main] MetamodelGraphWalker - Visiting attribute path : user.events.name
+[DEBUG] 2020-04-08 16:00:54.301 [main] MetamodelGraphWalker - Visiting attribute path : user.events.notes
+[DEBUG] 2020-04-08 16:00:54.301 [main] MetamodelGraphWalker - Visiting attribute path : user.events.startTime
+[DEBUG] 2020-04-08 16:00:54.302 [main] MetamodelGraphWalker - Visiting attribute path : user.events.user
+[DEBUG] 2020-04-08 16:00:54.302 [main] MetamodelGraphWalker - Property path deemed to be circular : user.events.user
+[DEBUG] 2020-04-08 16:00:54.303 [main] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2020-04-08 16:00:54.303 [main] MetamodelGraphWalker - Property path deemed to be circular : user.roles
+[DEBUG] 2020-04-08 16:00:54.303 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks
+[DEBUG] 2020-04-08 16:00:54.303 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@51f68849]
+[DEBUG] 2020-04-08 16:00:54.305 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4eb9ae4d]
+[DEBUG] 2020-04-08 16:00:54.305 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.complete
+[DEBUG] 2020-04-08 16:00:54.305 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.date
+[DEBUG] 2020-04-08 16:00:54.306 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.frequency
+[DEBUG] 2020-04-08 16:00:54.306 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.name
+[DEBUG] 2020-04-08 16:00:54.306 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.notes
+[DEBUG] 2020-04-08 16:00:54.306 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks.user
+[DEBUG] 2020-04-08 16:00:54.306 [main] MetamodelGraphWalker - Property path deemed to be circular : user.tasks.user
+[DEBUG] 2020-04-08 16:00:54.306 [main] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2020-04-08 16:00:54.306 [main] MetamodelGraphWalker - Visiting attribute path : user.userPassword
+[DEBUG] 2020-04-08 16:00:54.312 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2020-04-08 16:00:54.313 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-04-08 16:00:54.315 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-04-08 16:00:54.315 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Role.user)
+             - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.events, querySpaceUid=<gen:2>, path=edu.matc.entity.Role.user.events)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Event, querySpaceUid=<gen:3>, path=edu.matc.entity.Role.user.events.<elements>)
+             - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.tasks, querySpaceUid=<gen:4>, path=edu.matc.entity.Role.user.tasks)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Task, querySpaceUid=<gen:5>, path=edu.matc.entity.Role.user.tasks.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+                - JOIN (JoinDefinedByMetadata(events)) : <gen:1> -> <gen:2>
+                   - CollectionQuerySpaceImpl(uid=<gen:2>, collection=edu.matc.entity.User.events)
+                      - SQL table alias mapping - events2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {user_id7_0_2_}
+                      - entity-element alias suffix - 3_
+                      - 3_entity-element suffixed key columns - id1_0_3_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=edu.matc.entity.Event)
+                            - SQL table alias mapping - events2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_0_3_}
+                - JOIN (JoinDefinedByMetadata(tasks)) : <gen:1> -> <gen:4>
+                   - CollectionQuerySpaceImpl(uid=<gen:4>, collection=edu.matc.entity.User.tasks)
+                      - SQL table alias mapping - tasks3_
+                      - alias suffix - 4_
+                      - suffixed key columns - {user_id7_1_4_}
+                      - entity-element alias suffix - 5_
+                      - 5_entity-element suffixed key columns - id1_1_5_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:4> -> <gen:5>
+                         - EntityQuerySpaceImpl(uid=<gen:5>, entity=edu.matc.entity.Task)
+                            - SQL table alias mapping - tasks3_
+                            - alias suffix - 5_
+                            - suffixed key columns - {id1_1_5_}
+
+[DEBUG] 2020-04-08 16:00:54.321 [main] EntityLoader - Static select for entity edu.matc.entity.Role [READ]: select role0_.id as id1_2_0_, role0_.role_name as role_nam2_2_0_, role0_.user_id as user_id4_2_0_, role0_.user_name as user_nam3_2_0_, user1_.id as id1_3_1_, user1_.auto_fwd_incomplete_tasks as auto_fwd2_3_1_, user1_.user_name as user_nam3_3_1_, user1_.user_password as user_pas4_3_1_, events2_.user_id as user_id7_0_2_, events2_.id as id1_0_2_, events2_.id as id1_0_3_, events2_.date as date2_0_3_, events2_.end_time as end_time3_0_3_, events2_.name as name4_0_3_, events2_.notes as notes5_0_3_, events2_.start_time as start_ti6_0_3_, events2_.user_id as user_id7_0_3_, tasks3_.user_id as user_id7_1_4_, tasks3_.id as id1_1_4_, tasks3_.id as id1_1_5_, tasks3_.complete as complete2_1_5_, tasks3_.date as date3_1_5_, tasks3_.frequency as frequenc4_1_5_, tasks3_.name as name5_1_5_, tasks3_.notes as notes6_1_5_, tasks3_.user_id as user_id7_1_5_ from USER_ROLES role0_ left outer join USERS user1_ on role0_.user_id=user1_.id left outer join EVENT events2_ on user1_.id=events2_.user_id left outer join TASK tasks3_ on user1_.id=tasks3_.user_id where role0_.id=?
+[DEBUG] 2020-04-08 16:00:54.322 [main] Loader - Static select for action ACTION_MERGE on entity edu.matc.entity.Role: select role0_.id as id1_2_0_, role0_.role_name as role_nam2_2_0_, role0_.user_id as user_id4_2_0_, role0_.user_name as user_nam3_2_0_ from USER_ROLES role0_ where role0_.id=?
+[DEBUG] 2020-04-08 16:00:54.322 [main] Loader - Static select for action ACTION_REFRESH on entity edu.matc.entity.Role: select role0_.id as id1_2_0_, role0_.role_name as role_nam2_2_0_, role0_.user_id as user_id4_2_0_, role0_.user_name as user_nam3_2_0_ from USER_ROLES role0_ where role0_.id=?
+[DEBUG] 2020-04-08 16:00:54.323 [main] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.Task
+[DEBUG] 2020-04-08 16:00:54.323 [main] AbstractEntityPersister -  Version select: select id from TASK where id =?
+[DEBUG] 2020-04-08 16:00:54.323 [main] AbstractEntityPersister -  Snapshot select: select task_.id, task_.complete as complete2_1_, task_.date as date3_1_, task_.frequency as frequenc4_1_, task_.name as name5_1_, task_.notes as notes6_1_, task_.user_id as user_id7_1_ from TASK task_ where task_.id=?
+[DEBUG] 2020-04-08 16:00:54.323 [main] AbstractEntityPersister -  Insert 0: insert into TASK (complete, date, frequency, name, notes, user_id, id) values (?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2020-04-08 16:00:54.323 [main] AbstractEntityPersister -  Update 0: update TASK set complete=?, date=?, frequency=?, name=?, notes=?, user_id=? where id=?
+[DEBUG] 2020-04-08 16:00:54.323 [main] AbstractEntityPersister -  Delete 0: delete from TASK where id=?
+[DEBUG] 2020-04-08 16:00:54.323 [main] AbstractEntityPersister -  Identity insert: insert into TASK (complete, date, frequency, name, notes, user_id) values (?, ?, ?, ?, ?, ?)
+[DEBUG] 2020-04-08 16:00:54.323 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@48f2054d]
+[DEBUG] 2020-04-08 16:00:54.323 [main] MetamodelGraphWalker - Visiting attribute path : complete
+[DEBUG] 2020-04-08 16:00:54.323 [main] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2020-04-08 16:00:54.323 [main] MetamodelGraphWalker - Visiting attribute path : frequency
+[DEBUG] 2020-04-08 16:00:54.323 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2020-04-08 16:00:54.323 [main] MetamodelGraphWalker - Visiting attribute path : notes
+[DEBUG] 2020-04-08 16:00:54.323 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-04-08 16:00:54.323 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@19fbc594]
+[DEBUG] 2020-04-08 16:00:54.323 [main] MetamodelGraphWalker - Visiting attribute path : user.autoFwdIncompleteTasks
+[DEBUG] 2020-04-08 16:00:54.323 [main] MetamodelGraphWalker - Visiting attribute path : user.events
+[DEBUG] 2020-04-08 16:00:54.323 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@774d8276]
+[DEBUG] 2020-04-08 16:00:54.323 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6ce26986]
+[DEBUG] 2020-04-08 16:00:54.323 [main] MetamodelGraphWalker - Visiting attribute path : user.events.date
+[DEBUG] 2020-04-08 16:00:54.323 [main] MetamodelGraphWalker - Visiting attribute path : user.events.endTime
+[DEBUG] 2020-04-08 16:00:54.323 [main] MetamodelGraphWalker - Visiting attribute path : user.events.name
+[DEBUG] 2020-04-08 16:00:54.323 [main] MetamodelGraphWalker - Visiting attribute path : user.events.notes
+[DEBUG] 2020-04-08 16:00:54.323 [main] MetamodelGraphWalker - Visiting attribute path : user.events.startTime
+[DEBUG] 2020-04-08 16:00:54.323 [main] MetamodelGraphWalker - Visiting attribute path : user.events.user
+[DEBUG] 2020-04-08 16:00:54.323 [main] MetamodelGraphWalker - Property path deemed to be circular : user.events.user
+[DEBUG] 2020-04-08 16:00:54.323 [main] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2020-04-08 16:00:54.323 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@76a9a009]
+[DEBUG] 2020-04-08 16:00:54.324 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@9785903]
+[DEBUG] 2020-04-08 16:00:54.324 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.roleName
+[DEBUG] 2020-04-08 16:00:54.324 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.user
+[DEBUG] 2020-04-08 16:00:54.324 [main] MetamodelGraphWalker - Property path deemed to be circular : user.roles.user
+[DEBUG] 2020-04-08 16:00:54.324 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.userName
+[DEBUG] 2020-04-08 16:00:54.324 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks
+[DEBUG] 2020-04-08 16:00:54.324 [main] MetamodelGraphWalker - Property path deemed to be circular : user.tasks
+[DEBUG] 2020-04-08 16:00:54.324 [main] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2020-04-08 16:00:54.324 [main] MetamodelGraphWalker - Visiting attribute path : user.userPassword
+[DEBUG] 2020-04-08 16:00:54.324 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-04-08 16:00:54.324 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-04-08 16:00:54.327 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Task)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Task, querySpaceUid=<gen:0>, path=edu.matc.entity.Task)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Task.user)
+             - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.events, querySpaceUid=<gen:2>, path=edu.matc.entity.Task.user.events)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Event, querySpaceUid=<gen:3>, path=edu.matc.entity.Task.user.events.<elements>)
+             - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:4>, path=edu.matc.entity.Task.user.roles)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:5>, path=edu.matc.entity.Task.user.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Task)
+          - SQL table alias mapping - task0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+                - JOIN (JoinDefinedByMetadata(events)) : <gen:1> -> <gen:2>
+                   - CollectionQuerySpaceImpl(uid=<gen:2>, collection=edu.matc.entity.User.events)
+                      - SQL table alias mapping - events2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {user_id7_0_2_}
+                      - entity-element alias suffix - 3_
+                      - 3_entity-element suffixed key columns - id1_0_3_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=edu.matc.entity.Event)
+                            - SQL table alias mapping - events2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_0_3_}
+                - JOIN (JoinDefinedByMetadata(roles)) : <gen:1> -> <gen:4>
+                   - CollectionQuerySpaceImpl(uid=<gen:4>, collection=edu.matc.entity.User.roles)
+                      - SQL table alias mapping - roles3_
+                      - alias suffix - 4_
+                      - suffixed key columns - {user_id4_2_4_}
+                      - entity-element alias suffix - 5_
+                      - 5_entity-element suffixed key columns - id1_2_5_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:4> -> <gen:5>
+                         - EntityQuerySpaceImpl(uid=<gen:5>, entity=edu.matc.entity.Role)
+                            - SQL table alias mapping - roles3_
+                            - alias suffix - 5_
+                            - suffixed key columns - {id1_2_5_}
+
+[DEBUG] 2020-04-08 16:00:54.329 [main] EntityLoader - Static select for entity edu.matc.entity.Task [NONE]: select task0_.id as id1_1_0_, task0_.complete as complete2_1_0_, task0_.date as date3_1_0_, task0_.frequency as frequenc4_1_0_, task0_.name as name5_1_0_, task0_.notes as notes6_1_0_, task0_.user_id as user_id7_1_0_, user1_.id as id1_3_1_, user1_.auto_fwd_incomplete_tasks as auto_fwd2_3_1_, user1_.user_name as user_nam3_3_1_, user1_.user_password as user_pas4_3_1_, events2_.user_id as user_id7_0_2_, events2_.id as id1_0_2_, events2_.id as id1_0_3_, events2_.date as date2_0_3_, events2_.end_time as end_time3_0_3_, events2_.name as name4_0_3_, events2_.notes as notes5_0_3_, events2_.start_time as start_ti6_0_3_, events2_.user_id as user_id7_0_3_, roles3_.user_id as user_id4_2_4_, roles3_.id as id1_2_4_, roles3_.id as id1_2_5_, roles3_.role_name as role_nam2_2_5_, roles3_.user_id as user_id4_2_5_, roles3_.user_name as user_nam3_2_5_ from TASK task0_ left outer join USERS user1_ on task0_.user_id=user1_.id left outer join EVENT events2_ on user1_.id=events2_.user_id left outer join USER_ROLES roles3_ on user1_.id=roles3_.user_id where task0_.id=?
+[DEBUG] 2020-04-08 16:00:54.330 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4faf1f4]
+[DEBUG] 2020-04-08 16:00:54.332 [main] MetamodelGraphWalker - Visiting attribute path : complete
+[DEBUG] 2020-04-08 16:00:54.332 [main] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2020-04-08 16:00:54.332 [main] MetamodelGraphWalker - Visiting attribute path : frequency
+[DEBUG] 2020-04-08 16:00:54.332 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2020-04-08 16:00:54.332 [main] MetamodelGraphWalker - Visiting attribute path : notes
+[DEBUG] 2020-04-08 16:00:54.332 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-04-08 16:00:54.332 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7f2b584b]
+[DEBUG] 2020-04-08 16:00:54.335 [main] MetamodelGraphWalker - Visiting attribute path : user.autoFwdIncompleteTasks
+[DEBUG] 2020-04-08 16:00:54.335 [main] MetamodelGraphWalker - Visiting attribute path : user.events
+[DEBUG] 2020-04-08 16:00:54.335 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@56a05324]
+[DEBUG] 2020-04-08 16:00:54.335 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@11e71181]
+[DEBUG] 2020-04-08 16:00:54.336 [main] MetamodelGraphWalker - Visiting attribute path : user.events.date
+[DEBUG] 2020-04-08 16:00:54.336 [main] MetamodelGraphWalker - Visiting attribute path : user.events.endTime
+[DEBUG] 2020-04-08 16:00:54.336 [main] MetamodelGraphWalker - Visiting attribute path : user.events.name
+[DEBUG] 2020-04-08 16:00:54.336 [main] MetamodelGraphWalker - Visiting attribute path : user.events.notes
+[DEBUG] 2020-04-08 16:00:54.336 [main] MetamodelGraphWalker - Visiting attribute path : user.events.startTime
+[DEBUG] 2020-04-08 16:00:54.336 [main] MetamodelGraphWalker - Visiting attribute path : user.events.user
+[DEBUG] 2020-04-08 16:00:54.336 [main] MetamodelGraphWalker - Property path deemed to be circular : user.events.user
+[DEBUG] 2020-04-08 16:00:54.336 [main] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2020-04-08 16:00:54.337 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@56cfe6be]
+[DEBUG] 2020-04-08 16:00:54.337 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7f0d8eff]
+[DEBUG] 2020-04-08 16:00:54.337 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.roleName
+[DEBUG] 2020-04-08 16:00:54.337 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.user
+[DEBUG] 2020-04-08 16:00:54.337 [main] MetamodelGraphWalker - Property path deemed to be circular : user.roles.user
+[DEBUG] 2020-04-08 16:00:54.337 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.userName
+[DEBUG] 2020-04-08 16:00:54.337 [main] MetamodelGraphWalker - Visiting attribute path : user.tasks
+[DEBUG] 2020-04-08 16:00:54.337 [main] MetamodelGraphWalker - Property path deemed to be circular : user.tasks
+[DEBUG] 2020-04-08 16:00:54.337 [main] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2020-04-08 16:00:54.337 [main] MetamodelGraphWalker - Visiting attribute path : user.userPassword
+[DEBUG] 2020-04-08 16:00:54.337 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-04-08 16:00:54.337 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-04-08 16:00:54.337 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Task)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Task, querySpaceUid=<gen:0>, path=edu.matc.entity.Task)
+          - EntityAttributeFetchImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:1>, path=edu.matc.entity.Task.user)
+             - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.events, querySpaceUid=<gen:2>, path=edu.matc.entity.Task.user.events)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Event, querySpaceUid=<gen:3>, path=edu.matc.entity.Task.user.events.<elements>)
+             - CollectionAttributeFetchImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:4>, path=edu.matc.entity.Task.user.roles)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:5>, path=edu.matc.entity.Task.user.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Task)
+          - SQL table alias mapping - task0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+                - JOIN (JoinDefinedByMetadata(events)) : <gen:1> -> <gen:2>
+                   - CollectionQuerySpaceImpl(uid=<gen:2>, collection=edu.matc.entity.User.events)
+                      - SQL table alias mapping - events2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {user_id7_0_2_}
+                      - entity-element alias suffix - 3_
+                      - 3_entity-element suffixed key columns - id1_0_3_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=edu.matc.entity.Event)
+                            - SQL table alias mapping - events2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_0_3_}
+                - JOIN (JoinDefinedByMetadata(roles)) : <gen:1> -> <gen:4>
+                   - CollectionQuerySpaceImpl(uid=<gen:4>, collection=edu.matc.entity.User.roles)
+                      - SQL table alias mapping - roles3_
+                      - alias suffix - 4_
+                      - suffixed key columns - {user_id4_2_4_}
+                      - entity-element alias suffix - 5_
+                      - 5_entity-element suffixed key columns - id1_2_5_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:4> -> <gen:5>
+                         - EntityQuerySpaceImpl(uid=<gen:5>, entity=edu.matc.entity.Role)
+                            - SQL table alias mapping - roles3_
+                            - alias suffix - 5_
+                            - suffixed key columns - {id1_2_5_}
+
+[DEBUG] 2020-04-08 16:00:54.338 [main] EntityLoader - Static select for entity edu.matc.entity.Task [READ]: select task0_.id as id1_1_0_, task0_.complete as complete2_1_0_, task0_.date as date3_1_0_, task0_.frequency as frequenc4_1_0_, task0_.name as name5_1_0_, task0_.notes as notes6_1_0_, task0_.user_id as user_id7_1_0_, user1_.id as id1_3_1_, user1_.auto_fwd_incomplete_tasks as auto_fwd2_3_1_, user1_.user_name as user_nam3_3_1_, user1_.user_password as user_pas4_3_1_, events2_.user_id as user_id7_0_2_, events2_.id as id1_0_2_, events2_.id as id1_0_3_, events2_.date as date2_0_3_, events2_.end_time as end_time3_0_3_, events2_.name as name4_0_3_, events2_.notes as notes5_0_3_, events2_.start_time as start_ti6_0_3_, events2_.user_id as user_id7_0_3_, roles3_.user_id as user_id4_2_4_, roles3_.id as id1_2_4_, roles3_.id as id1_2_5_, roles3_.role_name as role_nam2_2_5_, roles3_.user_id as user_id4_2_5_, roles3_.user_name as user_nam3_2_5_ from TASK task0_ left outer join USERS user1_ on task0_.user_id=user1_.id left outer join EVENT events2_ on user1_.id=events2_.user_id left outer join USER_ROLES roles3_ on user1_.id=roles3_.user_id where task0_.id=?
+[DEBUG] 2020-04-08 16:00:54.338 [main] Loader - Static select for action ACTION_MERGE on entity edu.matc.entity.Task: select task0_.id as id1_1_0_, task0_.complete as complete2_1_0_, task0_.date as date3_1_0_, task0_.frequency as frequenc4_1_0_, task0_.name as name5_1_0_, task0_.notes as notes6_1_0_, task0_.user_id as user_id7_1_0_ from TASK task0_ where task0_.id=?
+[DEBUG] 2020-04-08 16:00:54.341 [main] Loader - Static select for action ACTION_REFRESH on entity edu.matc.entity.Task: select task0_.id as id1_1_0_, task0_.complete as complete2_1_0_, task0_.date as date3_1_0_, task0_.frequency as frequenc4_1_0_, task0_.name as name5_1_0_, task0_.notes as notes6_1_0_, task0_.user_id as user_id7_1_0_ from TASK task0_ where task0_.id=?
+[DEBUG] 2020-04-08 16:00:54.344 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@3be3e76c]
+[DEBUG] 2020-04-08 16:00:54.344 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6c07ad6b]
+[DEBUG] 2020-04-08 16:00:54.350 [main] MetamodelGraphWalker - Visiting attribute path : complete
+[DEBUG] 2020-04-08 16:00:54.350 [main] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2020-04-08 16:00:54.350 [main] MetamodelGraphWalker - Visiting attribute path : frequency
+[DEBUG] 2020-04-08 16:00:54.350 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2020-04-08 16:00:54.350 [main] MetamodelGraphWalker - Visiting attribute path : notes
+[DEBUG] 2020-04-08 16:00:54.350 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-04-08 16:00:54.350 [main] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2020-04-08 16:00:54.350 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-04-08 16:00:54.354 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-04-08 16:00:54.355 [main] LoadPlanTreePrinter - LoadPlan(collection=edu.matc.entity.User.tasks)
+    - Returns
+       - CollectionReturnImpl(collection=edu.matc.entity.User.tasks, querySpaceUid=<gen:0>, path=[edu.matc.entity.User.tasks])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Task, querySpaceUid=<gen:1>, path=[edu.matc.entity.User.tasks].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=edu.matc.entity.User.tasks)
+          - SQL table alias mapping - tasks0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id7_1_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.Task)
+                - SQL table alias mapping - tasks0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2020-04-08 16:00:54.355 [main] CollectionLoader - Static select for collection edu.matc.entity.User.tasks: select tasks0_.user_id as user_id7_1_0_, tasks0_.id as id1_1_0_, tasks0_.id as id1_1_1_, tasks0_.complete as complete2_1_1_, tasks0_.date as date3_1_1_, tasks0_.frequency as frequenc4_1_1_, tasks0_.name as name5_1_1_, tasks0_.notes as notes6_1_1_, tasks0_.user_id as user_id7_1_1_ from TASK tasks0_ where tasks0_.user_id=?
+[DEBUG] 2020-04-08 16:00:54.355 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@798cf6d2]
+[DEBUG] 2020-04-08 16:00:54.357 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1c1fa494]
+[DEBUG] 2020-04-08 16:00:54.357 [main] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2020-04-08 16:00:54.357 [main] MetamodelGraphWalker - Visiting attribute path : endTime
+[DEBUG] 2020-04-08 16:00:54.357 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2020-04-08 16:00:54.357 [main] MetamodelGraphWalker - Visiting attribute path : notes
+[DEBUG] 2020-04-08 16:00:54.357 [main] MetamodelGraphWalker - Visiting attribute path : startTime
+[DEBUG] 2020-04-08 16:00:54.357 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-04-08 16:00:54.357 [main] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2020-04-08 16:00:54.357 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-04-08 16:00:54.358 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-04-08 16:00:54.359 [main] LoadPlanTreePrinter - LoadPlan(collection=edu.matc.entity.User.events)
+    - Returns
+       - CollectionReturnImpl(collection=edu.matc.entity.User.events, querySpaceUid=<gen:0>, path=[edu.matc.entity.User.events])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Event, querySpaceUid=<gen:1>, path=[edu.matc.entity.User.events].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=edu.matc.entity.User.events)
+          - SQL table alias mapping - events0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id7_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.Event)
+                - SQL table alias mapping - events0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+[DEBUG] 2020-04-08 16:00:54.359 [main] CollectionLoader - Static select for collection edu.matc.entity.User.events: select events0_.user_id as user_id7_0_0_, events0_.id as id1_0_0_, events0_.id as id1_0_1_, events0_.date as date2_0_1_, events0_.end_time as end_time3_0_1_, events0_.name as name4_0_1_, events0_.notes as notes5_0_1_, events0_.start_time as start_ti6_0_1_, events0_.user_id as user_id7_0_1_ from EVENT events0_ where events0_.user_id=?
+[DEBUG] 2020-04-08 16:00:54.359 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@7a3f08b6]
+[DEBUG] 2020-04-08 16:00:54.359 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1be52861]
+[DEBUG] 2020-04-08 16:00:54.359 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2020-04-08 16:00:54.359 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-04-08 16:00:54.359 [main] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2020-04-08 16:00:54.359 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2020-04-08 16:00:54.359 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-04-08 16:00:54.360 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-04-08 16:00:54.360 [main] LoadPlanTreePrinter - LoadPlan(collection=edu.matc.entity.User.roles)
+    - Returns
+       - CollectionReturnImpl(collection=edu.matc.entity.User.roles, querySpaceUid=<gen:0>, path=[edu.matc.entity.User.roles])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=edu.matc.entity.Role, querySpaceUid=<gen:1>, path=[edu.matc.entity.User.roles].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=edu.matc.entity.User.roles)
+          - SQL table alias mapping - roles0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id4_2_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_2_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=edu.matc.entity.Role)
+                - SQL table alias mapping - roles0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_2_1_}
+
+[DEBUG] 2020-04-08 16:00:54.360 [main] CollectionLoader - Static select for collection edu.matc.entity.User.roles: select roles0_.user_id as user_id4_2_0_, roles0_.id as id1_2_0_, roles0_.id as id1_2_1_, roles0_.role_name as role_nam2_2_1_, roles0_.user_id as user_id4_2_1_, roles0_.user_name as user_nam3_2_1_ from USER_ROLES roles0_ where roles0_.user_id=?
+[DEBUG] 2020-04-08 16:00:54.391 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2020-04-08 16:00:54.391 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2020-04-08 16:00:54.391 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2020-04-08 16:00:54.398 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2020-04-08 16:00:54.398 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2020-04-08 16:00:54.399 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2020-04-08 16:00:54.399 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2020-04-08 16:00:54.403 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@4f213a2
+[DEBUG] 2020-04-08 16:00:54.404 [main] SessionFactoryRegistry - Registering SessionFactory: 7b51f53b-525d-4506-b1eb-e384d6556f6f (<unnamed>)
+[DEBUG] 2020-04-08 16:00:54.404 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2020-04-08 16:00:54.469 [main] StatisticsInitiator - Statistics initialized [enabled=false]

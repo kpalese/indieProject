@@ -105,7 +105,7 @@ public class GenericDao<T> {
      * @param value value of the property to search for
      * @return list of orders meeting the criteria search
      */
-    public List<T> getByPropertyEqual(String propertyName, String value) {
+    public List<T> getByPropertyEqual(String propertyName, Object value) {
         Session session = getSession();
 
         logger.debug("Searching for entity with " + propertyName + " = " + value);
@@ -128,7 +128,7 @@ public class GenericDao<T> {
      * @param value        the value
      * @return the by property like
      */
-    public List<T> getByPropertyLike(String propertyName, String value) {
+    public List<T> getByPropertyLike(String propertyName, Object value) {
         Session session = getSession();
 
         logger.debug("Searching for entity with {} = {}",  propertyName, value);
