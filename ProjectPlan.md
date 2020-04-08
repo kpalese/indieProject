@@ -21,7 +21,7 @@
 - [x] Create user dao unit tests
 - [x] Weekly journal entry
 - [x] Set up logging
-- [ ] Create class uml diagram
+- [x] Create class uml diagram
 - [x] Prepare for Week 5 peer design/code review
 
 
@@ -41,15 +41,15 @@
 - [x] Deploy to AWS for first time
 - [x] Weekly journal entry
 - [x] Create task table
-- [ ] Add the task entity (test, dev and prod dbs)
+- [x] Add the task entity (test, dev and prod dbs)
 - [x] Realize that these daos are repetitive. Refactor into a generic dao!
-- [ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created. 
+- [x] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created. 
 
 
 ### Week 7
 
-- [ ] Weekly journal entry
-- [ ] Verify all entities are in test, prod, and dev dbs
+- [x] Weekly journal entry
+- [x] Verify all entities are in test, prod, and dev dbs
 - [ ] Update index jsp to be closer to the final version
 - [ ] Build the event add/update/delete jsp
 - [ ] Build the task add/update/delete jsp
