@@ -9,7 +9,7 @@
             <div class="wrapper">
             <h2>Welcome to Task Tracker!</h2>
 
-            <a href="users/viewPlanner.jsp">Click here to view your planner (for logged in users only)</a><br/><br/>
+            <a href="users/viewPlanner">Click here to view your planner (for logged in users only)</a><br/><br/>
 
             <a href="allUsers">Display All Users (for the sake of exercise 6...This will be removed eventually!)</a>
             </div>
