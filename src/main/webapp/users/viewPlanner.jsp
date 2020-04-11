@@ -12,6 +12,7 @@
                 <h2>Placeholder for xx/xxxx - xx/xxxx</h2>
             </div>
 
+            <p>TESTING: Welcome user ${user.userName}!</p>
             <div class="row">
                 <div class="col-1">
                     <h3>Monday<br/>x/xx</h3>

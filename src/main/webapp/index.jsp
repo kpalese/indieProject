@@ -12,7 +12,7 @@
 
             <a href="users/viewPlanner">Click here to view your planner (for logged in users only - this will be removed/edited eventually!)</a><br/><br/>
 
-                <a href="createUserAccountDisplay">Create a new account (will be moved eventually)</a><br/><br/>
+                <a href="createUserAccount">Create a new account (will be moved eventually)</a><br/><br/>
 
             <a href="allUsers">Display All Users (for the sake of exercise 6...This will be removed eventually!)</a>
             </div>
