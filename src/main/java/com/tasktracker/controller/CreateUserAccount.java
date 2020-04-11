@@ -41,8 +41,9 @@ public class CreateUserAccount extends HttpServlet {
         //logger.debug("Adding User: " + user);
         Role role = new Role();
         role.setUser(user);
-
         role.setRoleName("user");
+        role.setUserName(user.getUserName());
+
         user.addRole(role);
 
         userDao.insert(user);
