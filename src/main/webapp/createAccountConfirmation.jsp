@@ -9,7 +9,7 @@
 <main>
     <div class="wrapper">
         <h2>Success!</h2>
-        <p>Your account was successfully created. Do you want to <a href="#">sign in</a>?</p>
+        <p>Your account was successfully created. Do you want to <a href="users/viewPlanner">sign in</a>?</p>
 <%--     TODO: Success/failure message--%>
     </div>
 </main>
