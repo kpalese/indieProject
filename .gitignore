@@ -60,3 +60,6 @@ src/main/resources/log4j2.properties
 
 # Test database
 src/test/resources/database.properties
+
+# Properties
+src/main/resources/tasktracker.properties
