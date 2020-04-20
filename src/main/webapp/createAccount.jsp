@@ -1,5 +1,6 @@
-<%@include file="templates/head.jsp"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="title" value="Create Account - Task Tracker" />
+<%@include file="templates/head.jsp"%>
 
 <html>
 <body>

@@ -36,7 +36,7 @@ public class ViewPlanner extends HttpServlet {
         List<User> users = userDao.getByPropertyEqual("userName", req.getRemoteUser());
         User user = users.get(0);
 
-        //Verify list of users is only 1
+        //TODO: Verify list of users is only 1?
 
         session.setAttribute("user", user);
 

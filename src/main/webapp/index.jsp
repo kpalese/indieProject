@@ -1,5 +1,6 @@
-<%@include file="templates/head.jsp"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="title" value="Home - Task Tracker" />
+<%@include file="templates/head.jsp"%>
 
 <html>
 <body>
@@ -8,11 +9,9 @@
 
         <main>
             <div class="wrapper">
-            <h2>Welcome to Task Tracker!</h2>
+                <h2>Welcome to Task Tracker!</h2>
 
-                <p>TODO: Put message at top if user just logged out</p>
-
-            <a href="allUsers">Display All Users (for the sake of exercise 6...This will be removed eventually!)</a>
+                <p>Text explaining Task Tracker will go here.</p>
             </div>
         </main>
 </body>
