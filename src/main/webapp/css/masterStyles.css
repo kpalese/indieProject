@@ -36,6 +36,10 @@ h2 {
     margin-right: auto;
 }
 
+.categoryHeading {
+    font-size: 1.5em;
+}
+
 .plannerRow {
     margin-bottom: 2em;
 }
@@ -46,28 +50,4 @@ h2 {
 
 .fa-angle-right {
     margin-left: 1.5em;
-}
-
-.categoryHeading {
-    font-size: 1.5em;
-}
-
-.mainContainer {
-    background-color: red;
-}
-
-.headerContainer {
-    background-color: cornflowerblue;
-}
-
-#plannerContainer {
-    background-color: palevioletred;
-}
-
-.plannerRow {
-    background-color: darkseagreen;
-}
-
-.to-do-container {
-    background-color: gold;
 }

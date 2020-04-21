@@ -11,7 +11,7 @@
         <div class="mainContainer col-12 container-fluid">
 
             <div class="headerContainer col-12">
-                <div class="row">
+                <div class="row w-100">
                     <div class="col-2">
                         <p class="inline">Welcome ${user.userName}!</p>
                     </div>
@@ -21,28 +21,28 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row w-100">
 
-                <div id="plannerContainer" class="col-8">
-                    <div class="row">
-                        <div class="col-3 offset-2">
+                <div id="plannerContainer" class="container col-8">
+                    <div class="row w-100">
+                        <div class="col offset-2">
                             <p class="categoryHeading">Events</p>
                         </div>
 
-                        <div class="col-3">
+                        <div class="col">
                             <p class="categoryHeading">Tasks</p>
                         </div>
                     </div>
 
-                    <div class="plannerRow row">
+                    <div class="plannerRow row w-100">
                         <div class="col-2">
                             <h3>${sessionScope.firstDayOfWeek}<br/>${sessionScope.shorthandFirstDateOfWeek}</h3>
                         </div>
 
-                        <div class="col-3">
-                            <div class="card">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
+                        <div class="col">
+                            <div class="card w-100">
+                                <ul class="list-group list-group-flush w-100">
+                                    <li class="list-group-item w-100">Cras justo odio</li>
                                     <li class="list-group-item">Dapibus ac facilisis in</li>
                                     <li class="list-group-item">Vestibulum at eros</li>
                                     <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -50,10 +50,10 @@
                             </div>
                         </div>
 
-                        <div class="col-3">
-                            <div class="card">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
+                        <div class="col">
+                            <div class="card w-100">
+                                <ul class="list-group list-group-flush w-100">
+                                    <li class="list-group-item w-100">Cras justo odio</li>
                                     <li class="list-group-item">Dapibus ac facilisis in</li>
                                     <li class="list-group-item">Vestibulum at eros</li>
                                 </ul>
@@ -61,16 +61,16 @@
                         </div>
                     </div>
 
-                    <div class="plannerRow row">
+                    <div class="plannerRow row w-100">
                         <div class="col-2">
                             <h3>${sessionScope.secondDayOfWeek}<br/>${sessionScope.shorthandSecondDateOfWeek}</h3>
                         </div>
 
-                        <div class="col-3">
+                        <div class="col">
                             <p>Placeholder for events</p>
                         </div>
 
-                        <div class="col-3">
+                        <div class="col">
                             <p>Placeholder for tasks</p>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                     <div class="row w-100">
                         <div class="card w-100">
                             <ul class="list-group list-group-flush w-100">
-                                <li class="list-group-item w-100">Cras justo odio</li>
+                                <li class="list-group-item">Cras justo odio</li>
                                 <li class="list-group-item">Dapibus ac facilisis in</li>
                                 <li class="list-group-item">Vestibulum at eros</li>
                                 <li class="list-group-item">Dapibus ac facilisis in</li>
