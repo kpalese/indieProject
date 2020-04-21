@@ -18,6 +18,11 @@ nav {
 
 h2 {
     text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.inline {
+    display: inline-block;
 }
 
 .error {
@@ -31,9 +36,18 @@ h2 {
     margin-right: auto;
 }
 
-#plannerContainer {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1em;
-    padding-right: 1em;
+.plannerRow {
+    margin-bottom: 2em;
+}
+
+.fa-angle-left {
+    margin-right: 1.5em;
+}
+
+.fa-angle-right {
+    margin-left: 1.5em;
+}
+
+.categoryHeading {
+    font-size: 1.5em;
 }
