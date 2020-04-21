@@ -46,6 +46,7 @@
                                     <li class="list-group-item">Dapibus ac facilisis in</li>
                                     <li class="list-group-item">Vestibulum at eros</li>
                                     <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item"><button type="button" class="btn btn-primary" href="addEvent">Add Event</button></li>
                                 </ul>
                             </div>
                         </div>
@@ -56,6 +57,7 @@
                                     <li class="list-group-item w-100">Cras justo odio</li>
                                     <li class="list-group-item">Dapibus ac facilisis in</li>
                                     <li class="list-group-item">Vestibulum at eros</li>
+                                    <li class="list-group-item"><button type="button" class="btn btn-primary" href="addTask">Add Task</button></li>
                                 </ul>
                             </div>
                         </div>
@@ -92,6 +94,7 @@
                                 <li class="list-group-item">Cras justo odio</li>
                                 <li class="list-group-item">Dapibus ac facilisis in</li>
                                 <li class="list-group-item">Vestibulum at eros</li>
+                                <li class="list-group-item"><button type="button" class="btn btn-primary" href="addItem">Add Item</button></li>
                             </ul>
                         </div>
                     </div>

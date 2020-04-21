@@ -22,6 +22,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
+                    <a class="nav-link" href="${pageContext.request.contextPath}/users/viewPlanner">My Planner</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">Settings</a>
                 </li>
                 <li class="nav-item">

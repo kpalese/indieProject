@@ -11,6 +11,8 @@
             <div class="wrapper">
                 <h2>Welcome to Task Tracker!</h2>
 
+<%--                TODO: Message if user just logged out--%>
+
                 <p>Text explaining Task Tracker will go here.</p>
             </div>
         </main>
