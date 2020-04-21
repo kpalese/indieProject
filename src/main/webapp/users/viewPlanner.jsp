@@ -10,13 +10,13 @@
     <main>
         <div id="plannerContainer">
             <div class="container-fluid">
-                <h2>Placeholder for xx/xxxx - xx/xxxx</h2>
+                <h2>Week of ${sessionScope.firstDateOfWeek} - ${sessionScope.lastDateOfWeek}</h2>
             </div>
 
             <p>TESTING: Welcome user ${user.userName}!</p>
             <div class="row">
                 <div class="col-1">
-                    <h3>Monday<br/>x/xx</h3>
+                    <h3>${sessionScope.firstDayOfWeek}<br/>x/xx</h3>
                 </div>
 
                 <div class="col-3">
