@@ -79,24 +79,20 @@
                 <div class="to-do-container col-4">
 
                     <div class="row">
-                        <div class="col-4">
-                            <p class="categoryHeading">To Do List</p>
-                        </div>
+                        <p class="categoryHeading">To Do List</p>
                     </div>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="card">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                            </div>
+                    <div class="row w-100">
+                        <div class="card w-100">
+                            <ul class="list-group list-group-flush w-100">
+                                <li class="list-group-item w-100">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
