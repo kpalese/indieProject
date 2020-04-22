@@ -52,6 +52,10 @@ h2 {
     margin-left: 1.5em;
 }
 
+.required {
+    color: red;
+}
+
 /*.to-do-container {*/
 /*    position: fixed;*/
 /*    right: 0;*/
