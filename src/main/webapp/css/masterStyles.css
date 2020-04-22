@@ -50,6 +50,10 @@ h2 {
     margin-bottom: 2em;
 }
 
+#to-do-container {
+    padding-left: 2em;
+}
+
 .fa-angle-left {
     margin-right: 1.5em;
 }
@@ -60,6 +64,29 @@ h2 {
 
 .required {
     color: red;
+}
+
+/**
+* Scrollbar styles
+ */
+#plannerContainer::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#plannerContainer::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+#plannerContainer::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
 }
 
 /*.to-do-container {*/
