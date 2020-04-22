@@ -8,7 +8,7 @@
     <%@include file="../templates/navmenu.jsp"%>
 
     <main>
-        <div class="mainContainer col-12 container-fluid">
+        <div class="mainContainer col-12 container-fluid text-wrap">
 
             <div class="headerContainer col-12">
                 <div class="row w-100">
@@ -46,7 +46,7 @@
                                     <li class="list-group-item">Dapibus ac facilisis in</li>
                                     <li class="list-group-item">Vestibulum at eros</li>
                                     <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item"><button type="button" class="btn btn-primary" href="addEvent">Add Event</button></li>
+                                    <li class="list-group-item"><a href="<%=request.getContextPath()%>/users/addEvent?eventDate=${sessionScope.firstDateOfWeek}" class="btn btn-primary">Add Event</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                                     <li class="list-group-item w-100">Cras justo odio</li>
                                     <li class="list-group-item">Dapibus ac facilisis in</li>
                                     <li class="list-group-item">Vestibulum at eros</li>
-                                    <li class="list-group-item"><button type="button" class="btn btn-primary" href="addTask">Add Task</button></li>
+                                    <li class="list-group-item"><a href="<%=request.getContextPath()%>/users/addTask" class="btn btn-primary">Add Task</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -94,13 +94,12 @@
                                 <li class="list-group-item">Cras justo odio</li>
                                 <li class="list-group-item">Dapibus ac facilisis in</li>
                                 <li class="list-group-item">Vestibulum at eros</li>
-                                <li class="list-group-item"><button type="button" class="btn btn-primary" href="addItem">Add Item</button></li>
+                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/users/addToDoItem" class="btn btn-primary">Add Item</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </main>
 </body>
