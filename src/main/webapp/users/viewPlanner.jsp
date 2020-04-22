@@ -76,9 +76,22 @@
                             <p>Placeholder for tasks</p>
                         </div>
                     </div>
+
+                    <p>Fake text</p>
+                    <p>Fake text</p>
+                    <p>Fake text</p>
+                    <p>Fake text</p>
+                    <p>Fake text</p>
+                    <p>Fake text</p>
+                    <p>Fake text</p>
+                    <p>Fake text</p>
+                    <p>Fake text</p>
+                    <p>Fake text</p>
+                    <p>Fake text</p>
+
                 </div>
 
-                <div class="to-do-container col-4">
+                <div id="to-do-container" class="col-4">
 
                     <div class="row">
                         <p class="categoryHeading">To Do List</p>

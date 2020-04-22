@@ -40,6 +40,12 @@ h2 {
     font-size: 1.5em;
 }
 
+#plannerContainer {
+    max-height: 66vh;
+    width: auto;
+    overflow-y: scroll;
+}
+
 .plannerRow {
     margin-bottom: 2em;
 }

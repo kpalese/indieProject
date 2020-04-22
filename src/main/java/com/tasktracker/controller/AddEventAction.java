@@ -39,7 +39,6 @@ public class AddEventAction extends HttpServlet {
         User user = (User)session.getAttribute("user");
 
         //Convert date and time variables from Strings
-        //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd/yyyy");
         LocalDate eventDate = LocalDate.parse(req.getParameter("eventDate"));
         LocalTime startTime = LocalTime.parse(req.getParameter("startTime"));
         LocalTime endTime = LocalTime.parse(req.getParameter("endTime"));
@@ -51,6 +50,6 @@ public class AddEventAction extends HttpServlet {
 
         //TODO: Message that event was successfully added?
 
-        resp.sendRedirect(req.getContextPath() + "/index.jsp");
+        resp.sendRedirect(req.getContextPath() + "/users/viewPlanner.jsp");
     }
 }

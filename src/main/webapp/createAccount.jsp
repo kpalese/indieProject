@@ -10,7 +10,7 @@
 <main>
     <div class="wrapper">
         <h2>Create A New Task Tracker Account</h2>
-        <FORM ACTION="createUserAccountAction" METHOD="POST" id="createAccountForm">
+        <FORM ACTION="createUserAccountAction" METHOD="POST" id="createAccountForm" class="mainForm">
             <div class="form-group">
                 <label for="userName">User name: </label>
                 <INPUT TYPE="TEXT" NAME="userName" class="form-control" id="userName">
