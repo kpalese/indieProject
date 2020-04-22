@@ -30,8 +30,8 @@ h2 {
     font-weight: bold;
 }
 
-#loginForm {
-    max-width: 35em;
+.mainForm {
+    max-width: 30em;
     margin-left: auto;
     margin-right: auto;
 }

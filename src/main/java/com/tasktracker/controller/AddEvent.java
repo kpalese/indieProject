@@ -1,7 +1,5 @@
 package com.tasktracker.controller;
 
-import com.tasktracker.entity.User;
-import com.tasktracker.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -32,7 +30,7 @@ public class AddEvent extends HttpServlet {
         //Get date of event
         String stringEventDate = req.getParameter("eventDate");
 
-        //Format dat of event to LocalDate
+        //Format date of event to LocalDate
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd/yyyy");
         LocalDate eventDate = LocalDate.parse(stringEventDate, dtf);
 

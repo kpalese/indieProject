@@ -10,7 +10,7 @@
 
     <main>
         <div class="wrapper">
-            <FORM ACTION="j_security_check" METHOD="POST" id="loginForm">
+            <FORM ACTION="j_security_check" METHOD="POST" class="mainForm">
                 <div class="form-group">
                     <label for="j_username">User name: </label>
                     <INPUT TYPE="TEXT" NAME="j_username" class="form-control" id="j_username">

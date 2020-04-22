@@ -8,19 +8,17 @@
 <%@include file="../templates/navmenu.jsp"%>
 
     <main>
-        <h2>Add </h2>
-
-        EVENT DATE TEST: ${sessionScope.eventDate}
-
         <div class="wrapper">
-            <FORM ACTION="" METHOD="POST" id="addEvent">
+            <h2>Add Event</h2>
+
+            <FORM ACTION="${pageContext.request.contextPath}/users/addEventAction" METHOD="GET" id="addEvent" class="mainForm">
                 <div class="form-group">
                     <label for="eventName"><span class="required">*</span>Name of Event: </label>
                     <INPUT TYPE="TEXT" NAME="eventName" class="form-control" id="eventName">
                 </div>
                 <div class="form-group">
                     <label for="eventDate"><span class="required">*</span>Date: </label>
-                    <INPUT TYPE="DATE" NAME="eventDate" class="form-control" id="eventDate">
+                    <INPUT TYPE="DATE" value="${sessionScope.eventDate}" NAME="eventDate" class="form-control" id="eventDate">
                 </div>
                 <div class="form-group">
                     <label for="startTime"><span class="required">*</span>Start Time: </label>
@@ -32,7 +30,7 @@
                 </div>
                 <div class="form-group">
                     <label for="notes">Notes</label>
-                    <textarea class="form-control" id="notes" rows="3"></textarea>
+                    <textarea class="form-control" NAME="notes" id="notes" rows="3"></textarea>
                 </div>
 
 <%--TODO: try to go back to the planner page that the user was just on (not necessarily the page for today)--%>
