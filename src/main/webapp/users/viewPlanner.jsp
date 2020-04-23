@@ -7,6 +7,11 @@
     <%@include file="../templates/header.jsp"%>
     <%@include file="../templates/navmenu.jsp"%>
 
+    <%--    Set variable for pageDate object--%>
+    <c:set var = "pageDates"
+           value = "${requestScope.pageDates}"
+           scope = "request" />
+
     <main>
         <div class="mainContainer col-12 container-fluid text-wrap">
 
@@ -16,7 +21,8 @@
                         <p class="inline">Welcome ${user.userName}!</p>
                     </div>
                     <div class="col-10">
-                        <h2 class="inline offset-2"><i class="fas fa-angle-left"></i> Week of ${sessionScope.firstDateOfWeek} - ${sessionScope.lastDateOfWeek} <i class="fas fa-angle-right"></i></h2>
+                        <h2 class="inline offset-2"><i class="fas fa-angle-left">
+                        </i> Week of ${pageDates.getLocalDateToMDDYYYY(pageDates.getDateOfWeek(1))} - ${pageDates.getLocalDateToMDDYYYY(pageDates.getDateOfWeek(7))} <i class="fas fa-angle-right"></i></h2>
                     </div>
                 </div>
             </div>
@@ -36,7 +42,7 @@
 
                     <div class="plannerRow row w-100">
                         <div class="col-2">
-                            <h3>${sessionScope.firstDayOfWeek}<br/>${sessionScope.shorthandFirstDateOfWeek}</h3>
+                            <h3>${pageDates.getDayOfWeek(pageDates.getDateOfWeek(1))}<br/>${pageDates.getLocalDateToMDD(pageDates.getDateOfWeek(1))}</h3>
                         </div>
 
                         <div class="col">
@@ -49,7 +55,7 @@
                                                 <c:if test="${event.formattedEndTime!=null}"> &ndash; ${event.formattedEndTime}</c:if> ${event.name}</button></a></li>
                                     </c:forEach>
 
-                                    <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addEvent?eventDate=${sessionScope.firstDateOfWeek}"
+                                    <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addEvent?eventDate=${pageDates.getDateOfWeek(1)}"
                                        class="btn btn-primary">Add Event</a></li>
                                 </ul>
                             </div>

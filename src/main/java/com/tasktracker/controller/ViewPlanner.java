@@ -1,6 +1,7 @@
 package com.tasktracker.controller;
 
 import com.tasktracker.entity.Event;
+import com.tasktracker.entity.PageDates;
 import com.tasktracker.entity.User;
 import com.tasktracker.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
@@ -47,26 +48,29 @@ public class ViewPlanner extends HttpServlet {
         //TODO: Verify list of users is only 1?
         session.setAttribute("user", user);
 
-        //Get current date
+        //Get current date and then first date of the week
         LocalDate now = LocalDate.now();
-
-        //Get date of first day of week, format it, and set as attribute
         TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
         LocalDate firstDateOfWeek = now.with(fieldUS, 1);
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-        String formattedFirstDateOfWeek = dtf.format(firstDateOfWeek);
-        session.setAttribute("firstDateOfWeek", formattedFirstDateOfWeek);
 
-        //Get last date of week and set attribute
-        LocalDate lastDateOfWeek = now.with(fieldUS, 7);
-        String formattedLastDateOfWeek = dtf.format(lastDateOfWeek);
-        session.setAttribute("lastDateOfWeek", formattedLastDateOfWeek);
+        //Create PageDates entity to calculate the calendar dates for this page and place in the session
+        PageDates pageDates = new PageDates(firstDateOfWeek);
+        req.setAttribute("pageDates", pageDates);
 
-        //Set the days of the week
-        setDaysOfWeek(firstDateOfWeek, session);
 
-        //Set shorthand dates
-        setShorthandDates(firstDateOfWeek, session);
+
+//        //Get date of first day of week, format it, and set as attribute
+//        TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
+//        LocalDate firstDateOfWeek = now.with(fieldUS, 1);
+//        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+//        String formattedFirstDateOfWeek = dtf.format(firstDateOfWeek);
+//        session.setAttribute("firstDateOfWeek", formattedFirstDateOfWeek);
+//
+//        //Get last date of week and set attribute
+//        LocalDate lastDateOfWeek = now.with(fieldUS, 7);
+//        String formattedLastDateOfWeek = dtf.format(lastDateOfWeek);
+//        session.setAttribute("lastDateOfWeek", formattedLastDateOfWeek);
+
 
         getEvents(firstDateOfWeek, session);
 
@@ -75,40 +79,6 @@ public class ViewPlanner extends HttpServlet {
         dispatcher.forward(req, resp);
     }
 
-    /**
-     * //TODO: Comments!
-     * @param firstDateOfWeek
-     * @param session
-     */
-    public void setDaysOfWeek(LocalDate firstDateOfWeek, HttpSession session) {
-        //Get the days of the week
-        DayOfWeek firstDayOfWeek = firstDateOfWeek.getDayOfWeek();
-        DayOfWeek secondDayOfWeek = firstDateOfWeek.plusDays(1).getDayOfWeek();
-
-        //Set the days of the week as session attributes
-        session.setAttribute("firstDayOfWeek", firstDayOfWeek);
-        session.setAttribute("secondDayOfWeek", secondDayOfWeek);
-    }
-
-
-    /**
-     * //TODO: Comments!
-     *
-     * @param firstDateOfWeek the first date of week
-     * @param session         the session
-     */
-    public void setShorthandDates(LocalDate firstDateOfWeek, HttpSession session) {
-        //Define a format for the shorthand dates
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd");
-
-        //Get the shorthand dates of the week
-        String shorthandFirstDateOfWeek = dtf.format(firstDateOfWeek);
-        String shorthandSecondDateOfWeek = dtf.format(firstDateOfWeek.plusDays(1));
-
-        //Set the shorthand dates of the week as session attributes
-        session.setAttribute("shorthandFirstDateOfWeek", shorthandFirstDateOfWeek);
-        session.setAttribute("shorthandSecondDateOfWeek", shorthandSecondDateOfWeek);
-    }
 
     /**
      *
