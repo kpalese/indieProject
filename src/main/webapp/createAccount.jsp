@@ -9,19 +9,19 @@
 
 <main>
     <div class="wrapper">
-        <h2>Create A New Task Tracker Account</h2>
+        <h2>Create a Task Tracker Account</h2>
         <FORM ACTION="createUserAccountAction" METHOD="POST" id="createAccountForm" class="mainForm">
             <div class="form-group">
-                <label for="userName">User name: </label>
-                <INPUT TYPE="TEXT" NAME="userName" class="form-control" id="userName">
+                <label for="userName"><span class="required">*</span>User name: </label>
+                <INPUT TYPE="TEXT" NAME="userName" class="form-control" id="userName" required="required">
             </div>
             <div class="form-group">
-                <label for="password">Password: </label>
-                <INPUT TYPE="PASSWORD" NAME="password" class="form-control" id="password">
+                <label for="password"><span class="required">*</span>Password: </label>
+                <INPUT TYPE="PASSWORD" NAME="password" class="form-control" id="password" required="required">
             </div>
             <div class="form-group">
-                <label for="confirmPassword">Confirm Password: </label>
-                <INPUT TYPE="PASSWORD" NAME="confirmPassword" class="form-control" id="confirmPassword">
+                <label for="confirmPassword"><span class="required">*</span>Confirm Password: </label>
+                <INPUT TYPE="PASSWORD" NAME="confirmPassword" class="form-control" id="confirmPassword" required="required">
             </div>
             <INPUT TYPE="SUBMIT" VALUE="Create Account" class="btn btn-primary">
         </FORM>

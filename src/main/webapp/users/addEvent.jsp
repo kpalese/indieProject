@@ -14,15 +14,15 @@
             <FORM ACTION="${pageContext.request.contextPath}/users/addEventAction" METHOD="GET" id="addEvent" class="mainForm">
                 <div class="form-group">
                     <label for="eventName"><span class="required">*</span>Name of Event: </label>
-                    <INPUT TYPE="TEXT" NAME="eventName" class="form-control" id="eventName">
+                    <INPUT TYPE="TEXT" NAME="eventName" class="form-control" id="eventName" required="required">
                 </div>
                 <div class="form-group">
                     <label for="eventDate"><span class="required">*</span>Date: </label>
-                    <INPUT TYPE="DATE" value="${sessionScope.eventDate}" NAME="eventDate" class="form-control" id="eventDate">
+                    <INPUT TYPE="DATE" value="${sessionScope.eventDate}" NAME="eventDate" class="form-control" id="eventDate" required="required">
                 </div>
                 <div class="form-group">
                     <label for="startTime"><span class="required">*</span>Start Time: </label>
-                    <INPUT TYPE="TIME" NAME="startTime" class="form-control" id="startTime">
+                    <INPUT TYPE="TIME" NAME="startTime" class="form-control" id="startTime" required="required">
                 </div>
                 <div class="form-group">
                     <label for="endTime">End Time: </label>
@@ -34,7 +34,7 @@
                 </div>
 
 <%--TODO: try to go back to the planner page that the user was just on (not necessarily the page for today)--%>
-                <a href="<%=request.getContextPath()%>/users/viewPlanner" class="btn btn-light">Back</a>
+                <a href="${pageContext.request.contextPath}/users/viewPlanner" class="btn btn-light">Back</a>
                 <INPUT TYPE="SUBMIT" VALUE="Add Event" class="btn btn-primary">
             </FORM>
         </div>

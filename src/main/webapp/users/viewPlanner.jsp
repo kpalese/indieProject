@@ -44,12 +44,12 @@
                                 <ul class="list-group list-group-flush w-100">
 
                                     <c:forEach var="event" items="${sessionScope.eventsDay1}">
-                                        <li class="list-group-item"><a href="${pageContext.request.contextPath}/editEvent?id=${event.id}">
+                                        <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/editEvent?id=${event.id}">
                                             <button type="button" class="btn btn-light">${event.formattedStartTime}
                                                 <c:if test="${event.formattedEndTime!=null}"> &ndash; ${event.formattedEndTime}</c:if> ${event.name}</button></a></li>
                                     </c:forEach>
 
-                                    <li class="list-group-item"><a href="<%=request.getContextPath()%>/users/addEvent?eventDate=${sessionScope.firstDateOfWeek}"
+                                    <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addEvent?eventDate=${sessionScope.firstDateOfWeek}"
                                        class="btn btn-primary">Add Event</a></li>
                                 </ul>
                             </div>
@@ -61,7 +61,7 @@
                                     <li class="list-group-item w-100">Cras justo odio</li>
                                     <li class="list-group-item">Dapibus ac facilisis in</li>
                                     <li class="list-group-item">Vestibulum at eros</li>
-                                    <li class="list-group-item"><a href="<%=request.getContextPath()%>/users/addTask" class="btn btn-primary">Add Task</a></li>
+                                    <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addTask" class="btn btn-primary">Add Task</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -122,7 +122,7 @@
                                 <li class="list-group-item">Cras justo odio</li>
                                 <li class="list-group-item">Dapibus ac facilisis in</li>
                                 <li class="list-group-item">Vestibulum at eros</li>
-                                <li class="list-group-item"><a href="<%=request.getContextPath()%>/users/addToDoItem" class="btn btn-primary">Add Item</a></li>
+                                <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addToDoItem" class="btn btn-primary">Add Item</a></li>
                             </ul>
                         </div>
                     </div>

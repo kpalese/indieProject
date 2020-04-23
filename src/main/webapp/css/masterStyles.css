@@ -54,6 +54,11 @@ h2 {
     padding-left: 2em;
 }
 
+/*TODO: edit? this is the defaults from bootstrap...*/
+/*.list-group-item {*/
+/*    padding: .75rem 1.25rem;*/
+/*}*/
+
 .fa-angle-left {
     margin-right: 1.5em;
 }
