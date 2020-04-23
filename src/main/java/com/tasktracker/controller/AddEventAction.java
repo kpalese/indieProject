@@ -41,7 +41,10 @@ public class AddEventAction extends HttpServlet {
         //Convert date and time variables from Strings
         LocalDate eventDate = LocalDate.parse(req.getParameter("eventDate"));
         LocalTime startTime = LocalTime.parse(req.getParameter("startTime"));
-        LocalTime endTime = LocalTime.parse(req.getParameter("endTime"));
+        LocalTime endTime = null;
+        if (req.getParameter("endTime") !=null && req.getParameter("endTime") != "") {
+            endTime = LocalTime.parse(req.getParameter("endTime"));
+        }
 
         //Create event object and insert into database
         Event event = new Event(req.getParameter("eventName"), eventDate, startTime, endTime, req.getParameter("notes"), user);
@@ -50,6 +53,6 @@ public class AddEventAction extends HttpServlet {
 
         //TODO: Message that event was successfully added?
 
-        resp.sendRedirect(req.getContextPath() + "/users/viewPlanner.jsp");
+        resp.sendRedirect(req.getContextPath() + "/users/viewPlanner");
     }
 }

@@ -192,23 +192,29 @@ public class Event implements Comparable<Event> {
     }
 
     /**
-     * Gets the start time formatted as hh:mm:ss a
+     * Gets the start time formatted as h:mm a
      *
      * @return the formatted start time
      */
     public String getFormattedStartTime() {
-        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("hh:mm:ss a");
-        return this.getStartTime().format(timeFormatter);
+        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("h:mm a");
+        String formattedStartTime = this.getStartTime().format(timeFormatter);
+        return formattedStartTime.replace("AM", "am").replace("PM","pm");
     }
 
     /**
-     * Gets the end time formatted as hh:mm:ss a
+     * Gets the end time formatted as h:mm a
      *
      * @return the formatted end time
      */
     public String getFormattedEndTime() {
-        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("hh:mm:ss a");
-        return this.getEndTime().format(timeFormatter);
+        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("h:mm a");
+        if (this.getEndTime() != null) {
+            String formattedEndTime = this.getEndTime().format(timeFormatter);
+            return formattedEndTime.replace("AM", "am").replace("PM","pm");
+        } else {
+            return null;
+        }
     }
 
     @Override
