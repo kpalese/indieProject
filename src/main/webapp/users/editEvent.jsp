@@ -29,8 +29,8 @@
                 <INPUT TYPE="TIME" NAME="endTime" class="form-control" id="endTime" value="${sessionScope.eventToEdit.endTime}">
             </div>
             <div class="form-group">
-                <label for="notes">Notes</label>
-                <textarea class="form-control" NAME="notes" id="notes" rows="3"></textarea>
+                <label for="notes">Notes:</label>
+                <textarea class="form-control" NAME="notes" id="notes" rows="3">${sessionScope.eventToEdit.notes}</textarea>
             </div>
 
             <%--TODO: try to go back to the planner page that the user was just on (not necessarily the page for today)--%>

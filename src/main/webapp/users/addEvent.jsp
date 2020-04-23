@@ -29,7 +29,7 @@
                     <INPUT TYPE="TIME" NAME="endTime" class="form-control" id="endTime">
                 </div>
                 <div class="form-group">
-                    <label for="notes">Notes</label>
+                    <label for="notes">Notes:</label>
                     <textarea class="form-control" NAME="notes" id="notes" rows="3"></textarea>
                 </div>
 
