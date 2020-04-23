@@ -42,10 +42,11 @@
                         <div class="col">
                             <div class="card w-100">
                                 <ul class="list-group list-group-flush w-100">
-                                    <li class="list-group-item w-100">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+
+                                    <c:forEach var="event" items="${sessionScope.eventsDay1}">
+                                        <li class="list-group-item">${event.formattedStartTime} ${event.name}</li>
+                                    </c:forEach>
+
                                     <li class="list-group-item"><a href="<%=request.getContextPath()%>/users/addEvent?eventDate=${sessionScope.firstDateOfWeek}" class="btn btn-primary">Add Event</a></li>
                                 </ul>
                             </div>

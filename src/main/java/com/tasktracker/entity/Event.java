@@ -4,6 +4,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
 
@@ -14,7 +15,7 @@ import java.util.Objects;
  */
 @Entity(name = "Event")
 @Table(name = "EVENT")
-public class Event {
+public class Event implements Comparable<Event> {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
@@ -24,7 +25,6 @@ public class Event {
     @Column(name = "name")
     private String name;
 
-    //TODO: Should these be LocalDate and Time??
     @Column(name = "date")
     private LocalDate date;
 
@@ -191,6 +191,26 @@ public class Event {
         this.user = user;
     }
 
+    /**
+     * Gets the start time formatted as hh:mm:ss a
+     *
+     * @return the formatted start time
+     */
+    public String getFormattedStartTime() {
+        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("hh:mm:ss a");
+        return this.getStartTime().format(timeFormatter);
+    }
+
+    /**
+     * Gets the end time formatted as hh:mm:ss a
+     *
+     * @return the formatted end time
+     */
+    public String getFormattedEndTime() {
+        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("hh:mm:ss a");
+        return this.getEndTime().format(timeFormatter);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -201,12 +221,21 @@ public class Event {
                 Objects.equals(date, event.date) &&
                 Objects.equals(startTime, event.startTime) &&
                 Objects.equals(endTime, event.endTime) &&
-                Objects.equals(notes, event.notes);
-        //TODO: removed user...is that correct?
+                Objects.equals(notes, event.notes) &&
+                Objects.equals(user, event.user);
+
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(id, name, date, startTime, endTime, notes);
+    }
+
+    @Override
+    public int compareTo(Event e) {
+        if (getStartTime() == null || e.getStartTime() == null) {
+            return 0;
+        }
+        return getStartTime().compareTo(e.getStartTime());
     }
 }

@@ -41,7 +41,7 @@ h2 {
 }
 
 #plannerContainer {
-    max-height: 66vh;
+    max-height: 62vh;
     width: auto;
     overflow-y: scroll;
 }

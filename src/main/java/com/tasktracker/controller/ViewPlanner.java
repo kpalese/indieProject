@@ -1,5 +1,6 @@
 package com.tasktracker.controller;
 
+import com.tasktracker.entity.Event;
 import com.tasktracker.entity.User;
 import com.tasktracker.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
@@ -14,10 +15,11 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.time.DayOfWeek;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalField;
 import java.time.temporal.WeekFields;
+import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
@@ -37,31 +39,26 @@ public class ViewPlanner extends HttpServlet {
         logger.info("****User is: " + req.getRemoteUser() + " and is user is " + req.isUserInRole("user"));
 
         HttpSession session = req.getSession();
-        GenericDao userDao = new GenericDao(User.class);
 
+        //Get current user
+        GenericDao userDao = new GenericDao(User.class);
         List<User> users = userDao.getByPropertyEqual("userName", req.getRemoteUser());
         User user = users.get(0);
-
         //TODO: Verify list of users is only 1?
-
         session.setAttribute("user", user);
 
         //Get current date
-        LocalDateTime now = LocalDateTime.now();
+        LocalDate now = LocalDate.now();
 
-        //Get date of first day of week
+        //Get date of first day of week, format it, and set as attribute
         TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
-        LocalDateTime firstDateOfWeek = now.with(fieldUS, 1);
-
-        //Format date
+        LocalDate firstDateOfWeek = now.with(fieldUS, 1);
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd/yyyy");
         String formattedFirstDateOfWeek = dtf.format(firstDateOfWeek);
-
-        //Set first date of week attribute
         session.setAttribute("firstDateOfWeek", formattedFirstDateOfWeek);
 
         //Get last date of week and set attribute
-        LocalDateTime lastDateOfWeek = now.with(fieldUS, 7);
+        LocalDate lastDateOfWeek = now.with(fieldUS, 7);
         String formattedLastDateOfWeek = dtf.format(lastDateOfWeek);
         session.setAttribute("lastDateOfWeek", formattedLastDateOfWeek);
 
@@ -71,6 +68,9 @@ public class ViewPlanner extends HttpServlet {
         //Set shorthand dates
         setShorthandDates(firstDateOfWeek, session);
 
+        getEvents(firstDateOfWeek, session);
+
+        //Forward to viewPlanner
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users/viewPlanner.jsp");
         dispatcher.forward(req, resp);
     }
@@ -80,7 +80,7 @@ public class ViewPlanner extends HttpServlet {
      * @param firstDateOfWeek
      * @param session
      */
-    public void setDaysOfWeek(LocalDateTime firstDateOfWeek, HttpSession session) {
+    public void setDaysOfWeek(LocalDate firstDateOfWeek, HttpSession session) {
         //Get the days of the week
         DayOfWeek firstDayOfWeek = firstDateOfWeek.getDayOfWeek();
         DayOfWeek secondDayOfWeek = firstDateOfWeek.plusDays(1).getDayOfWeek();
@@ -97,7 +97,7 @@ public class ViewPlanner extends HttpServlet {
      * @param firstDateOfWeek the first date of week
      * @param session         the session
      */
-    public void setShorthandDates(LocalDateTime firstDateOfWeek, HttpSession session) {
+    public void setShorthandDates(LocalDate firstDateOfWeek, HttpSession session) {
         //Define a format for the shorthand dates
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd");
 
@@ -108,6 +108,26 @@ public class ViewPlanner extends HttpServlet {
         //Set the shorthand dates of the week as session attributes
         session.setAttribute("shorthandFirstDateOfWeek", shorthandFirstDateOfWeek);
         session.setAttribute("shorthandSecondDateOfWeek", shorthandSecondDateOfWeek);
+    }
+
+    /**
+     *
+     */
+    public void getEvents(LocalDate firstDateOfWeek, HttpSession session) {
+        GenericDao eventDao = new GenericDao(Event.class);
+
+        //Get the events for each day of the week
+        List<Event> eventsDay1 = eventDao.getByPropertyEqual("date", firstDateOfWeek);
+        List<Event> eventsDay2 = eventDao.getByPropertyEqual("date", firstDateOfWeek.plusDays(1));
+
+        //Sort the events by start time
+        Collections.sort(eventsDay1);
+        Collections.sort(eventsDay2);
+
+
+        //Put the events into the session
+        session.setAttribute("eventsDay1", eventsDay1);
+        session.setAttribute("eventsDay2", eventsDay2);
     }
 
 }
