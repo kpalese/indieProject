@@ -47,7 +47,11 @@
 | 4/10/20 | Spent an embarrassing amount of time trying to figure out why I was getting an error related to Tomcat. Re-read/watched some of the week 9 materials as I was feeling very lost on the team project.  |  | 5 |
 | 4/11/20 | Indie project: Worked on creating an account and logout. Need to polish it and add validations, but the basic logic is there. |  | 4 |
 | 4/12/20 | Worked on understanding OAuth and started implementing in my github branch. Team meeting. Got stuck on implementing properties loader. |  | 7 |
-| 4/13/20 |  |  | |
+| 4/13/20 | Team project:  worked on OAuth | 6 | |
+| 4/14/20 | Team project: Finished OAuth, added some validations and added basic text to index | 7 | |
+| 4/20/20 | Started week 13 videos (still need to complete activity), worked on viewPlanner jsp and servlets | 6.5 | |
+| 4/21/20 | Worked through some bootstrap issues on viewPlanner jsp, added basic functionality to add an event to the database | | 8.5 |
+| 4/22/20 | Added scrollbar to event and task area, viewPlanner now displays events, started basic functionality to edit an event| 6 | |
 
 
 
