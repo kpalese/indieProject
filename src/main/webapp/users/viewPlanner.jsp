@@ -44,8 +44,9 @@
                                 <ul class="list-group list-group-flush w-100">
 
                                     <c:forEach var="event" items="${sessionScope.eventsDay1}">
-                                        <li class="list-group-item">${event.formattedStartTime}
-                                            <c:if test="${event.formattedEndTime!=null}"> &ndash; ${event.formattedEndTime}</c:if> ${event.name}</li>
+                                        <li class="list-group-item"><a href="${pageContext.request.contextPath}/editEvent?id=${event.id}">
+                                            <button type="button" class="btn btn-light">${event.formattedStartTime}
+                                                <c:if test="${event.formattedEndTime!=null}"> &ndash; ${event.formattedEndTime}</c:if> ${event.name}</button></a></li>
                                     </c:forEach>
 
                                     <li class="list-group-item"><a href="<%=request.getContextPath()%>/users/addEvent?eventDate=${sessionScope.firstDateOfWeek}"
