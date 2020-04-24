@@ -2442,3 +2442,463 @@
 [DEBUG] 2020-04-24 10:33:33.386 [http-nio-8080-exec-2] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
 [DEBUG] 2020-04-24 10:33:33.386 [http-nio-8080-exec-2] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
 [DEBUG] 2020-04-24 10:33:33.386 [http-nio-8080-exec-2] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-04-24 15:23:48.356 [http-nio-8080-exec-7] SQL - select event0_.id as id1_0_0_, event0_.date as date2_0_0_, event0_.end_time as end_time3_0_0_, event0_.name as name4_0_0_, event0_.notes as notes5_0_0_, event0_.start_time as start_ti6_0_0_, event0_.user_id as user_id7_0_0_, user1_.id as id1_3_1_, user1_.auto_fwd_incomplete_tasks as auto_fwd2_3_1_, user1_.user_name as user_nam3_3_1_, user1_.user_password as user_pas4_3_1_, roles2_.user_id as user_id4_2_2_, roles2_.id as id1_2_2_, roles2_.id as id1_2_3_, roles2_.role_name as role_nam2_2_3_, roles2_.user_id as user_id4_2_3_, roles2_.user_name as user_nam3_2_3_, tasks3_.user_id as user_id7_1_4_, tasks3_.id as id1_1_4_, tasks3_.id as id1_1_5_, tasks3_.complete as complete2_1_5_, tasks3_.date as date3_1_5_, tasks3_.frequency as frequenc4_1_5_, tasks3_.name as name5_1_5_, tasks3_.notes as notes6_1_5_, tasks3_.user_id as user_id7_1_5_ from EVENT event0_ left outer join USERS user1_ on event0_.user_id=user1_.id left outer join USER_ROLES roles2_ on user1_.id=roles2_.user_id left outer join TASK tasks3_ on user1_.id=tasks3_.user_id where event0_.id=?
+[DEBUG] 2020-04-24 15:23:48.480 [http-nio-8080-exec-7] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2020-04-24 15:23:48.481 [http-nio-8080-exec-7] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2020-04-24 15:23:48.495 [http-nio-8080-exec-7] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.roles#6]
+[DEBUG] 2020-04-24 15:23:48.496 [http-nio-8080-exec-7] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.tasktracker.entity.User.tasks#6]
+[DEBUG] 2020-04-24 15:23:48.496 [http-nio-8080-exec-7] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2020-04-24 15:23:48.496 [http-nio-8080-exec-7] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2020-04-24 15:23:48.499 [http-nio-8080-exec-7] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.roles#6]
+[DEBUG] 2020-04-24 15:23:48.500 [http-nio-8080-exec-7] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.tasktracker.entity.User.tasks#6]
+[DEBUG] 2020-04-24 15:23:48.500 [http-nio-8080-exec-7] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Event#7]
+[DEBUG] 2020-04-24 15:23:48.500 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `date` : value = 2020-04-19
+[DEBUG] 2020-04-24 15:23:48.509 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.509 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `endTime` : value = null
+[DEBUG] 2020-04-24 15:23:48.509 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`endTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.509 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `name` : value = No end time
+[DEBUG] 2020-04-24 15:23:48.509 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.509 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `notes` : value = 
+[DEBUG] 2020-04-24 15:23:48.509 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`notes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.509 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `startTime` : value = 10:00
+[DEBUG] 2020-04-24 15:23:48.509 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`startTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.509 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:48.509 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.511 [http-nio-8080-exec-7] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Event#7]
+[DEBUG] 2020-04-24 15:23:48.521 [http-nio-8080-exec-7] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.User#6]
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `autoFwdIncompleteTasks` : value = false
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`autoFwdIncompleteTasks`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `events` : value = NOT NULL COLLECTION
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`events`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `tasks` : value = NOT NULL COLLECTION
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`tasks`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `userName` : value = kp
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `userPassword` : value = kp
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`userPassword`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.User#6]
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Role#5]
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `roleName` : value = user
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`roleName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:48.522 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.530 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `userName` : value = kp
+[DEBUG] 2020-04-24 15:23:48.530 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.530 [http-nio-8080-exec-7] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Role#5]
+[DEBUG] 2020-04-24 15:23:48.530 [http-nio-8080-exec-7] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Role#6]
+[DEBUG] 2020-04-24 15:23:48.530 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `roleName` : value = user
+[DEBUG] 2020-04-24 15:23:48.530 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`roleName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.530 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:48.530 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.531 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `userName` : value = kp
+[DEBUG] 2020-04-24 15:23:48.531 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.531 [http-nio-8080-exec-7] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Role#6]
+[DEBUG] 2020-04-24 15:23:48.531 [http-nio-8080-exec-7] CollectionLoadContext - 1 collections were found in result set for role: com.tasktracker.entity.User.roles
+[DEBUG] 2020-04-24 15:23:48.531 [http-nio-8080-exec-7] CollectionLoadContext - Collection fully initialized: [com.tasktracker.entity.User.roles#6]
+[DEBUG] 2020-04-24 15:23:48.531 [http-nio-8080-exec-7] CollectionLoadContext - 1 collections initialized for role: com.tasktracker.entity.User.roles
+[DEBUG] 2020-04-24 15:23:48.531 [http-nio-8080-exec-7] CollectionLoadContext - 1 collections were found in result set for role: com.tasktracker.entity.User.tasks
+[DEBUG] 2020-04-24 15:23:48.531 [http-nio-8080-exec-7] CollectionLoadContext - Collection fully initialized: [com.tasktracker.entity.User.tasks#6]
+[DEBUG] 2020-04-24 15:23:48.531 [http-nio-8080-exec-7] CollectionLoadContext - 1 collections initialized for role: com.tasktracker.entity.User.tasks
+[DEBUG] 2020-04-24 15:23:48.531 [http-nio-8080-exec-7] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-04-24 15:23:48.532 [http-nio-8080-exec-7] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:48.532 [http-nio-8080-exec-7] SQL - select events0_.user_id as user_id7_0_0_, events0_.id as id1_0_0_, events0_.id as id1_0_1_, events0_.date as date2_0_1_, events0_.end_time as end_time3_0_1_, events0_.name as name4_0_1_, events0_.notes as notes5_0_1_, events0_.start_time as start_ti6_0_1_, events0_.user_id as user_id7_0_1_ from EVENT events0_ where events0_.user_id=?
+[DEBUG] 2020-04-24 15:23:48.533 [http-nio-8080-exec-7] ResultSetProcessorImpl - Preparing collection initializer : [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:48.533 [http-nio-8080-exec-7] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2020-04-24 15:23:48.533 [http-nio-8080-exec-7] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:48.533 [http-nio-8080-exec-7] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2020-04-24 15:23:48.535 [http-nio-8080-exec-7] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:48.538 [http-nio-8080-exec-7] ResultSetProcessorImpl - Starting ResultSet row #2
+[DEBUG] 2020-04-24 15:23:48.543 [http-nio-8080-exec-7] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:48.544 [http-nio-8080-exec-7] ResultSetProcessorImpl - Starting ResultSet row #3
+[DEBUG] 2020-04-24 15:23:48.546 [http-nio-8080-exec-7] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:48.546 [http-nio-8080-exec-7] ResultSetProcessorImpl - Starting ResultSet row #4
+[DEBUG] 2020-04-24 15:23:48.550 [http-nio-8080-exec-7] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:48.550 [http-nio-8080-exec-7] ResultSetProcessorImpl - Starting ResultSet row #5
+[DEBUG] 2020-04-24 15:23:48.550 [http-nio-8080-exec-7] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:48.550 [http-nio-8080-exec-7] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Event#4]
+[DEBUG] 2020-04-24 15:23:48.550 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `date` : value = 2020-04-19
+[DEBUG] 2020-04-24 15:23:48.550 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.550 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `endTime` : value = 19:30
+[DEBUG] 2020-04-24 15:23:48.550 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`endTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.550 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `name` : value = Phone interview
+[DEBUG] 2020-04-24 15:23:48.550 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.550 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `notes` : value = Do the thing
+[DEBUG] 2020-04-24 15:23:48.550 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`notes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.550 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `startTime` : value = 19:00
+[DEBUG] 2020-04-24 15:23:48.550 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`startTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.550 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Event#4]
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Event#5]
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `date` : value = 2020-04-19
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `endTime` : value = 07:15
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`endTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `name` : value = Coffee
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `notes` : value = 
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`notes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `startTime` : value = 06:45
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`startTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Event#5]
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Event#9]
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `date` : value = 2020-04-19
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `endTime` : value = null
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`endTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `name` : value = With notes
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `notes` : value = With notes, but without an end time.
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`notes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `startTime` : value = 13:15
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`startTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Event#9]
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Event#10]
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `date` : value = 2020-04-19
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `endTime` : value = null
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`endTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `name` : value = after code changes
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `notes` : value = 
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`notes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `startTime` : value = 17:00
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`startTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Event#10]
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Event#11]
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `date` : value = 2020-04-19
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `endTime` : value = 01:20
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`endTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `name` : value = AAAAAAAAAAAAAAAAB
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `notes` : value = dhdfhdhdhdfh
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`notes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `startTime` : value = 01:00
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`startTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Event#11]
+[DEBUG] 2020-04-24 15:23:48.551 [http-nio-8080-exec-7] CollectionLoadContext - 1 collections were found in result set for role: com.tasktracker.entity.User.events
+[DEBUG] 2020-04-24 15:23:48.552 [http-nio-8080-exec-7] CollectionLoadContext - Collection fully initialized: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:48.552 [http-nio-8080-exec-7] CollectionLoadContext - 1 collections initialized for role: com.tasktracker.entity.User.events
+[DEBUG] 2020-04-24 15:23:48.554 [http-nio-8080-exec-7] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-04-24 15:23:48.554 [http-nio-8080-exec-7] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2020-04-24 15:23:48.554 [http-nio-8080-exec-7] AbstractLoadPlanBasedEntityLoader - Done entity load : com.tasktracker.entity.Event#7
+[DEBUG] 2020-04-24 15:23:48.556 [http-nio-8080-exec-7] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-04-24 15:23:59.281 [http-nio-8080-exec-8] SQL - select event0_.id as id1_0_0_, event0_.date as date2_0_0_, event0_.end_time as end_time3_0_0_, event0_.name as name4_0_0_, event0_.notes as notes5_0_0_, event0_.start_time as start_ti6_0_0_, event0_.user_id as user_id7_0_0_, user1_.id as id1_3_1_, user1_.auto_fwd_incomplete_tasks as auto_fwd2_3_1_, user1_.user_name as user_nam3_3_1_, user1_.user_password as user_pas4_3_1_, roles2_.user_id as user_id4_2_2_, roles2_.id as id1_2_2_, roles2_.id as id1_2_3_, roles2_.role_name as role_nam2_2_3_, roles2_.user_id as user_id4_2_3_, roles2_.user_name as user_nam3_2_3_, tasks3_.user_id as user_id7_1_4_, tasks3_.id as id1_1_4_, tasks3_.id as id1_1_5_, tasks3_.complete as complete2_1_5_, tasks3_.date as date3_1_5_, tasks3_.frequency as frequenc4_1_5_, tasks3_.name as name5_1_5_, tasks3_.notes as notes6_1_5_, tasks3_.user_id as user_id7_1_5_ from EVENT event0_ left outer join USERS user1_ on event0_.user_id=user1_.id left outer join USER_ROLES roles2_ on user1_.id=roles2_.user_id left outer join TASK tasks3_ on user1_.id=tasks3_.user_id where event0_.id=?
+[DEBUG] 2020-04-24 15:23:59.293 [http-nio-8080-exec-8] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2020-04-24 15:23:59.293 [http-nio-8080-exec-8] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2020-04-24 15:23:59.296 [http-nio-8080-exec-8] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.roles#6]
+[DEBUG] 2020-04-24 15:23:59.297 [http-nio-8080-exec-8] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.tasktracker.entity.User.tasks#6]
+[DEBUG] 2020-04-24 15:23:59.297 [http-nio-8080-exec-8] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2020-04-24 15:23:59.297 [http-nio-8080-exec-8] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.roles#6]
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [com.tasktracker.entity.User.tasks#6]
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Event#7]
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `date` : value = 2020-04-19
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `endTime` : value = null
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`endTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `name` : value = No end time
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `notes` : value = 
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`notes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `startTime` : value = 10:00
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`startTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Event#7]
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.User#6]
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `autoFwdIncompleteTasks` : value = false
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`autoFwdIncompleteTasks`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `events` : value = NOT NULL COLLECTION
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`events`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `tasks` : value = NOT NULL COLLECTION
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`tasks`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `userName` : value = kp
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `userPassword` : value = kp
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`userPassword`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.User#6]
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Role#5]
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `roleName` : value = user
+[DEBUG] 2020-04-24 15:23:59.303 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`roleName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.304 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:59.304 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.304 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `userName` : value = kp
+[DEBUG] 2020-04-24 15:23:59.304 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.304 [http-nio-8080-exec-8] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Role#5]
+[DEBUG] 2020-04-24 15:23:59.304 [http-nio-8080-exec-8] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Role#6]
+[DEBUG] 2020-04-24 15:23:59.304 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `roleName` : value = user
+[DEBUG] 2020-04-24 15:23:59.304 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`roleName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.304 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:59.304 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.304 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `userName` : value = kp
+[DEBUG] 2020-04-24 15:23:59.304 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.304 [http-nio-8080-exec-8] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Role#6]
+[DEBUG] 2020-04-24 15:23:59.304 [http-nio-8080-exec-8] CollectionLoadContext - 1 collections were found in result set for role: com.tasktracker.entity.User.roles
+[DEBUG] 2020-04-24 15:23:59.304 [http-nio-8080-exec-8] CollectionLoadContext - Collection fully initialized: [com.tasktracker.entity.User.roles#6]
+[DEBUG] 2020-04-24 15:23:59.312 [http-nio-8080-exec-8] CollectionLoadContext - 1 collections initialized for role: com.tasktracker.entity.User.roles
+[DEBUG] 2020-04-24 15:23:59.312 [http-nio-8080-exec-8] CollectionLoadContext - 1 collections were found in result set for role: com.tasktracker.entity.User.tasks
+[DEBUG] 2020-04-24 15:23:59.312 [http-nio-8080-exec-8] CollectionLoadContext - Collection fully initialized: [com.tasktracker.entity.User.tasks#6]
+[DEBUG] 2020-04-24 15:23:59.326 [http-nio-8080-exec-8] CollectionLoadContext - 1 collections initialized for role: com.tasktracker.entity.User.tasks
+[DEBUG] 2020-04-24 15:23:59.327 [http-nio-8080-exec-8] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-04-24 15:23:59.327 [http-nio-8080-exec-8] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:59.327 [http-nio-8080-exec-8] SQL - select events0_.user_id as user_id7_0_0_, events0_.id as id1_0_0_, events0_.id as id1_0_1_, events0_.date as date2_0_1_, events0_.end_time as end_time3_0_1_, events0_.name as name4_0_1_, events0_.notes as notes5_0_1_, events0_.start_time as start_ti6_0_1_, events0_.user_id as user_id7_0_1_ from EVENT events0_ where events0_.user_id=?
+[DEBUG] 2020-04-24 15:23:59.343 [http-nio-8080-exec-8] ResultSetProcessorImpl - Preparing collection initializer : [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:59.343 [http-nio-8080-exec-8] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2020-04-24 15:23:59.358 [http-nio-8080-exec-8] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:59.358 [http-nio-8080-exec-8] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2020-04-24 15:23:59.361 [http-nio-8080-exec-8] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:59.363 [http-nio-8080-exec-8] ResultSetProcessorImpl - Starting ResultSet row #2
+[DEBUG] 2020-04-24 15:23:59.363 [http-nio-8080-exec-8] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:59.363 [http-nio-8080-exec-8] ResultSetProcessorImpl - Starting ResultSet row #3
+[DEBUG] 2020-04-24 15:23:59.363 [http-nio-8080-exec-8] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:59.363 [http-nio-8080-exec-8] ResultSetProcessorImpl - Starting ResultSet row #4
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] ResultSetProcessorImpl - Starting ResultSet row #5
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Event#4]
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `date` : value = 2020-04-19
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `endTime` : value = 19:30
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`endTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `name` : value = Phone interview
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `notes` : value = Do the thing
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`notes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `startTime` : value = 19:00
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`startTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Event#4]
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Event#5]
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `date` : value = 2020-04-19
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `endTime` : value = 07:15
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`endTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `name` : value = Coffee
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `notes` : value = 
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`notes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `startTime` : value = 06:45
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`startTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Event#5]
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Event#9]
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `date` : value = 2020-04-19
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `endTime` : value = null
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`endTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `name` : value = With notes
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `notes` : value = With notes, but without an end time.
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`notes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `startTime` : value = 13:15
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`startTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Event#9]
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Event#10]
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `date` : value = 2020-04-19
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.364 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `endTime` : value = null
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`endTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `name` : value = after code changes
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `notes` : value = 
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`notes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `startTime` : value = 17:00
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`startTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Event#10]
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Event#11]
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `date` : value = 2020-04-19
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `endTime` : value = 01:20
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`endTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `name` : value = AAAAAAAAAAAAAAAAB
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `notes` : value = dhdfhdhdhdfh
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`notes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `startTime` : value = 01:00
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`startTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Event#11]
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] CollectionLoadContext - 1 collections were found in result set for role: com.tasktracker.entity.User.events
+[DEBUG] 2020-04-24 15:23:59.365 [http-nio-8080-exec-8] CollectionLoadContext - Collection fully initialized: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:59.376 [http-nio-8080-exec-8] CollectionLoadContext - 1 collections initialized for role: com.tasktracker.entity.User.events
+[DEBUG] 2020-04-24 15:23:59.377 [http-nio-8080-exec-8] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-04-24 15:23:59.381 [http-nio-8080-exec-8] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2020-04-24 15:23:59.403 [http-nio-8080-exec-8] AbstractLoadPlanBasedEntityLoader - Done entity load : com.tasktracker.entity.Event#7
+[DEBUG] 2020-04-24 15:23:59.403 [http-nio-8080-exec-8] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-04-24 15:23:59.429 [http-nio-8080-exec-8] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2020-04-24 15:23:59.429 [http-nio-8080-exec-8] TransactionImpl - begin
+[DEBUG] 2020-04-24 15:23:59.436 [http-nio-8080-exec-8] TransactionImpl - committing
+[DEBUG] 2020-04-24 15:23:59.451 [http-nio-8080-exec-8] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2020-04-24 15:23:59.451 [http-nio-8080-exec-8] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2020-04-24 15:23:59.452 [http-nio-8080-exec-8] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2020-04-24 15:23:59.452 [http-nio-8080-exec-8] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2020-04-24 15:23:59.452 [http-nio-8080-exec-8] EntityPrinter - Listing entities:
+[DEBUG] 2020-04-24 15:23:59.469 [http-nio-8080-exec-8] EntityPrinter - com.tasktracker.entity.Event{date=2020-04-19, notes=, name=No end time, startTime=10:00, id=7, endTime=null, user=com.tasktracker.entity.User#6}
+[DEBUG] 2020-04-24 15:23:59.472 [http-nio-8080-exec-8] SQL - delete from EVENT where id=?
+[DEBUG] 2020-04-24 15:23:59.914 [http-nio-8080-exec-8] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-04-24 15:23:59.921 [http-nio-8080-exec-8] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-04-24 15:23:59.922 [http-nio-8080-exec-8] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2020-04-24 15:23:59.962 [http-nio-8080-exec-10] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.userName=:param0
+[DEBUG] 2020-04-24 15:23:59.972 [http-nio-8080-exec-10] SQL - select user0_.id as id1_3_, user0_.auto_fwd_incomplete_tasks as auto_fwd2_3_, user0_.user_name as user_nam3_3_, user0_.user_password as user_pas4_3_ from USERS user0_ where user0_.user_name=?
+[DEBUG] 2020-04-24 15:23:59.977 [http-nio-8080-exec-10] Loader - Result set row: 0
+[DEBUG] 2020-04-24 15:23:59.978 [http-nio-8080-exec-10] Loader - Result row: EntityKey[com.tasktracker.entity.User#6]
+[DEBUG] 2020-04-24 15:23:59.979 [http-nio-8080-exec-10] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.User#6]
+[DEBUG] 2020-04-24 15:23:59.979 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `autoFwdIncompleteTasks` : value = false
+[DEBUG] 2020-04-24 15:23:59.979 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`autoFwdIncompleteTasks`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.979 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `events` : value = NOT NULL COLLECTION
+[DEBUG] 2020-04-24 15:23:59.979 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`events`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.980 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2020-04-24 15:23:59.980 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.980 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `tasks` : value = NOT NULL COLLECTION
+[DEBUG] 2020-04-24 15:23:59.980 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`tasks`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.980 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `userName` : value = kp
+[DEBUG] 2020-04-24 15:23:59.980 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.980 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `userPassword` : value = kp
+[DEBUG] 2020-04-24 15:23:59.980 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`userPassword`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.980 [http-nio-8080-exec-10] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.User#6]
+[DEBUG] 2020-04-24 15:23:59.981 [http-nio-8080-exec-10] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.tasktracker.entity.User.tasks#6]
+[DEBUG] 2020-04-24 15:23:59.981 [http-nio-8080-exec-10] SQL - select tasks0_.user_id as user_id7_1_0_, tasks0_.id as id1_1_0_, tasks0_.id as id1_1_1_, tasks0_.complete as complete2_1_1_, tasks0_.date as date3_1_1_, tasks0_.frequency as frequenc4_1_1_, tasks0_.name as name5_1_1_, tasks0_.notes as notes6_1_1_, tasks0_.user_id as user_id7_1_1_ from TASK tasks0_ where tasks0_.user_id=?
+[DEBUG] 2020-04-24 15:23:59.983 [http-nio-8080-exec-10] ResultSetProcessorImpl - Preparing collection initializer : [com.tasktracker.entity.User.tasks#6]
+[DEBUG] 2020-04-24 15:23:59.984 [http-nio-8080-exec-10] CollectionLoadContext - 1 collections were found in result set for role: com.tasktracker.entity.User.tasks
+[DEBUG] 2020-04-24 15:23:59.984 [http-nio-8080-exec-10] CollectionLoadContext - Collection fully initialized: [com.tasktracker.entity.User.tasks#6]
+[DEBUG] 2020-04-24 15:23:59.984 [http-nio-8080-exec-10] CollectionLoadContext - 1 collections initialized for role: com.tasktracker.entity.User.tasks
+[DEBUG] 2020-04-24 15:23:59.984 [http-nio-8080-exec-10] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-04-24 15:23:59.984 [http-nio-8080-exec-10] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2020-04-24 15:23:59.984 [http-nio-8080-exec-10] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.tasktracker.entity.User.roles#6]
+[DEBUG] 2020-04-24 15:23:59.984 [http-nio-8080-exec-10] SQL - select roles0_.user_id as user_id4_2_0_, roles0_.id as id1_2_0_, roles0_.id as id1_2_1_, roles0_.role_name as role_nam2_2_1_, roles0_.user_id as user_id4_2_1_, roles0_.user_name as user_nam3_2_1_ from USER_ROLES roles0_ where roles0_.user_id=?
+[DEBUG] 2020-04-24 15:23:59.986 [http-nio-8080-exec-10] ResultSetProcessorImpl - Preparing collection initializer : [com.tasktracker.entity.User.roles#6]
+[DEBUG] 2020-04-24 15:23:59.987 [http-nio-8080-exec-10] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2020-04-24 15:23:59.994 [http-nio-8080-exec-10] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.roles#6]
+[DEBUG] 2020-04-24 15:23:59.995 [http-nio-8080-exec-10] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2020-04-24 15:23:59.996 [http-nio-8080-exec-10] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.roles#6]
+[DEBUG] 2020-04-24 15:23:59.996 [http-nio-8080-exec-10] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Role#5]
+[DEBUG] 2020-04-24 15:23:59.996 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `roleName` : value = user
+[DEBUG] 2020-04-24 15:23:59.996 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`roleName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.996 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:59.997 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.997 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `userName` : value = kp
+[DEBUG] 2020-04-24 15:23:59.997 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.997 [http-nio-8080-exec-10] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Role#5]
+[DEBUG] 2020-04-24 15:23:59.997 [http-nio-8080-exec-10] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Role#6]
+[DEBUG] 2020-04-24 15:23:59.997 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `roleName` : value = user
+[DEBUG] 2020-04-24 15:23:59.997 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`roleName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.997 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:23:59.997 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.998 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `userName` : value = kp
+[DEBUG] 2020-04-24 15:23:59.998 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:23:59.998 [http-nio-8080-exec-10] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Role#6]
+[DEBUG] 2020-04-24 15:23:59.998 [http-nio-8080-exec-10] CollectionLoadContext - 1 collections were found in result set for role: com.tasktracker.entity.User.roles
+[DEBUG] 2020-04-24 15:23:59.998 [http-nio-8080-exec-10] CollectionLoadContext - Collection fully initialized: [com.tasktracker.entity.User.roles#6]
+[DEBUG] 2020-04-24 15:23:59.998 [http-nio-8080-exec-10] CollectionLoadContext - 1 collections initialized for role: com.tasktracker.entity.User.roles
+[DEBUG] 2020-04-24 15:23:59.998 [http-nio-8080-exec-10] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-04-24 15:23:59.998 [http-nio-8080-exec-10] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2020-04-24 15:23:59.998 [http-nio-8080-exec-10] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:23:59.999 [http-nio-8080-exec-10] SQL - select events0_.user_id as user_id7_0_0_, events0_.id as id1_0_0_, events0_.id as id1_0_1_, events0_.date as date2_0_1_, events0_.end_time as end_time3_0_1_, events0_.name as name4_0_1_, events0_.notes as notes5_0_1_, events0_.start_time as start_ti6_0_1_, events0_.user_id as user_id7_0_1_ from EVENT events0_ where events0_.user_id=?
+[DEBUG] 2020-04-24 15:24:00.004 [http-nio-8080-exec-10] ResultSetProcessorImpl - Preparing collection initializer : [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:24:00.004 [http-nio-8080-exec-10] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2020-04-24 15:24:00.007 [http-nio-8080-exec-10] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:24:00.008 [http-nio-8080-exec-10] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2020-04-24 15:24:00.010 [http-nio-8080-exec-10] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:24:00.010 [http-nio-8080-exec-10] ResultSetProcessorImpl - Starting ResultSet row #2
+[DEBUG] 2020-04-24 15:24:00.011 [http-nio-8080-exec-10] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:24:00.012 [http-nio-8080-exec-10] ResultSetProcessorImpl - Starting ResultSet row #3
+[DEBUG] 2020-04-24 15:24:00.012 [http-nio-8080-exec-10] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:24:00.013 [http-nio-8080-exec-10] ResultSetProcessorImpl - Starting ResultSet row #4
+[DEBUG] 2020-04-24 15:24:00.014 [http-nio-8080-exec-10] CollectionReferenceInitializerImpl - Found row of collection: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:24:00.015 [http-nio-8080-exec-10] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Event#4]
+[DEBUG] 2020-04-24 15:24:00.015 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `date` : value = 2020-04-19
+[DEBUG] 2020-04-24 15:24:00.015 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.015 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `endTime` : value = 19:30
+[DEBUG] 2020-04-24 15:24:00.015 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`endTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.015 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `name` : value = Phone interview
+[DEBUG] 2020-04-24 15:24:00.015 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.015 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `notes` : value = Do the thing
+[DEBUG] 2020-04-24 15:24:00.015 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`notes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.015 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `startTime` : value = 19:00
+[DEBUG] 2020-04-24 15:24:00.015 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`startTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.015 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:24:00.015 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.018 [http-nio-8080-exec-10] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Event#4]
+[DEBUG] 2020-04-24 15:24:00.018 [http-nio-8080-exec-10] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Event#5]
+[DEBUG] 2020-04-24 15:24:00.018 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `date` : value = 2020-04-19
+[DEBUG] 2020-04-24 15:24:00.018 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.018 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `endTime` : value = 07:15
+[DEBUG] 2020-04-24 15:24:00.018 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`endTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.018 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `name` : value = Coffee
+[DEBUG] 2020-04-24 15:24:00.018 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.019 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `notes` : value = 
+[DEBUG] 2020-04-24 15:24:00.019 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`notes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.019 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `startTime` : value = 06:45
+[DEBUG] 2020-04-24 15:24:00.019 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`startTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.019 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:24:00.019 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.021 [http-nio-8080-exec-10] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Event#5]
+[DEBUG] 2020-04-24 15:24:00.021 [http-nio-8080-exec-10] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Event#9]
+[DEBUG] 2020-04-24 15:24:00.021 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `date` : value = 2020-04-19
+[DEBUG] 2020-04-24 15:24:00.021 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.022 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `endTime` : value = null
+[DEBUG] 2020-04-24 15:24:00.022 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`endTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.022 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `name` : value = With notes
+[DEBUG] 2020-04-24 15:24:00.022 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.022 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `notes` : value = With notes, but without an end time.
+[DEBUG] 2020-04-24 15:24:00.022 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`notes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.022 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `startTime` : value = 13:15
+[DEBUG] 2020-04-24 15:24:00.022 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`startTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.022 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:24:00.022 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.035 [http-nio-8080-exec-10] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Event#9]
+[DEBUG] 2020-04-24 15:24:00.035 [http-nio-8080-exec-10] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Event#10]
+[DEBUG] 2020-04-24 15:24:00.035 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `date` : value = 2020-04-19
+[DEBUG] 2020-04-24 15:24:00.035 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.036 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `endTime` : value = null
+[DEBUG] 2020-04-24 15:24:00.036 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`endTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.036 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `name` : value = after code changes
+[DEBUG] 2020-04-24 15:24:00.036 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.036 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `notes` : value = 
+[DEBUG] 2020-04-24 15:24:00.036 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`notes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.036 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `startTime` : value = 17:00
+[DEBUG] 2020-04-24 15:24:00.036 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`startTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.036 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:24:00.036 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.036 [http-nio-8080-exec-10] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Event#10]
+[DEBUG] 2020-04-24 15:24:00.037 [http-nio-8080-exec-10] TwoPhaseLoad - Resolving attributes for [com.tasktracker.entity.Event#11]
+[DEBUG] 2020-04-24 15:24:00.037 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `date` : value = 2020-04-19
+[DEBUG] 2020-04-24 15:24:00.037 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`date`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.037 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `endTime` : value = 01:20
+[DEBUG] 2020-04-24 15:24:00.038 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`endTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.038 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `name` : value = AAAAAAAAAAAAAAAAB
+[DEBUG] 2020-04-24 15:24:00.038 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.038 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `notes` : value = dhdfhdhdhdfh
+[DEBUG] 2020-04-24 15:24:00.038 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`notes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.038 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `startTime` : value = 01:00
+[DEBUG] 2020-04-24 15:24:00.038 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`startTime`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.038 [http-nio-8080-exec-10] TwoPhaseLoad - Processing attribute `user` : value = 6
+[DEBUG] 2020-04-24 15:24:00.038 [http-nio-8080-exec-10] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-04-24 15:24:00.040 [http-nio-8080-exec-10] TwoPhaseLoad - Done materializing entity [com.tasktracker.entity.Event#11]
+[DEBUG] 2020-04-24 15:24:00.040 [http-nio-8080-exec-10] CollectionLoadContext - 1 collections were found in result set for role: com.tasktracker.entity.User.events
+[DEBUG] 2020-04-24 15:24:00.040 [http-nio-8080-exec-10] CollectionLoadContext - Collection fully initialized: [com.tasktracker.entity.User.events#6]
+[DEBUG] 2020-04-24 15:24:00.040 [http-nio-8080-exec-10] CollectionLoadContext - 1 collections initialized for role: com.tasktracker.entity.User.events
+[DEBUG] 2020-04-24 15:24:00.040 [http-nio-8080-exec-10] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-04-24 15:24:00.040 [http-nio-8080-exec-10] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2020-04-24 15:24:00.040 [http-nio-8080-exec-10] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction

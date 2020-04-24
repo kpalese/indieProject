@@ -1,5 +1,5 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:set var="title" value="Add Event - Task Tracker" />
+<c:set var="title" value="Delete Event - Task Tracker" />
 <%@include file="../templates/head.jsp"%>
 
 <html>
