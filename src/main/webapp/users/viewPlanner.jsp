@@ -45,8 +45,6 @@
                             <h3>${pageDates.getDayOfWeek(pageDates.getDateOfWeek(1))}<br/>${pageDates.getLocalDateToMDD(pageDates.getDateOfWeek(1))}</h3>
                         </div>
 
-                        <a href="${pageContext.request.contextPath}/users/deleteEvent?id=${event.id}"></a>
-
                         <div class="col">
                             <div class="card w-100">
                                 <ul class="list-group list-group-flush w-100">
