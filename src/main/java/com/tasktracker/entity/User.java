@@ -2,9 +2,8 @@ package com.tasktracker.entity;
 
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.time.LocalDate;
+import java.util.*;
 
 /**
  * A java bean to represent a user
@@ -30,7 +29,7 @@ public class User {
     private boolean autoFwdIncompleteTasks;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Event> events = new HashSet<>();
+    private List<Event> events = new ArrayList<>();
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Task> tasks = new HashSet<>();
@@ -133,8 +132,25 @@ public class User {
      *
      * @return the events
      */
-    public Set<Event> getEvents() {
+    public List<Event> getEvents() {
         return events;
+    }
+
+    /**
+     * TODO dao test??
+     */
+    public List<Event> getEventsByDate(LocalDate localDate) {
+        List<Event> eventsMatchingDate = new ArrayList<>();
+        for (Event event : this.getEvents()) {
+            if (event.getDate().equals(localDate)) {
+                eventsMatchingDate.add(event);
+            }
+        }
+
+        //Sort the events by start time
+        Collections.sort(eventsMatchingDate);
+
+        return eventsMatchingDate;
     }
 
     /**
@@ -142,7 +158,7 @@ public class User {
      *
      * @param events the events
      */
-    public void setEvents(Set<Event> events) {
+    public void setEvents(List<Event> events) {
         this.events = events;
     }
 

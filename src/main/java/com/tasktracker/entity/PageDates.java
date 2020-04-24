@@ -47,9 +47,9 @@ public class PageDates {
         this.firstDateOfWeek = firstDateOfWeek;
     }
 
-    public LocalDate getDateOfWeek(String positionInWeek) {
+    public LocalDate getDateOfWeek(int positionInWeek) {
         TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
-        return getFirstDateOfWeek().with(fieldUS, Integer.parseInt(positionInWeek));
+        return getFirstDateOfWeek().with(fieldUS, positionInWeek);
     }
 
     public DayOfWeek getDayOfWeek(LocalDate dateOfWeek) {
