@@ -5,6 +5,7 @@ import com.tasktracker.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -25,5 +26,10 @@ public class DeleteEvent extends HttpServlet {
         GenericDao eventDao = new GenericDao(Event.class);
         Event eventToDelete = (Event)eventDao.getById(eventId);
 
+        //Add event to the request
+        req.setAttribute("eventToDelete", eventToDelete);
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/users/deleteEvent.jsp");
+        dispatcher.forward(req, resp);
     }
 }

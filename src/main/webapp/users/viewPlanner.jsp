@@ -45,19 +45,18 @@
                             <h3>${pageDates.getDayOfWeek(pageDates.getDateOfWeek(1))}<br/>${pageDates.getLocalDateToMDD(pageDates.getDateOfWeek(1))}</h3>
                         </div>
 
+                        <a href="${pageContext.request.contextPath}/users/deleteEvent?id=${event.id}"></a>
+
                         <div class="col">
                             <div class="card w-100">
                                 <ul class="list-group list-group-flush w-100">
-
                                     <c:forEach var="event" items="${sessionScope.user.getEventsByDate(pageDates.getDateOfWeek(1))}">
-                                        <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/editEvent?id=${event.id}">
-                                            <button type="button" class="btn btn-light" data-toggle="tooltip" title="${event.notes}">
-                                                <a href="${pageContext.request.contextPath}/users/deleteEvent?id=${event.id}"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete event"></i></a>
-                                                ${event.formattedStartTime}
+                                        <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/deleteEvent?id=${event.id}"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete event"></i></a>
+                                            <a href="${pageContext.request.contextPath}/users/editEvent?id=${event.id}" data-toggle="tooltip" title="${event.notes}">
+                                            <button type="button" class="btn btn-light"> ${event.formattedStartTime}
                                                 <c:if test="${event.formattedEndTime!=null}"> &ndash; ${event.formattedEndTime}</c:if>
-                                                ${event.name}</button></a></li>
+                                                    ${event.name}</button></a></li>
                                     </c:forEach>
-
                                     <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addEvent?eventDate=${pageDates.getDateOfWeek(1)}"
                                        class="btn btn-primary">Add Event</a></li>
                                 </ul>
