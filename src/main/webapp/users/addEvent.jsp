@@ -18,7 +18,7 @@
                 </div>
                 <div class="form-group">
                     <label for="eventDate"><span class="required">*</span>Date: </label>
-                    <INPUT TYPE="DATE" value="${sessionScope.eventDate}" NAME="eventDate" class="form-control" id="eventDate" required="required">
+                    <INPUT TYPE="DATE" value="${requestScope.eventDate}" NAME="eventDate" class="form-control" id="eventDate" required="required">
                 </div>
                 <div class="form-group">
                     <label for="startTime"><span class="required">*</span>Start Time: </label>

@@ -10,6 +10,7 @@
 
     <main>
         <div class="wrapper">
+            <h2>Log In</h2>
             <FORM ACTION="j_security_check" METHOD="POST" class="mainForm">
                 <div class="form-group">
                     <label for="j_username"><span class="required">*</span>User name: </label>

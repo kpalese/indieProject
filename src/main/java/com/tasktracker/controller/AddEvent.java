@@ -28,16 +28,10 @@ public class AddEvent extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //Get date of event
-        String stringEventDate = req.getParameter("eventDate");
-
-        //Format date of event to LocalDate
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-        LocalDate eventDate = LocalDate.parse(stringEventDate, dtf);
-
+        String eventDate = req.getParameter("eventDate");
 
         //Send event date to addEvent jsp
-        HttpSession session = req.getSession();
-        session.setAttribute("eventDate", eventDate);
+        req.setAttribute("eventDate", eventDate);
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users/addEvent.jsp");
         dispatcher.forward(req, resp);

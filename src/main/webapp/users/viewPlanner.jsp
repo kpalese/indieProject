@@ -75,7 +75,7 @@
 
                     <div class="plannerRow row w-100">
                         <div class="col-2">
-                            <h3>${sessionScope.secondDayOfWeek}<br/>${sessionScope.shorthandSecondDateOfWeek}</h3>
+                            <h3>${pageDates.getDayOfWeek(pageDates.getDateOfWeek(2))}<br/>${pageDates.getLocalDateToMDD(pageDates.getDateOfWeek(2))}</h3>
                         </div>
 
                         <div class="col">
