@@ -1,7 +1,6 @@
 package com.tasktracker.controller;
 
 import com.tasktracker.entity.Event;
-import com.tasktracker.entity.User;
 import com.tasktracker.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,7 +10,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -22,19 +20,19 @@ import java.time.LocalTime;
  */
 
 @WebServlet(
-        urlPatterns = {"/users/addEventAction"}
+        urlPatterns = {"/users/editEventAction"}
 )
-public class AddEventAction extends HttpServlet {
+public class EditEventAction extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
+        //Get event to be edited
+        String eventId = req.getParameter("id");
+        GenericDao eventDao = new GenericDao(Event.class);
+        Event eventToEdit = (Event)eventDao.getById(Integer.parseInt(eventId));
 
-        //Get user
-        User user = (User)session.getAttribute("user");
-
-        //Convert date and time variables from Strings
+        //Convert user-entered date and time variables from Strings
         LocalDate eventDate = LocalDate.parse(req.getParameter("eventDate"));
         LocalTime startTime = LocalTime.parse(req.getParameter("startTime"));
         LocalTime endTime = null;
@@ -42,12 +40,15 @@ public class AddEventAction extends HttpServlet {
             endTime = LocalTime.parse(req.getParameter("endTime"));
         }
 
-        //Create event object and insert into database
-        Event event = new Event(req.getParameter("eventName"), eventDate, startTime, endTime, req.getParameter("notes"), user);
-        GenericDao eventDao = new GenericDao(Event.class);
-        eventDao.insert(event);
+        //Update event information in database
+        eventToEdit.setName(req.getParameter("eventName"));
+        eventToEdit.setDate(eventDate);
+        eventToEdit.setStartTime(startTime);
+        eventToEdit.setEndTime(endTime);
+        eventToEdit.setNotes(req.getParameter("notes"));
+        eventDao.saveOrUpdate(eventToEdit);
 
-        //TODO: Message that event was successfully added?
+        //TODO: Message that event was successfully updated?
 
         resp.sendRedirect(req.getContextPath() + "/users/viewPlanner");
     }

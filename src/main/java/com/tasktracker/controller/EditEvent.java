@@ -11,7 +11,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet(
@@ -27,9 +26,8 @@ public class EditEvent extends HttpServlet {
         GenericDao eventDao = new GenericDao(Event.class);
         Event eventToEdit = (Event)eventDao.getById(eventId);
 
-        //Add event to the session
-        HttpSession session = req.getSession();
-        session.setAttribute("eventToEdit", eventToEdit);
+        //Add event to the request
+        req.setAttribute("eventToEdit", eventToEdit);
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users/editEvent.jsp");
         dispatcher.forward(req, resp);

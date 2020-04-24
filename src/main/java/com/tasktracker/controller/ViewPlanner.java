@@ -1,6 +1,5 @@
 package com.tasktracker.controller;
 
-import com.tasktracker.entity.Event;
 import com.tasktracker.entity.PageDates;
 import com.tasktracker.entity.User;
 import com.tasktracker.persistence.GenericDao;
