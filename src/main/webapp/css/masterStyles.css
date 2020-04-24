@@ -71,6 +71,10 @@ h2 {
     color: red;
 }
 
+.fa-minus-circle {
+    margin-right: .5em;
+}
+
 /**
 * Scrollbar styles
  */
