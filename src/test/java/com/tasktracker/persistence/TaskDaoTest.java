@@ -57,11 +57,10 @@ public class TaskDaoTest {
         LocalDate date = LocalDate.parse("2020-05-23");
         String frequency = "once";
         String notes = "This new task is going to be great!";
-        boolean complete = false;
         GenericDao userDao = new GenericDao(User.class);
         User user = (User)userDao.getById(1);
 
-        Task newTask = new Task(name, date, frequency, notes, complete, user);
+        Task newTask = new Task(name, date, frequency, notes, user);
         int id = genericDao.insert(newTask);
         assertNotEquals(0,id);
         Task insertedTask = (Task)genericDao.getById(id);

@@ -37,12 +37,19 @@ public class AddTaskAction extends HttpServlet {
         LocalDate taskDate = LocalDate.parse(req.getParameter("taskDate"));
 
         //Create task object and insert into database
-        Task task = new Task(req.getParameter("taskName"), taskDate, req.getParameter("frequency"), req.getParameter("notes"), false, user);
-        GenericDao taskDao = new GenericDao(Task.class);
-        taskDao.insert(task);
+        //If frequency is once
+        if (req.getParameter("frequency").equals("Once")) {
+            Task task = new Task(req.getParameter("taskName"), taskDate, req.getParameter("frequency"), req.getParameter("notes"), user);
+            GenericDao taskDao = new GenericDao(Task.class);
+            taskDao.insert(task);
+        }
 
 
-        //If frequency is once/daily/weekly...
+
+
+
+
+        //If frequency is daily/weekly...
 
 
 
