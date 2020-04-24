@@ -1,13 +1,5 @@
-#mainLogo {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    height: 10em;
-    width: auto;
-}
-
 nav {
-    margin-bottom: .5em;
+    margin-bottom: 1em;
 }
 
 .wrapper {
@@ -40,8 +32,15 @@ h2 {
     font-size: 1.5em;
 }
 
+#welcomeUser {
+    background-color: lightblue;
+    background-image: linear-gradient(-90deg, white, #e5f7fd);
+    padding: .25em;
+    padding-left: 20%;
+}
+
 #plannerContainer {
-    max-height: 62vh;
+    max-height: 75vh;
     width: auto;
     overflow-y: scroll;
 }

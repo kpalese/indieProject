@@ -3,6 +3,9 @@
 <%--If user is not logged in--%>
 <c:if test="${sessionScope.user == null}">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="${pageContext.request.contextPath}/index.jsp">
+            <img src=${pageContext.request.contextPath}/images/taskTrackerHorizontal.png alt="task tracker logo" id="mainLogoHorizonal">
+        </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -19,6 +22,9 @@
 <%--If user is logged in--%>
 <c:if test="${sessionScope.user != null}">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="${pageContext.request.contextPath}/index.jsp">
+            <img src=${pageContext.request.contextPath}/images/taskTrackerHorizontal.png alt="task tracker logo" id="mainLogoHorizonal">
+        </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">

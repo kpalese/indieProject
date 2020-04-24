@@ -4,7 +4,6 @@
 
 <html>
 <body>
-    <%@include file="../templates/header.jsp"%>
     <%@include file="../templates/navmenu.jsp"%>
 
     <%--    Set variable for pageDate object--%>
@@ -18,7 +17,7 @@
             <div class="headerContainer col-12">
                 <div class="row w-100">
                     <div class="col-2">
-                        <p class="inline">Welcome ${user.userName}!</p>
+                        <p class="inline-block" id="welcomeUser">Welcome ${user.userName}!</p>
                     </div>
                     <div class="col-10">
                         <h2 class="inline offset-2"><i class="fas fa-angle-left">
