@@ -43,7 +43,7 @@ public class ViewPlanner extends HttpServlet {
         //TODO: Verify list of users is only 1?
         session.setAttribute("user", user);
 
-        //Get current date and then first date of the week
+        //Get current date and first date of the week
         LocalDate now = LocalDate.now();
         TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
         LocalDate firstDateOfWeek = now.with(fieldUS, 1);

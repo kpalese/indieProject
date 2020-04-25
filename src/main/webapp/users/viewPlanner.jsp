@@ -12,14 +12,14 @@
            scope = "request" />
 
     <main>
-        <div class="mainContainer col-12 container-fluid text-wrap">
+        <div class="mainContainer col-sm-12 container-fluid text-wrap">
 
-            <div class="headerContainer col-12">
+            <div class="headerContainer col-sm-12">
                 <div class="row w-100">
-                    <div class="col-2">
+                    <div class="col-sm-2">
                         <p class="inline-block" id="welcomeUser">Welcome ${user.userName}!</p>
                     </div>
-                    <div class="col-10">
+                    <div class="col-sm-10">
                         <h2 class="inline offset-2"><i class="fas fa-angle-left">
                         </i> Week of ${pageDates.getLocalDateToMDDYYYY(pageDates.getDateOfWeek(1))} - ${pageDates.getLocalDateToMDDYYYY(pageDates.getDateOfWeek(7))} <i class="fas fa-angle-right"></i></h2>
                     </div>
@@ -28,7 +28,7 @@
 
             <div class="row w-100">
 
-                <div id="plannerContainer" class="container col-8">
+                <div id="plannerContainer" class="container col-sm-8">
                     <div class="row w-100">
                         <div class="col offset-2">
                             <p class="categoryHeading">Events</p>
@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="plannerRow row w-100">
-                        <div class="col-2">
+                        <div class="col-sm-2">
                             <h3>${pageDates.getDayOfWeek(pageDates.getDateOfWeek(1))}<br/>${pageDates.getLocalDateToMDD(pageDates.getDateOfWeek(1))}</h3>
                         </div>
 
@@ -50,8 +50,8 @@
                                     <c:forEach var="event" items="${sessionScope.user.getEventsByDate(pageDates.getDateOfWeek(1))}">
                                         <li class="list-group-item">
                                             <div class="row">
-                                                <a href="${pageContext.request.contextPath}/users/deleteEvent?id=${event.id}" class="col-2"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete event"></i></a>
-                                                <a href="${pageContext.request.contextPath}/users/editEvent?id=${event.id}" class="col-10" data-toggle="tooltip" title="${event.notes}">
+                                                <a href="${pageContext.request.contextPath}/users/deleteEvent?id=${event.id}" class="col-sm-2"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete event"></i></a>
+                                                <a href="${pageContext.request.contextPath}/users/editEvent?id=${event.id}" class="col-sm-10" data-toggle="tooltip" title="${event.notes}">
                                                 <button type="button" class="btn btn-light"> ${event.formattedStartTime}
                                                     <c:if test="${event.formattedEndTime!=null}"> &ndash; ${event.formattedEndTime}</c:if>
                                                         ${event.name}</button></a>
@@ -70,8 +70,8 @@
                                     <c:forEach var="task" items="${sessionScope.user.getTasksByDate(pageDates.getDateOfWeek(1))}">
                                         <li class="list-group-item">
                                             <div class="row">
-                                                <a href="${pageContext.request.contextPath}/users/deleteTask?id=${task.id}" class="col-2"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete task"></i></a>
-                                                <a href="${pageContext.request.contextPath}/users/editTask?id=${task.id}" class="col-10" data-toggle="tooltip" title="${task.notes}">
+                                                <a href="${pageContext.request.contextPath}/users/deleteTask?id=${task.id}" class="col-sm-2"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete task"></i></a>
+                                                <a href="${pageContext.request.contextPath}/users/editTask?id=${task.id}" class="col-sm-10" data-toggle="tooltip" title="${task.notes}">
                                                     <button type="button" class="btn btn-light"> ${task.name}</button></a>
                                             </div>
                                         </li>
@@ -83,7 +83,7 @@
                     </div>
 
                     <div class="plannerRow row w-100">
-                        <div class="col-2">
+                        <div class="col-sm-2">
                             <h3>${pageDates.getDayOfWeek(pageDates.getDateOfWeek(2))}<br/>${pageDates.getLocalDateToMDD(pageDates.getDateOfWeek(2))}</h3>
                         </div>
 
@@ -121,7 +121,7 @@
 
                 </div>
 
-                <div id="to-do-container" class="col-4">
+                <div id="to-do-container" class="col-sm-4">
 
                     <div class="row">
                         <p class="categoryHeading">To Do List</p>
