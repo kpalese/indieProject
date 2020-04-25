@@ -36,22 +36,10 @@ public class AddTaskAction extends HttpServlet {
         //Convert date variable from String
         LocalDate taskDate = LocalDate.parse(req.getParameter("taskDate"));
 
-        //Create task object and insert into database
-        //If frequency is once
-        if (req.getParameter("frequency").equals("Once")) {
-            Task task = new Task(req.getParameter("taskName"), taskDate, req.getParameter("frequency"), req.getParameter("notes"), null, user);
-            GenericDao taskDao = new GenericDao(Task.class);
-            taskDao.insert(task);
-        }
-
-
-
-
-
-
-        //If frequency is daily/weekly...
-
-
+        //Create a Task object and insert into database
+        Task task = new Task(req.getParameter("taskName"), taskDate, req.getParameter("frequency"), req.getParameter("notes"), null, user);
+        GenericDao taskDao = new GenericDao(Task.class);
+        taskDao.insert(task);
 
         //TODO: Message that event was successfully added?
 

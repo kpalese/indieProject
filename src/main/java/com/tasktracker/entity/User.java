@@ -28,11 +28,11 @@ public class User {
     @Column(name ="auto_fwd_incomplete_tasks")
     private boolean autoFwdIncompleteTasks;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<Event> events = new ArrayList<>();
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
-    private List<Task> tasks = new ArrayList<>();
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Task> tasks = new HashSet<>();
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Role> roles = new HashSet<>();
@@ -188,8 +188,24 @@ public class User {
      *
      * @return the tasks
      */
-    public List<Task> getTasks() {
+    public Set<Task> getTasks() {
         return tasks;
+    }
+
+    /**
+     * TODO dao test??
+     */
+    public Set<Task> getTasksByDate(LocalDate localDate) {
+        Set<Task> tasksMatchingDate = new HashSet<>();
+        for (Task task : this.getTasks()) {
+            if (task.getDate().equals(localDate)) {
+                tasksMatchingDate.add(task);
+            }
+        }
+
+        //TODO: get recurring tasks that occur on this day
+
+        return tasksMatchingDate;
     }
 
     /**
@@ -197,7 +213,7 @@ public class User {
      *
      * @param tasks the tasks
      */
-    public void setTasks(List<Task> tasks) {
+    public void setTasks(Set<Task> tasks) {
         this.tasks = tasks;
     }
 

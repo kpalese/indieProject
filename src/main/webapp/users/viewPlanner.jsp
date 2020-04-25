@@ -67,10 +67,16 @@
                         <div class="col">
                             <div class="card w-100">
                                 <ul class="list-group list-group-flush w-100">
-                                    <li class="list-group-item w-100">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                    <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addTask" class="btn btn-primary">Add Task</a></li>
+                                    <c:forEach var="task" items="${sessionScope.user.getTasksByDate(pageDates.getDateOfWeek(1))}">
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <a href="${pageContext.request.contextPath}/users/deleteTask?id=${task.id}" class="col-2"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete task"></i></a>
+                                                <a href="${pageContext.request.contextPath}/users/editTask?id=${task.id}" class="col-10" data-toggle="tooltip" title="${task.notes}">
+                                                    <button type="button" class="btn btn-light"> ${task.name}</button></a>
+                                            </div>
+                                        </li>
+                                    </c:forEach>
+                                    <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addTask?taskDate=${pageDates.getDateOfWeek(1)}" class="btn btn-primary">Add Task</a></li>
                                 </ul>
                             </div>
                         </div>
