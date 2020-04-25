@@ -50,8 +50,8 @@
                                     <c:forEach var="event" items="${sessionScope.user.getEventsByDate(pageDates.getDateOfWeek(1))}">
                                         <li class="list-group-item">
                                             <div class="row">
-                                                <a href="${pageContext.request.contextPath}/users/deleteEvent?id=${event.id}" class="col-1"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete event"></i></a>
-                                                <a href="${pageContext.request.contextPath}/users/editEvent?id=${event.id}" class="col-11" data-toggle="tooltip" title="${event.notes}">
+                                                <a href="${pageContext.request.contextPath}/users/deleteEvent?id=${event.id}" class="col-2"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete event"></i></a>
+                                                <a href="${pageContext.request.contextPath}/users/editEvent?id=${event.id}" class="col-10" data-toggle="tooltip" title="${event.notes}">
                                                 <button type="button" class="btn btn-light"> ${event.formattedStartTime}
                                                     <c:if test="${event.formattedEndTime!=null}"> &ndash; ${event.formattedEndTime}</c:if>
                                                         ${event.name}</button></a>

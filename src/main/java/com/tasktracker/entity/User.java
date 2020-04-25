@@ -28,11 +28,11 @@ public class User {
     @Column(name ="auto_fwd_incomplete_tasks")
     private boolean autoFwdIncompleteTasks;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<Event> events = new ArrayList<>();
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Task> tasks = new HashSet<>();
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    private List<Task> tasks = new ArrayList<>();
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Role> roles = new HashSet<>();
@@ -188,7 +188,7 @@ public class User {
      *
      * @return the tasks
      */
-    public Set<Task> getTasks() {
+    public List<Task> getTasks() {
         return tasks;
     }
 
@@ -197,7 +197,7 @@ public class User {
      *
      * @param tasks the tasks
      */
-    public void setTasks(Set<Task> tasks) {
+    public void setTasks(List<Task> tasks) {
         this.tasks = tasks;
     }
 

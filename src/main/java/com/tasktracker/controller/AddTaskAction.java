@@ -39,7 +39,7 @@ public class AddTaskAction extends HttpServlet {
         //Create task object and insert into database
         //If frequency is once
         if (req.getParameter("frequency").equals("Once")) {
-            Task task = new Task(req.getParameter("taskName"), taskDate, req.getParameter("frequency"), req.getParameter("notes"), user);
+            Task task = new Task(req.getParameter("taskName"), taskDate, req.getParameter("frequency"), req.getParameter("notes"), null, user);
             GenericDao taskDao = new GenericDao(Task.class);
             taskDao.insert(task);
         }

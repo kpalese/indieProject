@@ -5,10 +5,8 @@ import com.tasktracker.entity.User;
 import com.tasktracker.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import java.time.LocalDate;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TaskDaoTest {
@@ -31,7 +29,7 @@ public class TaskDaoTest {
         Task retrievedTask = (Task)genericDao.getById(2);
         assertNotNull(retrievedTask);
         assertEquals("Call Mom", retrievedTask.getName());
-        LocalDate expectedDate = LocalDate.parse("2020-05-01");
+        LocalDate expectedDate = LocalDate.parse("2020-03-02");
         assertEquals(expectedDate, retrievedTask.getDate());
     }
 
@@ -57,10 +55,11 @@ public class TaskDaoTest {
         LocalDate date = LocalDate.parse("2020-05-23");
         String frequency = "once";
         String notes = "This new task is going to be great!";
+        LocalDate lastDateCompleted = null;
         GenericDao userDao = new GenericDao(User.class);
         User user = (User)userDao.getById(1);
 
-        Task newTask = new Task(name, date, frequency, notes, user);
+        Task newTask = new Task(name, date, frequency, notes, lastDateCompleted, user);
         int id = genericDao.insert(newTask);
         assertNotEquals(0,id);
         Task insertedTask = (Task)genericDao.getById(id);

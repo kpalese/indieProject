@@ -32,6 +32,9 @@ public class Task {
     @Column(name = "notes")
     private String notes;
 
+    @Column(name="last_date_completed")
+    private LocalDate lastDateCompleted;
+
     @ManyToOne
     private User user;
 
@@ -47,13 +50,15 @@ public class Task {
      * @param date      the date
      * @param frequency the frequency
      * @param notes     the notes
+     * @param lastDateCompleted the date the task was last completed
      * @param user      the user
      */
-    public Task(String name, LocalDate date, String frequency, String notes, User user) {
+    public Task(String name, LocalDate date, String frequency, String notes, LocalDate lastDateCompleted, User user) {
         this.name = name;
         this.date = date;
         this.frequency = frequency;
         this.notes = notes;
+        this.lastDateCompleted = lastDateCompleted;
         this.user = user;
     }
 
@@ -148,6 +153,24 @@ public class Task {
     }
 
     /**
+     * Gets last date completed.
+     *
+     * @return the last date completed
+     */
+    public LocalDate getLastDateCompleted() {
+        return lastDateCompleted;
+    }
+
+    /**
+     * Sets last date completed.
+     *
+     * @param lastDateCompleted the last date completed
+     */
+    public void setLastDateCompleted(LocalDate lastDateCompleted) {
+        this.lastDateCompleted = lastDateCompleted;
+    }
+
+    /**
      * Gets user.
      *
      * @return the user
@@ -174,11 +197,13 @@ public class Task {
                 Objects.equals(name, task.name) &&
                 Objects.equals(date, task.date) &&
                 Objects.equals(frequency, task.frequency) &&
-                Objects.equals(notes, task.notes);
+                Objects.equals(notes, task.notes) &&
+                Objects.equals(lastDateCompleted, task.lastDateCompleted) &&
+                Objects.equals(user, task.user);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, date, frequency, notes);
+        return Objects.hash(id, name, date, frequency, notes, lastDateCompleted);
     }
 }
