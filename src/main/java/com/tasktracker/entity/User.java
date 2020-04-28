@@ -1,10 +1,8 @@
 package com.tasktracker.entity;
 
-import com.tasktracker.persistence.GenericDao;
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
 import java.util.*;
 
 /**
@@ -203,15 +201,19 @@ public class User {
 
         for (Task task : this.getTasks()) {
             //Get 'once' tasks
-            if (task.getFrequency().equals("once") && task.getDate().equals(localDate)) {
-                tasksMatchingDate.add(task);
-            }
+            if (task.getFrequency().equals("once")) {
+                if (task.getDate().equals(localDate)) {
+                    tasksMatchingDate.add(task);
+                }
             //Get incomplete 'daily' tasks
-            else if (task.getFrequency().equals("daily") && task.getLastDateCompleted().isBefore(localDate)) {
-                tasksMatchingDate.add(task);
-            }
+            } else if (task.getFrequency().equals("daily")) {
+                if (task.getLastDateCompleted() == null) {
+                    tasksMatchingDate.add(task);
+                } else if (task.getLastDateCompleted().isBefore(localDate)) {
+                    tasksMatchingDate.add(task);
+                }
             //Get incomplete 'weekly' tasks
-            else if (task.getFrequency().equals("weekly") && task.getWeeklyTaskDayOfWeek().equals(dayOfWeek)) {
+            } else if (task.getFrequency().equals("weekly") && task.getWeeklyTaskDayOfWeek().equals(dayOfWeek)) {
                 if (task.getLastDateCompleted() == null) {
                     tasksMatchingDate.add(task);
                 } else if (task.getLastDateCompleted().isBefore(localDate)) {
