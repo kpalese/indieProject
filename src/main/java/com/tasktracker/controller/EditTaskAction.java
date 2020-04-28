@@ -25,7 +25,7 @@ public class EditTaskAction extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         //Get task to be edited
         String taskId = req.getParameter("id");
         GenericDao taskDao = new GenericDao(Task.class);

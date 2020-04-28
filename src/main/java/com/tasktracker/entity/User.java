@@ -205,18 +205,18 @@ public class User {
                 if (task.getDate().equals(localDate)) {
                     tasksMatchingDate.add(task);
                 }
-            //Get incomplete 'daily' tasks
+            //Get incomplete 'daily' tasks and daily tasks that were completed on this day
             } else if (task.getFrequency().equals("daily")) {
                 if (task.getLastDateCompleted() == null) {
                     tasksMatchingDate.add(task);
-                } else if (task.getLastDateCompleted().isBefore(localDate)) {
+                } else if (task.getLastDateCompleted().isBefore(localDate) || task.getLastDateCompleted().isEqual(localDate)) {
                     tasksMatchingDate.add(task);
                 }
-            //Get incomplete 'weekly' tasks
+            //Get incomplete 'weekly' tasks and weekly tasks that were completed on this day
             } else if (task.getFrequency().equals("weekly") && task.getWeeklyTaskDayOfWeek().equals(dayOfWeek)) {
                 if (task.getLastDateCompleted() == null) {
                     tasksMatchingDate.add(task);
-                } else if (task.getLastDateCompleted().isBefore(localDate)) {
+                } else if (task.getLastDateCompleted().isBefore(localDate) || task.getLastDateCompleted().isEqual(localDate)) {
                     tasksMatchingDate.add(task);
                 }
             }
