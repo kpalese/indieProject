@@ -37,11 +37,9 @@ public class AddTaskAction extends HttpServlet {
         LocalDate taskDate = LocalDate.parse(req.getParameter("taskDate"));
 
         //If a weekly task, get day of week it should repeat on
-        String dayOfWeek = null;
+        String dayOfWeek = "";
         if (req.getParameter("frequency").equals("weekly")) {
-            dayOfWeek = taskDate.getDayOfWeek().toString();
-            //TODO: Remove below
-            System.out.print("****Day of week: " + dayOfWeek);
+           dayOfWeek = taskDate.getDayOfWeek().toString();
         }
 
         //Create a Task object and insert into database

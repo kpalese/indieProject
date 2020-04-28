@@ -22,9 +22,9 @@
             <div class="form-group">
                 <label for="frequency"><span class="required">*</span>Frequency: </label>
                  <select class="form-control" name="frequency" id="frequency">
-                     <option>Once</option>
-                     <option>Daily</option>
-                     <option>Weekly</option>
+                     <option>once</option>
+                     <option>daily</option>
+                     <option>weekly</option>
                 </select>
             </div>
             <div class="form-group">

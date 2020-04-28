@@ -139,7 +139,7 @@ public class User {
     }
 
     /**
-     * TODO dao test??
+     *
      */
     public List<Event> getEventsByDate(LocalDate localDate) {
         List<Event> eventsMatchingDate = new ArrayList<>();
@@ -195,32 +195,30 @@ public class User {
     }
 
     /**
-     * TODO dao test??
+     * //TODO: Clean this up? Had lots of trouble with weekly tasks retrieving null; however once I really broke it up it works...
      */
-    public List<Task> getTasksByDate(LocalDate localDate) {
-        List<Task> tasksMatchingDate = new ArrayList<>();
+    public Set<Task> getTasksByDate(LocalDate localDate) {
+        Set<Task> tasksMatchingDate = new HashSet<>();
+        String dayOfWeek = localDate.getDayOfWeek().toString().toUpperCase();
 
-        //Get 'once' tasks
         for (Task task : this.getTasks()) {
-            if (task.getDate().equals(localDate)) {
+            //Get 'once' tasks
+            if (task.getFrequency().equals("once") && task.getDate().equals(localDate)) {
                 tasksMatchingDate.add(task);
             }
-        }
-
-        //Get incomplete 'daily' tasks
-        for (Task task : this.getTasks()) {
-            if (task.getFrequency().equals("daily") && task.getLastDateCompleted().isBefore(localDate)) {
+            //Get incomplete 'daily' tasks
+            else if (task.getFrequency().equals("daily") && task.getLastDateCompleted().isBefore(localDate)) {
                 tasksMatchingDate.add(task);
             }
-        }
-
-        //Get incomplete 'weekly' tasks
-        for (Task task : this.getTasks()) {
-            if (task.getFrequency().equals("weekly") && task.getWeeklyTaskDayOfWeek().equals(localDate.getDayOfWeek().toString()) && task.getLastDateCompleted().isBefore(localDate)) {
-                tasksMatchingDate.add(task);
+            //Get incomplete 'weekly' tasks
+            else if (task.getFrequency().equals("weekly") && task.getWeeklyTaskDayOfWeek().equals(dayOfWeek)) {
+                if (task.getLastDateCompleted() == null) {
+                    tasksMatchingDate.add(task);
+                } else if (task.getLastDateCompleted().isBefore(localDate)) {
+                    tasksMatchingDate.add(task);
+                }
             }
         }
-
         return tasksMatchingDate;
     }
 

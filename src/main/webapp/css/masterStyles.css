@@ -76,6 +76,11 @@ h2 {
     color: red;
 }
 
+.frequency {
+    font-size: .75em;
+    font-style: italic;
+}
+
 .fa-minus-circle {
     /*margin-right: .5em;*/
 }
