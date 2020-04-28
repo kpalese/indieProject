@@ -36,8 +36,16 @@ public class AddTaskAction extends HttpServlet {
         //Convert date variable from String
         LocalDate taskDate = LocalDate.parse(req.getParameter("taskDate"));
 
+        //If a weekly task, get day of week it should repeat on
+        String dayOfWeek = null;
+        if (req.getParameter("frequency").equals("weekly")) {
+            dayOfWeek = taskDate.getDayOfWeek().toString();
+            //TODO: Remove below
+            System.out.print("****Day of week: " + dayOfWeek);
+        }
+
         //Create a Task object and insert into database
-        Task task = new Task(req.getParameter("taskName"), taskDate, req.getParameter("frequency"), req.getParameter("notes"), null, user);
+        Task task = new Task(req.getParameter("taskName"), taskDate, req.getParameter("frequency"), dayOfWeek, req.getParameter("notes"), null, user);
         GenericDao taskDao = new GenericDao(Task.class);
         taskDao.insert(task);
 

@@ -67,15 +67,15 @@
                         <div class="col">
                             <div class="card w-100">
                                 <ul class="list-group list-group-flush w-100">
-                                    <c:forEach var="task" items="${sessionScope.user.getTasksByDate(pageDates.getDateOfWeek(1))}">
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <a href="${pageContext.request.contextPath}/users/deleteTask?id=${task.id}" class="col-sm-2"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete task"></i></a>
-                                                <a href="${pageContext.request.contextPath}/users/editTask?id=${task.id}" class="col-sm-10" data-toggle="tooltip" title="${task.notes}">
-                                                    <button type="button" class="btn btn-light"> ${task.name}</button></a>
-                                            </div>
-                                        </li>
-                                    </c:forEach>
+<%--                                    <c:forEach var="task" items="${sessionScope.user.getTasksByDate(pageDates.getDateOfWeek(1))}">--%>
+<%--                                        <li class="list-group-item">--%>
+<%--                                            <div class="row">--%>
+<%--                                                <a href="${pageContext.request.contextPath}/users/deleteTask?id=${task.id}" class="col-sm-2"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete task"></i></a>--%>
+<%--                                                <a href="${pageContext.request.contextPath}/users/editTask?id=${task.id}" class="col-sm-10" data-toggle="tooltip" title="${task.notes}">--%>
+<%--                                                    <button type="button" class="btn btn-light"> ${task.name} <c:if test="${task.frequency !='once'}"> (${task.frequency})$</c:if></button></a>--%>
+<%--                                            </div>--%>
+<%--                                        </li>--%>
+<%--                                    </c:forEach>--%>
                                     <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addTask?taskDate=${pageDates.getDateOfWeek(1)}" class="btn btn-primary">Add Task</a></li>
                                 </ul>
                             </div>

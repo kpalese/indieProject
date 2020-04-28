@@ -20,6 +20,6 @@ VALUES (1,'Meeting with Ann','2020-02-29','09:30:00','11:00:00','This is a very 
 
 delete from TASK;
 INSERT INTO TASK
-VALUES (1, 'Replace furnace filter', '2020-05-26', 'once', 'Use the ABC321 type', null, 1),
-       (2, 'Call Mom', '2020-03-02', 'weekly',NULL, '2020-04-01', 1),
-       (3, 'Water the plants', '2020-04-10', 'weekly',NULL, '2020-04-17', 2);
+VALUES (1, 'Replace furnace filter', '2020-05-26', 'once', null, 'Use the ABC321 type', null, 1),
+       (2, 'Call Mom', '2020-03-02', 'weekly', 'Monday', null, '2020-04-01', 1),
+       (3, 'Water the plants', '2020-04-10', 'weekly', 'Tuesday', null, '2020-04-17', 2);

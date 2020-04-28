@@ -1,8 +1,10 @@
 package com.tasktracker.entity;
 
+import com.tasktracker.persistence.GenericDao;
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.*;
 
 /**
@@ -195,15 +197,29 @@ public class User {
     /**
      * TODO dao test??
      */
-    public Set<Task> getTasksByDate(LocalDate localDate) {
-        Set<Task> tasksMatchingDate = new HashSet<>();
+    public List<Task> getTasksByDate(LocalDate localDate) {
+        List<Task> tasksMatchingDate = new ArrayList<>();
+
+        //Get 'once' tasks
         for (Task task : this.getTasks()) {
             if (task.getDate().equals(localDate)) {
                 tasksMatchingDate.add(task);
             }
         }
 
-        //TODO: get recurring tasks that occur on this day
+        //Get incomplete 'daily' tasks
+        for (Task task : this.getTasks()) {
+            if (task.getFrequency().equals("daily") && task.getLastDateCompleted().isBefore(localDate)) {
+                tasksMatchingDate.add(task);
+            }
+        }
+
+        //Get incomplete 'weekly' tasks
+        for (Task task : this.getTasks()) {
+            if (task.getFrequency().equals("weekly") && task.getWeeklyTaskDayOfWeek().equals(localDate.getDayOfWeek().toString()) && task.getLastDateCompleted().isBefore(localDate)) {
+                tasksMatchingDate.add(task);
+            }
+        }
 
         return tasksMatchingDate;
     }

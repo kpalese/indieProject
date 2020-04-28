@@ -59,7 +59,7 @@ public class TaskDaoTest {
         GenericDao userDao = new GenericDao(User.class);
         User user = (User)userDao.getById(1);
 
-        Task newTask = new Task(name, date, frequency, notes, lastDateCompleted, user);
+        Task newTask = new Task(name, date, frequency, "daily", notes, lastDateCompleted, user);
         int id = genericDao.insert(newTask);
         assertNotEquals(0,id);
         Task insertedTask = (Task)genericDao.getById(id);

@@ -29,6 +29,9 @@ public class Task {
     @Column(name = "frequency")
     private String frequency;
 
+    @Column(name = "weekly_DOW")
+    private String weeklyTaskDayOfWeek;
+
     @Column(name = "notes")
     private String notes;
 
@@ -53,10 +56,11 @@ public class Task {
      * @param lastDateCompleted the date the task was last completed
      * @param user      the user
      */
-    public Task(String name, LocalDate date, String frequency, String notes, LocalDate lastDateCompleted, User user) {
+    public Task(String name, LocalDate date, String frequency, String weeklyTaskDayOfWeek, String notes, LocalDate lastDateCompleted, User user) {
         this.name = name;
         this.date = date;
         this.frequency = frequency;
+        this.weeklyTaskDayOfWeek = weeklyTaskDayOfWeek;
         this.notes = notes;
         this.lastDateCompleted = lastDateCompleted;
         this.user = user;
@@ -135,6 +139,24 @@ public class Task {
     }
 
     /**
+     * Gets weekly task day of week.
+     *
+     * @return the day of the week that weekly tasks occur
+     */
+    public String getWeeklyTaskDayOfWeek() {
+        return weeklyTaskDayOfWeek;
+    }
+
+    /**
+     * Sets weekly task day of week.
+     *
+     * @param weeklyTaskDayOfWeek the day of the week that weekly tasks occur
+     */
+    public void setWeeklyTaskDayOfWeek(String weeklyTaskDayOfWeek) {
+        this.weeklyTaskDayOfWeek = weeklyTaskDayOfWeek;
+    }
+
+    /**
      * Gets notes.
      *
      * @return the notes
@@ -197,6 +219,7 @@ public class Task {
                 Objects.equals(name, task.name) &&
                 Objects.equals(date, task.date) &&
                 Objects.equals(frequency, task.frequency) &&
+                Objects.equals(weeklyTaskDayOfWeek, task.weeklyTaskDayOfWeek) &&
                 Objects.equals(notes, task.notes) &&
                 Objects.equals(lastDateCompleted, task.lastDateCompleted) &&
                 Objects.equals(user, task.user);
@@ -204,6 +227,6 @@ public class Task {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, date, frequency, notes, lastDateCompleted);
+        return Objects.hash(id, name, date, frequency, weeklyTaskDayOfWeek, notes, lastDateCompleted);
     }
 }
