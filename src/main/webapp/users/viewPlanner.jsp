@@ -50,8 +50,8 @@
                                     <c:forEach var="event" items="${sessionScope.user.getEventsByDate(pageDates.getDateOfWeek(1))}">
                                         <li class="list-group-item">
                                             <div class="row">
-                                                <a href="${pageContext.request.contextPath}/users/deleteEvent?id=${event.id}" class="col-sm-2"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete event"></i></a>
-                                                <a href="${pageContext.request.contextPath}/users/editEvent?id=${event.id}" class="col-sm-10" data-toggle="tooltip" title="${event.notes}">
+                                                <a href="${pageContext.request.contextPath}/users/deleteEvent?id=${event.id}" class="col-sm-1"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete event"></i></a>
+                                                <a href="${pageContext.request.contextPath}/users/editEvent?id=${event.id}" class="col" data-toggle="tooltip" title="${event.notes}">
                                                 <button type="button" class="btn btn-light"> ${event.formattedStartTime}
                                                     <c:if test="${event.formattedEndTime!=null}"> &ndash; ${event.formattedEndTime}</c:if>
                                                         ${event.name}</button></a>
@@ -70,9 +70,11 @@
                                     <c:forEach var="task" items="${sessionScope.user.getTasksByDate(pageDates.getDateOfWeek(1))}">
                                         <li class="list-group-item">
                                             <div class="row">
-                                                <a href="${pageContext.request.contextPath}/users/deleteTask?id=${task.id}" class="col-sm-2"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete task"></i></a>
-                                                <a href="${pageContext.request.contextPath}/users/editTask?id=${task.id}" class="col-sm-10" data-toggle="tooltip" title="${task.notes}">
-                                                    <button type="button" class="btn btn-light"> ${task.name} <c:if test="${task.frequency !='once'}"> <span class="frequency">(${task.frequency})</span></c:if></button></a>
+                                                <a href="${pageContext.request.contextPath}/users/deleteTask?id=${task.id}" class="col-sm-1"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete task"></i></a>
+                                                <a href="${pageContext.request.contextPath}/users/completeTaskAction?id=${task.id}&date=${pageDates.getDateOfWeek(1)}" class="col-sm-1"><i class="fas fa-check-square" data-toggle="tooltip" title="Complete task"></i></a>
+                                                <a href="${pageContext.request.contextPath}/users/editTask?id=${task.id}" class="col" data-toggle="tooltip" title="${task.notes}">
+                                                    <button type="button" class="btn btn-light <c:if test="${task.lastDateCompleted == pageDates.getDateOfWeek(1)}">strikethrough</c:if>"> ${task.name} <c:if test="${task.frequency !='once'}"> <span class="frequency">(${task.frequency})</span></c:if>
+                                                        </button></a>
                                             </div>
                                         </li>
                                     </c:forEach>

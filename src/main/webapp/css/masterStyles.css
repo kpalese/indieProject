@@ -76,6 +76,10 @@ h2 {
     color: red;
 }
 
+.strikethrough {
+    text-decoration: line-through;
+}
+
 .frequency {
     font-size: .75em;
     font-style: italic;
