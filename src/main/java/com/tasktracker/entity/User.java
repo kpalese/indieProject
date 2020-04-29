@@ -195,8 +195,8 @@ public class User {
     /**
      * //TODO: Clean this up? Had lots of trouble with weekly tasks retrieving null; however once I really broke it up it works...
      */
-    public Set<Task> getTasksByDate(LocalDate localDate) {
-        Set<Task> tasksMatchingDate = new HashSet<>();
+    public List<Task> getTasksByDate(LocalDate localDate) {
+        List<Task> tasksMatchingDate = new ArrayList<>();
         String dayOfWeek = localDate.getDayOfWeek().toString().toUpperCase();
 
         for (Task task : this.getTasks()) {
@@ -221,6 +221,9 @@ public class User {
                 }
             }
         }
+        //Sort the tasks by last date completed
+        Collections.sort(tasksMatchingDate);
+
         return tasksMatchingDate;
     }
 

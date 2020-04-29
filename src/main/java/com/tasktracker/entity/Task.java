@@ -13,7 +13,7 @@ import java.util.Objects;
  */
 @Entity(name = "Task")
 @Table(name = "TASK")
-public class Task {
+public class Task implements Comparable<Task> {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
@@ -228,5 +228,22 @@ public class Task {
     @Override
     public int hashCode() {
         return Objects.hash(id, name, date, frequency, weeklyTaskDayOfWeek, notes, lastDateCompleted);
+    }
+
+    @Override
+    public int compareTo(Task t) {
+
+        if (getLastDateCompleted() == null || t.getLastDateCompleted() == null) {
+            return 0;
+        }
+        else if (this.getLastDateCompleted() == t.getLastDateCompleted()) {
+            return 0;
+        }
+        else if (this.getLastDateCompleted().isBefore(t.getLastDateCompleted())) {
+            return -1;
+        }
+        else {
+            return 0;
+        }
     }
 }
