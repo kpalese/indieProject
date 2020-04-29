@@ -25,20 +25,27 @@
                         </i> Week of ${pageDates.getLocalDateToMDDYYYY(pageDates.getDateOfWeek(1))} - ${pageDates.getLocalDateToMDDYYYY(pageDates.getDateOfWeek(7))} <i href="#" class="fas fa-angle-right"></i></h2>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="col offset-2 noLRPadding">
+                                <p class="categoryHeading">Events</p>
+                            </div>
+
+                            <div class="col noLRPadding">
+                                <p class="categoryHeading">Tasks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 noLRPadding">
+                            <p class="categoryHeading">To Do List</p>
+                    </div>
+                </div>
             </div>
 
             <div class="row w-100">
 
                 <div id="plannerContainer" class="container col-sm-8">
-                    <div class="row w-100">
-                        <div class="col offset-2">
-                            <p class="categoryHeading">Events</p>
-                        </div>
-
-                        <div class="col">
-                            <p class="categoryHeading">Tasks</p>
-                        </div>
-                    </div>
 
                     <%--Display a row of events and tasks for each of the 7 days in the week--%>
                     <c:forEach var="i" begin="1" end="7" step="1" >
@@ -106,9 +113,9 @@
 
                 <div id="to-do-container" class="col-sm-4">
 
-                    <div class="row">
-                        <p class="categoryHeading">To Do List</p>
-                    </div>
+<%--                    <div class="row">--%>
+<%--                        <p class="categoryHeading">To Do List</p>--%>
+<%--                    </div>--%>
 
                     <div class="row w-100">
                         <div class="card w-100">
