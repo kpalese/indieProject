@@ -68,15 +68,28 @@
                             <div class="card w-100">
                                 <ul class="list-group list-group-flush w-100">
                                     <c:forEach var="task" items="${sessionScope.user.getTasksByDate(pageDates.getDateOfWeek(1))}">
+                                        <c:if test="${task.lastDateCompleted == pageDates.getDateOfWeek(1)}">
                                         <li class="list-group-item">
                                             <div class="row">
                                                 <a href="${pageContext.request.contextPath}/users/deleteTask?id=${task.id}" class="col-sm-1"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete task"></i></a>
-                                                <a href="${pageContext.request.contextPath}/users/completeTaskAction?id=${task.id}&date=${pageDates.getDateOfWeek(1)}" class="col-sm-1"><i class="fas fa-check-square" data-toggle="tooltip" title="Complete task"></i></a>
-                                                <a href="${pageContext.request.contextPath}/users/editTask?id=${task.id}" class="col" data-toggle="tooltip" title="${task.notes}">
-                                                    <button type="button" class="btn btn-light <c:if test="${task.lastDateCompleted == pageDates.getDateOfWeek(1)}">strikethrough</c:if>"> ${task.name} <c:if test="${task.frequency !='once'}"> <span class="frequency">(${task.frequency})</span></c:if>
+                                                <a class="col offset-1" data-toggle="tooltip" title="${task.notes}">
+                                                    <button type="button" class="btn btn-light" disabled><s> ${task.name} <c:if test="${task.frequency !='once'}"> <span class="frequency">(${task.frequency})</span></c:if></s>
                                                         </button></a>
                                             </div>
                                         </li>
+                                        </c:if>
+
+                                        <c:if test="${task.lastDateCompleted != pageDates.getDateOfWeek(1)}">
+                                            <li class="list-group-item">
+                                                <div class="row">
+                                                    <a href="${pageContext.request.contextPath}/users/deleteTask?id=${task.id}" class="col-sm-1"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete task"></i></a>
+                                                    <a href="${pageContext.request.contextPath}/users/completeTaskAction?id=${task.id}&date=${pageDates.getDateOfWeek(1)}" class="col-sm-1"><i class="fas fa-check-square" data-toggle="tooltip" title="Complete task"></i></a>
+                                                    <a href="${pageContext.request.contextPath}/users/editTask?id=${task.id}" class="col" data-toggle="tooltip" title="${task.notes}">
+                                                        <button type="button" class="btn btn-light"> ${task.name} <c:if test="${task.frequency !='once'}"> <span class="frequency">(${task.frequency})</span></c:if>
+                                                        </button></a>
+                                                </div>
+                                            </li>
+                                        </c:if>
                                     </c:forEach>
                                     <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addTask?taskDate=${pageDates.getDateOfWeek(1)}" class="btn btn-primary">Add Task</a></li>
                                 </ul>
