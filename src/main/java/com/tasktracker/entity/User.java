@@ -35,6 +35,9 @@ public class User {
     private Set<Task> tasks = new HashSet<>();
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Todo> todos = new HashSet<>();
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Role> roles = new HashSet<>();
 
     /**
@@ -254,6 +257,44 @@ public class User {
     public void removeTask(Task task) {
         tasks.remove(task);
         task.setUser(null);
+    }
+
+    /**
+     * Gets todos.
+     *
+     * @return the todos
+     */
+    public Set<Todo> getTodos() {
+        return todos;
+    }
+
+    /**
+     * Sets todos.
+     *
+     * @param todos the todos
+     */
+    public void setTodos(Set<Todo> todos) {
+        this.todos = todos;
+    }
+
+    /**
+     * Add to-do.
+     *
+     * @param todo the to do list item
+     */
+    public void addTodo(Todo todo) {
+        todos.add(todo);
+        todo.setUser(this);
+    }
+
+    /**
+     * Remove to-do
+     *
+     * @param todo the to-do list item
+     */
+    public void removeTodo(Todo todo) {
+        todos.remove(todo);
+        todo.setUser(null);
     }
 
     /**

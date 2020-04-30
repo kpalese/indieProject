@@ -32,7 +32,7 @@ public class ViewPlanner extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        logger.info("****User is: " + req.getRemoteUser() + " and is user is " + req.isUserInRole("user"));
+        logger.info("****User is: " + req.getRemoteUser() + " and user role is " + req.isUserInRole("user"));
 
         HttpSession session = req.getSession();
 
@@ -46,6 +46,8 @@ public class ViewPlanner extends HttpServlet {
         //Get current date and first date of the week
         LocalDate now = LocalDate.now();
         TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
+        //TODO: Add user setting for Sun or Mon start of week
+        //TemporalField fieldUS = WeekFields.of(Locale.UK).dayOfWeek();
         LocalDate firstDateOfWeek = now.with(fieldUS, 1);
 
         //Create PageDates entity to calculate the calendar dates for this page and place in the request

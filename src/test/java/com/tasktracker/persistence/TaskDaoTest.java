@@ -24,12 +24,12 @@ public class TaskDaoTest {
     /**
      * Verify successful retrieval of a task
      */
-  //TODO: WHY WAS THIS TEST FAILING AFTER 11PM??
+    @Test
     void getByIdSuccess() {
         Task retrievedTask = (Task)genericDao.getById(2);
         assertNotNull(retrievedTask);
         assertEquals("Call Mom", retrievedTask.getName());
-        LocalDate expectedDate = LocalDate.parse("2020-03-02");
+        LocalDate expectedDate = LocalDate.parse("2020-04-05");
         assertEquals(expectedDate, retrievedTask.getDate());
     }
 

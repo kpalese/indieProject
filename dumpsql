@@ -1,3 +1,5 @@
+create schema indieProject collate utf8mb4_0900_ai_ci;
+
 create table USERS
 (
     id int auto_increment
@@ -38,6 +40,18 @@ create table TASK
             on update cascade on delete cascade
 );
 
+create table TODO
+(
+    id int auto_increment
+        primary key,
+    name varchar(50) null,
+    notes varchar(100) null,
+    user_id int null,
+    constraint TODO_USERS_id_fk
+        foreign key (user_id) references USERS (id)
+            on update cascade on delete cascade
+);
+
 create table USER_ROLES
 (
     id int auto_increment
@@ -49,3 +63,4 @@ create table USER_ROLES
         foreign key (user_id) references USERS (id)
             on update cascade on delete cascade
 );
+

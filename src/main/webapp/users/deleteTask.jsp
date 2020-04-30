@@ -21,7 +21,7 @@
                 <INPUT TYPE="TEXT" NAME="taskName" class="form-control" id="taskName" required="required" value="${requestScope.taskToDelete.name}">
             </div>
             <div class="form-group">
-                <label for="taskDate">Date: </label>
+                <label for="taskDate"><c:if test="${requestScope.taskToDelete.frequency !='once'}">Initial </c:if>Date: </label>
                 <INPUT TYPE="DATE" NAME="taskDate" class="form-control" id="taskDate" required="required" value="${requestScope.taskToDelete.date}">
             </div>
             <div class="form-group">

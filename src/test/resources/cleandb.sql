@@ -21,5 +21,11 @@ VALUES (1,'Meeting with Ann','2020-02-29','09:30:00','11:00:00','This is a very 
 delete from TASK;
 INSERT INTO TASK
 VALUES (1, 'Replace furnace filter', '2020-05-26', 'once', null, 'Use the ABC321 type', null, 1),
-       (2, 'Call Mom', '2020-03-02', 'weekly', 'Monday', null, '2020-04-01', 1),
+       (2, 'Call Mom', '2020-04-05', 'weekly', 'Monday', null, '2020-04-12', 1),
        (3, 'Water the plants', '2020-04-10', 'weekly', 'Tuesday', null, '2020-04-17', 2);
+
+delete from TODO;
+INSERT INTO TODO
+VALUES (1, 'Water plant', null, 1),
+       (2, 'Schedule dentist appt', 'They said schedule sometime before September', 2),
+       (3, 'Get bday gift for so-and-so', 'They are allergic to flowers', 1);
