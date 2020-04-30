@@ -115,18 +115,17 @@
                     <div class="row w-100">
                         <div class="card w-100">
                             <ul class="list-group list-group-flush w-100">
-<%--                                TODO Below commented out code is causing display to get all wonky--%>
-<%--                                <c:forEach var="item" items="${sessionScope.user.todos()}">--%>
-<%--                                    <li class="list-group-item">--%>
-<%--                                        <div class="row w-100">--%>
-<%--                                            <a href="${pageContext.request.contextPath}/users/deleteTodo?id=${item.id}" class="col-sm-2"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete item"></i></a>--%>
-<%--                                                &lt;%&ndash;                                            TODO: Should completing todo items even be allowed?? &ndash;%&gt;--%>
-<%--                                            <a href="${pageContext.request.contextPath}/users/completeTodoAction?id=${item.id}" class="col-sm-2"><i class="fas fa-check-square" data-toggle="tooltip" title="Complete item"></i></a>--%>
-<%--                                            <a href="${pageContext.request.contextPath}/users/editTodo?id=${item.id}" class="col" data-toggle="tooltip" title="${item.notes}">--%>
-<%--                                                <button type="button" class="btn btn-light"> ${item.name}</button></a>--%>
-<%--                                        </div>--%>
-<%--                                    </li>--%>
-<%--                                </c:forEach>--%>
+                                <c:forEach var="item" items="${sessionScope.user.todos}">
+                                    <li class="list-group-item">
+                                        <div class="row w-100">
+                                            <a href="${pageContext.request.contextPath}/users/deleteTodo?id=${item.id}" class="col-sm-1"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete item"></i></a>
+                                                <%--                                            TODO: Should completing todo items even be allowed?? --%>
+                                            <a href="${pageContext.request.contextPath}/users/completeTodoAction?id=${item.id}" class="col-sm-1"><i class="fas fa-check-square" data-toggle="tooltip" title="Complete item"></i></a>
+                                            <a href="${pageContext.request.contextPath}/users/editTodo?id=${item.id}" class="col" data-toggle="tooltip" title="${item.notes}">
+                                                <button type="button" class="btn btn-light"> ${item.name}</button></a>
+                                        </div>
+                                    </li>
+                                </c:forEach>
                                 <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addTodo" class="btn btn-primary">Add Item</a></li>
                             </ul>
                         </div>
