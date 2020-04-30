@@ -112,11 +112,6 @@
                 </div>
 
                 <div id="to-do-container" class="col-sm-4">
-
-<%--                    <div class="row">--%>
-<%--                        <p class="categoryHeading">To Do List</p>--%>
-<%--                    </div>--%>
-
                     <div class="row w-100">
                         <div class="card w-100">
                             <ul class="list-group list-group-flush w-100">
@@ -127,7 +122,7 @@
                                 <li class="list-group-item">Cras justo odio</li>
                                 <li class="list-group-item">Dapibus ac facilisis in</li>
                                 <li class="list-group-item">Vestibulum at eros</li>
-                                <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addToDoItem" class="btn btn-primary">Add Item</a></li>
+                                <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addTodo" class="btn btn-primary">Add Item</a></li>
                             </ul>
                         </div>
                     </div>
