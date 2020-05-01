@@ -21,8 +21,6 @@ public class RemoveTaskAction extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        HttpSession session = req.getSession();
-
         //Get task to be removed
         String taskId = req.getParameter("id");
         GenericDao taskDao = new GenericDao(Task.class);
@@ -36,7 +34,11 @@ public class RemoveTaskAction extends HttpServlet {
         //If it's a recurring task, determine which instances the user wants to remove
         if (!req.getParameter("frequency").equals("once")) {
             if (req.getParameter("instances").equals("onlyThis")) {
-                taskToRemove.setLastDateCompleted((LocalDate)session.getAttribute("now"));
+                LocalDate completeDate = (LocalDate)req.getAttribute("date");
+
+                logger.debug("***Complete date = " + completeDate);
+
+                taskToRemove.setLastDateCompleted(completeDate);
                 taskDao.saveOrUpdate(taskToRemove);
 
             } else if (req.getParameter("instances").equals("allInstances")) {

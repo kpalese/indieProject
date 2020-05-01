@@ -30,6 +30,7 @@
 
             <input type="hidden" name="id" value="${requestScope.taskToRemove.id}" />
             <input type="hidden" name="date" value="${requestScope.date}" />
+            <input type="hidden" name="frequency" value="${requestScope.taskToRemove.frequency}" />
             <fieldset disabled>
             <div class="form-group">
                 <label for="taskName">Name of Task: </label>
