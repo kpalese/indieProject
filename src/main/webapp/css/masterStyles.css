@@ -105,6 +105,14 @@ h2 {
     margin-bottom: 3em;
 }
 
+#goToDate {
+    margin-left: 1em;
+}
+
+#goToDateSubmit {
+    margin-left: 1.5em;
+}
+
 /**
 * Scrollbar styles
  */

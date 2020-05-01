@@ -32,11 +32,11 @@
                             </a>
                             <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
                                 <a class="dropdown-item" href="${pageContext.request.contextPath}/users/viewPlanner">Go to Today</a>
-                                <p class="dropdown-item">
+                                <a class="dropdown-item">
                                     <FORM ACTION="${pageContext.request.contextPath}/users/go" METHOD="GET" class="form-inline">
-                                        <label for="goToDate">Specific date</label><input type="date" NAME="goToDate" id="goToDate"><INPUT TYPE="SUBMIT" VALUE="Go" class="btn btn-primary form-control">
+                                        <label for="goToDate">Specific date:</label><input type="date" NAME="goToDate" id="goToDate"><INPUT TYPE="SUBMIT" VALUE="Go" class="btn btn-primary form-control" id="goToDateSubmit">
                                     </FORM>
-                                </p>
+                                </a>
                             </div>
                         </div>
                     </div>
