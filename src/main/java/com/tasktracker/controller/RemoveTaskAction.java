@@ -19,13 +19,15 @@ public class RemoveTaskAction extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        //Get task to be deleted
+        //Get task to be removed
         String taskId = req.getParameter("id");
         GenericDao taskDao = new GenericDao(Task.class);
-        Task taskToDelete = (Task) taskDao.getById(Integer.parseInt(taskId));
+        Task taskToRemove = (Task) taskDao.getById(Integer.parseInt(taskId));
+
+        //
 
         //Delete task
-        taskDao.delete(taskToDelete);
+        taskDao.delete(taskToRemove);
 
         //TODO: Message that task was successfully deleted?
 
