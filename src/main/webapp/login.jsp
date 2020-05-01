@@ -8,8 +8,9 @@
 
     <main>
         <div class="wrapper">
-            <h2>Log In</h2>
-            <FORM ACTION="j_security_check" METHOD="POST" class="mainForm">
+
+            <FORM ACTION="j_security_check" METHOD="POST" class="mainForm" id="login">
+                <h2>Log In</h2>
                 <div class="form-group">
                     <label for="j_username"><span class="required">*</span>User name: </label>
                     <INPUT TYPE="TEXT" NAME="j_username" class="form-control" id="j_username" required="required">

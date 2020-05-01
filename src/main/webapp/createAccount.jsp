@@ -8,8 +8,9 @@
 
 <main>
     <div class="wrapper">
-        <h2>Create a Task Tracker Account</h2>
+
         <FORM ACTION="createUserAccountAction" METHOD="POST" id="createAccountForm" class="mainForm">
+            <h2>Create a Task Tracker Account</h2>
             <div class="form-group">
                 <label for="userName"><span class="required">*</span>User name: </label>
                 <INPUT TYPE="TEXT" NAME="userName" class="form-control" id="userName" required="required">

@@ -21,8 +21,9 @@
                         <p class="inline-block" id="welcomeUser">Welcome ${user.userName}!</p>
                     </div>
                     <div class="col-sm-10">
-                        <h2 class="inline offset-2"><i href="#" class="fas fa-angle-left">
-                        </i> Week of ${pageDates.getLocalDateToMDDYYYY(pageDates.getDateOfWeek(1))} - ${pageDates.getLocalDateToMDDYYYY(pageDates.getDateOfWeek(7))} <i href="#" class="fas fa-angle-right"></i></h2>
+                        <h2 class="inline offset-2"><a href="${pageContext.request.contextPath}/users/prev?firstDate=${pageDates.firstDateOfWeek}" data-toggle="tooltip" title="Previous week"><i class="fas fa-angle-left"></i></a>
+                            Week of ${pageDates.getLocalDateToMDDYYYY(pageDates.getDateOfWeek(1))} - ${pageDates.getLocalDateToMDDYYYY(pageDates.getDateOfWeek(7))}
+                            <a href="#"><i class="fas fa-angle-right"></i></a></h2>
                     </div>
                 </div>
                 <div class="row">
@@ -50,7 +51,7 @@
                     <%--Display a row of events and tasks for each of the 7 days in the week--%>
                     <c:forEach var="i" begin="1" end="7" step="1" >
 
-                        <div class="plannerRow row w-100">
+                        <div class="plannerRow row w-100 <c:if test="${i % 2 == 0}">shadedBackground</c:if>">
                             <div class="col-sm-2">
                                 <h3>${pageDates.getDayOfWeek(pageDates.getDateOfWeekFromString(i))}<br/>${pageDates.getLocalDateToMDD(pageDates.getDateOfWeekFromString(i))}</h3>
                             </div>

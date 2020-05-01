@@ -8,9 +8,9 @@
 
     <main>
         <div class="wrapper">
-            <h2>Add Event</h2>
 
             <FORM ACTION="${pageContext.request.contextPath}/users/addEventAction" METHOD="GET" id="addEvent" class="mainForm">
+                <h2>Add Event</h2>
                 <div class="form-group">
                     <label for="eventName"><span class="required">*</span>Name of Event: </label>
                     <INPUT TYPE="TEXT" NAME="eventName" class="form-control" id="eventName" required="required">

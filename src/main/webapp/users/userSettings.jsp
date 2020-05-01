@@ -8,9 +8,10 @@
 
 <main>
     <div class="wrapper">
-        <h2>User Settings</h2>
+
 
         <FORM ACTION="${pageContext.request.contextPath}/users/userSettingsAction" METHOD="GET" id="userSettings" class="mainForm">
+            <h2>User Settings</h2>
             <div class="form-group">
                 <legend>Automatically forward your incomplete tasks to the next week?</legend>
                 <div class="form-check">

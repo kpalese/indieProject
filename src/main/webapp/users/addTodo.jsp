@@ -8,9 +8,9 @@
 
 <main>
     <div class="wrapper">
-        <h2>Add To Do Item</h2>
 
         <FORM ACTION="${pageContext.request.contextPath}/users/addTodoAction" METHOD="GET" id="addTodo" class="mainForm">
+            <h2>Add To Do Item</h2>
             <div class="form-group">
                 <label for="todoName"><span class="required">*</span>Name of To Do Item: </label>
                 <INPUT TYPE="TEXT" NAME="todoName" class="form-control" id="todoName" required="required">

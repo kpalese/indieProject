@@ -8,11 +8,11 @@
 
 <main>
     <div class="wrapper">
-        <h2>Delete Event?</h2>
-
-        <p class="warningMessage">Are you sure you want to delete this event?</p>
 
         <FORM ACTION="${pageContext.request.contextPath}/users/deleteEventAction" METHOD="GET" id="deleteEvent" class="mainForm">
+            <h2>Delete Event?</h2>
+
+            <p class="warningMessage">Are you sure you want to delete this event?</p>
             <input type="hidden" name="id" value="${requestScope.eventToDelete.id}" />
             <fieldset disabled>
             <div class="form-group">

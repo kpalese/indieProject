@@ -8,9 +8,9 @@
 
 <main>
     <div class="wrapper">
-        <h2>Add Task</h2>
 
         <FORM ACTION="${pageContext.request.contextPath}/users/addTaskAction" METHOD="GET" id="addTask" class="mainForm">
+            <h2>Add Task</h2>
             <div class="form-group">
                 <label for="taskName"><span class="required">*</span>Name of Task: </label>
                 <INPUT TYPE="TEXT" NAME="taskName" class="form-control" id="taskName" required="required">

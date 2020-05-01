@@ -196,7 +196,8 @@ public class User {
     }
 
     /**
-     * //TODO: Clean this up? Had lots of trouble with weekly tasks retrieving null; however once I really broke it up it works...
+     * TODO: clean up! Why were my && statements not working? Broke it up into a million if statements and now it works...
+     *
      */
     public List<Task> getTasksByDate(LocalDate localDate) {
         List<Task> tasksMatchingDate = new ArrayList<>();
@@ -211,14 +212,18 @@ public class User {
             //Get incomplete 'daily' tasks and daily tasks that were completed on this day
             } else if (task.getFrequency().equals("daily")) {
                 if (task.getLastDateCompleted() == null) {
-                    tasksMatchingDate.add(task);
+                    if (task.getDate().isBefore(localDate) || task.getDate().isEqual(localDate)) {
+                        tasksMatchingDate.add(task);
+                    }
                 } else if (task.getLastDateCompleted().isBefore(localDate) || task.getLastDateCompleted().isEqual(localDate)) {
                     tasksMatchingDate.add(task);
                 }
             //Get incomplete 'weekly' tasks and weekly tasks that were completed on this day
             } else if (task.getFrequency().equals("weekly") && task.getWeeklyTaskDayOfWeek().equals(dayOfWeek)) {
                 if (task.getLastDateCompleted() == null) {
-                    tasksMatchingDate.add(task);
+                    if (task.getDate().isBefore(localDate) || task.getDate().isEqual(localDate)) {
+                        tasksMatchingDate.add(task);
+                    }
                 } else if (task.getLastDateCompleted().isBefore(localDate) || task.getLastDateCompleted().isEqual(localDate)) {
                     tasksMatchingDate.add(task);
                 }

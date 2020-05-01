@@ -8,9 +8,9 @@
 
 <main>
     <div class="wrapper">
-        <h2>Edit Event</h2>
 
         <FORM ACTION="${pageContext.request.contextPath}/users/editEventAction" METHOD="GET" id="editEvent" class="mainForm">
+            <h2>Edit Event</h2>
             <input type="hidden" name="id" value="${requestScope.eventToEdit.id}" />
             <div class="form-group">
                 <label for="eventName"><span class="required">*</span>Name of Event: </label>

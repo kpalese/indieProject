@@ -8,9 +8,9 @@
 
 <main>
     <div class="wrapper">
-        <h2>Edit Task</h2>
 
         <FORM ACTION="${pageContext.request.contextPath}/users/editTaskAction" METHOD="GET" id="editTask" class="mainForm">
+            <h2>Edit Task</h2>
             <input type="hidden" name="id" value="${requestScope.taskToEdit.id}" />
             <div class="form-group">
                 <label for="taskName"><span class="required">*</span>Name of Task: </label>

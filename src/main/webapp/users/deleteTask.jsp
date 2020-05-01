@@ -8,12 +8,12 @@
 
 <main>
     <div class="wrapper">
-        <h2>Delete Task</h2>
-
-        <p class="warningMessage">Are you sure you want to delete this task?</p>
-        <p class="warningMessage">If this is a recurring task, all past and future instances will also be deleted.</p>
 
         <FORM ACTION="${pageContext.request.contextPath}/users/deleteTaskAction" METHOD="GET" id="deleteTask" class="mainForm">
+            <h2>Delete Task</h2>
+
+            <p class="warningMessage">Are you sure you want to delete this task?</p>
+            <p class="warningMessage">If this is a recurring task, all past and future instances will also be deleted.</p>
             <input type="hidden" name="id" value="${requestScope.taskToDelete.id}" />
             <fieldset disabled>
             <div class="form-group">
