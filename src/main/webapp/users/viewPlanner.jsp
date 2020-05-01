@@ -109,7 +109,7 @@
                                             <c:if test="${task.frequency !='once'}">
                                                 <li class="list-group-item">
                                                     <div class="row">
-                                                        <c:if test="${pageDates.getDateOfWeekFromString(i).isBefore(sessionScope.now) || pageDates.getDateOfWeekFromString(i).equals(now)}">
+                                                        <c:if test="${pageDates.getDateOfWeekFromString(i).isBefore(sessionScope.now) || pageDates.getDateOfWeekFromString(i).equals(sessionScope.now)}">
                                                             <a href="${pageContext.request.contextPath}/users/removeTask?id=${task.id}&date=${pageDates.getDateOfWeekFromString(i)}" class="col-sm-1"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Remove task"></i></a>
                                                         </c:if>
                                                             <a href="${pageContext.request.contextPath}/users/editTask?id=${task.id}" class="col" data-toggle="tooltip" title="${task.notes}">

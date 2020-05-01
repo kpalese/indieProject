@@ -24,14 +24,14 @@ public class RemoveTask extends HttpServlet {
         //Get task to be deleted
         int taskId = Integer.parseInt(req.getParameter("id"));
         GenericDao taskDao = new GenericDao(Task.class);
-        Task taskToDelete = (Task)taskDao.getById(taskId);
+        Task taskToRemove = (Task)taskDao.getById(taskId);
 
         //Add task to the request
-        req.setAttribute("taskToDelete", taskToDelete);
+        req.setAttribute("taskToRemove", taskToRemove);
 
         //TODO: If it's a recurring task in the future, warn user that tasks between today and future date will be completed too
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/users/deleteTask.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/users/removeTask.jsp");
         dispatcher.forward(req, resp);
     }
 }
