@@ -20,10 +20,25 @@
                     <div class="col-sm-2">
                         <p class="inline-block" id="welcomeUser">Welcome ${user.userName}!</p>
                     </div>
-                    <div class="col-sm-10">
+                    <div class="col-sm-7">
                         <h2 class="inline offset-2"><a href="${pageContext.request.contextPath}/users/prev?firstDate=${pageDates.firstDateOfWeek}" data-toggle="tooltip" title="Previous week"><i class="fas fa-angle-left"></i></a>
                             Week of ${pageDates.getLocalDateToMDDYYYY(pageDates.getDateOfWeek(1))} - ${pageDates.getLocalDateToMDDYYYY(pageDates.getDateOfWeek(7))}
                             <a href="${pageContext.request.contextPath}/users/next?firstDate=${pageDates.firstDateOfWeek}" data-toggle="tooltip" title="Next week"><i class="fas fa-angle-right"></i></a></h2>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="dropdown show w-100">
+                            <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Jump to date
+                            </a>
+                            <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="${pageContext.request.contextPath}/users/viewPlanner">Go to Today</a>
+                                <p class="dropdown-item">
+                                    <FORM ACTION="${pageContext.request.contextPath}/users/go" METHOD="GET" class="form-inline">
+                                        <label for="goToDate">Specific date</label><input type="date" NAME="goToDate" id="goToDate"><INPUT TYPE="SUBMIT" VALUE="Go" class="btn btn-primary form-control">
+                                    </FORM>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">

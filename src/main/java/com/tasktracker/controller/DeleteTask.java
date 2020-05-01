@@ -29,6 +29,8 @@ public class DeleteTask extends HttpServlet {
         //Add task to the request
         req.setAttribute("taskToDelete", taskToDelete);
 
+        //TODO: If it's a recurring task in the future, warn user that tasks between today and future date will be completed too
+
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users/deleteTask.jsp");
         dispatcher.forward(req, resp);
     }
