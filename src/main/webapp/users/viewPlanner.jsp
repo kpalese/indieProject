@@ -95,28 +95,14 @@
                                 <div class="card w-100">
                                     <ul class="list-group list-group-flush w-100">
                                         <c:forEach var="task" items="${sessionScope.user.getTasksByDate(pageDates.getDateOfWeekFromString(i))}">
-                                            <c:if test="${task.lastDateCompleted == pageDates.getDateOfWeekFromString(i)}">
                                             <li class="list-group-item">
                                                 <div class="row">
-                                                    <a href="${pageContext.request.contextPath}/users/deleteTask?id=${task.id}" class="col-sm-1"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete task"></i></a>
-                                                    <a class="col offset-1" data-toggle="tooltip" title="${task.notes}">
-                                                        <button type="button" class="btn btn-light" disabled><s> ${task.name} <c:if test="${task.frequency !='once'}"> <span class="frequency">(${task.frequency})</span></c:if></s>
-                                                            </button></a>
+                                                    <a href="${pageContext.request.contextPath}/users/removeTask?id=${task.id}&date=${pageDates.getDateOfWeekFromString(i)}" class="col-sm-1"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Remove task"></i></a>
+                                                    <a href="${pageContext.request.contextPath}/users/editTask?id=${task.id}" class="col" data-toggle="tooltip" title="${task.notes}">
+                                                        <button type="button" class="btn btn-light"> ${task.name} <c:if test="${task.frequency !='once'}"> <span class="frequency">(${task.frequency})</span></c:if>
+                                                        </button></a>
                                                 </div>
                                             </li>
-                                            </c:if>
-
-                                            <c:if test="${task.lastDateCompleted != pageDates.getDateOfWeekFromString(i)}">
-                                                <li class="list-group-item">
-                                                    <div class="row">
-                                                        <a href="${pageContext.request.contextPath}/users/deleteTask?id=${task.id}" class="col-sm-1"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete task"></i></a>
-                                                        <a href="${pageContext.request.contextPath}/users/completeTaskAction?id=${task.id}&date=${pageDates.getDateOfWeekFromString(i)}" class="col-sm-1"><i class="fas fa-check-square" data-toggle="tooltip" title="Complete task"></i></a>
-                                                        <a href="${pageContext.request.contextPath}/users/editTask?id=${task.id}" class="col" data-toggle="tooltip" title="${task.notes}">
-                                                            <button type="button" class="btn btn-light"> ${task.name} <c:if test="${task.frequency !='once'}"> <span class="frequency">(${task.frequency})</span></c:if>
-                                                            </button></a>
-                                                    </div>
-                                                </li>
-                                            </c:if>
                                         </c:forEach>
                                         <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addTask?taskDate=${pageDates.getDateOfWeekFromString(i)}" class="btn btn-primary">Add Task</a></li>
                                     </ul>
@@ -135,8 +121,6 @@
                                     <li class="list-group-item">
                                         <div class="row w-100">
                                             <a href="${pageContext.request.contextPath}/users/deleteTodo?id=${item.id}" class="col-sm-1"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Delete item"></i></a>
-                                                <%--                                            TODO: Should completing todo items even be allowed?? --%>
-                                            <a href="${pageContext.request.contextPath}/users/completeTodoAction?id=${item.id}" class="col-sm-1"><i class="fas fa-check-square" data-toggle="tooltip" title="Complete item"></i></a>
                                             <a href="${pageContext.request.contextPath}/users/editTodo?id=${item.id}" class="col" data-toggle="tooltip" title="${item.notes}">
                                                 <button type="button" class="btn btn-light"> ${item.name}</button></a>
                                         </div>

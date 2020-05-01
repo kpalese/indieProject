@@ -209,22 +209,22 @@ public class User {
                 if (task.getDate().equals(localDate)) {
                     tasksMatchingDate.add(task);
                 }
-            //Get incomplete 'daily' tasks and daily tasks that were completed on this day
+            //Get incomplete 'daily' tasks
             } else if (task.getFrequency().equals("daily")) {
                 if (task.getLastDateCompleted() == null) {
                     if (task.getDate().isBefore(localDate) || task.getDate().isEqual(localDate)) {
                         tasksMatchingDate.add(task);
                     }
-                } else if (task.getLastDateCompleted().isBefore(localDate) || task.getLastDateCompleted().isEqual(localDate)) {
+                } else if (task.getLastDateCompleted().isBefore(localDate)) {
                     tasksMatchingDate.add(task);
                 }
-            //Get incomplete 'weekly' tasks and weekly tasks that were completed on this day
+            //Get incomplete 'weekly' tasks
             } else if (task.getFrequency().equals("weekly") && task.getWeeklyTaskDayOfWeek().equals(dayOfWeek)) {
                 if (task.getLastDateCompleted() == null) {
                     if (task.getDate().isBefore(localDate) || task.getDate().isEqual(localDate)) {
                         tasksMatchingDate.add(task);
                     }
-                } else if (task.getLastDateCompleted().isBefore(localDate) || task.getLastDateCompleted().isEqual(localDate)) {
+                } else if (task.getLastDateCompleted().isBefore(localDate)) {
                     tasksMatchingDate.add(task);
                 }
             }

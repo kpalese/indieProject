@@ -1,5 +1,5 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:set var="title" value="Delete Task - Task Tracker" />
+<c:set var="title" value="Remove Task - Task Tracker" />
 <%@include file="../templates/head.jsp"%>
 
 <html>
@@ -9,7 +9,7 @@
 <main>
     <div class="wrapper">
 
-        <FORM ACTION="${pageContext.request.contextPath}/users/deleteTaskAction" METHOD="GET" id="deleteTask" class="mainForm">
+        <FORM ACTION="${pageContext.request.contextPath}/users/removeTaskAction" METHOD="GET" id="deleteTask" class="mainForm">
             <h2>Delete Task</h2>
 
             <p class="warningMessage">Are you sure you want to delete this task?</p>

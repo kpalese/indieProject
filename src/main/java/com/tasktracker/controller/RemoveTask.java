@@ -14,9 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(
-        urlPatterns = {"/users/deleteTask"}
+        urlPatterns = {"/users/removeTask"}
 )
-public class DeleteTask extends HttpServlet {
+public class RemoveTask extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override

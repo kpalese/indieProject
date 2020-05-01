@@ -12,9 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(
-        urlPatterns = {"/users/deleteTaskAction"}
+        urlPatterns = {"/users/removeTaskAction"}
 )
-public class DeleteTaskAction extends HttpServlet {
+public class RemoveTaskAction extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override

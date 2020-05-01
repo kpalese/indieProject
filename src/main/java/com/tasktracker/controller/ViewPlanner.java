@@ -45,6 +45,7 @@ public class ViewPlanner extends HttpServlet {
 
         //Get current date and first date of the week
         LocalDate now = LocalDate.now();
+        session.setAttribute("now", now);
         TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
         //TODO: Add user setting for Sun or Mon start of week
         //TemporalField fieldUS = WeekFields.of(Locale.UK).dayOfWeek();
