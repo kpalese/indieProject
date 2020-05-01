@@ -23,7 +23,7 @@
                     <div class="col-sm-10">
                         <h2 class="inline offset-2"><a href="${pageContext.request.contextPath}/users/prev?firstDate=${pageDates.firstDateOfWeek}" data-toggle="tooltip" title="Previous week"><i class="fas fa-angle-left"></i></a>
                             Week of ${pageDates.getLocalDateToMDDYYYY(pageDates.getDateOfWeek(1))} - ${pageDates.getLocalDateToMDDYYYY(pageDates.getDateOfWeek(7))}
-                            <a href="#"><i class="fas fa-angle-right"></i></a></h2>
+                            <a href="${pageContext.request.contextPath}/users/next?firstDate=${pageDates.firstDateOfWeek}" data-toggle="tooltip" title="Next week"><i class="fas fa-angle-right"></i></a></h2>
                     </div>
                 </div>
                 <div class="row">

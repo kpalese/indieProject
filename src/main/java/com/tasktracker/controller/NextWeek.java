@@ -1,7 +1,6 @@
 package com.tasktracker.controller;
 
 import com.tasktracker.entity.PageDates;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,9 +14,9 @@ import java.io.IOException;
 import java.time.LocalDate;
 
 @WebServlet(
-        urlPatterns = {"/users/prev"}
+        urlPatterns = {"/users/next"}
 )
-public class PreviousWeek extends HttpServlet {
+public class NextWeek extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
@@ -27,7 +26,7 @@ public class PreviousWeek extends HttpServlet {
         LocalDate prevPageFirstDate = LocalDate.parse(prevPageFirstDateString);
 
         //Calculate first date of the current week
-        LocalDate firstDateOfWeek = prevPageFirstDate.minusDays(7);
+        LocalDate firstDateOfWeek = prevPageFirstDate.plusDays(7);
 
         //Create PageDates entity to calculate the calendar dates for this page and place in the request
         PageDates pageDates = new PageDates(firstDateOfWeek);
