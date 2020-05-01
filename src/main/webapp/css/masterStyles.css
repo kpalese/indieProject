@@ -101,6 +101,10 @@ h2 {
     padding-right: 0;
 }
 
+#removeTaskInstance {
+    margin-bottom: 3em;
+}
+
 /**
 * Scrollbar styles
  */

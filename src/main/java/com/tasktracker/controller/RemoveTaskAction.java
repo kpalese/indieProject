@@ -34,11 +34,8 @@ public class RemoveTaskAction extends HttpServlet {
         //If it's a recurring task, determine which instances the user wants to remove
         if (!req.getParameter("frequency").equals("once")) {
             if (req.getParameter("instances").equals("onlyThis")) {
-                LocalDate completeDate = (LocalDate)req.getAttribute("date");
-
-                logger.debug("***Complete date = " + completeDate);
-
-                taskToRemove.setLastDateCompleted(completeDate);
+                LocalDate removeDate = LocalDate.parse(req.getParameter("removeDate"));
+                taskToRemove.setLastDateCompleted(removeDate);
                 taskDao.saveOrUpdate(taskToRemove);
 
             } else if (req.getParameter("instances").equals("allInstances")) {

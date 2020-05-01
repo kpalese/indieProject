@@ -28,10 +28,8 @@ public class RemoveTask extends HttpServlet {
 
         //Add task to the request
         req.setAttribute("taskToRemove", taskToRemove);
-        logger.debug("****date: " + req.getParameter("date"));
-        req.setAttribute("date", req.getAttribute("date"));
 
-        //TODO: If it's a recurring task in the future, warn user that tasks between today and future date will be completed too
+        req.setAttribute("removeDate", req.getParameter("removeDate"));
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users/removeTask.jsp");
         dispatcher.forward(req, resp);
