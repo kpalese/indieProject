@@ -5,11 +5,13 @@ import com.tasktracker.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -27,6 +29,8 @@ public class EditEventAction extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        HttpSession session = req.getSession();
+
         //Get event to be edited
         String eventId = req.getParameter("id");
         GenericDao eventDao = new GenericDao(Event.class);
@@ -34,9 +38,10 @@ public class EditEventAction extends HttpServlet {
 
         //Convert user-entered date and time variables from Strings
         LocalDate eventDate = LocalDate.parse(req.getParameter("eventDate"));
+
         LocalTime startTime = LocalTime.parse(req.getParameter("startTime"));
         LocalTime endTime = null;
-        if (req.getParameter("endTime") !=null && req.getParameter("endTime") != "") {
+        if (req.getParameter("endTime") !=null && !req.getParameter("endTime").equals("")) {
             endTime = LocalTime.parse(req.getParameter("endTime"));
         }
 
@@ -48,8 +53,17 @@ public class EditEventAction extends HttpServlet {
         eventToEdit.setNotes(req.getParameter("notes"));
         eventDao.saveOrUpdate(eventToEdit);
 
-        //TODO: Message that event was successfully updated?
+        //Add message that event was successfully added
+        session.setAttribute("userMessage", "The event was successfully updated!");
+        session.setAttribute("messageClass", "alert-success");
 
-        resp.sendRedirect(req.getContextPath() + "/users/viewPlanner");
+        //Set the planner date to return the user to
+        String goToDate = eventDate.toString();
+        req.removeAttribute("goToDate");
+        req.setAttribute("goToDate", goToDate);
+
+        //Forward to viewPlanner via GoToDate servlet
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/users/go");
+        dispatcher.forward(req, resp);
     }
 }

@@ -39,7 +39,7 @@ public class AddEventAction extends HttpServlet {
         LocalDate eventDate = LocalDate.parse(req.getParameter("eventDate"));
         LocalTime startTime = LocalTime.parse(req.getParameter("startTime"));
         LocalTime endTime = null;
-        if (req.getParameter("endTime") !=null && req.getParameter("endTime") != "") {
+        if (req.getParameter("endTime") !=null && !req.getParameter("endTime").equals("")) {
             endTime = LocalTime.parse(req.getParameter("endTime"));
         }
 
@@ -48,8 +48,7 @@ public class AddEventAction extends HttpServlet {
         GenericDao eventDao = new GenericDao(Event.class);
         eventDao.insert(event);
 
-        //TODO: it's not working, come back to this
-        //Message that even was successfully added
+        //Add message that event was successfully added
         session.setAttribute("userMessage", "The event was successfully added!");
         session.setAttribute("messageClass", "alert-success");
 

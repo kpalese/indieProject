@@ -29,7 +29,7 @@
                 </div>
                 <div class="form-group">
                     <label for="notes">Notes:</label>
-                    <textarea class="form-control" NAME="notes" id="notes" rows="3"></textarea>
+                    <textarea class="form-control" NAME="notes" id="notes" rows="3" maxlength="100"></textarea>
                 </div>
 
                 <a href="${pageContext.request.contextPath}/users/go?goToDate=${requestScope.eventDate}" class="btn btn-light">Back</a>

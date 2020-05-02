@@ -33,6 +33,9 @@ public class GoToDate extends HttpServlet {
             goToDateString = req.getParameter("goToDate");
         }
 
+        //TODO: remove below
+        System.out.println("From GoToDate servlet....goToDate is: " + goToDateString);
+
         //Get the date the user wants to navigate to
         LocalDate goToDate = LocalDate.parse(goToDateString);
 

@@ -30,12 +30,12 @@
             </div>
             <div class="form-group">
                 <label for="notes">Notes:</label>
-                <textarea class="form-control" NAME="notes" id="notes" rows="3">${requestScope.eventToEdit.notes}</textarea>
+                <textarea class="form-control" NAME="notes" id="notes" rows="3" maxlength="100">${requestScope.eventToEdit.notes}</textarea>
             </div>
 
             <%--TODO: try to go back to the planner page that the user was just on (not necessarily the page for today)--%>
-            <a href="${pageContext.request.contextPath}/users/viewPlanner" class="btn btn-light">Back</a>
-            <INPUT TYPE="SUBMIT" VALUE="Update Event" class="btn btn-primary">
+            <a href="${pageContext.request.contextPath}/users/go?goToDate=${requestScope.eventToEdit.date}" class="btn btn-light">Back</a>
+            <INPUT TYPE="SUBMIT" VALUE="Save Changes" class="btn btn-primary">
         </FORM>
     </div>
 </main>
