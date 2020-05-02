@@ -53,7 +53,7 @@ public class EditEventAction extends HttpServlet {
         eventToEdit.setNotes(req.getParameter("notes"));
         eventDao.saveOrUpdate(eventToEdit);
 
-        //Add message that event was successfully added
+        //Add message that event was successfully edited
         session.setAttribute("userMessage", "The event was successfully updated!");
         session.setAttribute("messageClass", "alert-success");
 
