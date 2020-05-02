@@ -6,6 +6,7 @@ import com.tasktracker.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -47,8 +48,16 @@ public class AddTaskAction extends HttpServlet {
         GenericDao taskDao = new GenericDao(Task.class);
         taskDao.insert(task);
 
-        //TODO: Message that event was successfully added?
+        //Add message that event was successfully added
+        session.setAttribute("userMessage", "The task was successfully added!");
+        session.setAttribute("messageClass", "alert-success");
 
-        resp.sendRedirect(req.getContextPath() + "/users/viewPlanner");
+        //Set the planner date to return the user to
+        String goToDate = taskDate.toString();
+        req.setAttribute("goToDate", goToDate);
+
+        //Forward to viewPlanner via GoToDate servlet
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/users/go");
+        dispatcher.forward(req, resp);
     }
 }
