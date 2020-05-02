@@ -44,7 +44,7 @@
 <%--                If there's a message for the user, display it--%>
                 <c:if test="${not empty sessionScope.userMessage}">
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-sm-4 offset-3">
                             <div class="userMessage alert ${sessionScope.messageClass}" role="alert">
                                 ${sessionScope.userMessage}
                             </div>
@@ -110,7 +110,7 @@
                                             <c:if test="${task.frequency =='once'}">
                                                 <li class="list-group-item">
                                                     <div class="row">
-                                                        <a href="${pageContext.request.contextPath}/users/removeTask?id=${task.id}&date=${pageDates.getDateOfWeekFromString(i)}" class="col-sm-1"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Remove task"></i></a>
+                                                        <a href="${pageContext.request.contextPath}/users/removeTask?id=${task.id}&removeDate=${pageDates.getDateOfWeekFromString(i)}" class="col-sm-1"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Remove task"></i></a>
                                                         <a href="${pageContext.request.contextPath}/users/editTask?id=${task.id}" class="col" data-toggle="tooltip" title="${task.notes}">
                                                             <button type="button" class="btn btn-light"> ${task.name} <c:if test="${task.frequency !='once'}"> <span class="frequency">(${task.frequency})</span></c:if>
                                                             </button></a>

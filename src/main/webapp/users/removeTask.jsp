@@ -8,16 +8,17 @@
 
 <main>
     <div class="wrapper">
+
         <FORM ACTION="${pageContext.request.contextPath}/users/removeTaskAction" METHOD="GET" id="removeTask" class="mainForm">
             <h2>Remove Task</h2>
             <div id="removeTaskInstance">
     <%--            Warning message for 'once' tasks--%>
                 <c:if test="${requestScope.taskToRemove.frequency =='once'}">
-                    <p class="warningMessage">Are you sure you want to delete this task?</p>
+                    <p class="alert alert-danger">Are you sure you want to remove this task?</p>
                 </c:if>
     <%--            Warning message for recurring tasks--%>
                 <c:if test="${requestScope.taskToRemove.frequency !='once'}">
-                    <p class="warningMessage">This is a recurring task. Which task(s) do you want to remove?</p>
+                    <p class="alert alert-danger">This is a recurring task. Which task(s) do you want to remove?</p>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="instances" id="onlyThis" value="onlyThis">
                         <label class="form-check-label" for="onlyThis">Remove <b>this instance and all prior instances</b>.</label>
@@ -55,9 +56,8 @@
             </div>
             </fieldset>
 
-            <%--TODO: try to go back to the planner page that the user was just on (not necessarily the page for today)--%>
-            <a href="${pageContext.request.contextPath}/users/viewPlanner" class="btn btn-light">Back</a>
-            <INPUT TYPE="SUBMIT" VALUE="Remove Task" class="btn btn-primary">
+            <a href="${pageContext.request.contextPath}/users/go?goToDate=${requestScope.removeDate}" class="btn btn-light">Do Not Remove</a>
+            <INPUT TYPE="SUBMIT" VALUE="Remove Task" class="btn btn-danger">
         </FORM>
     </div>
 </main>
