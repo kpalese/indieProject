@@ -12,7 +12,7 @@
         <FORM ACTION="${pageContext.request.contextPath}/users/deleteEventAction" METHOD="GET" id="deleteEvent" class="mainForm">
             <h2>Delete Event?</h2>
 
-            <p class="warningMessage">Are you sure you want to delete this event?</p>
+            <p class="alert alert-danger">Are you sure you want to delete this event?</p>
             <input type="hidden" name="id" value="${requestScope.eventToDelete.id}" />
             <fieldset disabled>
             <div class="form-group">
@@ -37,8 +37,7 @@
             </div>
             </fieldset>
 
-            <%--TODO: try to go back to the planner page that the user was just on (not necessarily the page for today)--%>
-            <a href="${pageContext.request.contextPath}/users/viewPlanner" class="btn btn-light">Do Not Delete</a>
+            <a href="${pageContext.request.contextPath}/users/go?goToDate=${requestScope.eventToDelete.date}" class="btn btn-light">Do Not Delete</a>
             <INPUT TYPE="SUBMIT" VALUE="Delete Event" class="btn btn-danger">
         </FORM>
     </div>
