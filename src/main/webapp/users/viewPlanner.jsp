@@ -26,15 +26,15 @@
                             <a href="${pageContext.request.contextPath}/users/next?firstDate=${pageDates.firstDateOfWeek}" data-toggle="tooltip" title="Next week"><i class="fas fa-angle-right"></i></a></h2>
                     </div>
                     <div class="col-sm-3">
-                        <div class="dropdown show w-100">
+                        <div class="dropdown show">
                             <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Jump to date
                             </a>
-                            <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
+                            <div class="dropdown-menu" aria-labelledby="jumpToADateMenuLink">
                                 <a class="dropdown-item" href="${pageContext.request.contextPath}/users/viewPlanner">Go to Today</a>
                                 <a class="dropdown-item">
-                                    <FORM ACTION="${pageContext.request.contextPath}/users/go" METHOD="GET" class="form-inline">
-                                        <label for="goToDate">Specific date:</label><input type="date" NAME="goToDate" id="goToDate"><INPUT TYPE="SUBMIT" VALUE="Go" class="btn btn-primary form-control" id="goToDateSubmit">
+                                    <FORM ACTION="${pageContext.request.contextPath}/users/go" METHOD="GET">
+                                        <label for="goToDate">Specific date:</label><br/><input type="date" NAME="goToDate" id="goToDate"><INPUT TYPE="SUBMIT" VALUE="Go" class="btn btn-primary form-control" id="goToDateSubmit">
                                     </FORM>
                                 </a>
                             </div>

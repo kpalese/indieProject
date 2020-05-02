@@ -6,6 +6,7 @@ import com.tasktracker.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -49,6 +50,11 @@ public class AddEventAction extends HttpServlet {
 
         //TODO: Message that event was successfully added?
 
-        resp.sendRedirect(req.getContextPath() + "/users/viewPlanner");
+        String goToDate = eventDate.toString();
+        req.setAttribute("goToDate", goToDate);
+
+        //Forward to viewPlanner via GoToDate servlet
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/users/go");
+        dispatcher.forward(req, resp);
     }
 }
