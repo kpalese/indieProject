@@ -41,6 +41,18 @@
                         </div>
                     </div>
                 </div>
+<%--                If there's a message for the user, display it--%>
+                <c:if test="${not empty sessionScope.userMessage}">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="userMessage alert ${sessionScope.messageClass}" role="alert">
+                                ${sessionScope.userMessage}
+                            </div>
+                        </div>
+                    </div>
+                </c:if>
+                <c:remove var="userMessage"/>
+                <c:remove var="messageClass"/>
                 <div class="row">
                     <div class="col-sm-8">
                         <div class="row">

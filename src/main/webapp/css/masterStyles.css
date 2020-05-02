@@ -77,6 +77,10 @@ h2 {
     font-weight: bold;
 }
 
+.userMessage {
+    text-align: center;
+}
+
 .shadedBackground {
     background-image: linear-gradient(-90deg, #F0F0F0, white);
     border-radius: 5px;

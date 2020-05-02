@@ -24,13 +24,13 @@ import java.util.Locale;
 public class GoToDate extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //If it's from the "jump to date" button, it will be an attribute
-        //If it's from a redirect after e.g. adding an event, it will be a parameter
+        //If the request is from the "jump to date" button, it will be an attribute
+        //If the request is from a redirect after e.g. adding an event, it will be a parameter
         String goToDateString = "";
         if (req.getAttribute("goToDate") != null) {
             goToDateString = req.getAttribute("goToDate").toString();
         } else if (req.getParameter("goToDate") != null) {
-            goToDateString = req.getParameter("goToDate").toString();
+            goToDateString = req.getParameter("goToDate");
         }
 
         //Get the date the user wants to navigate to
@@ -46,7 +46,7 @@ public class GoToDate extends HttpServlet {
         PageDates newPageDates = new PageDates(firstDateOfWeek);
         req.setAttribute("pageDates", newPageDates);
 
-        //TODO: Review further: I removed user from session and then re-added to force the user methods to be called again
+        //TODO: Review further: I removed user from session and then re-added to force the user methods to be called again...is this the best way?
         //Get current user and add to session
         HttpSession session = req.getSession();
         GenericDao userDao = new GenericDao(User.class);

@@ -48,8 +48,12 @@ public class AddEventAction extends HttpServlet {
         GenericDao eventDao = new GenericDao(Event.class);
         eventDao.insert(event);
 
-        //TODO: Message that event was successfully added?
+        //TODO: it's not working, come back to this
+        //Message that even was successfully added
+        session.setAttribute("userMessage", "The event was successfully added!");
+        session.setAttribute("messageClass", "alert-success");
 
+        //Set the planner date to return the user to
         String goToDate = eventDate.toString();
         req.setAttribute("goToDate", goToDate);
 

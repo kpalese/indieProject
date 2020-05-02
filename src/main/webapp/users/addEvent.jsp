@@ -32,8 +32,7 @@
                     <textarea class="form-control" NAME="notes" id="notes" rows="3"></textarea>
                 </div>
 
-<%--TODO: try to go back to the planner page that the user was just on (not necessarily the page for today)--%>
-                <a href="${pageContext.request.contextPath}/users/viewPlanner" class="btn btn-light">Back</a>
+                <a href="${pageContext.request.contextPath}/users/go?goToDate=${requestScope.eventDate}" class="btn btn-light">Back</a>
                 <INPUT TYPE="SUBMIT" VALUE="Add Event" class="btn btn-primary">
             </FORM>
         </div>
