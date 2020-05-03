@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.annotation.Generated;
 
 @Generated("com.robohorse.robopojogenerator")
-public class Results{
+public class CalendarificResponse{
 
 	@JsonProperty("meta")
 	private Meta meta;
@@ -31,7 +31,7 @@ public class Results{
 	@Override
  	public String toString(){
 		return 
-			"Results{" + 
+			"CalendarificResponse{" + 
 			"meta = '" + meta + '\'' + 
 			",response = '" + response + '\'' + 
 			"}";

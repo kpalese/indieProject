@@ -16,17 +16,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CalendarificAPITest implements PropertiesLoader {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
-    public CalendarificAPITest() throws Exception {
-    }
-
 
     @Test
-    public void testCalendarificResults() throws Exception {
+    public void testCalendarificResponse() throws Exception {
 
         CalendarificAPI api = new CalendarificAPI();
-        HolidaysItem retrievedHoliday = api.getCalendarificResults("2020").getResponse().getHolidays().get(0);
+        List <HolidaysItem> retrievedHolidays = api.getCalendarificResponse("2020").getResponse().getHolidays();
+        HolidaysItem firstHoliday = retrievedHolidays.get(0);
 
-        assertEquals("New Year's Day", retrievedHoliday.getName());
+        assertEquals("New Year's Day", firstHoliday.getName());
         //assertEquals("New Year's Day is the first day of the Gregorian calendar, which is widely used in many countries such as the USA.", retrievedHoliday.getDescription());
     }
 }
