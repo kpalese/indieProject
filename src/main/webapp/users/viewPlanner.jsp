@@ -30,7 +30,7 @@
                             <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Jump to date
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="jumpToADateMenuLink">
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <a class="dropdown-item" href="${pageContext.request.contextPath}/users/viewPlanner">Go to Today</a>
                                 <a class="dropdown-item">
                                     <FORM ACTION="${pageContext.request.contextPath}/users/go" METHOD="GET">
@@ -44,7 +44,7 @@
 <%--                If there's a message for the user, display it--%>
                 <c:if test="${not empty sessionScope.userMessage}">
                     <div class="row">
-                        <div class="col-sm-4 offset-3">
+                        <div class="col">
                             <div class="userMessage alert ${sessionScope.messageClass}" role="alert">
                                 ${sessionScope.userMessage}
                             </div>

@@ -12,23 +12,26 @@
 
         <FORM ACTION="${pageContext.request.contextPath}/users/userSettingsAction" METHOD="GET" id="userSettings" class="mainForm">
             <h2>User Settings</h2>
-            <div class="form-group">
-                <legend>Automatically forward your incomplete tasks to the next week?</legend>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="autoForwardOptions" id="yesAutoForward" value="yesAutoForward"
-                    <c:if test = "${requestScope.autoForward}">
-                           checked="checked"
-                    </c:if>>
-                    <label class="form-check-label" for="yesAutoForward">Yes, automatically forward my incomplete tasks to the next week</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="autoForwardOptions" id="noAutoForward" value="noAutoForward"
-                    <c:if test = "${not requestScope.autoForward}">
-                           checked="checked"
-                    </c:if>>
-                    <label class="form-check-label" for="noAutoForward">No, do not forward my incomplete tasks to the next week</label>
-                </div>
-            </div><br/>
+
+<%--            TODO: I think I'm just going to automatically forward everyone's tasks because that it the default and
+                   I don't see why anyone would want to delete them just because it's a new week--%>
+<%--            <div class="form-group">--%>
+<%--                <legend>Automatically forward your incomplete tasks to the next week?</legend>--%>
+<%--                <div class="form-check">--%>
+<%--                    <input class="form-check-input" type="radio" name="autoForwardOptions" id="yesAutoForward" value="yesAutoForward"--%>
+<%--                    <c:if test = "${requestScope.autoForward}">--%>
+<%--                           checked="checked"--%>
+<%--                    </c:if>>--%>
+<%--                    <label class="form-check-label" for="yesAutoForward">Yes, automatically forward my incomplete tasks to the next week</label>--%>
+<%--                </div>--%>
+<%--                <div class="form-check">--%>
+<%--                    <input class="form-check-input" type="radio" name="autoForwardOptions" id="noAutoForward" value="noAutoForward"--%>
+<%--                    <c:if test = "${not requestScope.autoForward}">--%>
+<%--                           checked="checked"--%>
+<%--                    </c:if>>--%>
+<%--                    <label class="form-check-label" for="noAutoForward">No, do not forward my incomplete tasks to the next week</label>--%>
+<%--                </div>--%>
+<%--            </div><br/>--%>
 
         <%--TODO: Setting for determining the first day of the week?--%>
 
