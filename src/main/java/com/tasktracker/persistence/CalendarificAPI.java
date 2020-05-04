@@ -1,7 +1,6 @@
 package com.tasktracker.persistence;
 
 import com.calendarific.CalendarificResponse;
-import com.calendarific.*;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tasktracker.util.PropertiesLoader;
@@ -22,7 +21,7 @@ public class CalendarificAPI implements PropertiesLoader {
     }
 
     /**
-     * Gets national holidays for a particular year from the calendarific api
+     * Gets US national holidays for a particular year from the calendarific api
      * @param year the year for which holidays are requested
      * @return calendarificResponse
      */
@@ -31,7 +30,7 @@ public class CalendarificAPI implements PropertiesLoader {
 
         Client client = ClientBuilder.newClient();
         WebTarget target =
-                client.target("https://calendarific.com/api/v2/holidays?api_key=" + apiKey + "&country=US&type=national&year=" + year);
+                client.target("https://calendarific.com/api/v2/holidays/json?api_key=" + apiKey + "&country=US&year=" + year + "&type=national");
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
 
         ObjectMapper mapper = new ObjectMapper();
@@ -42,6 +41,7 @@ public class CalendarificAPI implements PropertiesLoader {
             logger.debug("CalendarificAPI: error processing JSON response");
             e.printStackTrace();
         }
+
         return calendarificResponse;
     }
 }

@@ -1,6 +1,8 @@
 package com.calendarific;
 
 import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.annotation.Generated;
 
@@ -25,7 +27,7 @@ public class HolidaysItem{
 	@JsonProperty("type")
 	private List<String> type;
 
-	@JsonProperty("states")
+	@JsonIgnore
 	private String states;
 
 	public void setDate(Date date){

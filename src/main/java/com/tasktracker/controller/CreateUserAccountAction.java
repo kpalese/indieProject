@@ -28,9 +28,9 @@ public class CreateUserAccountAction extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //private final Logger logger = LogManager.getLogger(this.getClass());
 
-        //Check to see if user already exists?
+        // TODO: Check to see if user already exists?
 
-        //Front end validation for passwords matching
+        //TODO: Front end validation for passwords matching
 
         GenericDao userDao = new GenericDao(User.class);
         GenericDao roleDao = new GenericDao(Role.class);
