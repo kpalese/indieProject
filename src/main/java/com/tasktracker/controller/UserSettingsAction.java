@@ -32,17 +32,17 @@ public class UserSettingsAction extends HttpServlet {
         HttpSession session = req.getSession();
         User user = (User)session.getAttribute("user");
 
-        //Get autoforward setting from the form
-        Boolean autoForward = null;
-        if (req.getParameter("autoForwardOptions").equals("yesAutoForward")) {
-            autoForward = true;
-        } else if(req.getParameter("autoForwardOptions").equals("noAutoForward")) {
-            autoForward = false;
+        //Get include holidays setting from the form
+        Boolean includeHolidays = null;
+        if (req.getParameter("includeHolidays").equals("yesHolidays")) {
+            includeHolidays = true;
+        } else if(req.getParameter("includeHolidays").equals("noHolidays")) {
+            includeHolidays = false;
         }
 
         //Update user settings
         GenericDao userDao = new GenericDao(User.class);
-        user.setAutoFwdIncompleteTasks(autoForward);
+        user.setIncludeHolidays(includeHolidays);
         userDao.saveOrUpdate(user);
 
         //TODO: Message that settings were successfully updated?

@@ -29,9 +29,9 @@ public class UserSettings extends HttpServlet {
         //Get user's current settings
         HttpSession session = req.getSession();
         User user = (User)session.getAttribute("user");
-        Boolean autoForward = user.isAutoFwdIncompleteTasks();
+        Boolean includeHolidays = user.isIncludeHolidays();
 
-        req.setAttribute("autoForward", autoForward);
+        req.setAttribute("includeHolidays", includeHolidays);
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users/userSettings.jsp");
         dispatcher.forward(req, resp);

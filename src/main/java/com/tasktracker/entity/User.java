@@ -25,8 +25,8 @@ public class User {
     @Column(name = "user_password")
     private String userPassword;
 
-    @Column(name ="auto_fwd_incomplete_tasks")
-    private boolean autoFwdIncompleteTasks;
+    @Column(name ="includeHolidays")
+    private boolean includeHolidays;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<Event> events = new ArrayList<>();
@@ -50,12 +50,12 @@ public class User {
      * Instantiates a new User.
      *  @param userName    the user name
      * @param userPassword    the user's password
-     * @param autoFwdIncompleteTasks whether or not to automatically forward the user's incomplete tasks
+     * @param includeHolidays whether or not to include US national holidays
      */
-    public User(String userName, String userPassword, boolean autoFwdIncompleteTasks) {
+    public User(String userName, String userPassword, boolean includeHolidays) {
         this.userName = userName;
         this.userPassword = userPassword;
-        this.autoFwdIncompleteTasks = autoFwdIncompleteTasks;
+        this.includeHolidays = includeHolidays;
     }
 
     /**
@@ -113,21 +113,21 @@ public class User {
     }
 
     /**
-     * Is auto fwd incomplete tasks boolean.
+     * Include holidays boolean.
      *
      * @return the boolean
      */
-    public boolean isAutoFwdIncompleteTasks() {
-        return autoFwdIncompleteTasks;
+    public boolean isIncludeHolidays() {
+        return includeHolidays;
     }
 
     /**
-     * Sets auto fwd incomplete tasks.
+     * Sets include holidays.
      *
-     * @param autoFwdIncompleteTasks the auto fwd incomplete tasks
+     * @param includeHolidays whether or not to include US holidays
      */
-    public void setAutoFwdIncompleteTasks(boolean autoFwdIncompleteTasks) {
-        this.autoFwdIncompleteTasks = autoFwdIncompleteTasks;
+    public void setIncludeHolidays(boolean includeHolidays) {
+        this.includeHolidays = includeHolidays;
     }
 
     /**
@@ -348,11 +348,11 @@ public class User {
         return userId == user.userId &&
                 Objects.equals(userName, user.userName) &&
                 Objects.equals(userPassword, user.userPassword) &&
-                Objects.equals(autoFwdIncompleteTasks, user.autoFwdIncompleteTasks);
+                Objects.equals(includeHolidays, user.includeHolidays);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(userId, userName, userPassword, autoFwdIncompleteTasks);
+        return Objects.hash(userId, userName, userPassword, includeHolidays);
     }
 }

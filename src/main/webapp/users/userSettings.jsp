@@ -13,25 +13,25 @@
         <FORM ACTION="${pageContext.request.contextPath}/users/userSettingsAction" METHOD="GET" id="userSettings" class="mainForm">
             <h2>User Settings</h2>
 
-<%--            TODO: I think I'm just going to automatically forward everyone's tasks because that it the default and
-                   I don't see why anyone would want to delete them just because it's a new week--%>
-<%--            <div class="form-group">--%>
-<%--                <legend>Automatically forward your incomplete tasks to the next week?</legend>--%>
-<%--                <div class="form-check">--%>
-<%--                    <input class="form-check-input" type="radio" name="autoForwardOptions" id="yesAutoForward" value="yesAutoForward"--%>
-<%--                    <c:if test = "${requestScope.autoForward}">--%>
-<%--                           checked="checked"--%>
-<%--                    </c:if>>--%>
-<%--                    <label class="form-check-label" for="yesAutoForward">Yes, automatically forward my incomplete tasks to the next week</label>--%>
-<%--                </div>--%>
-<%--                <div class="form-check">--%>
-<%--                    <input class="form-check-input" type="radio" name="autoForwardOptions" id="noAutoForward" value="noAutoForward"--%>
-<%--                    <c:if test = "${not requestScope.autoForward}">--%>
-<%--                           checked="checked"--%>
-<%--                    </c:if>>--%>
-<%--                    <label class="form-check-label" for="noAutoForward">No, do not forward my incomplete tasks to the next week</label>--%>
-<%--                </div>--%>
-<%--            </div><br/>--%>
+            <div class="form-group">
+                <p>Do you want to include US national holidays on your calendar?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="holidayOptions" id="yesHolidays" value="yesHolidays"
+                    <c:if test = "${requestScope.includeHolidays}">
+                           checked="checked"
+                    </c:if>>
+                    <label class="form-check-label" for="yesHolidays">Include US national holidays on my calendar</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="holidayOptions" id="noHolidays" value="noHolidays"
+                    <c:if test = "${not requestScope.includeHolidays}">
+                           checked="checked"
+                    </c:if>>
+                    <label class="form-check-label" for="noHolidays">Do not include US national holidays on my calendar</label>
+                </div>
+            </div>
+
+
 
         <%--TODO: Setting for determining the first day of the week?--%>
 
