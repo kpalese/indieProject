@@ -45,7 +45,9 @@ public class UserSettingsAction extends HttpServlet {
         user.setIncludeHolidays(includeHolidays);
         userDao.saveOrUpdate(user);
 
-        //TODO: Message that settings were successfully updated?
+        //Set a message that the user setting were updated
+        session.setAttribute("userMessage", "Your user setting have been updated!");
+        session.setAttribute("messageClass", "alert-success");
 
         resp.sendRedirect(req.getContextPath() + "/users/viewPlanner");
     }

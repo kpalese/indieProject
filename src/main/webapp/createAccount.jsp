@@ -9,11 +9,22 @@
 <main>
     <div class="wrapper">
 
-        <FORM ACTION="createUserAccountAction" METHOD="POST" id="createAccountForm" class="mainForm">
+        <FORM ACTION="createUserAccountAction" METHOD="GET" id="createAccountForm" class="mainForm">
             <h2>Create a Task Tracker Account</h2>
+
+<%--            If there's a message for the user, display it--%>
+            <c:if test="${not empty requestScope.userMessage}">
+                <div class="userMessage alert ${requestScope.messageClass}" role="alert">
+                        ${requestScope.userMessage}
+                </div>
+            </c:if>
+            <c:remove var="userMessage"/>
+            <c:remove var="messageClass"/>
+
             <div class="form-group">
                 <label for="userName"><span class="required">*</span>User name: </label>
-                <INPUT TYPE="TEXT" NAME="userName" class="form-control" id="userName" required="required">
+                <INPUT TYPE="TEXT" NAME="userName" class="form-control" id="userName" required="required"
+                   <c:if test="${not empty requestScope.userName}">value="${requestScope.userName}"</c:if>>
             </div>
             <div class="form-group">
                 <label for="password"><span class="required">*</span>Password: </label>
