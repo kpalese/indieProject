@@ -27,10 +27,11 @@ public class CalendarificAPI implements PropertiesLoader {
      */
     public CalendarificResponse getCalendarificResponse(String year) {
         String apiKey = properties.getProperty("calendarific.api.key");
+        String baseURL = properties.getProperty("calendarific.base.url");
 
         Client client = ClientBuilder.newClient();
         WebTarget target =
-                client.target("https://calendarific.com/api/v2/holidays/json?api_key=" + apiKey + "&country=US&year=" + year + "&type=national");
+                client.target(baseURL + "&api_key=" + apiKey + "&year=" + year);
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
 
         ObjectMapper mapper = new ObjectMapper();

@@ -21,11 +21,6 @@ h2 {
     display: inline-block;
 }
 
-.error {
-    color: red;
-    font-weight: bold;
-}
-
 .mainForm {
     max-width: 65%;
     margin-top: 3em;
@@ -69,12 +64,6 @@ h2 {
 
 .fa-angle-right {
     margin-left: 1.5em;
-}
-
-.warningMessage {
-    text-align: center;
-    color: red;
-    font-weight: bold;
 }
 
 .userMessage {

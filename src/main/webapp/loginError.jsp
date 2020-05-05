@@ -8,7 +8,9 @@
 
     <main>
         <div class="wrapper">
-            <p class="error">Login failed...please try again</p>
+            <div class="userMessage alert alert-danger" role="alert">
+                Login failed...please try again
+            </div>
         </div>
     </main>
 </body>

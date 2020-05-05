@@ -12,7 +12,7 @@
         <FORM ACTION="${pageContext.request.contextPath}/users/deleteTodoAction" METHOD="GET" id="deleteTodo" class="mainForm">
             <h2>Delete To Do Item</h2>
 
-            <p class="warningMessage">Are you sure you want to delete this to do item?</p>
+            <p class="alert alert-danger">Are you sure you want to delete this to do item?</p>
             <input type="hidden" name="id" value="${requestScope.todoToDelete.id}" />
             <fieldset disabled>
             <div class="form-group">
