@@ -21,9 +21,9 @@
                         <p class="inline-block" id="welcomeUser">Welcome ${sessionScope.user.userName}!</p>
                     </div>
                     <div class="col-sm-7">
-                        <h2 class="inline offset-2"><a href="${pageContext.request.contextPath}/users/prev?firstDate=${pageDates.firstDateOfWeek}" data-toggle="tooltip" title="Previous week"><i class="fas fa-angle-left"></i></a>
+                        <h2 class="inline offset-2"><a href="${pageContext.request.contextPath}/users/go?goToDate=${pageDates.firstDateOfWeek.minusDays(7)}" data-toggle="tooltip" title="Previous week"><i class="fas fa-angle-left"></i></a>
                             Week of ${pageDates.getLocalDateToMDDYYYY(pageDates.getDateOfWeek(1))} - ${pageDates.getLocalDateToMDDYYYY(pageDates.getDateOfWeek(7))}
-                            <a href="${pageContext.request.contextPath}/users/next?firstDate=${pageDates.firstDateOfWeek}" data-toggle="tooltip" title="Next week"><i class="fas fa-angle-right"></i></a></h2>
+                            <a href="${pageContext.request.contextPath}/users/go?goToDate=${pageDates.firstDateOfWeek.plusDays(7)}" data-toggle="tooltip" title="Next week"><i class="fas fa-angle-right"></i></a></h2>
                     </div>
                     <div class="col-sm-3">
                         <div class="dropdown show">

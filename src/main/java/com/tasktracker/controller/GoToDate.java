@@ -58,26 +58,56 @@ public class GoToDate extends HttpServlet {
         //TODO: Verify list of users is only 1?
         session.setAttribute("user", user);
 
-        //If user wants to include holidays, check if holidays for the "gotodate" year are already in the session
+        //Include holidays if user setting is to include them
         if (user.isIncludeHolidays()) {
-            //Check if user is navigating to a different year
-            String currentYear = Integer.toString((int) session.getAttribute("currentYear"));
-            if (!Integer.toString(goToDate.getYear()).equals(currentYear)) {
-                try {
-                    CalendarificAPI api = new CalendarificAPI();
-                    List <HolidaysItem> retrievedHolidays = api.getCalendarificResponse(Integer.toString(goToDate.getYear())).getResponse().getHolidays();
-
-                    //Set the new 'current year' and retrieved holidays to the session
-                    session.setAttribute("currentYear", currentYear);
-                    session.setAttribute("holidays", retrievedHolidays);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
+            includeHolidays(firstDateOfWeek, goToDate, fieldUS, session);
         }
 
         //Forward to viewPlanner
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users/viewPlanner.jsp");
         dispatcher.forward(req, resp);
+    }
+
+
+    /**
+     * Get the relevant holidays from Calendarific
+     *
+     * @param firstDateOfWeek the first date of week
+     * @param goToDate        the go to date
+     * @param fieldUS         the field us
+     * @param session         the session
+     */
+    public void includeHolidays(LocalDate firstDateOfWeek, LocalDate goToDate, TemporalField fieldUS, HttpSession session) {
+        try {
+            int startingYear = firstDateOfWeek.getYear();
+            int endingYear = goToDate.with(fieldUS, 7).getYear();
+            int currentYear = goToDate.getYear();
+
+            //If the current week spans two years, get the holidays for both years
+            if (startingYear != endingYear) {
+
+                CalendarificAPI api = new CalendarificAPI();
+                List <HolidaysItem> retrievedHolidays = api.getCalendarificResponse(Integer.toString(startingYear)).getResponse().getHolidays();
+                retrievedHolidays.addAll(api.getCalendarificResponse(Integer.toString(endingYear)).getResponse().getHolidays());
+
+                //Put the retrieved holidays into the session and set the ending year as the current year
+                session.setAttribute("currentYear", endingYear);
+                session.setAttribute("holidays", retrievedHolidays);
+
+            } else {
+                //If the current week spans just one year, get the holidays for just this year
+                //Check if the current year's holidays are already in the session
+                if (currentYear != (int)session.getAttribute("currentYear")) {
+                    CalendarificAPI api = new CalendarificAPI();
+                    List <HolidaysItem> retrievedHolidays = api.getCalendarificResponse(Integer.toString(currentYear)).getResponse().getHolidays();
+
+                    //Put the current date and the retrieved holidays into the session
+                    session.setAttribute("currentYear", currentYear);
+                    session.setAttribute("holidays", retrievedHolidays);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
