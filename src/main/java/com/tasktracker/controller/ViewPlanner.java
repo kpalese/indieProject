@@ -1,7 +1,9 @@
 package com.tasktracker.controller;
 
+import com.calendarific.HolidaysItem;
 import com.tasktracker.entity.PageDates;
 import com.tasktracker.entity.User;
+import com.tasktracker.persistence.CalendarificAPI;
 import com.tasktracker.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -45,6 +47,10 @@ public class ViewPlanner extends HttpServlet {
 
         //Get current date and first date of the week
         LocalDate now = LocalDate.now();
+
+        //Uncomment the below line to test New Year's Day
+        //LocalDate now = LocalDate.of(2020, 1, 1);
+
         session.setAttribute("now", now);
         TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
         //TODO: Add user setting for Sun or Mon start of week
@@ -54,6 +60,20 @@ public class ViewPlanner extends HttpServlet {
         //Create PageDates entity to calculate the calendar dates for this page and place in the request
         PageDates pageDates = new PageDates(firstDateOfWeek);
         req.setAttribute("pageDates", pageDates);
+
+        //If user wants to include holidays, get the holidays for the current year (GoToDate servlet will get holidays for other years)
+        if (user.isIncludeHolidays()) {
+            int currentYear = now.getYear();
+            try {
+                CalendarificAPI api = new CalendarificAPI();
+                List <HolidaysItem> retrievedHolidays = api.getCalendarificResponse(Integer.toString(currentYear)).getResponse().getHolidays();
+
+                session.setAttribute("currentYear", currentYear);
+                session.setAttribute("holidays", retrievedHolidays);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
 
         //Forward to viewPlanner
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users/viewPlanner.jsp");

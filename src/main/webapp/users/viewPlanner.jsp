@@ -86,6 +86,19 @@
                             <div class="col">
                                 <div class="card w-100">
                                     <ul class="list-group list-group-flush w-100">
+<%--                                    If user settings are to display holidays, first display any holidays for this date--%>
+                                        <c:if test="${sessionScope.user.includeHolidays}">
+                                            <c:forEach var="holiday" items="${sessionScope.holidays}">
+                                                <c:if test="${holiday.dateToLocalDate().equals(pageDates.getDateOfWeekFromString(i))}">
+                                                    <li class="list-group-item">
+                                                        <div class="row holiday" data-toggle="tooltip" title="${holiday.description}">
+                                                            ${holiday.name}
+                                                        </div>
+                                                    </li>
+                                                </c:if>
+                                            </c:forEach>
+                                        </c:if>
+<%--                                        Display user's non-holiday events--%>
                                         <c:forEach var="event" items="${sessionScope.user.getEventsByDate(pageDates.getDateOfWeekFromString(i))}">
                                             <li class="list-group-item">
                                                 <div class="row">

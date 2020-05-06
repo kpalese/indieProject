@@ -1,5 +1,7 @@
 package com.calendarific;
 
+import java.time.Instant;
+import java.time.LocalDate;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -84,6 +86,14 @@ public class HolidaysItem{
 
 	public String getStates(){
 		return states;
+	}
+
+	public LocalDate dateToLocalDate() {
+		int year = this.getDate().getDatetime().getYear();
+		int month = this.getDate().getDatetime().getMonth();
+		int day = this.getDate().getDatetime().getDay();
+
+		return LocalDate.of(year, month, day);
 	}
 
 	@Override

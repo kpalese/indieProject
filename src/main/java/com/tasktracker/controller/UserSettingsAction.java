@@ -6,6 +6,7 @@ import com.tasktracker.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -49,6 +50,8 @@ public class UserSettingsAction extends HttpServlet {
         session.setAttribute("userMessage", "Your user setting have been updated!");
         session.setAttribute("messageClass", "alert-success");
 
-        resp.sendRedirect(req.getContextPath() + "/users/viewPlanner");
+        //Forward to viewPlanner
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/users/viewPlanner");
+        dispatcher.forward(req, resp);
     }
 }

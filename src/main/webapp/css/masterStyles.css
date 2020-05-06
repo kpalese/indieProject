@@ -80,6 +80,10 @@ h2 {
     margin-bottom: .6em;
 }
 
+.holiday {
+    margin-left: .5em;
+}
+
 .required {
     color: red;
 }
