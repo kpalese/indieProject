@@ -18,7 +18,7 @@
             <div class="headerContainer col-sm-12">
                 <div class="row w-100">
                     <div class="col-sm-2">
-                        <p class="inline-block" id="welcomeUser">Welcome ${user.userName}!</p>
+                        <p class="inline-block" id="welcomeUser">Welcome ${sessionScope.user.userName}!</p>
                     </div>
                     <div class="col-sm-7">
                         <h2 class="inline offset-2"><a href="${pageContext.request.contextPath}/users/prev?firstDate=${pageDates.firstDateOfWeek}" data-toggle="tooltip" title="Previous week"><i class="fas fa-angle-left"></i></a>

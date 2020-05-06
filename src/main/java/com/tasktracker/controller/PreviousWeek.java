@@ -33,6 +33,8 @@ public class PreviousWeek extends HttpServlet {
         PageDates pageDates = new PageDates(firstDateOfWeek);
         req.setAttribute("pageDates", pageDates);
 
+        //TODO: HOlidays
+
         //Forward to viewPlanner
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users/viewPlanner.jsp");
         dispatcher.forward(req, resp);

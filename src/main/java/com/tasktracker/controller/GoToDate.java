@@ -24,6 +24,7 @@ import java.util.Locale;
         urlPatterns = {"/users/go"}
 )
 public class GoToDate extends HttpServlet {
+    //TODO: break into smaller methods
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //If the request is from the "jump to date" button, it will be an attribute

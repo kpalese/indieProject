@@ -88,6 +88,10 @@ public class HolidaysItem{
 		return states;
 	}
 
+	/**
+	 * Returns the date of the holiday as a LocalDate
+	 * @return the holiday's date
+	 */
 	public LocalDate dateToLocalDate() {
 		int year = this.getDate().getDatetime().getYear();
 		int month = this.getDate().getDatetime().getMonth();
