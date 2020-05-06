@@ -1,7 +1,9 @@
 package com.tasktracker.controller;
 
+import com.calendarific.HolidaysItem;
 import com.tasktracker.entity.PageDates;
 import com.tasktracker.entity.User;
+import com.tasktracker.persistence.CalendarificAPI;
 import com.tasktracker.persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
@@ -54,6 +56,24 @@ public class GoToDate extends HttpServlet {
         User user = users.get(0);
         //TODO: Verify list of users is only 1?
         session.setAttribute("user", user);
+
+        //If user wants to include holidays, check if holidays for the "gotodate" year are already in the session
+        if (user.isIncludeHolidays()) {
+            //Check if user is navigating to a different year
+            String currentYear = Integer.toString((int) session.getAttribute("currentYear"));
+            if (!Integer.toString(goToDate.getYear()).equals(currentYear)) {
+                try {
+                    CalendarificAPI api = new CalendarificAPI();
+                    List <HolidaysItem> retrievedHolidays = api.getCalendarificResponse(Integer.toString(goToDate.getYear())).getResponse().getHolidays();
+
+                    //Set the new 'current year' and retrieved holidays to the session
+                    session.setAttribute("currentYear", currentYear);
+                    session.setAttribute("holidays", retrievedHolidays);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
 
         //Forward to viewPlanner
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users/viewPlanner.jsp");
