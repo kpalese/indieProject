@@ -14,11 +14,11 @@
             <input type="hidden" name="id" value="${requestScope.todoToEdit.id}" />
             <div class="form-group">
                 <label for="todoName"><span class="required">*</span>Name of To Do Item: </label>
-                <INPUT TYPE="TEXT" NAME="todoName" class="form-control" id="todoName" required="required" value="${requestScope.todoToDelete.name}">
+                <INPUT TYPE="TEXT" NAME="todoName" class="form-control" id="todoName" required="required" value="${requestScope.todoToEdit.name}">
             </div>
             <div class="form-group">
                 <label for="notes">Notes:</label>
-                <textarea class="form-control" NAME="notes" id="notes" rows="3">${requestScope.todoToDelete.notes}</textarea>
+                <textarea class="form-control" NAME="notes" id="notes" rows="3" maxlength="100">${requestScope.todoToEdit.notes}</textarea>
             </div>
 
             <%--TODO: try to go back to the planner page that the user was just on (not necessarily the page for today)--%>

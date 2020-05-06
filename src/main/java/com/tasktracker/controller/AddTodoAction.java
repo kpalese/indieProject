@@ -33,7 +33,9 @@ public class AddTodoAction extends HttpServlet {
         GenericDao todoDao = new GenericDao(Todo.class);
         todoDao.insert(todo);
 
-        //TODO: Message that todo was successfully added?
+        //Add message that item was successfully added
+        session.setAttribute("userMessage", "The item was successfully added!");
+        session.setAttribute("messageClass", "alert-success");
 
         resp.sendRedirect(req.getContextPath() + "/users/viewPlanner");
     }
