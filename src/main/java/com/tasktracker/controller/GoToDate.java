@@ -41,13 +41,8 @@ public class GoToDate extends HttpServlet {
         //Get the date the user wants to navigate to
         LocalDate goToDate = LocalDate.parse(goToDateString);
 
-        //Get the first date of the week the user wants to navigate to
-        //TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
-        //TemporalField fieldUS = WeekFields.of(Locale.UK).dayOfWeek();
-
         //Get the user setting for the first day of the week
         TemporalField field = getStartOfWeekSetting(session);
-
         LocalDate firstDateOfWeek = goToDate.with(field, 1);
 
         //Create PageDates entity to calculate the calendar dates for this page and place in the request

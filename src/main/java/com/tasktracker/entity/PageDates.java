@@ -49,13 +49,11 @@ public class PageDates {
     }
 
     public LocalDate getDateOfWeek(int positionInWeek) {
-        //TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
         return getFirstDateOfWeek().with(field, positionInWeek);
     }
 
     public LocalDate getDateOfWeekFromString(String stringPositionInWeek) {
         int positionInWeek = Integer.parseInt(stringPositionInWeek);
-        //TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
         return getFirstDateOfWeek().with(field, positionInWeek);
     }
 

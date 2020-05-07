@@ -107,6 +107,17 @@ h2 {
     max-width: fit-content;
 }
 
+#userSettings {
+    max-width: 70%;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-check {
+    margin-left: 2em;
+}
+
 /**
 * Scrollbar styles
  */
