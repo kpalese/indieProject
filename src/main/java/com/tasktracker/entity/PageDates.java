@@ -12,6 +12,7 @@ import java.util.Locale;
  */
 public class PageDates {
     private LocalDate firstDateOfWeek;
+    private TemporalField field;
 
     /**
      * Instantiates a new PageDates (empty constructor)
@@ -24,8 +25,9 @@ public class PageDates {
      *
      * @param firstDateOfWeek the first date of week
      */
-    public PageDates(LocalDate firstDateOfWeek) {
+    public PageDates(LocalDate firstDateOfWeek, TemporalField field) {
         this.firstDateOfWeek = firstDateOfWeek;
+        this.field = field;
     }
 
     /**
@@ -47,14 +49,14 @@ public class PageDates {
     }
 
     public LocalDate getDateOfWeek(int positionInWeek) {
-        TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
-        return getFirstDateOfWeek().with(fieldUS, positionInWeek);
+        //TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
+        return getFirstDateOfWeek().with(field, positionInWeek);
     }
 
     public LocalDate getDateOfWeekFromString(String stringPositionInWeek) {
         int positionInWeek = Integer.parseInt(stringPositionInWeek);
-        TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
-        return getFirstDateOfWeek().with(fieldUS, positionInWeek);
+        //TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
+        return getFirstDateOfWeek().with(field, positionInWeek);
     }
 
     public DayOfWeek getDayOfWeek(LocalDate dateOfWeek) {

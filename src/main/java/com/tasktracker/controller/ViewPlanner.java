@@ -52,24 +52,42 @@ public class ViewPlanner extends HttpServlet {
         //LocalDate now = LocalDate.of(2020, 1, 1);
 
         session.setAttribute("now", now);
-        TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
-        //TODO: Add user setting for Sun or Mon start of week
-        //TemporalField fieldUS = WeekFields.of(Locale.UK).dayOfWeek();
-        LocalDate firstDateOfWeek = now.with(fieldUS, 1);
+
+        //Get the user setting for the first day of the week
+        TemporalField field = getStartOfWeekSetting(user);
+        LocalDate firstDateOfWeek = now.with(field, 1);
 
         //Create PageDates entity to calculate the calendar dates for this page and place in the request
-        PageDates pageDates = new PageDates(firstDateOfWeek);
+        PageDates pageDates = new PageDates(firstDateOfWeek, field);
         req.setAttribute("pageDates", pageDates);
 
         //If user wants to include holidays, get the holidays for the current year (GoToDate servlet will get holidays
         // for other years if the user navigates to other years)
         if (user.isIncludeHolidays()) {
-           includeHolidays(firstDateOfWeek, now, fieldUS, session);
+           includeHolidays(firstDateOfWeek, now, field, session);
         }
 
         //Forward to viewPlanner
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users/viewPlanner.jsp");
         dispatcher.forward(req, resp);
+    }
+
+
+    /**
+     * Gets user's start of week setting.
+     *
+     * @param user the user
+     * @return the start of week setting
+     */
+    public TemporalField getStartOfWeekSetting(User user) {
+        TemporalField field = null;
+
+        if (user.getWeekStart().equals("Sunday")) {
+            field = WeekFields.of(Locale.US).dayOfWeek();
+        } else if (user.getWeekStart().equals("Monday")) {
+            field = WeekFields.of(Locale.UK).dayOfWeek();
+        }
+        return field;
     }
 
 

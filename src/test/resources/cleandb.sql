@@ -1,9 +1,9 @@
 delete from USERS;
 INSERT INTO USERS
-VALUES (1, 'testUser1', 'mypassword123', true),
-       (2, 'Jane_Doe', 'welcome123', false),
-       (3, 'WaltD', '321xyz', false),
-       (4, 'FlowerDaisy', 'ILikeFlowers', true);
+VALUES (1, 'testUser1', 'mypassword123', true, 'Sunday'),
+       (2, 'Jane_Doe', 'welcome123', false, 'Sunday'),
+       (3, 'WaltD', '321xyz', false, 'Monday'),
+       (4, 'FlowerDaisy', 'ILikeFlowers', true, 'Monday');
 
 delete from USER_ROLES;
 INSERT INTO USER_ROLES

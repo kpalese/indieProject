@@ -27,6 +27,8 @@ public class GoToDate extends HttpServlet {
     //TODO: break into smaller methods
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        HttpSession session = req.getSession();
+
         //If the request is from the "jump to date" button, it will be an attribute
         //If the request is from a redirect after e.g. adding an event, it will be a parameter
         String goToDateString = "";
@@ -40,18 +42,20 @@ public class GoToDate extends HttpServlet {
         LocalDate goToDate = LocalDate.parse(goToDateString);
 
         //Get the first date of the week the user wants to navigate to
-        TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
-        //TODO: Add user setting for Sun or Mon start of week
+        //TemporalField fieldUS = WeekFields.of(Locale.US).dayOfWeek();
         //TemporalField fieldUS = WeekFields.of(Locale.UK).dayOfWeek();
-        LocalDate firstDateOfWeek = goToDate.with(fieldUS, 1);
+
+        //Get the user setting for the first day of the week
+        TemporalField field = getStartOfWeekSetting(session);
+
+        LocalDate firstDateOfWeek = goToDate.with(field, 1);
 
         //Create PageDates entity to calculate the calendar dates for this page and place in the request
-        PageDates newPageDates = new PageDates(firstDateOfWeek);
+        PageDates newPageDates = new PageDates(firstDateOfWeek, field);
         req.setAttribute("pageDates", newPageDates);
 
         //TODO: Review further: I removed user from session and then re-added to force the user methods to be called again...is this the best way?
         //Get current user and add to session
-        HttpSession session = req.getSession();
         GenericDao userDao = new GenericDao(User.class);
         List<User> users = userDao.getByPropertyEqual("userName", req.getRemoteUser());
         User user = users.get(0);
@@ -60,7 +64,7 @@ public class GoToDate extends HttpServlet {
 
         //Include holidays if user setting is to include them
         if (user.isIncludeHolidays()) {
-            includeHolidays(firstDateOfWeek, goToDate, fieldUS, session);
+            includeHolidays(firstDateOfWeek, goToDate, field, session);
         }
 
         //Forward to viewPlanner
@@ -68,6 +72,23 @@ public class GoToDate extends HttpServlet {
         dispatcher.forward(req, resp);
     }
 
+    /**
+     * Gets user's start of week setting.
+     *
+     * @param session the HttpSession
+     * @return the start of week setting
+     */
+    public TemporalField getStartOfWeekSetting(HttpSession session) {
+        User user = (User)session.getAttribute("user");
+
+        TemporalField field = null;
+        if (user.getWeekStart().equals("Sunday")) {
+            field = WeekFields.of(Locale.US).dayOfWeek();
+        } else if (user.getWeekStart().equals("Monday")) {
+            field = WeekFields.of(Locale.UK).dayOfWeek();
+        }
+        return field;
+    }
 
     /**
      * Get the relevant holidays from Calendarific

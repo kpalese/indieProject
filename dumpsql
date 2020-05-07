@@ -6,7 +6,8 @@ create table USERS
         primary key,
     user_name varchar(40) not null,
     user_password varchar(200) not null,
-    includeHolidays tinyint(1) default 0 null
+    includeHolidays tinyint(1) default 0 null,
+    weekStart enum('Sunday', 'Monday') default 'Sunday' null
 );
 
 create table EVENT
@@ -63,3 +64,4 @@ create table USER_ROLES
         foreign key (user_id) references USERS (id)
             on update cascade on delete cascade
 );
+

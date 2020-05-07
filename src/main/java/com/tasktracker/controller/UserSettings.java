@@ -26,13 +26,8 @@ public class UserSettings extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //Get user's current settings
-        HttpSession session = req.getSession();
-        User user = (User)session.getAttribute("user");
-        Boolean includeHolidays = user.isIncludeHolidays();
 
-        req.setAttribute("includeHolidays", includeHolidays);
-
+        //Forward to the user settings jsp
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users/userSettings.jsp");
         dispatcher.forward(req, resp);
     }

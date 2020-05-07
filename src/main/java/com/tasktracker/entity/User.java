@@ -28,6 +28,9 @@ public class User {
     @Column(name ="includeHolidays")
     private boolean includeHolidays;
 
+    @Column(name = "weekStart")
+    private String weekStart;
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<Event> events = new ArrayList<>();
 
@@ -51,11 +54,13 @@ public class User {
      *  @param userName    the user name
      * @param userPassword    the user's password
      * @param includeHolidays whether or not to include US national holidays
+     * @param weekStart the day the week should begin
      */
-    public User(String userName, String userPassword, boolean includeHolidays) {
+    public User(String userName, String userPassword, boolean includeHolidays, String weekStart) {
         this.userName = userName;
         this.userPassword = userPassword;
         this.includeHolidays = includeHolidays;
+        this.weekStart = weekStart;
     }
 
     /**
@@ -128,6 +133,24 @@ public class User {
      */
     public void setIncludeHolidays(boolean includeHolidays) {
         this.includeHolidays = includeHolidays;
+    }
+
+    /**
+     * Gets that day the week should start on
+     *
+     * @return the week start
+     */
+    public String getWeekStart() {
+        return weekStart;
+    }
+
+    /**
+     * Sets the day the week should start on
+     *
+     * @param weekStart the week start
+     */
+    public void setWeekStart(String weekStart) {
+        this.weekStart = weekStart;
     }
 
     /**
@@ -348,11 +371,12 @@ public class User {
         return userId == user.userId &&
                 Objects.equals(userName, user.userName) &&
                 Objects.equals(userPassword, user.userPassword) &&
-                Objects.equals(includeHolidays, user.includeHolidays);
+                Objects.equals(includeHolidays, user.includeHolidays) &&
+                Objects.equals(weekStart, user.weekStart);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(userId, userName, userPassword, includeHolidays);
+        return Objects.hash(userId, userName, userPassword, includeHolidays, weekStart);
     }
 }

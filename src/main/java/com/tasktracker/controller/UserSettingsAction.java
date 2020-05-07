@@ -35,19 +35,23 @@ public class UserSettingsAction extends HttpServlet {
 
         //Get include holidays setting from the form
         Boolean includeHolidays = null;
-        if (req.getParameter("includeHolidays").equals("yesHolidays")) {
+        if (req.getParameter("holidayOptions").equals("yesHolidays")) {
             includeHolidays = true;
-        } else if(req.getParameter("includeHolidays").equals("noHolidays")) {
+        } else if(req.getParameter("holidayOptions").equals("noHolidays")) {
             includeHolidays = false;
         }
+
+        //Get start of week setting from the form
+        String weekStart = req.getParameter("weekStart");
 
         //Update user settings
         GenericDao userDao = new GenericDao(User.class);
         user.setIncludeHolidays(includeHolidays);
+        user.setWeekStart(weekStart);
         userDao.saveOrUpdate(user);
 
         //Set a message that the user setting were updated
-        session.setAttribute("userMessage", "Your user setting have been updated!");
+        session.setAttribute("userMessage", "Your user settings have been updated!");
         session.setAttribute("messageClass", "alert-success");
 
         //Forward to viewPlanner
