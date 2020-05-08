@@ -10,7 +10,7 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/e1bf11e528.js" crossorigin="anonymous"></script>
     <%--    Favicon--%>
     <link rel="apple-touch-icon" sizes="180x180" href="${pageContext.request.contextPath}/templates/favicon/apple-touch-icon.png">

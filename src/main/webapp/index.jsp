@@ -3,11 +3,11 @@
 <%@include file="templates/head.jsp"%>
 
 <html>
-<body>
+<body class="geometric">
     <%@include file="templates/navmenu.jsp"%>
 
         <main>
-            <div class="wrapper">
+            <div class="wrapper mainForm">
                 <h2>Welcome to Task Tracker!</h2>
 
 <%--                TODO: Message if user just logged out--%>

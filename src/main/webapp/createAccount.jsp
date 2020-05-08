@@ -3,7 +3,7 @@
 <%@include file="templates/head.jsp"%>
 
 <html>
-<body>
+<body class="geometric">
 <%@include file="templates/navmenu.jsp"%>
 
 <main>
@@ -34,7 +34,7 @@
                 <label for="confirmPassword"><span class="required">*</span>Confirm Password: </label>
                 <INPUT TYPE="PASSWORD" NAME="confirmPassword" class="form-control" id="confirmPassword" required="required">
             </div>
-            <INPUT TYPE="SUBMIT" VALUE="Create Account" class="btn btn-primary">
+            <INPUT TYPE="SUBMIT" VALUE="Create Account" class="btn button-main">
         </FORM>
     </div>
 </main>

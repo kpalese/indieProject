@@ -34,7 +34,7 @@
                                 <a class="dropdown-item" href="${pageContext.request.contextPath}/users/viewPlanner">Go to Today</a>
                                 <a class="dropdown-item">
                                     <FORM ACTION="${pageContext.request.contextPath}/users/go" METHOD="GET">
-                                        <label for="goToDate">Specific date:</label><br/><input type="date" NAME="goToDate" id="goToDate"><INPUT TYPE="SUBMIT" VALUE="Go" class="btn btn-primary form-control" id="goToDateSubmit">
+                                        <label for="goToDate">Specific date:</label><br/><input type="date" NAME="goToDate" id="goToDate"><INPUT TYPE="SUBMIT" VALUE="Go" class="btn button-main form-control" id="goToDateSubmit">
                                     </FORM>
                                 </a>
                             </div>
@@ -111,7 +111,7 @@
                                             </li>
                                         </c:forEach>
                                         <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addEvent?eventDate=${pageDates.getDateOfWeekFromString(i)}"
-                                           class="btn btn-primary">Add Event</a></li>
+                                           class="btn button-main">Add Event</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -144,7 +144,7 @@
                                                 </li>
                                             </c:if>
                                         </c:forEach>
-                                        <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addTask?taskDate=${pageDates.getDateOfWeekFromString(i)}" class="btn btn-primary">Add Task</a></li>
+                                        <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addTask?taskDate=${pageDates.getDateOfWeekFromString(i)}" class="btn button-main">Add Task</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -166,7 +166,7 @@
                                         </div>
                                     </li>
                                 </c:forEach>
-                                <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addTodo" class="btn btn-primary">Add Item</a></li>
+                                <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addTodo" class="btn button-main">Add Item</a></li>
                             </ul>
                         </div>
                     </div>

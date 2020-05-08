@@ -1,9 +1,32 @@
-body {
-    background-color: #FDFEFE;
+.button-main {
+    background-color: #0c3748;
+    color: white;
+}
+
+.geometric {
+    position: relative;
+}
+
+.geometric:before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    background-image: url(geometric-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
 }
 
 nav {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    color: #404040;
 }
 
 .wrapper {
@@ -15,18 +38,22 @@ nav {
 h2 {
     text-align: center;
     margin-bottom: 1.5em;
+    color: #404040;
 }
+
 
 .inline {
     display: inline-block;
 }
 
 .mainForm {
-    max-width: 65%;
+    background-color: rgba(253, 254, 254, .85);
+    max-width: 75%;
     margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
-    padding: 3em 10% 3em 10%;
+    padding: 3em 10% 4em 10%;
+    border-radius: 5px;
 }
 
 .categoryHeading {
