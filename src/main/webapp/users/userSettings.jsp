@@ -3,13 +3,13 @@
 <%@include file="../templates/head.jsp"%>
 
 <html>
-<body>
+<body class="geometric">
 <%@include file="../templates/navmenu.jsp"%>
 
 <main>
     <div class="wrapper">
 
-        <FORM ACTION="${pageContext.request.contextPath}/users/userSettingsAction" METHOD="GET" id="userSettings">
+        <FORM ACTION="${pageContext.request.contextPath}/users/userSettingsAction" METHOD="GET" class="mainForm">
             <h2>User Settings</h2>
 
                 <div class="form-group fieldset">
@@ -49,7 +49,7 @@
                 </div><br/>
 
             <a href="${pageContext.request.contextPath}/users/viewPlanner" class="btn btn-light">Back</a>
-            <INPUT TYPE="SUBMIT" VALUE="Save" class="btn btn-primary">
+            <INPUT TYPE="SUBMIT" VALUE="Save" class="btn button-main">
         </FORM>
     </div>
 </main>

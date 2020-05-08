@@ -4,7 +4,8 @@
 }
 
 .button-main:hover, :focus {
-    background-color: #81c289;
+    background-color: #f2c673;
+    color: #404040;
 }
 
 .geometric {
@@ -41,11 +42,22 @@ nav {
     border-radius: 0.25rem;
 }
 
+.solidButton:hover, :focus {
+    background-color: #f2c673;
+    color: #404040;
+}
+
 .outlineButton {
     color: #278e7e;
     border: 1px solid #278e7e;
     border-radius: 0.25rem;
 }
+
+.outlineButton:hover, :focus {
+    color: #404040;
+    border-color: #f2c673;
+}
+
 
 .wrapper {
     max-width: 80em;
@@ -70,7 +82,7 @@ h2 {
 .mainForm {
     background-color: rgba(253, 254, 254, .85);
     max-width: 75%;
-    margin-top: 3em;
+    margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
     padding: 3em 10% 4em 10%;
@@ -86,6 +98,15 @@ h2 {
     padding-left: 20%;
     border-radius: 5px;
 /*    todo */
+}
+
+#dropdownMenuLink {
+    color: white;
+}
+
+#dropdownMenuLink:hover, :focus {
+    color: #f2c673;
+    border: 1px solid #f2c673;
 }
 
 #plannerContainer {
@@ -150,6 +171,10 @@ i:hover, i:focus {
 
 .holiday {
     margin-left: .5em;
+    margin-right: .5em;
+    border: 2px solid #278e7e;
+    padding: .5em;
+    border-radius: 5px;
 }
 
 .required {
@@ -173,13 +198,6 @@ i:hover, i:focus {
 #goToDateSubmit {
     margin-left: .75em;
     max-width: fit-content;
-}
-
-#userSettings {
-    max-width: 70%;
-    margin-top: 3em;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .form-check {
