@@ -7,7 +7,7 @@
     <%@include file="templates/navmenu.jsp"%>
 
         <main>
-            <div class="wrapper mainForm">
+            <div class="wrapper mainForm" id="homePage">
                 <h2>Welcome to Task Tracker!</h2>
 
 <%--                TODO: Message if user just logged out--%>

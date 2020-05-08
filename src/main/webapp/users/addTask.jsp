@@ -3,7 +3,7 @@
 <%@include file="../templates/head.jsp"%>
 
 <html>
-<body>
+<body class="geometric">
 <%@include file="../templates/navmenu.jsp"%>
 
 <main>
@@ -33,7 +33,7 @@
             </div>
 
             <a href="${pageContext.request.contextPath}/users/go?goToDate=${requestScope.taskDate}" class="btn btn-light">Back</a>
-            <INPUT TYPE="SUBMIT" VALUE="Add Task" class="btn btn-primary">
+            <INPUT TYPE="SUBMIT" VALUE="Add Task" class="btn button-main">
         </FORM>
     </div>
 </main>

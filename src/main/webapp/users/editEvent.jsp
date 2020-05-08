@@ -3,7 +3,7 @@
 <%@include file="../templates/head.jsp"%>
 
 <html>
-<body>
+<body class="geometric">
 <%@include file="../templates/navmenu.jsp"%>
 
 <main>
@@ -34,7 +34,7 @@
             </div>
 
             <a href="${pageContext.request.contextPath}/users/go?goToDate=${requestScope.eventToEdit.date}" class="btn btn-light">Back</a>
-            <INPUT TYPE="SUBMIT" VALUE="Save Changes" class="btn btn-primary">
+            <INPUT TYPE="SUBMIT" VALUE="Save Changes" class="btn button-main">
         </FORM>
     </div>
 </main>

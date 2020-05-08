@@ -3,7 +3,7 @@
 <%@include file="templates/head.jsp"%>
 
 <html>
-<body>
+<body class="geometric">
 <%@include file="templates/navmenu.jsp"%>
 
     <main>

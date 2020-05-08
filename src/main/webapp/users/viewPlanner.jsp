@@ -4,7 +4,7 @@
 <%@include file="../templates/head.jsp"%>
 
 <html>
-<body>
+<body class="geometric">
     <%@include file="../templates/navmenu.jsp"%>
 
     <%--    Set variable for pageDate object--%>
@@ -34,7 +34,7 @@
                                 <a class="dropdown-item" href="${pageContext.request.contextPath}/users/viewPlanner">Go to Today</a>
                                 <a class="dropdown-item">
                                     <FORM ACTION="${pageContext.request.contextPath}/users/go" METHOD="GET">
-                                        <label for="goToDate">Specific date:</label><br/><input type="date" NAME="goToDate" id="goToDate"><INPUT TYPE="SUBMIT" VALUE="Go" class="btn button-main form-control" id="goToDateSubmit">
+                                        <label for="goToDate">Specific date:</label><br/><input type="date" NAME="goToDate" id="goToDate"><INPUT TYPE="SUBMIT" VALUE="Go" class="btn solidButton form-control" id="goToDateSubmit">
                                     </FORM>
                                 </a>
                             </div>
@@ -78,7 +78,7 @@
                     <%--Display a row of events and tasks for each of the 7 days in the week--%>
                     <c:forEach var="i" begin="1" end="7" step="1" >
 
-                        <div class="plannerRow row w-100 <c:if test="${i % 2 == 0}">shadedBackground</c:if>">
+                        <div class="plannerRow row w-100 <c:if test="${i % 2 == 0}">shadedBackground</c:if><c:if test="${i % 2 != 0}">darkShadedBackground</c:if>">
                             <div class="col-sm-2">
                                 <h3>${pageDates.getDayOfWeek(pageDates.getDateOfWeekFromString(i))}<br/>${pageDates.getLocalDateToMDD(pageDates.getDateOfWeekFromString(i))}</h3>
                             </div>

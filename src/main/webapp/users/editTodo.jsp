@@ -3,7 +3,7 @@
 <%@include file="../templates/head.jsp"%>
 
 <html>
-<body>
+<body class="geometric">
 <%@include file="../templates/navmenu.jsp"%>
 
 <main>
@@ -23,7 +23,7 @@
 
             <%--TODO: try to go back to the planner page that the user was just on (not necessarily the page for today)--%>
             <a href="${pageContext.request.contextPath}/users/viewPlanner" class="btn btn-light">Back</a>
-            <INPUT TYPE="SUBMIT" VALUE="Edit To Do Item" class="btn btn-primary">
+            <INPUT TYPE="SUBMIT" VALUE="Edit To Do Item" class="btn button-main">
         </FORM>
     </div>
 </main>
