@@ -22,11 +22,25 @@
 
 nav {
     margin-bottom: 2em;
+    padding-bottom: 1em;
 }
 
 .navbar-brand {
     font-size: 2em;
     color: #404040;
+}
+
+.solidButton {
+    background-color: #278e7e;
+    color: white;
+    margin-right: 1em;
+    border-radius: 0.25rem;
+}
+
+.outlineButton {
+    color: #278e7e;
+    border: 1px solid #278e7e;
+    border-radius: 0.25rem;
 }
 
 .wrapper {
@@ -53,7 +67,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     padding: 3em 10% 4em 10%;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .categoryHeading {
