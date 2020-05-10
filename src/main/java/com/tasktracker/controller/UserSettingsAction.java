@@ -1,10 +1,7 @@
 package com.tasktracker.controller;
 
-import com.tasktracker.entity.Task;
 import com.tasktracker.entity.User;
 import com.tasktracker.persistence.GenericDao;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -14,10 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.time.LocalDate;
 
 /**
- * //TODO: COMMENT HERE
+ * Updates the user settings in the database and then forwards the user to their planner
  * @author kpalese
  */
 
@@ -25,8 +21,6 @@ import java.time.LocalDate;
         urlPatterns = {"/users/userSettingsAction"}
 )
 public class UserSettingsAction extends HttpServlet {
-    private final Logger logger = LogManager.getLogger(this.getClass());
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //Get user

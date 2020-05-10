@@ -2,8 +2,6 @@ package com.tasktracker.controller;
 
 import com.tasktracker.entity.Task;
 import com.tasktracker.persistence.GenericDao;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -16,7 +14,7 @@ import java.io.IOException;
 import java.time.LocalDate;
 
 /**
- * //TODO: COMMENT HERE
+ * Updates the task in the database and then forwards the user to their planner
  * @author kpalese
  */
 
@@ -24,12 +22,8 @@ import java.time.LocalDate;
         urlPatterns = {"/users/editTaskAction"}
 )
 public class EditTaskAction extends HttpServlet {
-    private final Logger logger = LogManager.getLogger(this.getClass());
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-
         //Get task to be edited
         String taskId = req.getParameter("id");
         GenericDao taskDao = new GenericDao(Task.class);
@@ -53,6 +47,7 @@ public class EditTaskAction extends HttpServlet {
         taskDao.saveOrUpdate(taskToEdit);
 
         //Add message that task was successfully edited
+        HttpSession session = req.getSession();
         session.setAttribute("userMessage", "The task was successfully updated!");
         session.setAttribute("messageClass", "alert-success");
 

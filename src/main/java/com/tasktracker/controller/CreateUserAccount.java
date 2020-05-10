@@ -1,8 +1,5 @@
 package com.tasktracker.controller;
 
-import com.tasktracker.entity.User;
-import com.tasktracker.persistence.GenericDao;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * //TODO: COMMENT HERE
+ * Forwards the user to the create account jsp
  * @author kpalese
  */
 

@@ -11,6 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * Forwards the user to the delete to do jsp along with the to do item to be deleted
+ */
 @WebServlet(
         urlPatterns = {"/users/deleteTodo"}
 )

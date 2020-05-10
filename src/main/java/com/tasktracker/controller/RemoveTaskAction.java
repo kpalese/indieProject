@@ -15,6 +15,10 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.time.LocalDate;
 
+/**
+ * TODO: COMMENTS
+ * @author Kelly Palese
+ */
 @WebServlet(
         urlPatterns = {"/users/removeTaskAction"}
 )

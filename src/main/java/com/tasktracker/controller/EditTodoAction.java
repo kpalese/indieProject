@@ -15,7 +15,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * //TODO: COMMENT HERE
+ * Updates the to do item in the database and then forwards the user back to their planner
  * @author kpalese
  */
 
@@ -27,8 +27,6 @@ public class EditTodoAction extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-
         //Get to-do to be edited
         String todoId = req.getParameter("id");
         GenericDao todoDao = new GenericDao(Todo.class);
@@ -40,6 +38,7 @@ public class EditTodoAction extends HttpServlet {
         todoDao.saveOrUpdate(todoToEdit);
 
         //Add message that to-do item was successfully edited
+        HttpSession session = req.getSession();
         session.setAttribute("userMessage", "The item was successfully updated!");
         session.setAttribute("messageClass", "alert-success");
 

@@ -22,7 +22,7 @@
 
         <h3>What is considered a To Do item?</h3>
         <p>A to do item is something you need to accomplish, but it does not have a set deadline.</p>
-        <p>Examples of to do items: Return an item to a store, update your resume, stain the deck, send thank you notes</p>
+        <p>Examples of to do items: Return an item to a store, update your resume, stain the deck, send thank you notes</p><br/>
 
         <h3>Why can't I remove a single instance of a recurring task?</h3>
         <p>Placeholder</p><br/>
@@ -30,7 +30,7 @@
         <h3>Why can't I remove future recurring tasks?</h3>
         <p>Placeholder</p><br/>
 
-        <h3>What might be included in future version of Task Tracker?</h3>
+        <h3>What might be included in future versions of Task Tracker?</h3>
         <p>Placeholder...all day events, recurring events</p>
 
     </div>

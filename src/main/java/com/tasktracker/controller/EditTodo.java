@@ -11,6 +11,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * Forwards the user to the edit to do jsp along with the to do item that is being edited
+ * @author  Kelly Palese
+ */
 @WebServlet(
         urlPatterns = {"/users/editTodo"}
 )

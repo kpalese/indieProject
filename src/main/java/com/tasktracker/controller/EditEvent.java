@@ -2,8 +2,6 @@ package com.tasktracker.controller;
 
 import com.tasktracker.entity.Event;
 import com.tasktracker.persistence.GenericDao;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -13,12 +11,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * Forwards the user to the edit event jsp along with the event to be edited
+ */
 @WebServlet(
         urlPatterns = {"/users/editEvent"}
 )
 public class EditEvent extends HttpServlet {
-    private final Logger logger = LogManager.getLogger(this.getClass());
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //Get event to be edited

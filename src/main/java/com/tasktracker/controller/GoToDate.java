@@ -20,6 +20,10 @@ import java.time.temporal.WeekFields;
 import java.util.List;
 import java.util.Locale;
 
+/**
+ * //TODO: COMMENTS
+ * @author Kelly Palese
+ */
 @WebServlet(
         urlPatterns = {"/users/go"}
 )
@@ -27,14 +31,6 @@ public class GoToDate extends HttpServlet {
     //TODO: break into smaller methods
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-
-
-        System.out.println("****GoToDate Servlet*****");
-        System.out.println("goToDate param: " + req.getParameter("goToDate"));
-        System.out.println("goToDate attribute: " + req.getAttribute("goToDate"));
-
-
         //If the request is from the "jump to date" button, it will be an attribute
         //If the request is from a redirect after e.g. adding an event, it will be a parameter
         String goToDateString = "";
@@ -48,6 +44,7 @@ public class GoToDate extends HttpServlet {
         LocalDate goToDate = LocalDate.parse(goToDateString);
 
         //Get the user setting for the first day of the week
+        HttpSession session = req.getSession();
         TemporalField field = getStartOfWeekSetting(session);
         LocalDate firstDateOfWeek = goToDate.with(field, 1);
 

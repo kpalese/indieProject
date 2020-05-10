@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * //TODO: COMMENT HERE
+ * Forwards the user to the add to do page
  * @author kpalese
  */
 

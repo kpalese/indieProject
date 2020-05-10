@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.time.LocalDate;
 
 /**
- * //TODO: COMMENT HERE
+ * Inserts the new task into the database and then directs the user back to the view planner page from which they came
  * @author kpalese
  */
 
@@ -29,9 +29,8 @@ public class AddTaskAction extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-
         //Get user
+        HttpSession session = req.getSession();
         User user = (User)session.getAttribute("user");
 
         //Convert date variable from String
@@ -46,7 +45,8 @@ public class AddTaskAction extends HttpServlet {
         //Create a Task object and insert into database
         Task task = new Task(req.getParameter("taskName"), taskDate, req.getParameter("frequency"), dayOfWeek, req.getParameter("notes"), null, user);
         GenericDao taskDao = new GenericDao(Task.class);
-        taskDao.insert(task);
+        int id = taskDao.insert(task);
+        logger.info("Inserted task id: {}", id);
 
         //Add message that event was successfully added
         session.setAttribute("userMessage", "The task was successfully added!");

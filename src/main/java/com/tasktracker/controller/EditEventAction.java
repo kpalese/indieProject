@@ -2,8 +2,6 @@ package com.tasktracker.controller;
 
 import com.tasktracker.entity.Event;
 import com.tasktracker.persistence.GenericDao;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -17,7 +15,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 /**
- * //TODO: COMMENT HERE
+ * Updates the event in the database and then forwards to the user's planner
  * @author kpalese
  */
 
@@ -25,12 +23,8 @@ import java.time.LocalTime;
         urlPatterns = {"/users/editEventAction"}
 )
 public class EditEventAction extends HttpServlet {
-    private final Logger logger = LogManager.getLogger(this.getClass());
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-
         //Get event to be edited
         String eventId = req.getParameter("id");
         GenericDao eventDao = new GenericDao(Event.class);
@@ -54,6 +48,7 @@ public class EditEventAction extends HttpServlet {
         eventDao.saveOrUpdate(eventToEdit);
 
         //Add message that event was successfully edited
+        HttpSession session = req.getSession();
         session.setAttribute("userMessage", "The event was successfully updated!");
         session.setAttribute("messageClass", "alert-success");
 

@@ -12,12 +12,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
 /**
- * //TODO: COMMENT HERE
+ * Verifies that the username is unique and that the passwords match. Then creates a new user and a new role of type 'user'.
  * @author kpalese
  */
 
@@ -59,8 +58,9 @@ public class CreateUserAccountAction extends HttpServlet {
                     user.setUserName(req.getParameter("userName"));
                     user.setUserPassword(req.getParameter("password"));
 
-                    logger.debug("Adding User: " + user);
+                    logger.info("Adding User: " + user);
 
+                    //Add the role 'user' to the new user
                     Role role = new Role();
                     role.setUser(user);
                     role.setRoleName("user");
@@ -71,6 +71,7 @@ public class CreateUserAccountAction extends HttpServlet {
                     userDao.insert(user);
                     roleDao.insert(role);
 
+                    //Forward to the create account confirmation jsp
                     RequestDispatcher dispatcher = req.getRequestDispatcher("/createAccountConfirmation.jsp");
                     dispatcher.forward(req, resp);
                 }

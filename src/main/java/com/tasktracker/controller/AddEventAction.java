@@ -18,7 +18,8 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 /**
- * //TODO: COMMENT HERE
+ * This servlet gets the event information entered by the user, inserts the event into the database, and forwards the user
+ * to the calendar week that they were on previously
  * @author kpalese
  */
 
@@ -30,9 +31,8 @@ public class AddEventAction extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-
         //Get user
+        HttpSession session = req.getSession();
         User user = (User)session.getAttribute("user");
 
         //Convert date and time variables from Strings
@@ -46,7 +46,8 @@ public class AddEventAction extends HttpServlet {
         //Create event object and insert into database
         Event event = new Event(req.getParameter("eventName"), eventDate, startTime, endTime, req.getParameter("notes"), user);
         GenericDao eventDao = new GenericDao(Event.class);
-        eventDao.insert(event);
+        int id = eventDao.insert(event);
+        logger.info("Inserted event id: {}", id);
 
         //Add message that event was successfully added
         session.setAttribute("userMessage", "The event was successfully added!");
