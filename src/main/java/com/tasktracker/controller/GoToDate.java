@@ -29,6 +29,12 @@ public class GoToDate extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
 
+
+        System.out.println("****GoToDate Servlet*****");
+        System.out.println("goToDate param: " + req.getParameter("goToDate"));
+        System.out.println("goToDate attribute: " + req.getAttribute("goToDate"));
+
+
         //If the request is from the "jump to date" button, it will be an attribute
         //If the request is from a redirect after e.g. adding an event, it will be a parameter
         String goToDateString = "";

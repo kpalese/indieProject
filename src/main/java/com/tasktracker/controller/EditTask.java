@@ -1,6 +1,5 @@
 package com.tasktracker.controller;
 
-import com.tasktracker.entity.Event;
 import com.tasktracker.entity.Task;
 import com.tasktracker.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
@@ -29,6 +28,10 @@ public class EditTask extends HttpServlet {
 
         //Add task to the request
         req.setAttribute("taskToEdit", taskToEdit);
+
+        //Add planner date that the user should return to after completing Edit Task workflow
+        String goToDate = req.getParameter("goToDate");
+        req.setAttribute("goToDate", goToDate);
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users/editTask.jsp");
         dispatcher.forward(req, resp);

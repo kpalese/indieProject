@@ -124,7 +124,7 @@
                                                 <li class="list-group-item">
                                                     <div class="row">
                                                         <a href="${pageContext.request.contextPath}/users/removeTask?id=${task.id}&removeDate=${pageDates.getDateOfWeekFromString(i)}" class="col-sm-1"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Remove task"></i></a>
-                                                        <a href="${pageContext.request.contextPath}/users/editTask?id=${task.id}" class="col" data-toggle="tooltip" title="${task.notes}">
+                                                        <a href="${pageContext.request.contextPath}/users/editTask?id=${task.id}&goToDate=${pageDates.getDateOfWeekFromString(i)}" class="col" data-toggle="tooltip" title="${task.notes}">
                                                             <button type="button" class="btn btn-light"> ${task.name} <c:if test="${task.frequency !='once'}"> <span class="frequency">(${task.frequency})</span></c:if>
                                                             </button></a>
                                                     </div>
@@ -137,7 +137,7 @@
                                                         <c:if test="${pageDates.getDateOfWeekFromString(i).isBefore(sessionScope.now) || pageDates.getDateOfWeekFromString(i).equals(sessionScope.now)}">
                                                             <a href="${pageContext.request.contextPath}/users/removeTask?id=${task.id}&removeDate=${pageDates.getDateOfWeekFromString(i)}" class="col-sm-1"><i class="fas fa-minus-circle" data-toggle="tooltip" title="Remove task"></i></a>
                                                         </c:if>
-                                                            <a href="${pageContext.request.contextPath}/users/editTask?id=${task.id}" class="col" data-toggle="tooltip" title="${task.notes}">
+                                                            <a href="${pageContext.request.contextPath}/users/editTask?id=${task.id}&goToDate=${pageDates.getDateOfWeekFromString(i)}" class="col" data-toggle="tooltip" title="${task.notes}">
                                                             <button type="button" class="btn btn-light"> ${task.name} <c:if test="${task.frequency !='once'}"> <span class="frequency">(${task.frequency})</span></c:if>
                                                             </button></a>
                                                     </div>
