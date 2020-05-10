@@ -52,15 +52,19 @@
 | 4/20/20 | Started week 13 videos (still need to complete activity), worked on viewPlanner jsp and servlets | 6.5 | |
 | 4/21/20 | Worked through some bootstrap issues on viewPlanner jsp, added basic functionality to add an event to the database | 8.5 |  |
 | 4/22/20 | Added scrollbar to event and task area, viewPlanner now displays events, started basic functionality to edit an event| 6 | |
-
-
-
-
-
-
-
-
-
+| 4/23/20 | Created PageDates entity to populate calendar dates, edit event workflow updated to store events in the request (rather than the session)  | 5 | |
+| 4/24/20 | Completed Delete Event basic functionality, started Add Task workflow, changed tasks to have a 'last completed date', updated View Planner jsp to display one-time tasks | 6 | |
+| 4/25/20 | Completed basic functionality for user preference to autoforward incomplete tasks | 1.5 | |
+| 4/28/20 | One-time and recurring tasks now display, edit task and delete tasks basic workflows are complete,  | 6.75 | |
+| 4/29/20 | Looping on View Planner jsp now displays all 7 days of the week, worked on sorting tasks for the user display, workflow to add a to-do item is in place | 8.25 | |
+| 4/30/20 | Delete to-do item workflow is in place, to-do list items now display on View Planner jsp | 3.25 | |
+| 5/1/20 | getTasksByDate() excludes tasks prior to the starting date, navigating to next week and previous week in place, able to jump to a specific date, users are only able to remove current or past tasks, 'delete task' renamed to 'remove task', adding a new event redirects back to the week for which the event was added  | 9.75 | |
+| 5/2/20 |  Worked on 'Back' and 'Submit' buttons redirecting back to the correct week, added success messages for user| 3.5 | |
+| 5/3/20 | Worked on implementing the Calendarific api. Ran into an error with api test that will need to be resolved. | 4.5 | |
+| 5/5/20 | Added validation and user messaging to Create Account workflow to ensure username is unique and passwords match, deleted no longer used CSS styles | 1.5 | |
+| 5/6/20 | Holidays now display on planner, removed PrevWeek and NextWeek servlets and instead use GoToDate for those purposes, finished Edit To-Do item workflow | 2 | |
+| 5/7/20 | User setting allow for choosing Mon or Sun as first day of the week, began exploring CSS styles | 8.5 | |
+| 5/8/20 | Continued working on CSS styles. Implemented a geometric background and colors to match the background | 2 | |
 
 
 
