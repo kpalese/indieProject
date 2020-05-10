@@ -31,7 +31,10 @@
                     <a class="nav-link solidButton" href="${pageContext.request.contextPath}/users/viewPlanner">My Planner</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link solidButton" href="${pageContext.request.contextPath}/users/userSettings">Settings</a>
+                    <a class="nav-link solidButton" href="${pageContext.request.contextPath}/users/userSettings">My Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link solidButton" href="${pageContext.request.contextPath}/users/faq">FAQ</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link outlineButton" href="${pageContext.request.contextPath}/logout">Log Out</a>

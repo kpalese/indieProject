@@ -56,7 +56,6 @@ public class EditTaskAction extends HttpServlet {
         session.setAttribute("userMessage", "The task was successfully updated!");
         session.setAttribute("messageClass", "alert-success");
 
-
         //Set the date that the user should return to
         String goToDate = req.getParameter("goToDate");
         req.removeAttribute("goToDate");

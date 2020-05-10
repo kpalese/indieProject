@@ -47,6 +47,7 @@ public class RemoveTaskAction extends HttpServlet {
             }
         }
 
+        //Set a success message for the user
         session.setAttribute("userMessage", "The task was successfully removed!");
         session.setAttribute("messageClass", "alert-success");
 

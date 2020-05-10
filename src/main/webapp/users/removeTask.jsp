@@ -20,7 +20,7 @@
                 <c:if test="${requestScope.taskToRemove.frequency !='once'}">
                     <p class="alert alert-danger">This is a recurring task. Which task(s) do you want to remove?</p>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="instances" id="onlyThis" value="onlyThis">
+                        <input class="form-check-input" type="radio" name="instances" id="onlyThis" value="onlyThis" required="required">
                         <label class="form-check-label" for="onlyThis">Remove <b>this instance and all prior instances</b>.</label>
                     </div>
                     <div class="form-check form-check-inline">
