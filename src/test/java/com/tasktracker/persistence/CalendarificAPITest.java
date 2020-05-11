@@ -2,21 +2,16 @@ package com.tasktracker.persistence;
 
 import com.calendarific.HolidaysItem;
 import com.tasktracker.util.PropertiesLoader;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- * TODO: comments
+ * Validates integration with the Calendarific API
  */
 public class CalendarificAPITest implements PropertiesLoader {
-    private final Logger logger = LogManager.getLogger(this.getClass());
-
-
-    @Test
+     @Test
     public void testCalendarificResponse() throws Exception {
         CalendarificAPI api = new CalendarificAPI();
 

@@ -39,8 +39,7 @@ public class CalendarificAPI implements PropertiesLoader {
         try {
             calendarificResponse = mapper.readValue(response, CalendarificResponse.class);
         } catch (JsonProcessingException e) {
-            logger.debug("CalendarificAPI: error processing JSON response");
-            e.printStackTrace();
+            logger.debug("CalendarificAPI: error processing JSON response", e);
         }
 
         return calendarificResponse;
