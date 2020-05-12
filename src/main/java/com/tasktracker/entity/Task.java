@@ -232,18 +232,9 @@ public class Task implements Comparable<Task> {
 
     @Override
     public int compareTo(Task t) {
-
         if (getLastDateCompleted() == null || t.getLastDateCompleted() == null) {
             return 0;
         }
-        else if (this.getLastDateCompleted() == t.getLastDateCompleted()) {
-            return 0;
-        }
-        else if (this.getLastDateCompleted().isBefore(t.getLastDateCompleted())) {
-            return -1;
-        }
-        else {
-            return 0;
-        }
+        return getLastDateCompleted().compareTo(t.getLastDateCompleted());
     }
 }

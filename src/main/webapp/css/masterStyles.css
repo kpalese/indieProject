@@ -49,6 +49,11 @@ nav {
     color: #404040;
 }
 
+#goToDate:hover, :focus {
+    background-color: white;
+    color: black;
+}
+
 .outlineButton {
     color: #278e7e;
     border: 1px solid #278e7e;
@@ -60,6 +65,10 @@ nav {
     border-color: #f2c673;
 }
 
+.jumbotron {
+    background-color: rgba(253, 254, 254, .85);
+    border-radius: 15px;
+}
 
 .wrapper {
     max-width: 80em;
@@ -98,7 +107,6 @@ h2 {
 #welcomeUser {
     padding: .25em;
     padding-left: 20%;
-    border-radius: 5px;
 }
 
 #dropdownMenuLink {
@@ -201,6 +209,10 @@ i:hover, i:focus {
     padding-right: 0;
 }
 
+#login {
+    max-width: 55%;
+}
+
 #removeTaskInstance {
     margin-bottom: 3em;
 }
@@ -212,10 +224,6 @@ i:hover, i:focus {
 
 .form-check {
     margin-left: 2em;
-}
-
-#faq p {
-    line-height: .8;
 }
 
 /**
