@@ -166,7 +166,7 @@
                                         </div>
                                     </li>
                                 </c:forEach>
-                                <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addTodo" class="btn button-main">Add Item</a></li>
+                                <li class="list-group-item"><a href="${pageContext.request.contextPath}/users/addTodo?returnDate=${pageDates.getDateOfWeekFromString("1")}" class="btn button-main">Add Item</a></li>
                             </ul>
                         </div>
                     </div>

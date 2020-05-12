@@ -6,6 +6,8 @@ import com.tasktracker.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -25,7 +27,7 @@ public class AddTodoAction extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         //Get user
         HttpSession session = req.getSession();
         User user = (User)session.getAttribute("user");
@@ -40,6 +42,12 @@ public class AddTodoAction extends HttpServlet {
         session.setAttribute("userMessage", "The item was successfully added!");
         session.setAttribute("messageClass", "alert-success");
 
-        resp.sendRedirect(req.getContextPath() + "/users/viewPlanner");
+        //Set the planner date to return the user to
+        String goToDate = req.getParameter("returnDate");
+        req.setAttribute("goToDate", goToDate);
+
+        //Forward to viewPlanner via GoToDate servlet
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/users/go");
+        dispatcher.forward(req, resp);
     }
 }

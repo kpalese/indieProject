@@ -163,7 +163,10 @@ public class User {
     }
 
     /**
+     * Gets user's events by date and sorts them by starting time.
      *
+     * @param localDate the local date
+     * @return the events by date
      */
     public List<Event> getEventsByDate(LocalDate localDate) {
         List<Event> eventsMatchingDate = new ArrayList<>();
@@ -220,7 +223,10 @@ public class User {
 
     /**
      * TODO: clean up! Why were my && statements not working? Broke it up into a million if statements and now it works...
+     * Gets user's tasks by date
      *
+     * @param localDate the local date
+     * @return the tasks by date
      */
     public List<Task> getTasksByDate(LocalDate localDate) {
         List<Task> tasksMatchingDate = new ArrayList<>();

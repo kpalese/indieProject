@@ -19,6 +19,12 @@ import java.io.IOException;
 public class AddTodo extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //Get return date (so user returns to correct week in planner)
+        String returnDate = req.getParameter("returnDate");
+
+        //Send return date to addTask jsp
+        req.setAttribute("returnDate", returnDate);
+
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users/addTodo.jsp");
         dispatcher.forward(req, resp);
     }

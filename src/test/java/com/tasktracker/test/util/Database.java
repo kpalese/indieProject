@@ -1,10 +1,10 @@
 package com.tasktracker.test.util;
 
+import com.tasktracker.util.PropertiesLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -20,7 +20,7 @@ import java.util.Properties;
  * @author Alex M - Fall 2019 - added multi-line sql capability
  */
 
-public class Database {
+public class Database implements PropertiesLoader {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     // create an object of the class Database
@@ -31,23 +31,12 @@ public class Database {
 
     // private constructor prevents instantiating this class anywhere else
     private Database() {
-        loadProperties();
-
-    }
-
-    // TODO use properties loader (interface from adv java)
-    private void loadProperties() {
-        properties = new Properties();
+        //loadProperties();
         try {
-            properties.load (this.getClass().getResourceAsStream("/database.properties"));
-        } catch (IOException ioe) {
-            System.out.println("Database.loadProperties()...Cannot load the properties file");
-            ioe.printStackTrace();
+            properties = loadProperties("/database.properties");
         } catch (Exception e) {
-            System.out.println("Database.loadProperties()..." + e);
-            e.printStackTrace();
+            logger.error("Issue loading Properties", e);
         }
-
     }
 
     // get the only Database object available
