@@ -28,6 +28,11 @@ public class DeleteTodo extends HttpServlet {
         //Add to-do to the request
         req.setAttribute("todoToDelete", todoToDelete);
 
+        //Get return date (so user returns to correct week in planner)
+        String returnDate = req.getParameter("returnDate");
+        req.setAttribute("returnDate", returnDate);
+
+        //Forward to the delete to do jsp
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users/deleteTodo.jsp");
         dispatcher.forward(req, resp);
     }

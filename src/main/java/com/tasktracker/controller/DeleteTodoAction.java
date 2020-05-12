@@ -34,7 +34,12 @@ public class DeleteTodoAction extends HttpServlet {
         session.setAttribute("userMessage", "The item was successfully deleted!");
         session.setAttribute("messageClass", "alert-success");
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/users/viewPlanner.jsp");
+        //Set the planner date to return the user to
+        String goToDate = req.getParameter("returnDate");
+        req.setAttribute("goToDate", goToDate);
+
+        //Forward to viewPlanner via GoToDate servlet
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/users/go");
         dispatcher.forward(req, resp);
     }
 }
