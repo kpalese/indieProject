@@ -152,6 +152,11 @@ i:hover, i:focus {
     color: #0c3748;
 }
 
+.fa-info-circle {
+    font-size: .5em;
+    vertical-align: text-top;
+}
+
 .userMessage {
     text-align: center;
 }
@@ -187,6 +192,10 @@ i:hover, i:focus {
     font-style: italic;
 }
 
+.indent {
+    margin-left: 4em;
+}
+
 .noLRPadding {
     padding-left: 0;
     padding-right: 0;
@@ -203,6 +212,10 @@ i:hover, i:focus {
 
 .form-check {
     margin-left: 2em;
+}
+
+#faq p {
+    line-height: .8;
 }
 
 /**

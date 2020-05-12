@@ -18,15 +18,21 @@
                 </c:if>
     <%--            Warning message for recurring tasks--%>
                 <c:if test="${requestScope.taskToRemove.frequency !='once'}">
-                    <p class="alert alert-danger">This is a recurring task. Which task(s) do you want to remove?</p>
+                    <div class="alert alert-danger">
+                        <p>This is a recurring task. What do you want to do?</p>
+                        <small>Questions about recurring tasks? <a href="${pageContext.request.contextPath}/users/faq#recurTaskSingleInstance" target="_blank">View the FAQ</a></small>
+                    </div>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="instances" id="onlyThis" value="onlyThis" required="required">
-                        <label class="form-check-label" for="onlyThis">Remove <b>this instance and all prior instances</b>.</label>
+                        <label class="form-check-label" for="onlyThis">I finished the task, and I want to keep tracking it.</label><br/>
                     </div>
+                    <small class="form-text text-muted indent">This will remove all instances prior to today. Future instances will remain.</small><br/>
+
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="instances" id="allInstances" value="allInstances">
-                        <label class="form-check-label" for="allInstances">Remove <b>all instances</b> of this task. I'm no longer tracking it.</label>
+                        <label class="form-check-label" for="allInstances">I don't want to track this task anymore.</label><br/>
                     </div>
+                    <small class="form-text text-muted indent">This will remove <b>all</b> instances of this task</small><br/>
                 </c:if>
             </div>
 
@@ -39,7 +45,7 @@
                 <INPUT TYPE="TEXT" NAME="taskName" class="form-control" id="taskName" required="required" value="${requestScope.taskToRemove.name}">
             </div>
             <div class="form-group">
-                <label for="taskDate"><c:if test="${requestScope.taskToRemove.frequency !='once'}">Initial </c:if>Date: </label>
+                <label for="taskDate"><c:if test="${requestScope.taskToRemove.frequency !='once'}">Beginning </c:if>Date: </label>
                 <INPUT TYPE="DATE" NAME="taskDate" class="form-control" id="taskDate" required="required" value="${requestScope.taskToRemove.date}">
             </div>
             <div class="form-group">

@@ -10,7 +10,7 @@
     <div class="wrapper">
 
         <FORM ACTION="${pageContext.request.contextPath}/users/addTaskAction" METHOD="GET" id="addTask" class="mainForm">
-            <h2>Add Task</h2>
+            <h2>Add Task <a href="${pageContext.request.contextPath}/users/faq#taskFAQ" target="_blank"><i class="fas fa-info-circle" data-toggle="tooltip" title="Open Task FAQ in a new tab"></i></a></h2>
             <div class="form-group">
                 <label for="taskName"><span class="required">*</span>Name of Task: </label>
                 <INPUT TYPE="TEXT" NAME="taskName" class="form-control" id="taskName" required="required">

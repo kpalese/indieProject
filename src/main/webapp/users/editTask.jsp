@@ -18,7 +18,7 @@
                 <INPUT TYPE="TEXT" NAME="taskName" class="form-control" id="taskName" required="required" value="${requestScope.taskToEdit.name}">
             </div>
             <div class="form-group">
-                <label for="taskDate"><span class="required">*</span>Date: </label>
+                <label for="taskDate"><span class="required">*</span><c:if test="${requestScope.taskToEdit.frequency !='once'}">Beginning </c:if>Date: </label>
                 <INPUT TYPE="DATE" NAME="taskDate" class="form-control" id="taskDate" required="required" value="${requestScope.taskToEdit.date}">
             </div>
             <div class="form-group">

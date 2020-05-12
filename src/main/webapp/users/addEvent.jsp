@@ -10,7 +10,8 @@
         <div class="wrapper">
 
             <FORM ACTION="${pageContext.request.contextPath}/users/addEventAction" METHOD="GET" id="addEvent" class="mainForm">
-                <h2>Add Event</h2>
+                <h2>Add Event <a href="${pageContext.request.contextPath}/users/faq#eventFAQ" target="_blank"><i class="fas fa-info-circle" data-toggle="tooltip" title="Open Event FAQ in a new tab"></i></a></h2>
+
                 <div class="form-group">
                     <label for="eventName"><span class="required">*</span>Name of Event: </label>
                     <INPUT TYPE="TEXT" NAME="eventName" class="form-control" id="eventName" required="required">

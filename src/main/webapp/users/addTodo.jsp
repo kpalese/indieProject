@@ -10,7 +10,7 @@
     <div class="wrapper">
 
         <FORM ACTION="${pageContext.request.contextPath}/users/addTodoAction" METHOD="GET" id="addTodo" class="mainForm">
-            <h2>Add To Do Item</h2>
+            <h2>Add To Do Item <a href="${pageContext.request.contextPath}/users/faq#todoFAQ" target="_blank"><i class="fas fa-info-circle" data-toggle="tooltip" title="Open To Do Item FAQ in a new tab"></i></a></h2>
             <div class="form-group">
                 <label for="todoName"><span class="required">*</span>Name of To Do Item: </label>
                 <INPUT TYPE="TEXT" NAME="todoName" class="form-control" id="todoName" required="required">
