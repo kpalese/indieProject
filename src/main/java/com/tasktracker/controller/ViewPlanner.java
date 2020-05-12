@@ -22,7 +22,8 @@ import java.time.temporal.WeekFields;
 import java.util.*;
 
 /**
- * //TODO: COMMENT HERE
+ * Adds the current user to the session, creates a PageDates entity for the current week, includes holidays if user settings
+ * are to do so, and then forwards to the view planner jsp.
  * @author kpalese
  */
 
@@ -31,18 +32,16 @@ import java.util.*;
 )
 public class ViewPlanner extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
-    //TODO: break into smaller methods
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         logger.info("****User is: " + req.getRemoteUser() + " and user role is " + req.isUserInRole("user"));
-
-        HttpSession session = req.getSession();
 
         //Get current user and add to session
         GenericDao userDao = new GenericDao(User.class);
         List<User> users = userDao.getByPropertyEqual("userName", req.getRemoteUser());
         User user = users.get(0);
-        //TODO: Verify list of users is only 1?
+        HttpSession session = req.getSession();
         session.setAttribute("user", user);
 
         //Get current date and first date of the week

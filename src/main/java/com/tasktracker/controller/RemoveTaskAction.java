@@ -16,7 +16,9 @@ import java.io.IOException;
 import java.time.LocalDate;
 
 /**
- * TODO: COMMENTS
+ * Deletes "once" tasks from database. If it is a recurring task, checks whether user selected to remove all instances
+ * or only past instances. If user selected all instances, task is removed from database. If user selected past instances,
+ * then the last completed date is updated to the date on which the user removed the task.
  * @author Kelly Palese
  */
 @WebServlet(
@@ -40,6 +42,7 @@ public class RemoveTaskAction extends HttpServlet {
         }
 
         //If it's a recurring task, determine which instances the user wants to remove
+        logger.info("Frequency of task {} to be removed is {}", taskId, req.getParameter("frequency"));
         if (!req.getParameter("frequency").equals("once")) {
             if (req.getParameter("instances").equals("onlyThis")) {
                 LocalDate removeDate = LocalDate.parse(req.getParameter("removeDate"));

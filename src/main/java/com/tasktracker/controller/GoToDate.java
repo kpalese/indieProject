@@ -21,14 +21,15 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- * //TODO: COMMENTS
+ * Gets the "go to date", creates a PageDates entity based on the "go to date" and user settings for first day of week,
+ * includes holidays if user settings are to include them, and then forwards to the view planner jsp.
  * @author Kelly Palese
  */
 @WebServlet(
         urlPatterns = {"/users/go"}
 )
 public class GoToDate extends HttpServlet {
-    //TODO: break into smaller methods
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //If the request is from the "jump to date" button, it will be an attribute
@@ -52,12 +53,10 @@ public class GoToDate extends HttpServlet {
         PageDates newPageDates = new PageDates(firstDateOfWeek, field);
         req.setAttribute("pageDates", newPageDates);
 
-        //TODO: Review further: I removed user from session and then re-added to force the user methods to be called again...is this the best way?
-        //Get current user and add to session
+        //Get current user and add to session to force the user methods to be called again and therefore gather any new events/tasks/todos
         GenericDao userDao = new GenericDao(User.class);
         List<User> users = userDao.getByPropertyEqual("userName", req.getRemoteUser());
         User user = users.get(0);
-        //TODO: Verify list of users is only 1?
         session.setAttribute("user", user);
 
         //Include holidays if user setting is to include them

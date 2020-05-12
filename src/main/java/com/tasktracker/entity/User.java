@@ -222,7 +222,6 @@ public class User {
     }
 
     /**
-     * TODO: clean up! Why were my && statements not working? Broke it up into a million if statements and now it works...
      * Gets user's tasks by date
      *
      * @param localDate the local date
