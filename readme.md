@@ -6,7 +6,7 @@ This repository contains Kelly Palese's final project for Madison College's Ente
 
 In recent years, the personal planner industry has expanded quite a bit. Although the traditional planner style (bound paper printed with daily, weekly, or monthly calendar outlines) is still widely available, there is a trend towards planners that allow much more than just tracking the user's schedule. The newer planners allow users to organize items such as goals (e.g. fitness or mindfulness goals), meal planning, chores, and habit tracking. 
 
-The downside to these newer planners is that they are generally large and therefore bulky to carry around. My goal is to create a web application that allows users to track their schedule, goals, and to-do list all in one place without the inconvenience of lugging around a giant paper planner.
+The downside to these newer planners is that they are generally large and therefore bulky to carry around. It can also become visually messy as tasks are crossed off, erased, or added. My goal is to create a web application that allows users to track their schedule, goals, and to-do list all in one place without the inconvenience of lugging around a giant paper planner.
 
 Below are two different examples of newer paper planners that serve as some inspiration for my web application:
 
@@ -32,7 +32,7 @@ Below are two different examples of newer paper planners that serve as some insp
 * Dependency Management
   * Maven
 * Web Services consumed using Java
-  * CALENDAR SERVICE NEEDS TO BE DETERMINED
+  * Calendarific
 * CSS 
   * Bootstrap
 * Data Validation
@@ -44,7 +44,6 @@ Below are two different examples of newer paper planners that serve as some insp
   * AWS
 * Independent Research Topic/s
     * Drag and drop
-    * NEED TO EXPLORE THIS MORE
 * Unit Testing
   * JUnit tests to achieve 80%+ code coverage 
 * IDE: IntelliJ IDEA
@@ -54,11 +53,9 @@ Below are two different examples of newer paper planners that serve as some insp
 ### Design
 
 * [User Stories](DesignDocuments/userStories.md)
-* [Screen Design](DesignDocuments/Screens.md)
-* [Application Flow](DesignDocuments/applicationFlow.md)
+* [Screen Design](DesignDocuments/wireframes)
 * [Database Design](DesignDocuments/databaseDiagram.png)
-
 
 ### [Project Plan](ProjectPlan.md)
 
-### [Weekly Reflection](WeeklyReflection.md)
+### [Time log](timeLog.md)

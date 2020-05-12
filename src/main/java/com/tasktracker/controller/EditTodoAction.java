@@ -23,7 +23,6 @@ import java.io.IOException;
         urlPatterns = {"/users/editTodoAction"}
 )
 public class EditTodoAction extends HttpServlet {
-    private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

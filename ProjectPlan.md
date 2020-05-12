@@ -27,7 +27,7 @@
 
 ### Week 5
 
-- [ ] Create the template for all jsps using bootstrap or materialize
+- [x] Create the template for all jsps using bootstrap or materialize
 - [x] Weekly journal entry
 - [x] Add the event table
 - [x] Add the event entity
@@ -50,45 +50,45 @@
 
 - [x] Weekly journal entry
 - [x] Verify all entities are in test, prod, and dev dbs
-- [ ] Update index jsp to be closer to the final version
-- [ ] Build the event add/update/delete jsp
-- [ ] Build the task add/update/delete jsp
-- [ ] Set up authentication locally
-- [ ] Set up authentication on AWS
-- [ ] Review and incorporate any feedback from Checkpoint 2.
+- [x] Update index jsp to be closer to the final version
+- [x] Build the event add/update/delete jsp
+- [x] Build the task add/update/delete jsp
+- [x] Set up authentication locally
+- [x] Set up authentication on AWS
+- [x] Review and incorporate any feedback from Checkpoint 2.
 
 
 ### Week 8
 
-- [ ] Weekly journal entry
-- [ ] Build the view planner jsp
-- [ ] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented. 
+- [x] Weekly journal entry
+- [x] Build the view planner jsp
+- [x] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented. 
 
 ### Week 9
-- [ ] Weekly journal entry
-- [ ] Review and incorporate feedback from Checkpoint 3.
-- [ ] Carefully review code for standards and best practices - use a code quality tool? 
+- [x] Weekly journal entry
+- [x] Review and incorporate feedback from Checkpoint 3.
+- [x] Carefully review code for standards and best practices - use a code quality tool? 
 
 ### Week 10
-- [ ] Weekly journal entry
-- [ ] Unit test all api integrations
+- [x] Weekly journal entry
+- [x] Unit test all api integrations
 
 ### Week 11 - Team project work week
-- [ ] Weekly journal entry
+- [x] Weekly journal entry
 
 ### Week 12 - Team project due
-- [ ] Weekly journal entry
-- [ ] Review indie project and create list of todos
+- [x] Weekly journal entry
+- [x] Review indie project and create list of todos
 
 ### Week 13
-- [ ] Weekly journal entry
-- [ ] Complete todos identified in week 12
-- [ ] Prepare for week 13 peer code reviews
-- [ ] Code quality check
-- [ ] Review rubric to make sure I'm on target
+- [x] Weekly journal entry
+- [x] Complete todos identified in week 12
+- [x] Prepare for week 13 peer code reviews
+- [x] Code quality check
+- [x] Review rubric to make sure I'm on target
 
 ### Week 14
-- [ ] Weekly journal entry
+- [x] Weekly journal entry
 - [ ] Create final presentation
 
 ### Week 15

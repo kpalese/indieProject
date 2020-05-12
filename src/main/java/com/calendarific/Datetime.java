@@ -2,7 +2,6 @@ package com.calendarific;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.annotation.Generated;
-import java.time.LocalDate;
 
 @Generated("com.robohorse.robopojogenerator")
 public class Datetime{
