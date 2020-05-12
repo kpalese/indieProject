@@ -66,8 +66,6 @@ public class CreateUserAccountAction extends HttpServlet {
                     role.setRoleName("user");
                     role.setUserName(user.getUserName());
 
-                    user.addRole(role);
-
                     userDao.insert(user);
                     roleDao.insert(role);
 

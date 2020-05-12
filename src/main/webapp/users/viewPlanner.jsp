@@ -1,5 +1,4 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
 <c:set var="title" value="View Planner - Task Tracker" />
 <%@include file="../templates/head.jsp"%>
 

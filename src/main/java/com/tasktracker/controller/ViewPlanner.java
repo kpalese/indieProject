@@ -35,7 +35,7 @@ public class ViewPlanner extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        logger.info("****User is: " + req.getRemoteUser() + " and user role is " + req.isUserInRole("user"));
+        logger.info("****User is: " + req.getRemoteUser() + " and isUserInRole'user' is: " + req.isUserInRole("user"));
 
         //Get current user and add to session
         GenericDao userDao = new GenericDao(User.class);

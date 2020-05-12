@@ -12,22 +12,22 @@
 
         <h3 id="eventFAQ">What is an Event?</h3>
         <p>An Event has a date and a start time. It may or may not have an end time.</p>
-        <p><em>Examples of events:</em> Work meetings, medical or personal appointments, social commitments</p><br/>
+        <p><em>Examples of events:</em> Work meetings, medical or personal appointments, social commitments</p><br/><br/>
 
         <h3 id="taskFAQ">What is a Task?</h3>
         <p>A task has a specific date but can occur at any time on that date. A task can occur once, daily, or weekly.</p>
         <p><em>Examples of one-time tasks:</em> Pick up a prescription, accomplish a milestone in a project</p>
         <p><em>Examples of daily tasks:</em> Daily fitness goals, daily reminders to take a medication</p>
-        <p><em>Examples of weekly tasks:</em> Watering a plant every Wednesday, meal prepping every Sunday, weekly cleaning tasks</p><br/>
+        <p><em>Examples of weekly tasks:</em> Watering a plant every Wednesday, meal prepping every Sunday, weekly cleaning tasks</p><br/><br/>
 
         <h3 id="todoFAQ">What is a To Do item?</h3>
         <p>A to do item is something you need to accomplish, but it does not have a set deadline.</p>
-        <p><em>Examples of to do items:</em> Return an item to a store, update your resume, stain the deck, send thank you notes</p><br/>
+        <p><em>Examples of to do items:</em> Return an item to a store, update your resume, stain the deck, send thank you notes</p><br/><br/>
 
         <h3 id="recurTaskSingleInstance">Why can't I remove a single instance of a recurring task?</h3>
         <p>Recurring tasks are meant to be actions or goals that you must regularly accomplish. When you remove an instance
             of a recurring task, you're essentially saying <em>I'm up-to-date as of this point in time!</em> Therefore, when you
-            remove an instance of your recurring task, all past instances are also removed.</p><br/>
+            remove an instance of your recurring task, all past instances are also removed.</p><br/><br/>
 
         <h3 id="futureRecurTask">Why can't I remove future recurring tasks?</h3>
         <p>Recurring tasks are meant to be things that you must regularly accomplish. You're never exactly <b>done</b> with them
@@ -38,7 +38,7 @@
             anytime after your goal date.</p>
         <p>If you want to complete a task "early", you should probably make the task a to do item instead. To do items do
             not have associated dates.</p>
-        <p>You can always remove future <b>single occurrence</b> tasks.</p><br/>
+        <p>You can always remove future <b>single occurrence</b> tasks.</p><br/><br/>
 
         <h3>What might be included in future versions of Task Tracker?</h3>
         <p>Some goals for future versions include:</p>
