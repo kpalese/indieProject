@@ -42,8 +42,12 @@ public class EditTodoAction extends HttpServlet {
         session.setAttribute("userMessage", "The item was successfully updated!");
         session.setAttribute("messageClass", "alert-success");
 
-        //Forward to viewPlanner
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/users/viewPlanner");
+        //Set the planner date to return the user to
+        String goToDate = req.getParameter("returnDate");
+        req.setAttribute("goToDate", goToDate);
+
+        //Forward to viewPlanner via GoToDate servlet
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/users/go");
         dispatcher.forward(req, resp);
     }
 }

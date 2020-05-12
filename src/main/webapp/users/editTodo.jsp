@@ -12,6 +12,7 @@
         <FORM ACTION="${pageContext.request.contextPath}/users/editTodoAction" METHOD="GET" id="editTodo" class="mainForm">
             <h2>Edit To Do Item</h2>
             <input type="hidden" name="id" value="${requestScope.todoToEdit.id}" />
+            <input type="hidden" name="returnDate" value="${requestScope.returnDate}" />
             <div class="form-group">
                 <label for="todoName"><span class="required">*</span>Name of To Do Item: </label>
                 <INPUT TYPE="TEXT" NAME="todoName" class="form-control" id="todoName" required="required" value="${requestScope.todoToEdit.name}">
@@ -21,9 +22,8 @@
                 <textarea class="form-control" NAME="notes" id="notes" rows="3" maxlength="100">${requestScope.todoToEdit.notes}</textarea>
             </div>
 
-            <%--TODO: try to go back to the planner page that the user was just on (not necessarily the page for today)--%>
-            <a href="${pageContext.request.contextPath}/users/viewPlanner" class="btn btn-light">Back</a>
-            <INPUT TYPE="SUBMIT" VALUE="Edit To Do Item" class="btn button-main">
+            <a href="${pageContext.request.contextPath}/users/go?goToDate=${requestScope.returnDate}" class="btn btn-light">Back</a>
+            <INPUT TYPE="SUBMIT" VALUE="Edit Item" class="btn button-main">
         </FORM>
     </div>
 </main>

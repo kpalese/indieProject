@@ -29,6 +29,10 @@ public class EditTodo extends HttpServlet {
         //Add to-do to the request
         req.setAttribute("todoToEdit", todoToEdit);
 
+        //Get return date (so user returns to correct week in planner)
+        String returnDate = req.getParameter("returnDate");
+        req.setAttribute("returnDate", returnDate);
+
         RequestDispatcher dispatcher = req.getRequestDispatcher("/users/editTodo.jsp");
         dispatcher.forward(req, resp);
     }
