@@ -77,12 +77,12 @@ public class GoToDate extends HttpServlet {
      */
     public TemporalField getStartOfWeekSetting(HttpSession session) {
         User user = (User)session.getAttribute("user");
+        TemporalField field;
 
-        TemporalField field = null;
-        if (user.getWeekStart().equals("Sunday")) {
-            field = WeekFields.of(Locale.US).dayOfWeek();
-        } else if (user.getWeekStart().equals("Monday")) {
+        if (user.getWeekStart().equals("Monday")) {
             field = WeekFields.of(Locale.UK).dayOfWeek();
+        } else {
+            field = WeekFields.of(Locale.US).dayOfWeek();
         }
         return field;
     }

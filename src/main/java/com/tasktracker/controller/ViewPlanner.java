@@ -79,12 +79,12 @@ public class ViewPlanner extends HttpServlet {
      * @return the start of week setting
      */
     public TemporalField getStartOfWeekSetting(User user) {
-        TemporalField field = null;
+        TemporalField field;
 
-        if (user.getWeekStart().equals("Sunday")) {
-            field = WeekFields.of(Locale.US).dayOfWeek();
-        } else if (user.getWeekStart().equals("Monday")) {
+        if (user.getWeekStart().equals("Monday")) {
             field = WeekFields.of(Locale.UK).dayOfWeek();
+        } else {
+            field = WeekFields.of(Locale.US).dayOfWeek();
         }
         return field;
     }

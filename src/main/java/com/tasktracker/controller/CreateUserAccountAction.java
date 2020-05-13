@@ -57,16 +57,15 @@ public class CreateUserAccountAction extends HttpServlet {
                     User user = new User();
                     user.setUserName(req.getParameter("userName"));
                     user.setUserPassword(req.getParameter("password"));
-
+                    user.setWeekStart("Sunday");
                     logger.info("Adding User: " + user);
+                    userDao.insert(user);
 
                     //Add the role 'user' to the new user
                     Role role = new Role();
                     role.setUser(user);
                     role.setRoleName("user");
                     role.setUserName(user.getUserName());
-
-                    userDao.insert(user);
                     roleDao.insert(role);
 
                     //Forward to the create account confirmation jsp
