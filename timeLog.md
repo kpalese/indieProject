@@ -65,8 +65,9 @@
 | 5/6/20 | Holidays now display on planner, removed PrevWeek and NextWeek servlets and instead use GoToDate for those purposes, finished Edit To-Do item workflow | 2 | |
 | 5/7/20 | User setting allow for choosing Mon or Sun as first day of the week, began exploring CSS styles | 8.5 | |
 | 5/8/20 | Continued working on CSS styles. Implemented a geometric background and colors to match the background | 2 | |
-
-
-
+| 5/10/20 | Added FAQ page to navbar, Back and Submit buttons in edit task workflow now redirects to the proper week, added javadoc | 3 | |
+| 5/11/20 | Updates to the text on the FAQ, remove task jsp updated to better clarify options for removing a recurring task, jumbotron added to index | 3 | |
+| 5/12/20 | Back and submit buttons for Add, Edit, and Remove todo item now all redirect to the proper week, added more javadoc, updated styling for holidays, added custom error pages, updated AWS database and deployed to AWS | 4.5 | |
+| 5/13/20 | Fixed issue where user's setting for the first day of the week was not being added to the session as expected, redeployed to AWS, created demo video | 2 |  |
 
 
